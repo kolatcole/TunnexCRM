@@ -104,7 +104,7 @@ namespace CRMSystem.Infrastructure
                     skill.Name = data.Name;
                     skill.DateModified = DateTime.Now;
                     skill.UserModified = data.UserCreated;
-                  
+                    skill.StaffNumberWithSkill = data.StaffNumberWithSkill;
 
                     _context.Skills.Update(skill);
                     await _context.SaveChangesAsync();

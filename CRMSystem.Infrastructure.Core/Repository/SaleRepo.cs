@@ -139,18 +139,33 @@ namespace CRMSystem.Infrastructure
             }
             return sale.ID;
         }
-        public async Task<List<Sale>> getByCustomerIDAsync(int customerID)
+
+
+        public async Task<List<Sale>> GetSingleDaySales(DateTime date)
         {
             try
             {
-                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID).ToListAsync();
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated.Date ==date.Date).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+
         }
+        //public async Task<List<Sale>> getByCustomerIDAsync(int customerID)
+        //{
+        //    try
+        //    {
+        //        var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID).ToListAsync();
+        //        return sales;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //} b4 deployemnt
 
     }
 }

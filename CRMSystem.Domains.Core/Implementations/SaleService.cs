@@ -128,15 +128,26 @@ namespace CRMSystem.Domains
 
             return SID;
         }
+        //public async Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
+        //{
+        //    var sales = await _repo.getByCustomerIDAsync(customerID);
+
+        //    foreach (var sale in sales)
+        //    {
+        //        sale.Payment = await _payRepo.getPaymentByInvoiceNo(sale.Invoice.InvoiceNo);
+        //    }
+            
+        //    return sales;
+        //} b4 deployemnt
         public async Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
         {
-            var sales = await _repo.getByCustomerIDAsync(customerID);
+            var sales = await _sRepo.getByCustomerIDAsync(customerID);
 
             foreach (var sale in sales)
             {
                 sale.Payment = await _payRepo.getPaymentByInvoiceNo(sale.Invoice.InvoiceNo);
             }
-            
+
             return sales;
         }
         public async Task<Sale> GetSaleByIDAsync(int ID)
@@ -159,17 +170,7 @@ namespace CRMSystem.Domains
 
             return sales;
         }
-        public async Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
-        {
-            var sales = await _sRepo.getByCustomerIDAsync(customerID);
-
-            foreach (var sale in sales)
-            {
-                sale.Payment = await _payRepo.getPaymentByInvoiceNo(sale.Invoice.InvoiceNo);
-            }
-
-            return sales;
-        }
+      
 
         public async Task<List<Sale>> getSaleHistoryByDateAsync(DateTime startdate, DateTime enddate)
         {
@@ -178,6 +179,14 @@ namespace CRMSystem.Domains
         
         
         }
+        public async Task<List<Sale>> GetSingleDaySalesAsync(DateTime date)
+        {
+            var sales = await _sRepo.GetSingleDaySales(date);
+            return sales;
+
+
+        }
+        
 
     }
 }

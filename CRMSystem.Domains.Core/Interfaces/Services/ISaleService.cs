@@ -12,5 +12,6 @@ namespace CRMSystem.Domains
         Task<List<Sale>> GetAllSalesAsync();
         Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID);
         Task<List<Sale>> getSaleHistoryByDateAsync(DateTime startdate, DateTime enddate);
+        Task<List<Sale>> GetSingleDaySalesAsync(DateTime date);
     }
 }
