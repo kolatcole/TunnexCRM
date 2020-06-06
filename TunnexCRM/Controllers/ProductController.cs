@@ -64,7 +64,7 @@ namespace CRMSystem.Presentation
             return Ok(result);
         }
 
-        [HttpDelete("DeleteProduct/{ID}")]
+        [HttpPost("DeleteProduct/{ID}")]
         public async Task<IActionResult> Delete(int ID)
         {
 

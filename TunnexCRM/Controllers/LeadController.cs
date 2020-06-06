@@ -58,7 +58,7 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// </summary>
         /// <param name="ID"></param>
         /// <returns></returns>
-        [HttpDelete("DeleteLead/ID")]
+        [HttpPost("DeleteLead/ID")]
         public async Task<IActionResult> Delete(int ID)
         {
 

@@ -44,7 +44,7 @@ namespace CRMSystem.Presentation
         /// </summary>
         /// <param name="ID"></param>
         /// <returns></returns>
-        [HttpDelete("DeleteRole/{ID}")]
+        [HttpPost("DeleteRole/{ID}")]
         public async Task<IActionResult> Delete(int ID)
         {
 

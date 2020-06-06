@@ -22,7 +22,7 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
-        public async Task  deleteAsync(int ID)
+        public Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
