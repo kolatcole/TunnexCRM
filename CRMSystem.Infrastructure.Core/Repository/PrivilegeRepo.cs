@@ -1,6 +1,8 @@
 ﻿using CRMSystem.Domains;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,9 +16,33 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public Task<int> deleteAsync(Privilege data)
+        public async Task  deleteAsync(int ID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var privileges = await _context.Privileges.Where(x => x.RoleID == ID).ToListAsync();
+                _context.Privileges.RemoveRange(privileges);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task deleteAllAsync(List<Privilege> data)
+        {
+            try
+            {
+                _context.Privileges.RemoveRange(data);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public Task<List<Privilege>> getAllAsync()

@@ -63,5 +63,13 @@ namespace CRMSystem.Presentation
             var result = await _pRepo.GetTopSellingProducts();
             return Ok(result);
         }
+
+        [HttpDelete("DeleteProduct/{ID}")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _service.DeleteProductAsync(ID);
+            return Ok();
+        }
     }
 }

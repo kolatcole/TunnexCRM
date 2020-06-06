@@ -18,8 +18,13 @@ namespace CRMSystem.Presentation.Core.Controllers
             _service = service;
         }
 
-        [HttpPost("Save")]
-        public async Task<IActionResult> Post(Lead data)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("SaveLead")]
+        public async Task<IActionResult> SaveLead(Lead data)
         {
             var result = await _service.SaveLeadAsync(data);
             return Ok(result);
@@ -47,6 +52,18 @@ namespace CRMSystem.Presentation.Core.Controllers
             var result = await _service.ConvertLeadtoCustomerAsync(ID);
             return Ok(result);
 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        [HttpDelete("DeleteLead/ID")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _service.DeleteLeadAsync(ID);
+            return Ok();
         }
     }
 }

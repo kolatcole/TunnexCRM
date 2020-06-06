@@ -89,5 +89,18 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="ID"></param>
+       /// <returns></returns>
+        [HttpDelete("DeleteUser/{ID}")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _repo.deleteAsync(ID);
+            return Ok();
+        }
     }
 }

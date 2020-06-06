@@ -1,0 +1,644 @@
+2020-06-06 07:23:29.416 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 07:23:34.065 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 07:23:34.850 +01:00 [Information] Request finished in 793.2233ms 404 
+2020-06-06 07:23:47.286 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 07:23:47.304 +01:00 [Information] Request finished in 22.3417ms 301 
+2020-06-06 07:23:47.447 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 07:23:47.906 +01:00 [Information] Request finished in 444.9233ms 200 text/html;charset=utf-8
+2020-06-06 07:23:47.984 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-06 07:23:48.004 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-06 07:23:48.037 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-06 07:23:48.536 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-06 07:23:48.536 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-06 07:23:48.602 +01:00 [Information] Request finished in 605.4537ms 200 application/javascript
+2020-06-06 07:23:48.602 +01:00 [Information] Request finished in 583.9999ms 200 text/css
+2020-06-06 07:23:48.638 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-06 07:23:48.646 +01:00 [Information] Request finished in 721.7156ms 200 application/javascript
+2020-06-06 07:23:49.864 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 07:23:51.312 +01:00 [Information] Request finished in 1453.2528ms 200 application/json;charset=utf-8
+2020-06-06 07:23:51.548 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-06 07:23:51.569 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-06 07:23:51.640 +01:00 [Information] Request finished in 82.6714ms 404 
+2020-06-06 07:23:51.640 +01:00 [Information] Request finished in 64.818ms 404 
+2020-06-06 09:12:35.361 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 09:12:47.754 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 09:12:49.505 +01:00 [Information] Request finished in 1821.0489ms 404 
+2020-06-06 09:13:02.515 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 09:13:02.542 +01:00 [Information] Request finished in 20.5197ms 301 
+2020-06-06 09:13:02.568 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 09:13:03.044 +01:00 [Information] Request finished in 480.3644ms 200 text/html;charset=utf-8
+2020-06-06 09:13:04.913 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 09:13:05.758 +01:00 [Information] Request finished in 842.2803ms 200 application/json;charset=utf-8
+2020-06-06 09:13:06.231 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-06 09:13:06.238 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-06 09:13:06.444 +01:00 [Information] Request finished in 250.9182ms 404 
+2020-06-06 09:13:06.456 +01:00 [Information] Request finished in 229.6417ms 404 
+2020-06-06 09:13:48.881 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 304
+2020-06-06 09:13:48.999 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:13:49.002 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:13:49.112 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:13:49.349 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:15:58.904 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 09:16:00.354 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 09:16:00.628 +01:00 [Information] Request finished in 281.5647ms 404 
+2020-06-06 09:16:25.427 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 09:16:25.461 +01:00 [Information] Request finished in 49.9603ms 301 
+2020-06-06 09:16:25.514 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 09:16:25.698 +01:00 [Information] Request finished in 136.9257ms 200 text/html;charset=utf-8
+2020-06-06 09:16:27.349 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 09:16:27.489 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-06 09:16:27.489 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-06 09:16:27.601 +01:00 [Information] Request finished in 116.8143ms 404 
+2020-06-06 09:16:27.614 +01:00 [Information] Request finished in 122.2635ms 404 
+2020-06-06 09:16:27.888 +01:00 [Information] Request finished in 589.7813ms 200 application/json;charset=utf-8
+2020-06-06 09:16:49.952 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 304
+2020-06-06 09:16:50.003 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:16:50.020 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:16:50.040 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:16:50.177 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:16:51.322 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:16:51.426 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 1210.0819ms
+2020-06-06 09:16:51.435 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:16:51.446 +01:00 [Information] Request finished in 1502.5362ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:17:34.025 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 495
+2020-06-06 09:17:34.040 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:17:34.044 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:17:34.052 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:17:34.076 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:17:44.718 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.731 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.743 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.748 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.759 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.763 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.769 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.776 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.779 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.783 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.796 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.801 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:44.809 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:17:45.260 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 09:18:12.735 +01:00 [Information] Executed DbCommand ("3,364"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Leads] ([Address], [Company], [DateCreated], [DateModified], [Email], [FirstName], [Gender], [Image], [LastName], [Phone], [UserCreated], [UserModified], [isCustomer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT [ID]
+FROM [Leads]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 09:18:13.866 +01:00 [Information] Executed DbCommand ("258"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Messages] ([Attachment], [DateCreated], [DateModified], [LeadID], [Summary], [Type], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [ID]
+FROM [Messages]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 09:18:13.974 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-06 09:18:14.002 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 39913.801ms
+2020-06-06 09:18:14.014 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:18:14.039 +01:00 [Information] Request finished in 40036.8843ms 200 application/json; charset=utf-8
+2020-06-06 09:21:11.454 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 09:21:12.162 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 09:21:12.424 +01:00 [Information] Request finished in 276.1098ms 404 
+2020-06-06 09:21:23.817 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 09:21:23.853 +01:00 [Information] Request finished in 33.596ms 301 
+2020-06-06 09:21:23.859 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 09:21:23.991 +01:00 [Information] Request finished in 118.5358ms 200 text/html;charset=utf-8
+2020-06-06 09:21:24.839 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-06 09:21:25.027 +01:00 [Information] Request finished in 162.5993ms 404 
+2020-06-06 09:21:25.056 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 09:21:25.294 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-06 09:21:25.339 +01:00 [Information] Request finished in 107.4137ms 404 
+2020-06-06 09:21:25.608 +01:00 [Information] Request finished in 557.3874ms 200 application/json;charset=utf-8
+2020-06-06 09:21:38.799 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 304
+2020-06-06 09:21:38.857 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:21:38.891 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:21:38.915 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:21:39.041 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:21:39.759 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:21:39.805 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 733.1551ms
+2020-06-06 09:21:39.811 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:21:39.825 +01:00 [Information] Request finished in 1035.6253ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:22:30.032 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 301
+2020-06-06 09:22:30.068 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:22:30.082 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:22:30.089 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:22:30.102 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:22:30.147 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:22:30.151 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 45.5253ms
+2020-06-06 09:22:30.153 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:22:30.158 +01:00 [Information] Request finished in 178.0381ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:22:56.952 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 302
+2020-06-06 09:22:56.978 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:22:57.006 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:22:57.056 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:22:57.106 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:22:57.130 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:22:57.141 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 25.219ms
+2020-06-06 09:22:57.146 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:22:57.151 +01:00 [Information] Request finished in 211.4415ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:23:15.851 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 301
+2020-06-06 09:23:15.864 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:23:15.871 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:23:15.877 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:23:15.884 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:23:15.900 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:23:15.908 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 17.637ms
+2020-06-06 09:23:15.914 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:23:15.920 +01:00 [Information] Request finished in 155.5381ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:25:29.648 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 302
+2020-06-06 09:25:29.670 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:25:29.697 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:25:29.715 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:25:29.737 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:25:29.758 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:25:29.773 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 24.5091ms
+2020-06-06 09:25:29.780 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:25:29.785 +01:00 [Information] Request finished in 147.236ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:25:54.556 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 300
+2020-06-06 09:25:54.576 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:25:54.597 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:25:54.620 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:25:54.624 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:25:54.637 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:25:54.651 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 14.9809ms
+2020-06-06 09:25:54.655 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:25:54.659 +01:00 [Information] Request finished in 167.9192ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:26:56.872 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 492
+2020-06-06 09:26:56.894 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:26:56.898 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:26:56.902 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:26:56.910 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:26:56.946 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2020-06-06 09:26:56.970 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 37.1623ms
+2020-06-06 09:26:56.984 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:26:56.989 +01:00 [Information] Request finished in 129.3145ms 400 application/problem+json; charset=utf-8
+2020-06-06 09:29:02.053 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/Save application/json 413
+2020-06-06 09:29:02.073 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:29:02.087 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:29:02.092 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:29:02.097 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:29:16.194 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.225 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.242 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.246 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.264 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.287 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.296 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.306 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.312 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.331 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.342 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.349 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.360 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:29:16.536 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 09:29:18.967 +01:00 [Information] Executed DbCommand ("280"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Leads] ([Address], [Company], [DateCreated], [DateModified], [Email], [FirstName], [Gender], [Image], [LastName], [Phone], [UserCreated], [UserModified], [isCustomer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT [ID]
+FROM [Leads]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 09:29:19.596 +01:00 [Information] Executed DbCommand ("279"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Messages] ([Attachment], [DateCreated], [DateModified], [LeadID], [Summary], [Type], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [ID]
+FROM [Messages]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 09:29:19.649 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-06 09:29:19.680 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)" in 17560.7923ms
+2020-06-06 09:29:19.692 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Save (CRMSystem.Presentation.Core)"'
+2020-06-06 09:29:19.704 +01:00 [Information] Request finished in 17690.8803ms 200 application/json; charset=utf-8
+2020-06-06 09:34:22.576 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 09:34:22.927 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 09:34:23.128 +01:00 [Information] Request finished in 208.2563ms 404 
+2020-06-06 09:34:31.285 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 09:34:31.292 +01:00 [Information] Request finished in 21.8418ms 301 
+2020-06-06 09:34:31.306 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 09:34:31.388 +01:00 [Information] Request finished in 82.5331ms 200 text/html;charset=utf-8
+2020-06-06 09:34:31.953 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 09:34:32.263 +01:00 [Information] Request finished in 310.7947ms 200 application/json;charset=utf-8
+2020-06-06 09:34:44.464 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Lead/SaveLead application/json 413
+2020-06-06 09:34:44.487 +01:00 [Information] CORS policy execution failed.
+2020-06-06 09:34:44.487 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 09:34:44.489 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.SaveLead (CRMSystem.Presentation.Core)"'
+2020-06-06 09:34:44.614 +01:00 [Information] Route matched with "{action = \"SaveLead\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SaveLead(CRMSystem.Domains.Lead)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 09:34:46.496 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.496 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.497 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.497 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.497 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.497 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.498 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.499 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.499 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.499 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.500 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.500 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.500 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 09:34:46.610 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 09:34:48.107 +01:00 [Information] Executed DbCommand ("177"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Leads] ([Address], [Company], [DateCreated], [DateModified], [Email], [FirstName], [Gender], [Image], [LastName], [Phone], [UserCreated], [UserModified], [isCustomer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT [ID]
+FROM [Leads]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 09:34:48.463 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Messages] ([Attachment], [DateCreated], [DateModified], [LeadID], [Summary], [Type], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [ID]
+FROM [Messages]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 09:34:48.486 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-06 09:34:48.511 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.SaveLead (CRMSystem.Presentation.Core)" in 3879.7622ms
+2020-06-06 09:34:48.512 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.SaveLead (CRMSystem.Presentation.Core)"'
+2020-06-06 09:34:48.525 +01:00 [Information] Request finished in 4062.3682ms 200 application/json; charset=utf-8
+2020-06-06 10:40:45.189 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 10:40:50.038 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 10:40:51.754 +01:00 [Information] Request finished in 1703.3073ms 404 
+2020-06-06 10:43:20.007 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 10:43:20.047 +01:00 [Information] Request finished in 29.2548ms 301 
+2020-06-06 10:43:20.157 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 10:43:20.528 +01:00 [Information] Request finished in 371.9202ms 200 text/html;charset=utf-8
+2020-06-06 10:43:22.583 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 10:43:23.370 +01:00 [Information] Request finished in 793.2743ms 200 application/json;charset=utf-8
+2020-06-06 10:43:23.416 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-06 10:43:23.420 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-06 10:43:23.569 +01:00 [Information] Request finished in 151.3077ms 404 
+2020-06-06 10:43:23.577 +01:00 [Information] Request finished in 154.4784ms 404 
+2020-06-06 10:52:25.582 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 10:52:26.985 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 10:52:27.321 +01:00 [Information] Request finished in 342.6313ms 404 
+2020-06-06 10:52:37.807 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 10:52:37.834 +01:00 [Information] Request finished in 44.6538ms 301 
+2020-06-06 10:52:37.855 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 10:52:37.983 +01:00 [Information] Request finished in 120.9826ms 200 text/html;charset=utf-8
+2020-06-06 10:52:39.340 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 10:52:39.504 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-06 10:52:39.513 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-06 10:52:39.560 +01:00 [Information] Request finished in 53.9933ms 404 
+2020-06-06 10:52:39.560 +01:00 [Information] Request finished in 46.4493ms 404 
+2020-06-06 10:52:39.785 +01:00 [Information] Request finished in 453.6715ms 200 application/json;charset=utf-8
+2020-06-06 10:52:50.624 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-06 10:52:50.667 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 10:52:50.888 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 10:52:54.121 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.134 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.140 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.151 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.157 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.162 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.169 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.176 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.186 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.191 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.194 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.199 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.207 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 10:52:54.520 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 10:53:00.239 +01:00 [Information] Executed DbCommand ("1,879"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]"
+2020-06-06 10:53:01.063 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 10:53:02.989 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 12071.8184ms
+2020-06-06 10:53:03.000 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 10:53:03.022 +01:00 [Information] Request finished in 12465.316ms 200 application/json; charset=utf-8
+2020-06-06 10:53:29.590 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Customer/UpdateCustomer application/json 276
+2020-06-06 10:53:29.633 +01:00 [Information] CORS policy execution failed.
+2020-06-06 10:53:29.653 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 10:53:29.700 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.UpdateCustomer (CRMSystem.Presentation.Core)"'
+2020-06-06 10:53:29.784 +01:00 [Information] Route matched with "{action = \"UpdateCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCustomer(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 10:53:30.047 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 10:53:31.532 +01:00 [Information] Executed DbCommand ("967"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-06 10:53:32.526 +01:00 [Information] Executed DbCommand ("525"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-06 10:53:53.794 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-06 10:53:53.837 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.UpdateCustomer (CRMSystem.Presentation.Core)" in 24048.2608ms
+2020-06-06 10:53:53.842 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.UpdateCustomer (CRMSystem.Presentation.Core)"'
+2020-06-06 10:53:53.847 +01:00 [Information] Request finished in 24263.6963ms 200 application/json; charset=utf-8
+2020-06-06 10:54:02.763 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-06 10:54:02.774 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 10:54:02.788 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 10:54:02.834 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 10:54:02.875 +01:00 [Information] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]"
+2020-06-06 10:54:02.887 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 10:54:02.903 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 99.7369ms
+2020-06-06 10:54:02.908 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 10:54:02.912 +01:00 [Information] Request finished in 148.4573ms 200 application/json; charset=utf-8
+2020-06-06 10:54:16.646 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts  
+2020-06-06 10:54:16.656 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-06 10:54:16.679 +01:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts()" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2020-06-06 10:54:26.242 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 10:54:26.374 +01:00 [Information] Executed DbCommand ("112"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]"
+2020-06-06 10:54:26.409 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 10:54:26.544 +01:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 9763.2978ms
+2020-06-06 10:54:26.558 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-06 10:54:26.574 +01:00 [Information] Request finished in 9919.4239ms 200 application/json; charset=utf-8
+2020-06-06 10:54:59.274 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Product/UpdateProduct application/json 229
+2020-06-06 10:54:59.290 +01:00 [Information] CORS policy execution failed.
+2020-06-06 10:54:59.295 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 10:54:59.304 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.UpdateProduct (CRMSystem.Presentation.Core)"'
+2020-06-06 10:54:59.342 +01:00 [Information] Route matched with "{action = \"UpdateProduct\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(CRMSystem.Domains.Product)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2020-06-06 10:54:59.451 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 10:54:59.551 +01:00 [Information] Executed DbCommand ("51"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__p_0"
+2020-06-06 10:54:59.727 +01:00 [Information] Executed DbCommand ("129"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-06 10:54:59.759 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-06 10:54:59.771 +01:00 [Information] Executed action "CRMSystem.Presentation.ProductController.UpdateProduct (CRMSystem.Presentation.Core)" in 418.8777ms
+2020-06-06 10:54:59.779 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.UpdateProduct (CRMSystem.Presentation.Core)"'
+2020-06-06 10:54:59.797 +01:00 [Information] Request finished in 514.6264ms 200 application/json; charset=utf-8
+2020-06-06 10:55:07.412 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts  
+2020-06-06 10:55:07.419 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-06 10:55:07.426 +01:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts()" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2020-06-06 10:55:07.440 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 10:55:07.449 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]"
+2020-06-06 10:55:07.458 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 10:55:07.471 +01:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 35.7214ms
+2020-06-06 10:55:07.489 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-06 10:55:07.513 +01:00 [Information] Request finished in 80.8343ms 200 application/json; charset=utf-8
+2020-06-06 15:45:35.245 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 15:45:36.660 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 15:45:36.660 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 15:45:36.904 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 15:45:36.934 +01:00 [Information] Request finished in 280.1747ms 404 
+2020-06-06 15:45:36.934 +01:00 [Information] Request finished in 280.1864ms 301 
+2020-06-06 15:45:37.027 +01:00 [Information] Request finished in 122.5438ms 200 text/html;charset=utf-8
+2020-06-06 15:45:38.395 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 15:45:38.967 +01:00 [Information] Request finished in 572.8427ms 200 application/json;charset=utf-8
+2020-06-06 15:45:54.256 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-06 15:45:54.307 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 15:45:54.541 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:45:59.746 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.747 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.747 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.747 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.747 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.747 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.747 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.748 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.748 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.748 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.748 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.748 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:45:59.748 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 15:46:00.031 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:46:11.511 +01:00 [Information] Executed DbCommand ("1,240"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]"
+2020-06-06 15:46:11.801 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 15:46:11.901 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 17349.2406ms
+2020-06-06 15:46:11.902 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 15:46:11.912 +01:00 [Information] Request finished in 17656.6802ms 200 application/json; charset=utf-8
+2020-06-06 15:46:44.022 +01:00 [Information] Request starting HTTP/2.0 DELETE https://localhost:44363/api/Customer/DeleteCustomer application/json 268
+2020-06-06 15:46:44.041 +01:00 [Information] CORS policy execution failed.
+2020-06-06 15:46:44.041 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 15:46:44.060 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 15:46:44.103 +01:00 [Information] Route matched with "{action = \"Delete\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:46:44.390 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:46:45.568 +01:00 [Information] Executed DbCommand ("647"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT;"
+2020-06-06 15:46:45.754 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-06 15:46:45.755 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Delete (CRMSystem.Presentation.Core)" in 1651.3619ms
+2020-06-06 15:46:45.755 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 15:46:45.788 +01:00 [Information] Request finished in 1768.7937ms 200 
+2020-06-06 15:46:52.230 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-06 15:46:52.232 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 15:46:52.237 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:46:52.263 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:46:52.321 +01:00 [Information] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]"
+2020-06-06 15:46:52.324 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 15:46:52.326 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 87.8671ms
+2020-06-06 15:46:52.326 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 15:46:52.326 +01:00 [Information] Request finished in 97.2162ms 200 application/json; charset=utf-8
+2020-06-06 15:47:11.602 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Role/GetAllRoles  
+2020-06-06 15:47:11.604 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.RoleController.GetAllRoles (CRMSystem.Presentation.Core)"'
+2020-06-06 15:47:11.618 +01:00 [Information] Route matched with "{action = \"GetAllRoles\", controller = \"Role\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllRoles()" on controller "CRMSystem.Presentation.RoleController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:47:11.722 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:47:12.985 +01:00 [Information] Executed DbCommand ("943"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified], [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Roles] AS [r]
+LEFT JOIN [Privileges] AS [p] ON [r].[ID] = [p].[RoleID]
+ORDER BY [r].[ID], [p].[ID]"
+2020-06-06 15:47:13.038 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Role, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 15:47:13.056 +01:00 [Information] Executed action "CRMSystem.Presentation.RoleController.GetAllRoles (CRMSystem.Presentation.Core)" in 1437.5273ms
+2020-06-06 15:47:13.056 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.RoleController.GetAllRoles (CRMSystem.Presentation.Core)"'
+2020-06-06 15:47:13.057 +01:00 [Information] Request finished in 1454.8103ms 200 application/json; charset=utf-8
+2020-06-06 15:48:01.776 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Role/Save application/json 557
+2020-06-06 15:48:01.779 +01:00 [Information] CORS policy execution failed.
+2020-06-06 15:48:01.780 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 15:48:01.780 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.RoleController.Post (CRMSystem.Presentation.Core)"'
+2020-06-06 15:48:01.789 +01:00 [Information] Route matched with "{action = \"Post\", controller = \"Role\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CRMSystem.Domains.Role)" on controller "CRMSystem.Presentation.RoleController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:48:01.828 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:48:02.651 +01:00 [Information] Executed DbCommand ("713"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Roles] ([Code], [DateCreated], [DateModified], [Name], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Roles]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 15:48:02.867 +01:00 [Information] Executed DbCommand ("27"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Privileges] ([Code], [DateCreated], [DateModified], [Name], [Read], [RoleID], [UserCreated], [UserModified], [Write])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [ID]
+FROM [Privileges]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 15:48:02.896 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Privileges] ([Code], [DateCreated], [DateModified], [Name], [Read], [RoleID], [UserCreated], [UserModified], [Write])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [ID]
+FROM [Privileges]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-06 15:48:02.903 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-06 15:48:02.904 +01:00 [Information] Executed action "CRMSystem.Presentation.RoleController.Post (CRMSystem.Presentation.Core)" in 1115.2682ms
+2020-06-06 15:48:02.904 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.RoleController.Post (CRMSystem.Presentation.Core)"'
+2020-06-06 15:48:02.905 +01:00 [Information] Request finished in 1129.2561ms 200 application/json; charset=utf-8
+2020-06-06 15:48:07.843 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Role/GetAllRoles  
+2020-06-06 15:48:07.844 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.RoleController.GetAllRoles (CRMSystem.Presentation.Core)"'
+2020-06-06 15:48:07.844 +01:00 [Information] Route matched with "{action = \"GetAllRoles\", controller = \"Role\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllRoles()" on controller "CRMSystem.Presentation.RoleController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:48:07.849 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:48:07.897 +01:00 [Information] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified], [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Roles] AS [r]
+LEFT JOIN [Privileges] AS [p] ON [r].[ID] = [p].[RoleID]
+ORDER BY [r].[ID], [p].[ID]"
+2020-06-06 15:48:07.910 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Role, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 15:48:07.911 +01:00 [Information] Executed action "CRMSystem.Presentation.RoleController.GetAllRoles (CRMSystem.Presentation.Core)" in 66.5981ms
+2020-06-06 15:48:07.912 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.RoleController.GetAllRoles (CRMSystem.Presentation.Core)"'
+2020-06-06 15:48:07.912 +01:00 [Information] Request finished in 69.2437ms 200 application/json; charset=utf-8
+2020-06-06 15:48:36.026 +01:00 [Information] Request starting HTTP/2.0 DELETE https://localhost:44363/api/Role/DeleteRole application/json 364
+2020-06-06 15:48:36.028 +01:00 [Information] CORS policy execution failed.
+2020-06-06 15:48:36.028 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 15:48:36.029 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.RoleController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 15:48:36.040 +01:00 [Information] Route matched with "{action = \"Delete\", controller = \"Role\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(CRMSystem.Domains.Role)" on controller "CRMSystem.Presentation.RoleController" ("CRMSystem.Presentation.Core").
+2020-06-06 15:48:36.140 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 15:48:36.318 +01:00 [Information] Executed action "CRMSystem.Presentation.RoleController.Delete (CRMSystem.Presentation.Core)" in 277.2608ms
+2020-06-06 15:48:36.318 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.RoleController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 15:48:39.563 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'ID' on entity type 'Privilege' has a temporary value while attempting to change the entity's state to 'Deleted'. Either set a permanent value explicitly or ensure that the database is configured to generate values for this property.
+   at CRMSystem.Infrastructure.PrivilegeRepo.deleteAllAsync(List`1 data) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Infrastructure.Core\Repository\PrivilegeRepo.cs:line 41
+   at CRMSystem.Domains.RoleService.DeleteRoleAsync(Role data) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Domains.Core\Implementations\RoleService.cs:line 49
+   at CRMSystem.Presentation.RoleController.Delete(Role data) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Controllers\RoleController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-06 15:48:39.644 +01:00 [Information] Request finished in 3618.3744ms 500 text/plain
+2020-06-06 21:37:21.661 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-06 21:37:23.105 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-06 21:37:23.105 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-06 21:37:23.416 +01:00 [Information] Request finished in 315.4297ms 404 
+2020-06-06 21:37:23.416 +01:00 [Information] Request finished in 315.4401ms 301 
+2020-06-06 21:37:23.539 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-06 21:37:23.637 +01:00 [Information] Request finished in 97.6506ms 200 text/html;charset=utf-8
+2020-06-06 21:37:24.325 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-06 21:37:24.561 +01:00 [Information] Request finished in 236.4307ms 200 application/json;charset=utf-8
+2020-06-06 21:38:11.957 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-06 21:38:11.965 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:12.239 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 21:38:14.246 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.247 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.247 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.247 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.247 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.247 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.248 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-06 21:38:14.314 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 21:38:18.467 +01:00 [Information] Executed DbCommand ("609"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]"
+2020-06-06 21:38:18.639 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 21:38:18.701 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 6452.1801ms
+2020-06-06 21:38:18.702 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:18.707 +01:00 [Information] Request finished in 6750.1044ms 200 application/json; charset=utf-8
+2020-06-06 21:38:31.282 +01:00 [Information] Request starting HTTP/2.0 DELETE https://localhost:44363/api/Customer/DeleteCustomer/3  0
+2020-06-06 21:38:31.295 +01:00 [Information] CORS policy execution failed.
+2020-06-06 21:38:31.296 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 21:38:31.297 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:31.322 +01:00 [Information] Route matched with "{action = \"Delete\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 21:38:31.435 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 21:38:32.016 +01:00 [Information] Executed DbCommand ("389"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-06 21:38:32.388 +01:00 [Information] Executed DbCommand ("166"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT;"
+2020-06-06 21:38:32.474 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-06 21:38:32.474 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Delete (CRMSystem.Presentation.Core)" in 1151.6285ms
+2020-06-06 21:38:32.474 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:32.526 +01:00 [Information] Request finished in 1244.6911ms 200 
+2020-06-06 21:38:38.843 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-06 21:38:38.844 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:38.846 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-06 21:38:38.862 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 21:38:38.866 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]"
+2020-06-06 21:38:38.869 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 21:38:38.871 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 24.2506ms
+2020-06-06 21:38:38.872 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:38.872 +01:00 [Information] Request finished in 29.8914ms 200 application/json; charset=utf-8
+2020-06-06 21:38:53.593 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Lead/GetAllLeads  
+2020-06-06 21:38:53.594 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:53.604 +01:00 [Information] Route matched with "{action = \"GetAllLeads\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLeads()" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 21:38:53.734 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 21:38:54.268 +01:00 [Information] Executed DbCommand ("385"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[ID], [l].[Address], [l].[Company], [l].[DateCreated], [l].[DateModified], [l].[Email], [l].[FirstName], [l].[Gender], [l].[Image], [l].[LastName], [l].[Phone], [l].[UserCreated], [l].[UserModified], [l].[isCustomer], [m].[ID], [m].[Attachment], [m].[DateCreated], [m].[DateModified], [m].[LeadID], [m].[Summary], [m].[Type], [m].[UserCreated], [m].[UserModified]
+FROM [Leads] AS [l]
+LEFT JOIN [Messages] AS [m] ON [l].[ID] = [m].[LeadID]
+WHERE [l].[isCustomer] = CAST(0 AS bit)
+ORDER BY [l].[ID], [m].[ID]"
+2020-06-06 21:38:54.340 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Lead, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 21:38:54.348 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)" in 743.8964ms
+2020-06-06 21:38:54.349 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2020-06-06 21:38:54.349 +01:00 [Information] Request finished in 756.6399ms 200 application/json; charset=utf-8
+2020-06-06 21:39:17.834 +01:00 [Information] Request starting HTTP/2.0 DELETE https://localhost:44363/api/Lead/DeleteLead/ID?ID=4  0
+2020-06-06 21:39:17.837 +01:00 [Information] CORS policy execution failed.
+2020-06-06 21:39:17.838 +01:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-06-06 21:39:17.838 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 21:39:17.848 +01:00 [Information] Route matched with "{action = \"Delete\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32)" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 21:39:17.873 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 21:39:18.180 +01:00 [Information] Executed DbCommand ("294"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[ID], [m].[Attachment], [m].[DateCreated], [m].[DateModified], [m].[LeadID], [m].[Summary], [m].[Type], [m].[UserCreated], [m].[UserModified]
+FROM [Messages] AS [m]
+WHERE [m].[LeadID] = @__ID_0"
+2020-06-06 21:39:18.231 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Messages]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT;"
+2020-06-06 21:39:18.248 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[ID], [l].[Address], [l].[Company], [l].[DateCreated], [l].[DateModified], [l].[Email], [l].[FirstName], [l].[Gender], [l].[Image], [l].[LastName], [l].[Phone], [l].[UserCreated], [l].[UserModified], [l].[isCustomer]
+FROM [Leads] AS [l]
+WHERE [l].[ID] = @__p_0"
+2020-06-06 21:39:18.502 +01:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Leads]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT;"
+2020-06-06 21:39:18.508 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-06-06 21:39:18.509 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.Delete (CRMSystem.Presentation.Core)" in 660.1336ms
+2020-06-06 21:39:18.509 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.Delete (CRMSystem.Presentation.Core)"'
+2020-06-06 21:39:18.509 +01:00 [Information] Request finished in 676.2258ms 200 
+2020-06-06 21:39:25.771 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Lead/GetAllLeads  
+2020-06-06 21:39:25.772 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2020-06-06 21:39:25.773 +01:00 [Information] Route matched with "{action = \"GetAllLeads\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLeads()" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2020-06-06 21:39:25.779 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-06 21:39:25.869 +01:00 [Information] Executed DbCommand ("83"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[ID], [l].[Address], [l].[Company], [l].[DateCreated], [l].[DateModified], [l].[Email], [l].[FirstName], [l].[Gender], [l].[Image], [l].[LastName], [l].[Phone], [l].[UserCreated], [l].[UserModified], [l].[isCustomer], [m].[ID], [m].[Attachment], [m].[DateCreated], [m].[DateModified], [m].[LeadID], [m].[Summary], [m].[Type], [m].[UserCreated], [m].[UserModified]
+FROM [Leads] AS [l]
+LEFT JOIN [Messages] AS [m] ON [l].[ID] = [m].[LeadID]
+WHERE [l].[isCustomer] = CAST(0 AS bit)
+ORDER BY [l].[ID], [m].[ID]"
+2020-06-06 21:39:25.873 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Lead, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-06 21:39:25.876 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)" in 101.9204ms
+2020-06-06 21:39:25.877 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2020-06-06 21:39:25.878 +01:00 [Information] Request finished in 107.3778ms 200 application/json; charset=utf-8

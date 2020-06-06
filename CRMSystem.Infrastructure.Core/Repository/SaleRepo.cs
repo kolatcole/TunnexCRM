@@ -15,7 +15,7 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task<int> deleteAsync(Sale data)
+        public async Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -153,6 +153,11 @@ namespace CRMSystem.Infrastructure
                 throw ex;
             }
 
+        }
+
+        public Task deleteAllAsync(List<Sale> data)
+        {
+            throw new NotImplementedException();
         }
         //public async Task<List<Sale>> getByCustomerIDAsync(int customerID)
         //{

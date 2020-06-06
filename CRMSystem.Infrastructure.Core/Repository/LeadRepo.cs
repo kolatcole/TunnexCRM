@@ -16,16 +16,38 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        
-        public Task<int> deleteAsync(Lead data)
+        public Task deleteAllAsync(List<Lead> data)
         {
             throw new NotImplementedException();
         }
 
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var lead = await _context.Leads.FindAsync(ID);
+                _context.Leads.Remove(lead);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<List<Lead>> getAllAsync()
         {
-            var leads = await _context.Leads.Where(x => x.isCustomer == false).Include(y => y.Message).ToListAsync();
-            return leads;
+            try
+            {
+                var leads = await _context.Leads.Where(x => x.isCustomer == false).Include(y => y.Message).ToListAsync();
+                return leads;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         public Task<List<Lead>> getAllByIDAsync()
@@ -35,9 +57,15 @@ namespace CRMSystem.Infrastructure
 
         public async Task<Lead> getAsync(int ID)
         {
-            var lead = await _context.Leads.Include(y=>y.Message).Where(x => x.ID == ID && x.isCustomer==false).FirstOrDefaultAsync();
-            return lead;
-        }
+            try { 
+                var lead = await _context.Leads.Include(y=>y.Message).Where(x => x.ID == ID && x.isCustomer==false).FirstOrDefaultAsync();
+                return lead;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+}
 
         public Task<List<Lead>> getByCustomerIDAsync(int customerID)
         {

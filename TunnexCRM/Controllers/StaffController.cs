@@ -36,7 +36,7 @@ namespace CRMSystem.Presentation
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        [HttpPost("Update")]
+        [HttpPost("UpdateStaff")]
         public async Task<IActionResult> Update(Staff data)
         {
 
@@ -55,6 +55,18 @@ namespace CRMSystem.Presentation
         {
             var result = await _repo.getAllAsync();
             return Ok(result);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        [HttpDelete("DeleteStaff/{ID}")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _repo.deleteAsync(ID);
+            return Ok();
         }
     }
 }

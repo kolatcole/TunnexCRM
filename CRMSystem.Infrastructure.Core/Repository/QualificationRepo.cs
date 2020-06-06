@@ -17,7 +17,13 @@ namespace CRMSystem.Infrastructure
 
             _context = context;
         }
-        public Task<int> deleteAsync(Qualification data)
+
+        public Task deleteAllAsync(List<Qualification> data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }

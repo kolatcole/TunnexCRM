@@ -11,5 +11,6 @@ namespace CRMSystem.Domains
         Task<int> updateProductAsync(Product data);
         Task<List<Product>> GetAllProducts();
         Task<Product> GetProduct(int ID);
+        Task DeleteProductAsync(int ID);
     }
 }

@@ -48,7 +48,7 @@ namespace CRMSystem
                                   {
                                       builder.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200").
                                                     AllowAnyHeader()
-                                                  .AllowAnyMethod().AllowAnyOrigin();
+                                                  .AllowAnyMethod();
                                   });
             });
 

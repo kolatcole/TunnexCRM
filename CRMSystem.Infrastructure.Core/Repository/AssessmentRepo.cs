@@ -16,7 +16,11 @@ namespace CRMSystem.Infrastructure
 
             _context = context;
         }
-        public Task<int> deleteAsync(Assessment data)
+        public async Task  deleteAsync(int ID)
+        {
+            throw new NotImplementedException();
+        }
+        public Task deleteAllAsync(List<Assessment> data)
         {
             throw new NotImplementedException();
         }

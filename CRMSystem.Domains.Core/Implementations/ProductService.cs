@@ -48,5 +48,9 @@ namespace CRMSystem.Domains
             return result;
         
         }
+        public async Task DeleteProductAsync(int ID)
+        {
+            await _pRepo.deleteAsync(ID);
+        }
     }
 }

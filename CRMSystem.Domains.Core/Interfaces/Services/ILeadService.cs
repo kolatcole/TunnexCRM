@@ -9,7 +9,7 @@ namespace CRMSystem.Domains
     {
         Task<int> SaveLeadAsync(Lead data);
 
-
+        Task DeleteLeadAsync(int ID);
         Task<int> UpdateLeadAsync(Lead data);
         Task<Lead> getLeadByID(int ID);
         Task<List<Lead>> getAllLeads();

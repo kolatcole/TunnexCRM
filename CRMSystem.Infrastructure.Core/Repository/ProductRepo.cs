@@ -15,9 +15,25 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task<int> deleteAsync(Product data)
+
+        public Task deleteAllAsync(List<Product> data)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var product = await _context.Products.FindAsync(ID);
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<Product>> getAllAsync()

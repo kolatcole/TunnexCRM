@@ -38,5 +38,18 @@ namespace CRMSystem.Presentation
             var result = await _service.GetAllRolesAsync();
             return Ok(result);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        [HttpDelete("DeleteRole/{ID}")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _service.DeleteRoleAsync(ID);
+            return Ok();
+        }
     }
 }

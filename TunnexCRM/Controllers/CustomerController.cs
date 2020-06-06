@@ -73,5 +73,13 @@ namespace CRMSystem.Presentation
             var result = await _cRepo.MostFrequentCustomer();
             return Ok(result);
         }
+
+        [HttpDelete("DeleteCustomer/{ID}")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _repo.deleteAsync(ID);
+            return Ok();
+        }
     }
 }

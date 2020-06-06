@@ -59,10 +59,14 @@ namespace CRMSystem.Domains
             int LID = await _lRepo.insertAsync(data);
 
             List<Message> messages = new List<Message>();
-            foreach (var message in data.Message)
+            if (data.Message!=null)
             {
-                message.LeadID = LID;
-                messages.Add(message);
+                
+                foreach (var message in data.Message)
+                {
+                    message.LeadID = LID;
+                    messages.Add(message);
+                }
             }
 
             await _mRepo.insertListAsync(messages);
@@ -73,6 +77,12 @@ namespace CRMSystem.Domains
         public Task<int> UpdateLeadAsync(Lead data)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task DeleteLeadAsync(int ID)
+        {
+            await _mRepo.deleteAsync(ID);
+            await _lRepo.deleteAsync(ID);
         }
     }
 }

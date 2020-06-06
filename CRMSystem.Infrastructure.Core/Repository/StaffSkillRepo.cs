@@ -17,7 +17,12 @@ namespace CRMSystem.Infrastructure
 
         }
 
-        public Task<int> deleteAsync(StaffSkill data)
+        public Task deleteAllAsync(List<StaffSkill> data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
