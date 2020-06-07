@@ -27,7 +27,7 @@ namespace CRMSystem.Presentation
         /// 
         
         [HttpPost("SaveSale")]
-        public async Task<IActionResult> Post(Sale data)
+        public async Task<IActionResult> Save(Sale data)
         {
             var result = await _service.Save(data);
             return Ok(result);

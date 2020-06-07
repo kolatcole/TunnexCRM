@@ -70,7 +70,8 @@ namespace CRMSystem.Infrastructure
                         DateCreated = DateTime.Now,
                         UserCreated = data.UserCreated,
                         Summary=data.Summary,
-                        Type=data.Type
+                        Type=data.Type,
+                        LeadID=data.LeadID
                     };
                     await _context.Messages.AddAsync(message);
                     await _context.SaveChangesAsync();
