@@ -37,7 +37,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var customer = await _context.Customers.ToListAsync();
+                var customer = await _context.Customers.Include(x=>x.CustomerMessages).ToListAsync();
                 return customer;
             }
 
@@ -59,7 +59,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var customer = await _context.Customers.Where(x => x.ID == ID).FirstOrDefaultAsync();
+                var customer = await _context.Customers.Include(x => x.CustomerMessages).Where(x => x.ID == ID).FirstOrDefaultAsync();
                 return customer;
             }
 

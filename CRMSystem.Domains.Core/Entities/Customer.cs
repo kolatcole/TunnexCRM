@@ -15,5 +15,16 @@ namespace CRMSystem.Domains
         public string Gender { get; set; }
         public string Image { get; set; }
         public int TotalSales { get; set; }
+        public List<CustomerMessage> CustomerMessages { get; set; }
+    }
+
+    public class CustomerMessage : BaseEntity
+    {
+        public string Type { get; set; }
+        public string Summary { get; set; }
+        public int CustomerID { get; set; }
+
+        public string Attachment { get; set; }
+
     }
 }

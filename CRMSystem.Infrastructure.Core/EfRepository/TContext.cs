@@ -42,6 +42,7 @@ namespace CRMSystem.Infrastructure
         public DbSet<Assessment> Assessments { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<StaffSkill> StaffSkills { get; set; }
-
+        public DbSet<CustomerMessage> CustomerMessages { get; set; }
+        
     }
 }
