@@ -91,10 +91,12 @@ namespace CRMSystem
             services.AddScoped<IRepo<Qualification>, QualificationRepo>();
             services.AddScoped<IRepo<Assessment>, AssessmentRepo>();
             services.AddScoped<IRepo<StaffSkill>, StaffSkillRepo>();
+            services.AddScoped<IStaffSkillRepo, StaffSkillRepo>();
             services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
 
 
 
+            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IPaymentService, PaymentService>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<ISaleService, SaleService>();

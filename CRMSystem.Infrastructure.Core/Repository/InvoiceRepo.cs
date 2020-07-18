@@ -15,7 +15,7 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public async Task  deleteAsync(int ID)
+        public Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -43,7 +43,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var invoice = await _context.Invoices.Where(x => x.ID == ID).FirstOrDefaultAsync();
+                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.ID == ID).FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -59,7 +59,7 @@ namespace CRMSystem.Infrastructure
             // PENDING
             try
             {
-                var invoice = await _context.Invoices.Where(x => x.InvoiceNo == invNumber && x.CustomerID==customerID).FirstOrDefaultAsync();
+                var invoice = await _context.Invoices.Include(x=>x.Cart).ThenInclude(x=>x.Items).Where(x => x.InvoiceNo == invNumber && x.CustomerID==customerID).FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -171,7 +171,7 @@ namespace CRMSystem.Infrastructure
            
             try
             {
-                var invoices = await _context.Invoices.Where(x => x.Balance != 0 && x.DateCreated>=startdate && x.DateCreated<enddate).ToListAsync();
+                var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.Balance != 0 && x.DateCreated>=startdate && x.DateCreated<enddate).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)

@@ -68,5 +68,19 @@ namespace CRMSystem.Presentation.Core.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="staffID"></param>
+        /// <returns></returns>
+
+        [HttpGet("GetStaffSkillsByStaffID/{staffID}")]
+        public async Task<IActionResult> GetStaffSkillsByStaffID(int staffID)
+        {
+
+            var result = await _service.getStaffSkillsByStaffIDAsync(staffID);
+            return Ok(result);
+        }
+
     }
 }

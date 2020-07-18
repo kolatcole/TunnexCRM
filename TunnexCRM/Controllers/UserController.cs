@@ -13,12 +13,10 @@ namespace CRMSystem.Presentation
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IRepo<User> _repo;
-        private readonly IUserRepo _uRepo;
-        public UserController(IRepo<User> repo, IUserRepo uRepo)
+        private readonly IUserService _service;
+        public UserController(IUserService service)
         {
-            _repo = repo;
-            _uRepo = uRepo;
+            _service = service;
         }
 
         /// <summary>
@@ -29,7 +27,7 @@ namespace CRMSystem.Presentation
         [HttpPost("SaveUser")]
         public async Task<IActionResult> Save(User data)
         {
-            var result = await _repo.insertAsync(data);
+            var result = await _service.SaveUserAsync(data);
             if (result > 0)
                 return Ok(result);
             return NotFound();
@@ -45,7 +43,7 @@ namespace CRMSystem.Presentation
         [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate(string username, string password)
         {
-            var result = await _uRepo.GetUserByNameandPassword(username,password);
+            var result = await _service.GetUserByNameandPasswordAsync(username,password);
             if (result == null)
                 return Unauthorized();
             return Ok(result);
@@ -59,7 +57,7 @@ namespace CRMSystem.Presentation
         [HttpPost("UpdateUser")]
         public async Task<IActionResult> Update(User data)
         {
-            var result = await _repo.updateAsync(data);
+            var result = await _service.updateUserAsync(data);
             if (result > 0)
                 return Ok(result);
             return NotFound();
@@ -73,7 +71,7 @@ namespace CRMSystem.Presentation
         [HttpGet("GetUserByID/{ID}")]
         public async Task<IActionResult> GetUserByID(int ID)
         {
-            var result = await _repo.getAsync(ID);
+            var result = await _service.getUserAsync(ID);
             return Ok(result);
 
         }
@@ -85,7 +83,7 @@ namespace CRMSystem.Presentation
         [HttpGet("GetAllUsers")]
         public async Task<IActionResult> GetAllUsers()
         {
-            var result = await _repo.getAllAsync();
+            var result = await _service.getAllUsersAsync();
             return Ok(result);
 
         }
@@ -99,7 +97,7 @@ namespace CRMSystem.Presentation
         public async Task<IActionResult> Delete(int ID)
         {
 
-            await _repo.deleteAsync(ID);
+            await _service.deleteUserAsync(ID);
             return Ok();
         }
     }
