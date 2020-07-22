@@ -32,6 +32,19 @@ namespace CRMSystem.Presentation
              var result=await _service.insertProductAsync(data);
              return Ok(result);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("SaveMultipleProducts")]
+        public async Task<IActionResult> SaveMultipleProducts(List<Product> data)
+        {
+            var result = await _service.insertMultipleProductsAsync(data);
+            return Ok(result);
+        }
+
         /// <summary>
         /// 
         /// </summary>

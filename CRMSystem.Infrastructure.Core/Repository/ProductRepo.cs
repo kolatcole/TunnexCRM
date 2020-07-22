@@ -116,9 +116,18 @@ namespace CRMSystem.Infrastructure
             return product.ID;
         }
 
-        public Task<int> insertListAsync(List<Product> data)
+        public async Task<int> insertListAsync(List<Product> data)
         {
-            throw new NotImplementedException();
+            try
+            {
+                 _context.Products.AddRange(data);
+                await _context.SaveChangesAsync();
+                return data.Count;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<int> updateAsync(Product data)
