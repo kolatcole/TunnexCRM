@@ -138,3 +138,176 @@ FROM [Products] AS [p]"
 2020-07-22 21:15:22.406 +01:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 516.7598ms
 2020-07-22 21:15:22.406 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
 2020-07-22 21:15:22.406 +01:00 [Information] Request finished in 549.7881ms 200 application/json; charset=utf-8
+2020-07-22 22:58:10.800 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-22 22:58:11.115 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-07-22 22:58:11.266 +01:00 [Information] Request finished in 158.5793ms 404 
+2020-07-22 22:58:17.332 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-07-22 22:58:17.392 +01:00 [Information] Request finished in 61.6938ms 200 text/html;charset=utf-8
+2020-07-22 22:58:17.707 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-07-22 22:58:17.936 +01:00 [Information] Request finished in 229.5769ms 200 application/json;charset=utf-8
+2020-07-22 22:58:33.417 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/User/GetAllUsers  
+2020-07-22 22:58:33.430 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2020-07-22 22:58:33.492 +01:00 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers()" on controller "CRMSystem.Presentation.UserController" ("CRMSystem.Presentation.Core").
+2020-07-22 22:58:35.085 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.086 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.087 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.087 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.087 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.087 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.087 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-07-22 22:58:35.184 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-07-22 22:58:36.131 +01:00 [Information] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[Gender], [a].[Image], [a].[Name], [a].[Password], [a].[Phone], [a].[Post], [a].[RoleID], [a].[UserCreated], [a].[UserModified], [a].[Username]
+FROM [AppUsers] AS [a]"
+2020-07-22 22:58:36.542 +01:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 22:58:36.593 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 22:58:36.633 +01:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 22:58:36.635 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 22:58:36.638 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 22:58:36.644 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 22:58:36.646 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 22:58:36.649 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 22:58:36.651 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 22:58:36.653 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 22:58:36.667 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.User, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-07-22 22:58:36.704 +01:00 [Information] Executed action "CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)" in 3203.3368ms
+2020-07-22 22:58:36.705 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2020-07-22 22:58:36.715 +01:00 [Information] Request finished in 3299.0655ms 200 application/json; charset=utf-8
+2020-07-22 23:01:39.497 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/User/GetAllUsers  
+2020-07-22 23:01:39.507 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2020-07-22 23:01:39.509 +01:00 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers()" on controller "CRMSystem.Presentation.UserController" ("CRMSystem.Presentation.Core").
+2020-07-22 23:01:39.583 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-07-22 23:01:39.588 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[Gender], [a].[Image], [a].[Name], [a].[Password], [a].[Phone], [a].[Post], [a].[RoleID], [a].[UserCreated], [a].[UserModified], [a].[Username]
+FROM [AppUsers] AS [a]"
+2020-07-22 23:01:39.594 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.597 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.599 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.602 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.605 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.607 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.609 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.613 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.618 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.620 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.621 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.User, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-07-22 23:01:39.623 +01:00 [Information] Executed action "CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)" in 113.6465ms
+2020-07-22 23:01:39.623 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2020-07-22 23:01:39.624 +01:00 [Information] Request finished in 127.5185ms 200 application/json; charset=utf-8
+2020-07-22 23:01:39.847 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/User/GetAllUsers  
+2020-07-22 23:01:39.848 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2020-07-22 23:01:39.850 +01:00 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers()" on controller "CRMSystem.Presentation.UserController" ("CRMSystem.Presentation.Core").
+2020-07-22 23:01:39.879 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-07-22 23:01:39.885 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[Gender], [a].[Image], [a].[Name], [a].[Password], [a].[Phone], [a].[Post], [a].[RoleID], [a].[UserCreated], [a].[UserModified], [a].[Username]
+FROM [AppUsers] AS [a]"
+2020-07-22 23:01:39.889 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.892 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.895 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.897 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.899 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.901 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.903 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.904 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.906 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2020-07-22 23:01:39.909 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2020-07-22 23:01:39.910 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.User, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-07-22 23:01:39.913 +01:00 [Information] Executed action "CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)" in 62.8698ms
+2020-07-22 23:01:39.913 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2020-07-22 23:01:39.914 +01:00 [Information] Request finished in 67.1143ms 200 application/json; charset=utf-8

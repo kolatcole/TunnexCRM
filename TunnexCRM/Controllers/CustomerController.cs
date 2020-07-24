@@ -29,6 +29,20 @@ namespace CRMSystem.Presentation
             return Ok(result);
         
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("SaveMultipleCustomers")]
+        public async Task<IActionResult> SaveMultipleCustomers(List<Customer> data)
+        {
+            var result = await _service.SaveMultipleCustomersAsync(data);
+            return Ok(result);
+
+        }
         /// <summary>
         /// 
         /// </summary>

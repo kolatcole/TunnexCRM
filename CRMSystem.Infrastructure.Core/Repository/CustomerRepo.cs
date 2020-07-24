@@ -110,9 +110,18 @@ namespace CRMSystem.Infrastructure
             return customer.ID;
         }
 
-        public Task<int> insertListAsync(List<Customer> data)
+        public async Task<int> insertListAsync(List<Customer> data)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _context.Customers.AddRangeAsync(data);
+                await _context.SaveChangesAsync();
+                return data.Count;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<Customer>> MostFrequentCustomer()

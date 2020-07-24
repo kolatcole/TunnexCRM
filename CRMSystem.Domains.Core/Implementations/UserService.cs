@@ -56,8 +56,8 @@ namespace CRMSystem.Domains
         {
             // save role
 
-            int RID= await _roleService.SaveRoleWithPrivileges(data.Role);
-            data.RoleID = RID;
+            //int RID= await _roleService.SaveRoleWithPrivileges(data.Role);
+            //data.RoleID = RID;
 
 
 

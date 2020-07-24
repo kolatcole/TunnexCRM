@@ -41,6 +41,12 @@ namespace CRMSystem.Domains
             return result;
         }
 
+        public async Task<int> SaveMultipleCustomersAsync(List<Customer> data)
+        {
+            var result = await _cRepo.insertListAsync(data);
+            return result;
+        }
+
         public async Task<int> UpdateCustomerAsync(Customer data)
         {
             var result = await _cRepo.updateAsync(data);
