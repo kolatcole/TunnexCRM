@@ -9,18 +9,34 @@ namespace CRMSystem.Domains
     {
         private readonly IRepo<Assessment> _aRepo;
         private readonly IRepo<StaffSkill> _sRepo;
+        private readonly IRepo<Skill> _skRepo;
+        private readonly IStaffSkillRepo _sskRepo;
 
-        public StaffSkillService(IRepo<Assessment> aRepo,IRepo<StaffSkill> sRepo)
+        public StaffSkillService(IRepo<Assessment> aRepo,IRepo<StaffSkill> sRepo, IRepo<Skill> skRepo, IStaffSkillRepo sskRepo)
         {
 
             _sRepo = sRepo;
             _aRepo = aRepo;
+            _skRepo = skRepo;
+            _sskRepo = sskRepo;
         }
         
 
         public async Task<int> SaveStaffSkill(StaffSkill data)
         {
             var SID = await _sRepo.insertAsync(data);
+
+            // get skill and increment numberOfStaff by 1
+
+            var skill = await _skRepo.getAsync(data.SkillID);
+
+            skill.StaffNumberWithSkill += 1;
+
+            await _skRepo.updateAsync(skill);
+
+
+
+
             return SID;
 
         }
@@ -57,6 +73,12 @@ namespace CRMSystem.Domains
         public async Task<List<StaffSkill>> GetAllStaffSkillsAsync()
         {
             var skills = await _sRepo.getAllAsync();
+            return skills;
+        }
+
+        public async Task<List<StaffSkill>> getStaffSkillsByStaffIDAsync(int staffID)
+        {
+            var skills = await _sskRepo.getStaffSkillsByStaffID(staffID);
             return skills;
         }
     }

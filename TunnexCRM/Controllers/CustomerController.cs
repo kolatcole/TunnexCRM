@@ -12,12 +12,10 @@ namespace CRMSystem.Presentation
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private readonly IRepo<Customer> _repo;
-        private readonly ICustomerRepo _cRepo;
-        public CustomerController(IRepo<Customer> repo, ICustomerRepo cRepo)
+        private readonly ICustomerService _service;
+        public CustomerController(ICustomerService service)
         {
-            _repo = repo;
-            _cRepo = cRepo;
+            _service = service;
         }
         /// <summary>
         /// 
@@ -27,9 +25,23 @@ namespace CRMSystem.Presentation
         [HttpPost("SaveCustomer")]
         public async Task<IActionResult> Save(Customer data)
         {
-            var result = await _repo.insertAsync(data);
+            var result = await _service.SaveCustomerAsync(data);
             return Ok(result);
         
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("SaveMultipleCustomers")]
+        public async Task<IActionResult> SaveMultipleCustomers(List<Customer> data)
+        {
+            var result = await _service.SaveMultipleCustomersAsync(data);
+            return Ok(result);
+
         }
         /// <summary>
         /// 
@@ -39,7 +51,7 @@ namespace CRMSystem.Presentation
         [HttpPost("UpdateCustomer")]
         public async Task<IActionResult> Update(Customer data)
         {
-            var result = await _repo.updateAsync(data);
+            var result = await _service.UpdateCustomerAsync(data);
             return Ok(result);
 
         }
@@ -52,7 +64,7 @@ namespace CRMSystem.Presentation
         [HttpGet("GetCustomerByID/{ID}")]
         public async Task<IActionResult> GetCustomer(int ID)
         {
-            var result = await _repo.getAsync(ID);
+            var result = await _service.getCustomerByID(ID);
             return Ok(result);
         }
 
@@ -63,15 +75,23 @@ namespace CRMSystem.Presentation
         [HttpGet("GetAllCustomers")]
         public async Task<IActionResult> GetAllCustomers()
         {
-            var result = await _repo.getAllAsync();
+            var result = await _service.getAllCustomers();
             return Ok(result);
         }
 
         [HttpGet("MostFrequentCustomers")]
         public async Task<IActionResult> MostFrequent()
         {
-            var result = await _cRepo.MostFrequentCustomer();
+            var result = await _service.MostFrequentCustomerAsync();
             return Ok(result);
+        }
+
+        [HttpPost("DeleteCustomer/{ID}")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _service.DeleteCustomerAsync(ID);
+            return Ok();
         }
     }
 }

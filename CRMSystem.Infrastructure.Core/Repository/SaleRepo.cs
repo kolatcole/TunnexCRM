@@ -15,7 +15,7 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task<int> deleteAsync(Sale data)
+        public async Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -139,6 +139,26 @@ namespace CRMSystem.Infrastructure
             }
             return sale.ID;
         }
+
+
+        public async Task<List<Sale>> GetSingleDaySales(DateTime date)
+        {
+            try
+            {
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated.Date ==date.Date).ToListAsync();
+                return sales;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public Task deleteAllAsync(List<Sale> data)
+        {
+            throw new NotImplementedException();
+        }
         //public async Task<List<Sale>> getByCustomerIDAsync(int customerID)
         //{
         //    try
@@ -150,7 +170,7 @@ namespace CRMSystem.Infrastructure
         //    {
         //        throw ex;
         //    }
-        //}
+        //} b4 deployemnt
 
     }
 }

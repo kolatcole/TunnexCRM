@@ -25,6 +25,7 @@ namespace CRMSystem.Presentation
         /// <param name="data"></param>
         /// <returns></returns>
         /// 
+        
         [HttpPost("SaveSale")]
         public async Task<IActionResult> Save(Sale data)
         {
@@ -66,17 +67,17 @@ namespace CRMSystem.Presentation
 
         }
 
-        [HttpGet("GetSalesByDate/{startdate}/{enddate}")]
-        public async Task<IActionResult> GetSalesByDate(string startdate,string enddate)
+        [HttpGet("GetSingleDaySales/{date}")]
+        public async Task<IActionResult> GetSingleDaySales(string date)
         {
 
 
-            DateTime.TryParseExact(startdate, "dd-MM-yyyy", CultureInfo.InvariantCulture,DateTimeStyles.None, out DateTime sdate);
-            DateTime.TryParseExact(enddate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime edate);
-            if (edate <= DateTime.MinValue)
-                edate = DateTime.Now;
+            
+            DateTime.TryParseExact(date, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime edate);
 
-            var result = await _service.getSaleHistoryByDateAsync(sdate, edate);
+           
+            var result = await _service.GetSingleDaySalesAsync(edate);
+
             return Ok(result);
 
         }

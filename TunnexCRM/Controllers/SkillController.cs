@@ -59,5 +59,18 @@ namespace CRMSystem.Presentation.Core.Controllers
             var result = await _repo.getAsync(ID);
             return Ok(result);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        [HttpPost("DeleteSkill/ID")]
+        public async Task<IActionResult> Delete(int ID)
+        {
+
+            await _repo.deleteAsync(ID);
+            return Ok();
+        }
     }
 }

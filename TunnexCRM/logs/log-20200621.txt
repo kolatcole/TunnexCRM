@@ -1,0 +1,1253 @@
+2020-06-21 10:04:13.532 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:04:15.421 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:04:16.658 +01:00 [Information] Request finished in 1244.7297ms 404 
+2020-06-21 10:06:02.421 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:06:04.183 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:06:04.394 +01:00 [Information] Request finished in 227.0567ms 404 
+2020-06-21 10:06:21.022 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:06:21.038 +01:00 [Information] Request finished in 13.7518ms 301 
+2020-06-21 10:06:21.046 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:06:23.960 +01:00 [Information] Request finished in 2914.5825ms 200 text/html;charset=utf-8
+2020-06-21 10:06:24.982 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:06:24.988 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:06:24.998 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:06:26.451 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:06:26.470 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:06:26.530 +01:00 [Information] Request finished in 1531.7295ms 200 text/css
+2020-06-21 10:06:26.532 +01:00 [Information] Request finished in 1516.9513ms 200 application/javascript
+2020-06-21 10:06:26.538 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:06:26.547 +01:00 [Information] Request finished in 1559.3727ms 200 application/javascript
+2020-06-21 10:06:29.575 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:06:29.613 +01:00 [Information] Request finished in 40.6697ms 404 
+2020-06-21 10:06:31.511 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:06:31.517 +01:00 [Information] Request finished in 6.4226ms 404 
+2020-06-21 10:06:32.448 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:06:33.555 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2020-06-21 10:06:33.579 +01:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2020-06-21 10:06:33.584 +01:00 [Information] Request finished in 28.226ms 200 image/png
+2020-06-21 10:06:33.773 +01:00 [Information] Request finished in 1325.2623ms 200 application/json;charset=utf-8
+2020-06-21 10:07:25.230 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:07:25.295 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:07:25.493 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:07:28.161 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.166 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.171 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.177 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.183 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.188 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.192 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.197 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.204 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.210 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.217 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.221 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.225 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:07:28.338 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:07:32.207 +01:00 [Information] Executed DbCommand ("532"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:07:32.561 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:07:32.653 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 7144.9992ms
+2020-06-21 10:07:32.657 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:07:32.666 +01:00 [Information] Request finished in 7436.4244ms 200 application/json; charset=utf-8
+2020-06-21 10:08:32.855 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts  
+2020-06-21 10:08:32.864 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-21 10:08:32.890 +01:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts()" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:08:33.039 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:08:33.226 +01:00 [Information] Executed DbCommand ("150"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]"
+2020-06-21 10:08:33.280 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:08:33.332 +01:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 432.3778ms
+2020-06-21 10:08:33.340 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-21 10:08:33.347 +01:00 [Information] Request finished in 498.4163ms 200 application/json; charset=utf-8
+2020-06-21 10:11:00.950 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 10:11:00.985 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:11:01.005 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:11:01.076 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:11:01.342 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:11:02.426 +01:00 [Information] Executed DbCommand ("647"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:11:02.612 +01:00 [Information] Executed DbCommand ("21"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 10:11:02.738 +01:00 [Information] Executed DbCommand ("88"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:11:02.828 +01:00 [Information] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:11:02.852 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 10:11:02.865 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:11:02.896 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 10:11:03.013 +01:00 [Information] Executed DbCommand ("31"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:11:03.435 +01:00 [Information] Executed DbCommand ("13"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 10:11:03.464 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:11:03.510 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:11:03.526 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 10:11:03.553 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 2464.7715ms
+2020-06-21 10:11:03.561 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:11:03.565 +01:00 [Information] Request finished in 2622.3325ms 200 application/json; charset=utf-8
+2020-06-21 10:11:19.191 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts  
+2020-06-21 10:11:19.200 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-21 10:11:19.204 +01:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts()" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:11:19.210 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:11:19.219 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]"
+2020-06-21 10:11:19.224 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:11:19.234 +01:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 23.4959ms
+2020-06-21 10:11:19.238 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2020-06-21 10:11:19.243 +01:00 [Information] Request finished in 51.3586ms 200 application/json; charset=utf-8
+2020-06-21 10:11:47.774 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:11:47.782 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:11:47.786 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:11:47.799 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:11:47.813 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:11:47.819 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:11:47.826 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 34.0746ms
+2020-06-21 10:11:47.831 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:11:47.835 +01:00 [Information] Request finished in 61.7402ms 200 application/json; charset=utf-8
+2020-06-21 10:21:11.604 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:21:11.969 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:21:12.156 +01:00 [Information] Request finished in 195.6804ms 404 
+2020-06-21 10:21:20.497 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:21:20.532 +01:00 [Information] Request finished in 17.4392ms 301 
+2020-06-21 10:21:20.544 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:21:20.611 +01:00 [Information] Request finished in 72.4418ms 200 text/html;charset=utf-8
+2020-06-21 10:21:20.664 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:21:20.662 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:21:20.667 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:21:20.767 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:21:20.767 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:21:20.767 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:21:20.778 +01:00 [Information] Request finished in 120.3216ms 200 text/css
+2020-06-21 10:21:20.781 +01:00 [Information] Request finished in 118.3676ms 200 application/javascript
+2020-06-21 10:21:20.783 +01:00 [Information] Request finished in 120.5557ms 200 application/javascript
+2020-06-21 10:21:21.111 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:21:21.116 +01:00 [Information] Request finished in 6.2625ms 404 
+2020-06-21 10:21:21.308 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:21:21.312 +01:00 [Information] Request finished in 4.05ms 404 
+2020-06-21 10:21:21.437 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:21:21.749 +01:00 [Information] Request finished in 312.6278ms 200 application/json;charset=utf-8
+2020-06-21 10:24:04.129 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:24:04.486 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:24:04.670 +01:00 [Information] Request finished in 195.7812ms 404 
+2020-06-21 10:24:14.166 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:24:14.194 +01:00 [Information] Request finished in 31.0004ms 301 
+2020-06-21 10:24:14.199 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:24:14.282 +01:00 [Information] Request finished in 76.5814ms 200 text/html;charset=utf-8
+2020-06-21 10:24:14.338 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:24:14.359 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:24:14.366 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:24:14.449 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:24:14.449 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:24:14.449 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:24:14.465 +01:00 [Information] Request finished in 122.8528ms 200 application/javascript
+2020-06-21 10:24:14.472 +01:00 [Information] Request finished in 125.87ms 200 application/javascript
+2020-06-21 10:24:14.482 +01:00 [Information] Request finished in 125.8658ms 200 text/css
+2020-06-21 10:24:14.824 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:24:14.830 +01:00 [Information] Request finished in 7.9269ms 404 
+2020-06-21 10:24:15.122 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:24:15.130 +01:00 [Information] Request finished in 8.3406ms 404 
+2020-06-21 10:24:15.279 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:24:15.574 +01:00 [Information] Request finished in 294.6791ms 200 application/json;charset=utf-8
+2020-06-21 10:25:17.773 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:25:18.310 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:25:18.527 +01:00 [Information] Request finished in 247.6026ms 404 
+2020-06-21 10:25:28.569 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:25:28.596 +01:00 [Information] Request finished in 16.576ms 301 
+2020-06-21 10:25:28.603 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:25:28.696 +01:00 [Information] Request finished in 89.3654ms 200 text/html;charset=utf-8
+2020-06-21 10:25:28.751 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:25:28.764 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:25:28.766 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:25:28.918 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:25:28.930 +01:00 [Information] Request finished in 180.2461ms 200 text/css
+2020-06-21 10:25:29.010 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:25:29.015 +01:00 [Information] Request finished in 262.9854ms 200 application/javascript
+2020-06-21 10:25:29.084 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:25:29.090 +01:00 [Information] Request finished in 338.6548ms 200 application/javascript
+2020-06-21 10:25:29.407 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:25:29.423 +01:00 [Information] Request finished in 9.0322ms 404 
+2020-06-21 10:25:29.644 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:25:29.651 +01:00 [Information] Request finished in 8.9445ms 404 
+2020-06-21 10:25:29.786 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:25:30.079 +01:00 [Information] Request finished in 292.1349ms 200 application/json;charset=utf-8
+2020-06-21 10:30:39.904 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:30:40.377 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:30:40.607 +01:00 [Information] Request finished in 233.8475ms 404 
+2020-06-21 10:30:47.273 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:30:47.350 +01:00 [Information] Request finished in 58.6ms 301 
+2020-06-21 10:30:47.361 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:30:47.460 +01:00 [Information] Request finished in 99.405ms 200 text/html;charset=utf-8
+2020-06-21 10:30:47.546 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:30:47.557 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:30:47.575 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:30:47.672 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:30:47.672 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:30:47.672 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:30:47.689 +01:00 [Information] Request finished in 135.8385ms 200 text/css
+2020-06-21 10:30:47.686 +01:00 [Information] Request finished in 148.1685ms 200 application/javascript
+2020-06-21 10:30:47.729 +01:00 [Information] Request finished in 141.5676ms 200 application/javascript
+2020-06-21 10:30:48.201 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:30:48.208 +01:00 [Information] Request finished in 17.252ms 404 
+2020-06-21 10:30:48.586 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:30:48.599 +01:00 [Information] Request finished in 48.7945ms 404 
+2020-06-21 10:30:48.811 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:30:49.174 +01:00 [Information] Request finished in 364.1879ms 200 application/json;charset=utf-8
+2020-06-21 10:31:15.122 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:31:15.145 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:31:15.195 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:31:17.678 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.682 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.686 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.692 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.696 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.700 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.706 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.710 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.714 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.717 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.723 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.727 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.731 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:31:17.922 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:31:20.664 +01:00 [Information] Executed DbCommand ("90"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:31:20.898 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:31:20.937 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 5722.8993ms
+2020-06-21 10:31:20.943 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:31:20.951 +01:00 [Information] Request finished in 5830.9556ms 200 application/json; charset=utf-8
+2020-06-21 10:31:32.451 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 10:31:32.469 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:31:32.484 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:31:32.532 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:31:32.750 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:31:33.184 +01:00 [Information] Executed DbCommand ("108"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:31:33.393 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 10:31:33.469 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:31:33.531 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:31:33.560 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 10:31:33.573 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:31:33.645 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 10:31:33.844 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:31:33.885 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 10:31:34.119 +01:00 [Information] Executed DbCommand ("209"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:31:34.198 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:31:34.220 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 10:31:34.229 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 1691.3229ms
+2020-06-21 10:31:34.234 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:31:34.239 +01:00 [Information] Request finished in 1788.5224ms 200 application/json; charset=utf-8
+2020-06-21 10:31:40.965 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:31:40.978 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:31:40.984 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:31:41.005 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:31:41.033 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:31:41.040 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:31:41.049 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 57.4514ms
+2020-06-21 10:31:41.052 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:31:41.057 +01:00 [Information] Request finished in 95.8878ms 200 application/json; charset=utf-8
+2020-06-21 10:36:03.320 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:36:03.856 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:36:04.074 +01:00 [Information] Request finished in 224.3052ms 404 
+2020-06-21 10:36:10.447 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:36:10.469 +01:00 [Information] Request finished in 19.8709ms 301 
+2020-06-21 10:36:10.480 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:36:10.566 +01:00 [Information] Request finished in 89.137ms 200 text/html;charset=utf-8
+2020-06-21 10:36:10.625 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:36:10.625 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:36:10.628 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:36:10.734 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:36:10.734 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:36:10.734 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:36:10.743 +01:00 [Information] Request finished in 119.2221ms 200 application/javascript
+2020-06-21 10:36:10.749 +01:00 [Information] Request finished in 121.0949ms 200 application/javascript
+2020-06-21 10:36:10.749 +01:00 [Information] Request finished in 121.1041ms 200 text/css
+2020-06-21 10:36:11.076 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:36:11.083 +01:00 [Information] Request finished in 7.561ms 404 
+2020-06-21 10:36:11.278 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:36:11.283 +01:00 [Information] Request finished in 4.3059ms 404 
+2020-06-21 10:36:11.398 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:36:11.697 +01:00 [Information] Request finished in 290.0741ms 200 application/json;charset=utf-8
+2020-06-21 10:36:27.613 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:36:27.645 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:36:27.707 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:36:29.223 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.227 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.234 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.239 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.243 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.249 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.255 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.259 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.262 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.270 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.274 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.277 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.284 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:36:29.353 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:36:30.560 +01:00 [Information] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:36:30.724 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:36:30.770 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 3047.091ms
+2020-06-21 10:36:30.774 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:36:30.784 +01:00 [Information] Request finished in 3171.2385ms 200 application/json; charset=utf-8
+2020-06-21 10:37:15.102 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 10:37:15.148 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:37:15.162 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:37:15.202 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:37:15.431 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:37:15.978 +01:00 [Information] Executed DbCommand ("96"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:37:16.138 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 10:37:16.202 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:37:16.383 +01:00 [Information] Executed DbCommand ("116"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:37:16.415 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 10:37:16.425 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:37:16.488 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 10:37:16.595 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:37:16.630 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 10:37:16.653 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:37:16.700 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:37:16.718 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 10:37:16.729 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 1518.5005ms
+2020-06-21 10:37:16.733 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:37:16.738 +01:00 [Information] Request finished in 1635.5166ms 200 application/json; charset=utf-8
+2020-06-21 10:37:22.996 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:37:23.005 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:37:23.010 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:37:23.032 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:37:23.051 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:37:23.061 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:37:23.076 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 54.9432ms
+2020-06-21 10:37:23.080 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:37:23.085 +01:00 [Information] Request finished in 88.3288ms 200 application/json; charset=utf-8
+2020-06-21 10:44:33.048 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Customer/UpdateCustomer application/json 265
+2020-06-21 10:44:33.057 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:44:33.062 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 10:44:33.101 +01:00 [Information] Route matched with "{action = \"Update\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:44:33.145 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:44:33.253 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 10:44:33.420 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)" in 315.3289ms
+2020-06-21 10:44:33.437 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 10:44:34.702 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.Infrastructure.CustomerRepo.updateAsync(Customer data) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 168
+   at CRMSystem.Domains.CustomerService.UpdateCustomerAsync(Customer data) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 46
+   at CRMSystem.Presentation.CustomerController.Update(Customer data) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Controllers\CustomerController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-21 10:44:34.764 +01:00 [Information] Request finished in 1718.5956ms 500 text/plain
+2020-06-21 10:44:47.785 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Customer/UpdateCustomer application/json 265
+2020-06-21 10:44:47.791 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:44:47.795 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 10:44:47.801 +01:00 [Information] Route matched with "{action = \"Update\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:44:47.812 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:44:47.832 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 10:44:47.990 +01:00 [Information] Executed DbCommand ("113"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:44:48.000 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 10:44:48.007 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)" in 200.6281ms
+2020-06-21 10:44:48.013 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 10:44:48.018 +01:00 [Information] Request finished in 233.2911ms 200 application/json; charset=utf-8
+2020-06-21 10:44:56.226 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:44:56.232 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:44:56.238 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:44:56.245 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:44:56.257 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:44:56.269 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:44:56.285 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 33.286ms
+2020-06-21 10:44:56.289 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:44:56.295 +01:00 [Information] Request finished in 67.2878ms 200 application/json; charset=utf-8
+2020-06-21 10:45:55.547 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Customer/UpdateCustomer application/json 226
+2020-06-21 10:45:55.551 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:45:55.556 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 10:45:55.561 +01:00 [Information] Route matched with "{action = \"Update\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:45:55.579 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:45:55.602 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 10:45:55.620 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:45:55.697 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 10:45:55.704 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)" in 136.9865ms
+2020-06-21 10:45:55.709 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 10:45:55.714 +01:00 [Information] Request finished in 170.6417ms 200 application/json; charset=utf-8
+2020-06-21 10:46:01.879 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 10:46:01.883 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:46:01.887 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:46:01.894 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:46:01.919 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 10:46:01.930 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 10:46:01.945 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 44.5886ms
+2020-06-21 10:46:01.948 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 10:46:01.952 +01:00 [Information] Request finished in 72.5462ms 200 application/json; charset=utf-8
+2020-06-21 10:54:05.136 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:54:05.577 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:54:05.799 +01:00 [Information] Request finished in 224.2997ms 404 
+2020-06-21 10:56:54.170 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 10:56:54.713 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 10:56:54.950 +01:00 [Information] Request finished in 243.884ms 404 
+2020-06-21 10:57:01.145 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 10:57:01.175 +01:00 [Information] Request finished in 22.4809ms 301 
+2020-06-21 10:57:01.180 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 10:57:01.246 +01:00 [Information] Request finished in 65.4139ms 200 text/html;charset=utf-8
+2020-06-21 10:57:01.304 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 10:57:01.310 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 10:57:01.333 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 10:57:01.499 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 10:57:01.511 +01:00 [Information] Request finished in 217.4311ms 200 text/css
+2020-06-21 10:57:01.560 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 10:57:01.566 +01:00 [Information] Request finished in 266.4422ms 200 application/javascript
+2020-06-21 10:57:01.577 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 10:57:01.586 +01:00 [Information] Request finished in 277.0828ms 200 application/javascript
+2020-06-21 10:57:01.922 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 10:57:01.929 +01:00 [Information] Request finished in 6.5824ms 404 
+2020-06-21 10:57:02.110 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 10:57:02.116 +01:00 [Information] Request finished in 4.5565ms 404 
+2020-06-21 10:57:02.289 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 10:57:02.707 +01:00 [Information] Request finished in 421.0924ms 200 application/json;charset=utf-8
+2020-06-21 10:57:37.864 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 10:57:37.893 +01:00 [Information] CORS policy execution successful.
+2020-06-21 10:57:37.898 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 10:57:37.982 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 10:57:47.246 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.251 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.255 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.259 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.262 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.265 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.269 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.275 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.279 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.283 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.286 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.292 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.295 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 10:57:47.394 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 10:57:48.801 +01:00 [Information] Executed DbCommand ("140"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:57:54.964 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 10:57:58.172 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:58:00.094 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:58:00.137 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 10:58:00.152 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 10:58:01.972 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 10:58:02.131 +01:00 [Information] Executed DbCommand ("23"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 10:58:28.140 +01:00 [Information] Executed DbCommand ("32"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 11:55:16.950 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 11:55:17.753 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 11:55:18.155 +01:00 [Information] Request finished in 405.5584ms 404 
+2020-06-21 11:55:24.611 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 11:55:24.631 +01:00 [Information] Request finished in 23.8965ms 301 
+2020-06-21 11:55:24.639 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 11:55:24.723 +01:00 [Information] Request finished in 80.9667ms 200 text/html;charset=utf-8
+2020-06-21 11:55:24.766 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 11:55:24.772 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 11:55:24.783 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 11:55:24.868 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 11:55:24.869 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 11:55:24.870 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 11:55:24.881 +01:00 [Information] Request finished in 114.5687ms 200 application/javascript
+2020-06-21 11:55:24.884 +01:00 [Information] Request finished in 116.6162ms 200 text/css
+2020-06-21 11:55:24.887 +01:00 [Information] Request finished in 118.4664ms 200 application/javascript
+2020-06-21 11:55:25.208 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 11:55:25.221 +01:00 [Information] Request finished in 6.6797ms 404 
+2020-06-21 11:55:25.517 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 11:55:25.526 +01:00 [Information] Request finished in 9.8343ms 404 
+2020-06-21 11:55:25.667 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 11:55:26.077 +01:00 [Information] Request finished in 408.7719ms 200 application/json;charset=utf-8
+2020-06-21 11:56:26.976 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 11:56:27.032 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 11:56:27.085 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 11:56:28.694 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.700 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.705 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.708 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.713 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.721 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.725 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.729 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.736 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.740 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.744 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.751 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.756 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 11:56:28.845 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 11:56:30.363 +01:00 [Information] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 11:56:30.570 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 11:56:30.611 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 3506.3502ms
+2020-06-21 11:56:30.617 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 11:56:30.626 +01:00 [Information] Request finished in 3667.6955ms 200 application/json; charset=utf-8
+2020-06-21 11:56:51.959 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 11:56:51.989 +01:00 [Information] CORS policy execution successful.
+2020-06-21 11:56:51.999 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 11:56:52.033 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 11:56:54.801 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 11:56:55.373 +01:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 11:56:57.098 +01:00 [Information] Executed DbCommand ("14"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 11:56:58.096 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 11:56:58.912 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 11:56:58.940 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 11:56:58.950 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 11:56:59.998 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 11:57:00.115 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 11:57:00.733 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 11:57:00.758 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 11:57:00.921 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 11:57:03.633 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 11:57:03.645 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 11602.4079ms
+2020-06-21 11:57:03.651 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 11:57:03.663 +01:00 [Information] Request finished in 11702.3891ms 200 application/json; charset=utf-8
+2020-06-21 11:57:11.493 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 11:57:11.503 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 11:57:11.508 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 11:57:11.528 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 11:57:11.552 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 11:57:11.561 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 11:57:11.567 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 54.3421ms
+2020-06-21 11:57:11.571 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 11:57:11.577 +01:00 [Information] Request finished in 84.5405ms 200 application/json; charset=utf-8
+2020-06-21 11:57:52.461 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Customer/UpdateCustomer application/json 486
+2020-06-21 11:57:52.470 +01:00 [Information] CORS policy execution successful.
+2020-06-21 11:57:52.483 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 11:57:52.526 +01:00 [Information] Route matched with "{action = \"Update\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 11:57:55.635 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 11:57:55.672 +01:00 [Information] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 11:57:55.695 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 11:57:55.707 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 11:57:55.716 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)" in 3182.7692ms
+2020-06-21 11:57:55.722 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 11:57:55.727 +01:00 [Information] Request finished in 3267.3037ms 200 application/json; charset=utf-8
+2020-06-21 11:58:02.449 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 11:58:02.456 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 11:58:02.463 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 11:58:02.489 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 11:58:02.561 +01:00 [Information] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 11:58:02.580 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 11:58:02.593 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 122.3737ms
+2020-06-21 11:58:02.597 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 11:58:02.606 +01:00 [Information] Request finished in 157.7631ms 200 application/json; charset=utf-8
+2020-06-21 11:58:10.270 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 11:58:10.278 +01:00 [Information] CORS policy execution successful.
+2020-06-21 11:58:10.282 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 11:58:10.288 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 11:58:17.255 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 11:58:17.279 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 11:58:22.612 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 11:58:31.681 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 11:58:31.694 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 11:58:31.706 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 11:58:31.715 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 11:58:31.747 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 11:58:31.761 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:01:48.280 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 12:04:24.713 +01:00 [Information] Executed DbCommand ("156,331"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:04:24.774 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:04:29.359 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 12:04:29.366 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 379072.8186ms
+2020-06-21 12:04:29.371 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:04:29.381 +01:00 [Information] Request finished in 379112.3856ms 200 application/json; charset=utf-8
+2020-06-21 12:05:43.124 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 12:05:43.133 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:05:43.138 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:05:43.146 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:05:43.160 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 12:05:43.175 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 12:05:43.192 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 43.5294ms
+2020-06-21 12:05:43.196 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:05:43.200 +01:00 [Information] Request finished in 77.6826ms 200 application/json; charset=utf-8
+2020-06-21 12:05:56.988 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Customer/UpdateCustomer application/json 486
+2020-06-21 12:05:56.994 +01:00 [Information] CORS policy execution successful.
+2020-06-21 12:05:56.998 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 12:05:57.012 +01:00 [Information] Route matched with "{action = \"Update\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:06:03.038 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:06:03.078 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 12:26:56.954 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:26:56.964 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 12:26:56.975 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)" in 1259953.0514ms
+2020-06-21 12:26:56.981 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Update (CRMSystem.Presentation.Core)"'
+2020-06-21 12:26:56.986 +01:00 [Information] Request finished in 1260002.284ms 200 application/json; charset=utf-8
+2020-06-21 12:27:14.091 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 12:27:14.099 +01:00 [Information] CORS policy execution successful.
+2020-06-21 12:27:14.105 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:27:14.110 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:27:14.137 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:27:14.193 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:27:14.217 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 12:27:14.238 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:27:14.253 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:27:14.264 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 12:27:14.279 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:27:14.295 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 12:27:14.312 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:28:01.956 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 12:30:22.037 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-21 12:30:22.531 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-06-21 12:30:22.794 +01:00 [Information] Request finished in 267.7579ms 404 
+2020-06-21 12:30:28.741 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-06-21 12:30:28.765 +01:00 [Information] Request finished in 30.0639ms 301 
+2020-06-21 12:30:28.774 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-06-21 12:30:28.846 +01:00 [Information] Request finished in 71.6865ms 200 text/html;charset=utf-8
+2020-06-21 12:30:28.948 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-06-21 12:30:28.951 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-06-21 12:30:28.962 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-06-21 12:30:29.051 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-06-21 12:30:29.051 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-06-21 12:30:29.051 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-06-21 12:30:29.063 +01:00 [Information] Request finished in 115.052ms 200 text/css
+2020-06-21 12:30:29.067 +01:00 [Information] Request finished in 115.0542ms 200 application/javascript
+2020-06-21 12:30:29.074 +01:00 [Information] Request finished in 123.1379ms 200 application/javascript
+2020-06-21 12:30:29.405 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-06-21 12:30:29.412 +01:00 [Information] Request finished in 18.0143ms 404 
+2020-06-21 12:30:29.635 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-06-21 12:30:29.643 +01:00 [Information] Request finished in 9.3923ms 404 
+2020-06-21 12:30:29.771 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-06-21 12:30:30.032 +01:00 [Information] Request finished in 259.5612ms 200 application/json;charset=utf-8
+2020-06-21 12:30:39.103 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 12:30:39.126 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:30:39.179 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:30:40.643 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.651 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.657 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.662 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.666 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.670 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.676 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.679 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.683 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.686 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.691 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.695 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.699 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-06-21 12:30:40.799 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:30:41.931 +01:00 [Information] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 12:30:42.092 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 12:30:42.124 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 2930.815ms
+2020-06-21 12:30:42.128 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:30:42.136 +01:00 [Information] Request finished in 3037.0347ms 200 application/json; charset=utf-8
+2020-06-21 12:31:07.165 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 12:31:07.190 +01:00 [Information] CORS policy execution successful.
+2020-06-21 12:31:07.199 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:31:07.224 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:31:07.438 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:31:07.841 +01:00 [Information] Executed DbCommand ("116"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:31:08.013 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 12:31:08.062 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:31:08.104 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:31:08.137 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 12:31:08.153 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:31:08.190 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 12:31:08.285 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:31:15.274 +01:00 [Information] Executed DbCommand ("82"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 12:31:43.398 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:31:43.438 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:31:45.164 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 12:31:45.176 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 37946.0582ms
+2020-06-21 12:31:45.187 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:31:45.194 +01:00 [Information] Request finished in 38031.2896ms 200 application/json; charset=utf-8
+2020-06-21 12:31:56.052 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 12:31:56.061 +01:00 [Information] CORS policy execution successful.
+2020-06-21 12:31:56.066 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:31:56.075 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:31:56.111 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:31:56.129 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:31:56.149 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 12:31:56.161 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:31:56.199 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:31:56.212 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 12:31:56.225 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:31:56.250 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 12:31:56.272 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:32:00.496 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 12:32:08.915 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:32:08.943 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:32:10.441 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 12:32:10.446 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 14367.8559ms
+2020-06-21 12:32:10.450 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:32:10.457 +01:00 [Information] Request finished in 14403.8952ms 200 application/json; charset=utf-8
+2020-06-21 12:32:25.019 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 12:32:25.035 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:32:25.040 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:32:25.048 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:32:25.063 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 12:32:25.072 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 12:32:25.090 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 34.4793ms
+2020-06-21 12:32:25.100 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:32:25.104 +01:00 [Information] Request finished in 93.0461ms 200 application/json; charset=utf-8
+2020-06-21 12:32:46.324 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/SaveSale application/json 1327
+2020-06-21 12:32:46.333 +01:00 [Information] CORS policy execution successful.
+2020-06-21 12:32:46.340 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:32:46.346 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Sale)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:32:46.385 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:32:46.403 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:32:46.423 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Image], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-06-21 12:32:46.435 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Image] = @p3, [Name] = @p4, [Quantity] = @p5, [SalePrice] = @p6, [StockLevel] = @p7, [TotalSold] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:32:46.473 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:32:46.483 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-06-21 12:32:46.497 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [UserCreated] = @p4, [UserModified] = @p5
+WHERE [ID] = @p6;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:32:46.505 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID]
+FROM [Invoices] AS [i]
+ORDER BY [i].[ID] DESC"
+2020-06-21 12:32:46.515 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Decimal), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Decimal), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [AmountPaid], [Balance], [CartID], [CashierID], [CustomerID], [DateCreated], [DateModified], [Discount], [ExtData], [InvoiceDate], [InvoiceNo], [IsPaid], [Tax], [TaxInclusive], [TaxName], [TaxPercent], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+SELECT [ID]
+FROM [Invoices]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:32:48.706 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+WHERE [c].[ID] = @__p_0"
+2020-06-21 12:32:50.178 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Customers] SET [Address] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Email] = @p3, [FirstName] = @p4, [Gender] = @p5, [Image] = @p6, [LastName] = @p7, [Phone] = @p8, [TotalSales] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-06-21 12:32:50.192 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Sales] ([CartID], [CustomerID], [DateCreated], [DateModified], [InvoiceID], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Sales]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-06-21 12:32:51.457 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-06-21 12:32:51.466 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)" in 5114.0226ms
+2020-06-21 12:32:51.470 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.Save (CRMSystem.Presentation.Core)"'
+2020-06-21 12:32:51.475 +01:00 [Information] Request finished in 5152.6082ms 200 application/json; charset=utf-8
+2020-06-21 12:33:05.274 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2020-06-21 12:33:05.288 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:33:05.293 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2020-06-21 12:33:05.306 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-06-21 12:33:05.373 +01:00 [Information] Executed DbCommand ("56"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2020-06-21 12:33:05.389 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-06-21 12:33:05.397 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 98.4822ms
+2020-06-21 12:33:05.402 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2020-06-21 12:33:05.407 +01:00 [Information] Request finished in 136.4673ms 200 application/json; charset=utf-8

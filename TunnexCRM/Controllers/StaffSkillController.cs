@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 using CRMSystem.Domains;
-using CRMSystem.Domains.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Nancy.Json;
-using Newtonsoft.Json;
-using WebApiContrib.Formatting;
 
 namespace CRMSystem.Presentation.Core.Controllers
 {
@@ -74,132 +68,19 @@ namespace CRMSystem.Presentation.Core.Controllers
             return Ok(result);
         }
 
-        //[HttpGet("GetFromServer")]
-        //public async Task<IActionResult> GetFromServer()
-        //{
-
-        //    var comments = new List<Comment>();
-        //    var comms = "";
-
-        //    HttpClient _client = new HttpClient();
-
-        //    _client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
-
-        //    var res =  _client.GetAsync("posts/1/comments");
-        //    res.Wait();
-        //    var con = res.Result;
-
-        //    if (con.IsSuccessStatusCode)
-        //    {
-        //        var rest =  con.Content.ReadAsStringAsync();
-        //        rest.Wait();
-
-        //        comms = rest.Result;
-        //    }
-        //    var serializer = new JavaScriptSerializer();
-
-        //    comments = serializer.Deserialize<List<Comment>>(comms);
-
-        //    return Ok(comments);
-        //}
-
-
-
-        [HttpGet("GetFromServer")]
-        public async Task<IActionResult> GetFromServer()
-        {
-            HttpClient _client = new HttpClient();
-
-            List<Comment> comments = null;
-
-
-            _client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
-
-           var req= _client.GetAsync("posts/1/comments");
-            req.Wait();
-            var res = req.Result;
-
-            if (res.IsSuccessStatusCode)
-            {
-
-                var con = res.Content.ReadAsStringAsync();
-                con.Wait();
-                var commentString = con.Result;
-
-                var serializer = new JavaScriptSerializer();
-                comments = serializer.Deserialize<List<Comment>>(commentString);
-            
-            }
-            return Ok(comments);
-        
-        }
-
-
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="request"></param>
+        /// <param name="staffID"></param>
         /// <returns></returns>
-        [HttpPost("SendMessage")]
-        public async Task<IActionResult> SendMessage(RequestData request)
+
+        [HttpGet("GetStaffSkillsByStaffID/{staffID}")]
+        public async Task<IActionResult> GetStaffSkillsByStaffID(int staffID)
         {
-            //https://api.sandbox.africastalking.com/version1/messaging
 
-            var apiKey = "";
-            //request.username = "sandbox";
-            //request.to = "";
-            //request.message = "";
-
-            
-
-            HttpClient _client = new HttpClient();
-            _client.BaseAddress = new Uri("https://api.sandbox.africastalking.com/");
-            var requestMessage = new HttpRequestMessage(HttpMethod.Post, "version1/messaging");
-            _client.DefaultRequestHeaders.Add("apiKey", "a269e0154e849504fffa1c6210890d85e43998c15412248db1612a190b9b44d6");
-            _client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-            var nvc = new List<KeyValuePair<string, string>>();
-            nvc.Add(new KeyValuePair<string, string>("username", request.username));
-            nvc.Add(new KeyValuePair<string, string>("to", request.to));
-            nvc.Add(new KeyValuePair<string, string>("message", request.message));
-
-            requestMessage.Content = new FormUrlEncodedContent(nvc);
-
-            var res = await _client.SendAsync(requestMessage);
-            string response = null;
-            if (res.IsSuccessStatusCode)
-            {
-                 response = await res.Content.ReadAsStringAsync();
-               // response.Wait();
-
-              //  result = JsonConvert.DeserializeObject<SMSMessageData>(response);
-                
-            }
-            return Ok(response);
-
-
+            var result = await _service.getStaffSkillsByStaffIDAsync(staffID);
+            return Ok(result);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

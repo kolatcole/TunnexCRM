@@ -15,9 +15,25 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task<int> deleteAsync(Role data)
+
+        public Task deleteAllAsync(List<Role> data)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var role = await _context.Roles.FindAsync(ID);
+                _context.Roles.Remove(role);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<Role>> getAllAsync()

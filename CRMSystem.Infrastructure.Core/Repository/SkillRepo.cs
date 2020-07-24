@@ -16,9 +16,25 @@ namespace CRMSystem.Infrastructure
 
             _context = context;
         }
-        public Task<int> deleteAsync(Skill data)
+
+        public Task deleteAllAsync(List<Skill> data)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var skill = await _context.Skills.FindAsync(ID);
+                _context.Skills.Remove(skill);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<Skill>> getAllAsync()
@@ -104,7 +120,7 @@ namespace CRMSystem.Infrastructure
                     skill.Name = data.Name;
                     skill.DateModified = DateTime.Now;
                     skill.UserModified = data.UserCreated;
-                  
+                    skill.StaffNumberWithSkill = data.StaffNumberWithSkill;
 
                     _context.Skills.Update(skill);
                     await _context.SaveChangesAsync();

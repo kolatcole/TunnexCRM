@@ -16,9 +16,24 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public Task<int> deleteAsync(Message data)
+        public Task deleteAllAsync(List<Message> data)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var messages = await _context.Messages.Where(x=>x.LeadID==ID).ToListAsync();
+                _context.Messages.RemoveRange(messages);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<Message>> getAllAsync()
@@ -55,7 +70,8 @@ namespace CRMSystem.Infrastructure
                         DateCreated = DateTime.Now,
                         UserCreated = data.UserCreated,
                         Summary=data.Summary,
-                        Type=data.Type
+                        Type=data.Type,
+                        LeadID=data.LeadID
                     };
                     await _context.Messages.AddAsync(message);
                     await _context.SaveChangesAsync();

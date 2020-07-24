@@ -10,5 +10,6 @@ namespace CRMSystem.Domains
         Task<List<Sale>> getByCustomerIDAsync(int customerID);
 
         Task<List<Sale>> getSaleHistoryByDate(DateTime startdate,DateTime enddate);
+        Task<List<Sale>> GetSingleDaySales(DateTime date);
     }
 }

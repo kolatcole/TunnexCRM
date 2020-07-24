@@ -12,7 +12,7 @@ namespace CRMSystem.Domains
 
         public string InvoiceNo { get; set; }
 
-      //public Cart Cart { get; set; }
+        public Cart Cart { get; set; }
 
         public int CartID { get; set; }
 

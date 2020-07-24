@@ -46,9 +46,9 @@ namespace CRMSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("https://tunnexcrm.netlify.app","http://localhost:4200").   
+                                      builder/*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
                                                     AllowAnyHeader()
-                                                  .AllowAnyMethod();
+                                                  .AllowAnyMethod().AllowAnyOrigin();
                                   });
             });
 
@@ -91,9 +91,12 @@ namespace CRMSystem
             services.AddScoped<IRepo<Qualification>, QualificationRepo>();
             services.AddScoped<IRepo<Assessment>, AssessmentRepo>();
             services.AddScoped<IRepo<StaffSkill>, StaffSkillRepo>();
+            services.AddScoped<IStaffSkillRepo, StaffSkillRepo>();
+            services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
 
 
 
+            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IPaymentService, PaymentService>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<ISaleService, SaleService>();
@@ -102,6 +105,7 @@ namespace CRMSystem
             services.AddTransient<IInvoiceService, InvoiceService>();
             services.AddTransient<ILeadService, LeadService>();
             services.AddTransient<IStaffSkillService, StaffSkillService>();
+            services.AddTransient<ICustomerService, CustomerService>();
 
         }
 

@@ -15,16 +15,29 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task<int> deleteAsync(Customer data)
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var customer = await _context.Customers.FindAsync(ID);
+                _context.Customers.Remove(customer);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public Task deleteAllAsync(List<Customer> data)
         {
             throw new NotImplementedException();
         }
-
         public async Task<List<Customer>> getAllAsync()
         {
             try
             {
-                var customer = await _context.Customers.ToListAsync();
+                var customer = await _context.Customers.Include(x=>x.CustomerMessages).ToListAsync();
                 return customer;
             }
 
@@ -46,7 +59,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var customer = await _context.Customers.Where(x => x.ID == ID).FirstOrDefaultAsync();
+                var customer = await _context.Customers.Include(x => x.CustomerMessages).Where(x => x.ID == ID).FirstOrDefaultAsync();
                 return customer;
             }
 
@@ -97,9 +110,18 @@ namespace CRMSystem.Infrastructure
             return customer.ID;
         }
 
-        public Task<int> insertListAsync(List<Customer> data)
+        public async Task<int> insertListAsync(List<Customer> data)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _context.Customers.AddRangeAsync(data);
+                await _context.SaveChangesAsync();
+                return data.Count;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<Customer>> MostFrequentCustomer()
@@ -122,33 +144,32 @@ namespace CRMSystem.Infrastructure
             var newCustomer = await _context.Customers.FindAsync(data.ID);
             try
             {
-                if (newCustomer != null)
-                {
-                    
-                   
-                        newCustomer.Image = data.Image;
-                   
-                        newCustomer.FirstName = data.FirstName;
-                    
-                        newCustomer.Phone = data.Phone;
-                   
-                        newCustomer.LastName = data.LastName;
-                    newCustomer.DateModified = DateTime.Now;
-                    
-                        newCustomer.UserModified = data.UserModified;
-                    
-                        newCustomer.Gender = data.Gender;
-                    
-                        newCustomer.Email = data.Email;
-                    
-                        newCustomer.Address = data.Address;
-                    
-                        newCustomer.TotalSales += data.TotalSales;
+
+
+                if (data.Image != null ) newCustomer.Image = data.Image;
+
+
+                if (data.FirstName != null ) newCustomer.FirstName = data.FirstName;
+
+                if (data.Phone != null) newCustomer.Phone = data.Phone;
+
+                if (data.LastName != null ) newCustomer.LastName = data.LastName;
+                data.DateModified = DateTime.Now;
+
+                if (data.UserModified != 0 ) newCustomer.UserModified = data.UserModified;
+
+                if (data.Gender != null ) newCustomer.Gender = data.Gender;
+
+                if (data.Email != null) newCustomer.Email = data.Email;
+
+                if (data.Address != null) newCustomer.Address = data.Address;
+
+                if (data.TotalSales != 0) newCustomer.TotalSales += data.TotalSales;
 
 
                     _context.Customers.Update(newCustomer);
                      await _context.SaveChangesAsync();
-                }
+                
 
             }
             catch (Exception ex)

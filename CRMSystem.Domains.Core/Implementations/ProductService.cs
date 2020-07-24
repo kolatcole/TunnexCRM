@@ -28,6 +28,15 @@ namespace CRMSystem.Domains
 
 
         }
+        public async Task<int> insertMultipleProductsAsync(List<Product> data)
+        {
+
+            int PRID = await _pRepo.insertListAsync(data);
+
+            return PRID;
+
+
+        }
         public async Task<int> updateProductAsync(Product data)
         {
             var pid = await _pRepo.updateAsync(data);
@@ -47,6 +56,10 @@ namespace CRMSystem.Domains
             var result = await _pRepo.getAsync(ID);
             return result;
         
+        }
+        public async Task DeleteProductAsync(int ID)
+        {
+            await _pRepo.deleteAsync(ID);
         }
     }
 }

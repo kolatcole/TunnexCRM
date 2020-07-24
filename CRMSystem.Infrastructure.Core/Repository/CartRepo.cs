@@ -16,11 +16,14 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public Task<int> deleteAsync(Cart data)
+        public async Task  deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
-
+        public Task deleteAllAsync(List<Cart> data)
+        {
+            throw new NotImplementedException();
+        }
         public async Task<List<Cart>> getAllAsync()
         {
             var carts = await _context.Carts.ToListAsync();

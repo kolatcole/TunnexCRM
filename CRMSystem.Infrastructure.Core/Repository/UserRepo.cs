@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using System.Diagnostics.Contracts;
 
 namespace CRMSystem.Infrastructure
 {
@@ -15,17 +16,46 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task<int> deleteAsync(User data)
+
+        public Task deleteAllAsync(List<User> data)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task  deleteAsync(int ID)
+        {
+            try
+            {
+                var user = await _context.AppUsers.FindAsync(ID);
+                _context.AppUsers.Remove(user);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<List<User>> getAllAsync()
         {
             try
             {
-                var user = await _context.AppUsers.ToListAsync();
-                return user;
+                var users = await _context.AppUsers.ToListAsync();
+
+                foreach(var user in users)
+                {
+                    var role = await _context.Roles.Where(x => x.ID == user.RoleID).SingleOrDefaultAsync();
+                    user.Role = role;
+
+                    var privileges = await _context.Privileges.Where(x => x.RoleID == role.ID).ToListAsync();
+                    role.Privileges = privileges;
+
+                }
+
+
+
+                return users;
             }
             catch (Exception ex)
             {
@@ -39,6 +69,15 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var user =  await _context.AppUsers.Where(x => x.ID == ID).FirstOrDefaultAsync();
+                
+                var role = await _context.Roles.Where(x => x.ID == user.RoleID).SingleOrDefaultAsync();
+                user.Role = role;
+
+                var privileges = await _context.Privileges.Where(x => x.RoleID == role.ID).ToListAsync();
+                role.Privileges = privileges;
+                
+
+
                 return user;
             }
             catch (Exception ex)
@@ -86,7 +125,8 @@ namespace CRMSystem.Infrastructure
                         DateCreated=DateTime.Now,
                         Email=data.Email,
                         Password=data.Password,
-                        Username=data.Username
+                        Username=data.Username,
+                        RoleID=data.RoleID
                     };
                     await _context.AppUsers.AddAsync(user);
                     await _context.SaveChangesAsync();

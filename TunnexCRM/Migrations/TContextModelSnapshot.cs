@@ -29,13 +29,7 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IAS")
-                        .HasColumnType("int");
-
                     b.Property<int>("SAS")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SKAS")
                         .HasColumnType("int");
 
                     b.Property<int>("StaffSkillID")
@@ -126,6 +120,44 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("CRMSystem.Domains.CustomerMessage", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attachment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Summary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserCreated")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserModified")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("CustomerID");
+
+                    b.ToTable("CustomerMessages");
+                });
+
             modelBuilder.Entity("CRMSystem.Domains.Invoice", b =>
                 {
                     b.Property<int>("ID")
@@ -191,6 +223,8 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("CartID");
 
                     b.HasIndex("CashierID");
 
@@ -587,6 +621,9 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("StaffNumberWithSkill")
+                        .HasColumnType("int");
+
                     b.Property<int>("UserCreated")
                         .HasColumnType("int");
 
@@ -707,6 +744,9 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<string>("Post")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RoleID")
+                        .HasColumnType("int");
+
                     b.Property<int>("UserCreated")
                         .HasColumnType("int");
 
@@ -717,6 +757,8 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("RoleID");
 
                     b.ToTable("AppUsers");
                 });
@@ -730,8 +772,23 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("CRMSystem.Domains.CustomerMessage", b =>
+                {
+                    b.HasOne("CRMSystem.Domains.Customer", null)
+                        .WithMany("CustomerMessages")
+                        .HasForeignKey("CustomerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("CRMSystem.Domains.Invoice", b =>
                 {
+                    b.HasOne("CRMSystem.Domains.Cart", "Cart")
+                        .WithMany()
+                        .HasForeignKey("CartID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CRMSystem.Domains.User", "Cashier")
                         .WithMany()
                         .HasForeignKey("CashierID");
@@ -791,6 +848,15 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.HasOne("CRMSystem.Domains.Invoice", "Invoice")
                         .WithMany()
                         .HasForeignKey("InvoiceID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CRMSystem.Domains.User", b =>
+                {
+                    b.HasOne("CRMSystem.Domains.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

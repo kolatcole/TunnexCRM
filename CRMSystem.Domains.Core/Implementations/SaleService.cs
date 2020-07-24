@@ -138,7 +138,18 @@ namespace CRMSystem.Domains
         //    }
             
         //    return sales;
-        //}
+        //} b4 deployemnt
+        public async Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
+        {
+            var sales = await _sRepo.getByCustomerIDAsync(customerID);
+
+            foreach (var sale in sales)
+            {
+                sale.Payment = await _payRepo.getPaymentByInvoiceNo(sale.Invoice.InvoiceNo);
+            }
+
+            return sales;
+        }
         public async Task<Sale> GetSaleByIDAsync(int ID)
         {
             var sale = await _repo.getAsync(ID);
@@ -159,17 +170,7 @@ namespace CRMSystem.Domains
 
             return sales;
         }
-        //public async Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
-        //{
-        //    var sales = await _sRepo.getByCustomerIDAsync(customerID);
-
-        //    foreach (var sale in sales)
-        //    {
-        //        sale.Payment = await _payRepo.getPaymentByInvoiceNo(sale.Invoice.InvoiceNo);
-        //    }
-
-        //    return sales;
-        //}
+      
 
         public async Task<List<Sale>> getSaleHistoryByDateAsync(DateTime startdate, DateTime enddate)
         {
@@ -178,10 +179,14 @@ namespace CRMSystem.Domains
         
         
         }
-
-        public Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
+        public async Task<List<Sale>> GetSingleDaySalesAsync(DateTime date)
         {
-            throw new NotImplementedException();
+            var sales = await _sRepo.GetSingleDaySales(date);
+            return sales;
+
+
         }
+        
+
     }
 }

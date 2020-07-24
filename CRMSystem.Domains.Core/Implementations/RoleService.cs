@@ -43,5 +43,14 @@ namespace CRMSystem.Domains
             var result = await _Rrepo.getAllAsync();
             return result;
         }
+        public async Task DeleteRoleAsync(int ID)
+        {
+
+            await _Prepo.deleteAsync(ID);
+
+            await _Rrepo.deleteAsync(ID);
+
+            
+        }
     }
 }
