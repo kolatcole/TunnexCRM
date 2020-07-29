@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CRMSystem.Domains
@@ -22,6 +23,7 @@ namespace CRMSystem.Domains
     {
         public string Type { get; set; }
         public string Summary { get; set; }
+    //    [ForeignKey]
         public int CustomerID { get; set; }
 
         public string Attachment { get; set; }

@@ -11,8 +11,8 @@ namespace CRMSystem.Domains
 
         // invoice is supposed to be auto generated when a sale is made
 
-        [JsonIgnore]
-        public int InvoiceID { get; set; }
+       // [JsonIgnore]
+       //was included initially public int InvoiceID { get; set; }
         [JsonIgnore]
         public int CartID { get; set; }
         public Invoice Invoice { get; set; }

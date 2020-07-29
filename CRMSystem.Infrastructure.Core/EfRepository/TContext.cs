@@ -29,6 +29,7 @@ namespace CRMSystem.Infrastructure
         public DbSet<Price> Prices { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<CustomerMessage> CustomerMessages { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Privilege> Privileges { get; set; }
         public DbSet<Cart> Carts { get; set; }
@@ -42,7 +43,7 @@ namespace CRMSystem.Infrastructure
         public DbSet<Assessment> Assessments { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<StaffSkill> StaffSkills { get; set; }
-        public DbSet<CustomerMessage> CustomerMessages { get; set; }
+        
         
     }
 }

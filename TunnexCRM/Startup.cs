@@ -37,18 +37,15 @@ namespace CRMSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", opt => opt.WithOrigins("https://tunnexcrm.netlify.app/"));
-            //});
+            
             services.AddCors(options =>
             {
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder/*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
+                                      builder.WithOrigins("https://tunnexlabcrm.com")/*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
                                                     AllowAnyHeader()
-                                                  .AllowAnyMethod().AllowAnyOrigin();
+                                                  .AllowAnyMethod()/*.AllowAnyOrigin()*/;
                                   });
             });
 
@@ -64,7 +61,7 @@ namespace CRMSystem
             });
             services.AddDbContext<TContext>(opt =>
             {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultTLocal"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
             });
 
             services.AddScoped<IRepo<Lead>, LeadRepo>();
