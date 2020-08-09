@@ -102,7 +102,9 @@ namespace CRMSystem.Infrastructure
                         Quantity=data.Quantity,
                         SalePrice=data.SalePrice,
                         CostPrice=data.CostPrice,
-                        TotalSold=data.TotalSold
+                        TotalSold=data.TotalSold,
+                        Description=data.Description,
+                        Location=data.Location
                     };
                     await _context.Products.AddAsync(product);
                     await _context.SaveChangesAsync();
@@ -146,6 +148,8 @@ namespace CRMSystem.Infrastructure
                     newProduct.SalePrice = data.SalePrice;
                     newProduct.CostPrice = data.CostPrice;
                     newProduct.TotalSold = data.TotalSold;
+                    newProduct.Description = data.Description;
+                    newProduct.Location = data.Location;
 
 
                     _context.Products.Update(newProduct);

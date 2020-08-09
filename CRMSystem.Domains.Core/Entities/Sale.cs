@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CRMSystem.Domains
@@ -10,9 +11,9 @@ namespace CRMSystem.Domains
         public int CustomerID { get; set; }
 
         // invoice is supposed to be auto generated when a sale is made
-
-       // [JsonIgnore]
-       //was included initially public int InvoiceID { get; set; }
+        //was included initially 
+        [JsonIgnore]
+        public int InvoiceID { get; set; }
         [JsonIgnore]
         public int CartID { get; set; }
         public Invoice Invoice { get; set; }

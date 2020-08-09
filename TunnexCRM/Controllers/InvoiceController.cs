@@ -32,13 +32,13 @@ namespace CRMSystem.Presentation.Core.Controllers
             DateTime.TryParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime sDate);
             DateTime.TryParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime eDate);
 
-            //if (sDate <= DateTime.MinValue)
-            //   sDate = D
+            if (sDate <= DateTime.MinValue)
+                sDate = DateTime.Now.StartOfDay();
 
             if (eDate <= DateTime.MinValue)
-                eDate = DateTime.Now;
-            //else
-            //    eDate = eDate.
+                eDate = DateTime.Now.EndOfDay();
+            else
+                eDate = eDate.EndOfDay();
 
             var result = await _service.getDebtorInvoice(sDate,eDate);
             return Ok(result);

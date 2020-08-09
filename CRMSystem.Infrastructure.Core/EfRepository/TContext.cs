@@ -43,7 +43,13 @@ namespace CRMSystem.Infrastructure
         public DbSet<Assessment> Assessments { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<StaffSkill> StaffSkills { get; set; }
-        
-        
+        public DbSet<Quotation> Quotations { get; set; }
+        public DbSet<QuotProduct> QuotProducts { get; set; }
+        public DbSet<Waybill> Waybills { get; set; }
+        public DbSet<WaybillProduct> WaybillProducts { get; set; }
+
+
+
+
     }
 }

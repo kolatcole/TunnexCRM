@@ -15,6 +15,7 @@ namespace CRMSystem.Domains
 
         public int TotalSold { get; set; }
         public int StockLevel { get; set; }
-        //public Price Price { get; set; }
+        public string Description { get; set; }
+        public string Location { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,8 +15,10 @@ namespace CRMSystem.Domains
         private readonly IPaymentRepo _payRepo;
         private readonly ISaleRepo _sRepo;
         private readonly IRepo<Customer> _custRepo;
+        private readonly IWaybillService _wService;
 
-        public SaleService(IRepo<Sale> repo,  IInvoiceService inService, ICartService cService, IRepo<Payment> pRepo, IPaymentRepo payRepo, IRepo<Customer> custRepo, ISaleRepo sRepo)
+        public SaleService(IRepo<Sale> repo,  IInvoiceService inService, ICartService cService, IRepo<Payment> pRepo, 
+            IPaymentRepo payRepo, IRepo<Customer> custRepo, ISaleRepo sRepo, IWaybillService wService)
         {
             _repo = repo;
             _cService = cService;
@@ -24,6 +27,7 @@ namespace CRMSystem.Domains
             _payRepo = payRepo;
             _custRepo = custRepo;
             _sRepo = sRepo;
+            _wService = wService;
         }
         public async Task<int> Save(Sale data)
         {
@@ -115,15 +119,49 @@ namespace CRMSystem.Domains
 
             data.CartID = CID;
             // data.CartID = CID;
+            //was included initially  data.InvoiceID = IID;
             data.InvoiceID = IID;
             var SID = await _repo.insertAsync(data);
 
 
+            // save waybill
+
+            var waybill = new Waybill
+            {
+                DateCreated = DateTime.Now,
+                InvoiceNo = data.Invoice.InvoiceNo,
+                UserCreated = data.UserCreated
+               
+            };
 
 
 
 
             
+
+            var waybillProds = new List<WaybillProduct>();
+
+            // get productID from the cart items
+
+            foreach(var item in data.Cart.Items)
+            {
+                var prod = new WaybillProduct();
+                prod.ProductID = item.ProductID;
+                waybillProds.Add(prod);
+
+            }
+
+            // add products to waybill
+            waybill.WaybillProducts = waybillProds;
+
+            // Save both waybill with the listed products
+            var WID = await _wService.SaveWaybillAndProducts(waybill);
+
+
+
+
+
+
 
 
             return SID;
@@ -186,7 +224,68 @@ namespace CRMSystem.Domains
 
 
         }
-        
 
+        public async Task<List<Sale>> GetSalesReportByDate(int customerID, string startDate,string endDate)
+        {
+
+            List<Sale> sales;
+            DateTime.TryParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime sdate);
+            DateTime.TryParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime edate);
+
+            if (sdate <= DateTime.MinValue)
+                sdate = DateTime.Now.StartOfDay();
+
+            if (edate <= DateTime.MinValue)
+                edate = DateTime.Now.EndOfDay();
+            else
+                edate = edate.EndOfDay();
+
+            // filter by customerID only, if that's what was given
+
+            if ((startDate == "0" || endDate == "0") && customerID > 0)
+            {
+                return sales = await _sRepo.getByCustomerIDAsync(customerID);
+            }
+
+
+
+
+
+
+            // filter by dates alone if customerID is not given
+
+            else if (customerID < 1 && (startDate != "0" || endDate != "0"))
+            {
+                return sales = await _sRepo.getSaleHistoryByDate(sdate, edate);
+            }
+
+
+
+
+            // filter by all given parameters
+
+            else if (startDate != "0" && endDate != "0" && customerID > 0)
+            {
+                return sales = await _sRepo.getByCustomerIDandDateAsync(customerID, sdate, edate);
+            }
+
+
+
+            // get without any parameter
+            else
+                return sales = await _sRepo.getAllSalesAsync();
+
+
+
+           
+
+
+        }
+
+        public async Task<List<Waybill>> GetWaybillByDate(string startDate, string endDate)
+        {
+            var waybills = await _wService.GetAllWaybillByDates(startDate, endDate);
+            return waybills;
+        }
     }
 }

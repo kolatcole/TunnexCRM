@@ -81,5 +81,42 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="customerID"></param>
+        ///  <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetSalesReportByDate/{startDate}/{endDate}")]
+        public async Task<IActionResult> GetSalesReportByDate(int customerID=0,string startDate="0",string endDate="0")
+        {
+
+
+
+
+            var result = await _service.GetSalesReportByDate(customerID,startDate, endDate);
+
+            return Ok(result);
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetWaybillByDate/{startDate}/{endDate}")]
+        public async Task<IActionResult> GetWaybillByDate( string startDate = "0", string endDate = "0")
+        {
+
+            var result = await _service.GetWaybillByDate(startDate, endDate);
+
+            return Ok(result);
+
+        }
+
     }
 }

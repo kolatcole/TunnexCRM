@@ -159,18 +159,48 @@ namespace CRMSystem.Infrastructure
         {
             throw new NotImplementedException();
         }
-        //public async Task<List<Sale>> getByCustomerIDAsync(int customerID)
-        //{
-        //    try
-        //    {
-        //        var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID).ToListAsync();
-        //        return sales;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //} b4 deployemnt
+
+        public async Task<List<Sale>> GetSalesByDate(DateTime startdate, DateTime enddate)
+        {
+            try
+            {
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).
+                            Where(x => x.DateCreated.Date >= startdate.Date && x.DateCreated<=enddate.Date).ToListAsync();
+                return sales;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task<List<Sale>> getByCustomerIDandDateAsync(int customerID, DateTime startdate, DateTime enddate)
+        {
+            try
+            {
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).
+                                    ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID 
+                                    && x.DateCreated>=startdate && x.DateCreated<=enddate).ToListAsync();
+                return sales;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<List<Sale>> getAllSalesAsync()
+        {
+            try
+            {
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).
+                                    ThenInclude(a => a.Items).ToListAsync();
+                return sales;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
     }
 }

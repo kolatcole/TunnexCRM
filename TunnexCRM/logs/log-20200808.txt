@@ -1,0 +1,417 @@
+2020-08-08 10:00:44.833 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-08 10:00:45.476 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-08-08 10:00:45.476 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-08-08 10:00:45.718 +01:00 [Information] Request finished in 247.7024ms 0 
+2020-08-08 10:00:45.841 +01:00 [Information] Request finished in 371.1533ms 200 text/html;charset=utf-8
+2020-08-08 10:00:46.731 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-08-08 10:00:47.091 +01:00 [Information] Request finished in 364.0925ms 200 application/json;charset=utf-8
+2020-08-08 10:01:02.932 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Quotation/CreateQuotation application/json 165
+2020-08-08 10:01:02.954 +01:00 [Information] CORS policy execution successful.
+2020-08-08 10:01:02.974 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.CreateQuotation (CRMSystem.Presentation.Core)"'
+2020-08-08 10:01:03.039 +01:00 [Information] Route matched with "{action = \"CreateQuotation\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateQuotation(CRMSystem.Domains.Quotation)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:01:04.179 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.180 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.180 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.181 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.182 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.182 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.183 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.183 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.184 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.184 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.185 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.185 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.185 +01:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Quotation"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.186 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:01:04.244 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:01:05.794 +01:00 [Information] Executed DbCommand ("432"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Quotations] ([CustomerID], [DateCreated], [DateModified], [Name], [Price], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Quotations]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-08-08 10:01:05.933 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-08-08 10:01:05.996 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.CreateQuotation (CRMSystem.Presentation.Core)" in 2944.5778ms
+2020-08-08 10:01:05.999 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.CreateQuotation (CRMSystem.Presentation.Core)"'
+2020-08-08 10:01:06.005 +01:00 [Information] Request finished in 3074.4627ms 200 application/json; charset=utf-8
+2020-08-08 10:01:19.302 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomer/0  
+2020-08-08 10:01:19.307 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomer (CRMSystem.Presentation.Core)"'
+2020-08-08 10:01:19.319 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomer\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomer(Int32)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:01:19.404 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:01:20.029 +01:00 [Information] Executed DbCommand ("213"ms) [Parameters=["@__customerID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE [q].[CustomerID] = @__customerID_0"
+2020-08-08 10:01:20.071 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:01:20.096 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomer (CRMSystem.Presentation.Core)" in 776.4334ms
+2020-08-08 10:01:20.096 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomer (CRMSystem.Presentation.Core)"'
+2020-08-08 10:01:20.097 +01:00 [Information] Request finished in 795.8448ms 200 application/json; charset=utf-8
+2020-08-08 10:01:46.988 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Quotation/CreateQuotation application/json 166
+2020-08-08 10:01:46.991 +01:00 [Information] CORS policy execution successful.
+2020-08-08 10:01:46.993 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.CreateQuotation (CRMSystem.Presentation.Core)"'
+2020-08-08 10:01:46.995 +01:00 [Information] Route matched with "{action = \"CreateQuotation\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateQuotation(CRMSystem.Domains.Quotation)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:01:47.030 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:01:47.040 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Quotations] ([CustomerID], [DateCreated], [DateModified], [Name], [Price], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Quotations]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-08-08 10:01:47.047 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-08-08 10:01:47.049 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.CreateQuotation (CRMSystem.Presentation.Core)" in 53.276ms
+2020-08-08 10:01:47.049 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.CreateQuotation (CRMSystem.Presentation.Core)"'
+2020-08-08 10:01:47.050 +01:00 [Information] Request finished in 62.0975ms 200 application/json; charset=utf-8
+2020-08-08 10:02:06.258 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomer/2  
+2020-08-08 10:02:06.261 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomer (CRMSystem.Presentation.Core)"'
+2020-08-08 10:02:06.264 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomer\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomer(Int32)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:02:06.268 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:02:06.288 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__customerID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE [q].[CustomerID] = @__customerID_0"
+2020-08-08 10:02:06.290 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:02:06.292 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomer (CRMSystem.Presentation.Core)" in 27.9503ms
+2020-08-08 10:02:06.292 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomer (CRMSystem.Presentation.Core)"'
+2020-08-08 10:02:06.293 +01:00 [Information] Request finished in 35.1522ms 200 application/json; charset=utf-8
+2020-08-08 10:03:20.177 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/2020-08-01/2020-08-08  
+2020-08-08 10:03:20.179 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:03:20.190 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:03:20.204 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:03:20.305 +01:00 [Information] Executed DbCommand ("87"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:03:20.311 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:03:20.313 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 122.3051ms
+2020-08-08 10:03:20.313 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:03:20.314 +01:00 [Information] Request finished in 136.6227ms 200 application/json; charset=utf-8
+2020-08-08 10:03:34.634 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/2020-08-01/2020-08-18  
+2020-08-08 10:03:34.635 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:03:34.637 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:03:34.646 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:03:34.657 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:03:34.661 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:03:34.664 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 26.366ms
+2020-08-08 10:03:34.665 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:03:34.667 +01:00 [Information] Request finished in 32.751ms 200 application/json; charset=utf-8
+2020-08-08 10:03:49.642 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/2020-01-01/2020-08-18  
+2020-08-08 10:03:49.644 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:03:49.645 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:03:49.649 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:03:49.654 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:03:49.655 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:03:49.656 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 11.0403ms
+2020-08-08 10:03:49.657 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:03:49.657 +01:00 [Information] Request finished in 15.6308ms 200 application/json; charset=utf-8
+2020-08-08 10:04:34.850 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-08 10:04:35.467 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-08-08 10:04:35.654 +01:00 [Information] Request finished in 196.008ms 404 
+2020-08-08 10:04:41.114 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-08-08 10:04:41.133 +01:00 [Information] Request finished in 20.5027ms 301 
+2020-08-08 10:04:41.144 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-08-08 10:04:41.216 +01:00 [Information] Request finished in 75.0155ms 200 text/html;charset=utf-8
+2020-08-08 10:04:41.271 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-08-08 10:04:41.278 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-08-08 10:04:41.283 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-08-08 10:04:41.546 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-08-08 10:04:41.546 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-08-08 10:04:41.566 +01:00 [Information] Request finished in 287.5557ms 200 application/javascript
+2020-08-08 10:04:41.613 +01:00 [Information] Request finished in 291.0535ms 200 text/css
+2020-08-08 10:04:41.673 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-08-08 10:04:41.681 +01:00 [Information] Request finished in 409.1465ms 200 application/javascript
+2020-08-08 10:04:42.286 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-08-08 10:04:42.295 +01:00 [Information] Request finished in 9.8124ms 404 
+2020-08-08 10:04:42.540 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-08-08 10:04:42.547 +01:00 [Information] Request finished in 8.2553ms 404 
+2020-08-08 10:04:42.758 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2020-08-08 10:04:42.759 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-08-08 10:04:42.770 +01:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2020-08-08 10:04:42.775 +01:00 [Information] Request finished in 18.9952ms 200 image/png
+2020-08-08 10:04:43.014 +01:00 [Information] Request finished in 257.6177ms 200 application/json;charset=utf-8
+2020-08-08 10:05:48.842 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/2020-08-01/2020-08-18  
+2020-08-08 10:05:48.863 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:05:49.007 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:05:50.460 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.465 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.475 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.479 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.483 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.488 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.492 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.497 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.501 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.506 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.510 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.514 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.517 +01:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Quotation"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.523 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:05:50.599 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:05:52.083 +01:00 [Information] Executed DbCommand ("133"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:05:52.160 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:05:52.264 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 3192.9366ms
+2020-08-08 10:05:52.272 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:05:52.283 +01:00 [Information] Request finished in 3443.3886ms 200 application/json; charset=utf-8
+2020-08-08 10:06:33.769 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-08 10:06:34.249 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-08-08 10:06:34.472 +01:00 [Information] Request finished in 228.997ms 404 
+2020-08-08 10:06:40.831 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-08-08 10:06:40.892 +01:00 [Information] Request finished in 21.7443ms 301 
+2020-08-08 10:06:40.897 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-08-08 10:06:40.967 +01:00 [Information] Request finished in 69.0311ms 200 text/html;charset=utf-8
+2020-08-08 10:06:41.033 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-08-08 10:06:41.039 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-08-08 10:06:41.043 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-08-08 10:06:41.130 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-08-08 10:06:41.139 +01:00 [Information] Request finished in 116.0967ms 200 text/css
+2020-08-08 10:06:41.263 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-08-08 10:06:41.267 +01:00 [Information] Request finished in 240.4483ms 200 application/javascript
+2020-08-08 10:06:41.309 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-08-08 10:06:41.317 +01:00 [Information] Request finished in 290.4113ms 200 application/javascript
+2020-08-08 10:06:41.595 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-08-08 10:06:41.602 +01:00 [Information] Request finished in 8.2794ms 404 
+2020-08-08 10:06:41.791 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-08-08 10:06:41.796 +01:00 [Information] Request finished in 5.5208ms 404 
+2020-08-08 10:06:41.919 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-08-08 10:06:42.239 +01:00 [Information] Request finished in 317.7986ms 200 application/json;charset=utf-8
+2020-08-08 10:07:22.548 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/2020-08-01/2020-08-18  
+2020-08-08 10:07:22.582 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:07:22.656 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:12:02.860 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.878 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.884 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.891 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.894 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.898 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.902 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.915 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.920 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.927 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.931 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.935 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.940 +01:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Quotation"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:02.944 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:12:03.040 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:12:04.559 +01:00 [Information] Executed DbCommand ("134"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:12:04.646 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:12:04.688 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 282012.9107ms
+2020-08-08 10:12:04.694 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:12:04.704 +01:00 [Information] Request finished in 282168.5655ms 200 application/json; charset=utf-8
+2020-08-08 10:12:07.592 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/2020-08-01/2020-08-18  
+2020-08-08 10:12:07.612 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:12:07.618 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:13:19.656 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:13:19.682 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:13:19.688 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:13:19.694 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 72070.7985ms
+2020-08-08 10:13:19.697 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:13:19.701 +01:00 [Information] Request finished in 72109.3364ms 200 application/json; charset=utf-8
+2020-08-08 10:13:44.505 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/01-08-2020/18-08-2020  
+2020-08-08 10:13:44.512 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:13:44.519 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:14:03.443 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:14:03.555 +01:00 [Information] Executed DbCommand ("93"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:14:06.625 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:14:06.637 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 22114.1495ms
+2020-08-08 10:14:06.641 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:14:06.648 +01:00 [Information] Request finished in 22148.4258ms 200 application/json; charset=utf-8
+2020-08-08 10:15:03.154 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/08-08-2020/08-08-2020  
+2020-08-08 10:15:03.163 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:15:03.168 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:15:09.154 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:15:09.180 +01:00 [Information] Executed DbCommand ("16"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:15:09.185 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:15:09.193 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 6017.0517ms
+2020-08-08 10:15:09.196 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:15:09.201 +01:00 [Information] Request finished in 6052.6975ms 200 application/json; charset=utf-8
+2020-08-08 10:15:25.300 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/07-08-2020/08-08-2020  
+2020-08-08 10:15:25.312 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:15:25.319 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:15:31.254 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:15:31.266 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:15:31.273 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:15:31.280 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 5955.5326ms
+2020-08-08 10:15:31.285 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:15:31.289 +01:00 [Information] Request finished in 5993.7723ms 200 application/json; charset=utf-8
+2020-08-08 10:15:43.422 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/07-08-2020/09-08-2020  
+2020-08-08 10:15:43.427 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:15:43.450 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:15:45.636 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:15:45.651 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] < @__endDate_2)"
+2020-08-08 10:15:45.657 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:15:45.669 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 2209.4357ms
+2020-08-08 10:15:45.676 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:15:45.680 +01:00 [Information] Request finished in 2258.4318ms 200 application/json; charset=utf-8
+2020-08-08 10:17:02.770 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-08 10:17:03.131 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-08-08 10:17:03.344 +01:00 [Information] Request finished in 219.6537ms 404 
+2020-08-08 10:17:06.971 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-08-08 10:17:07.046 +01:00 [Information] Request finished in 75.6092ms 200 text/html;charset=utf-8
+2020-08-08 10:17:07.544 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-08-08 10:17:07.806 +01:00 [Information] Request finished in 262.4594ms 200 application/json;charset=utf-8
+2020-08-08 10:17:37.152 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/01-08-2020/08-08-2020  
+2020-08-08 10:17:37.163 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:17:37.226 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:17:38.283 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.283 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.284 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.284 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.284 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.284 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.284 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.286 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.287 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.287 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.288 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.288 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.288 +01:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Quotation"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.289 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:17:38.351 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:17:39.272 +01:00 [Information] Executed DbCommand ("95"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] <= @__endDate_2)"
+2020-08-08 10:17:39.332 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:17:39.363 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 2120.1694ms
+2020-08-08 10:17:39.365 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:17:39.375 +01:00 [Information] Request finished in 2223.7449ms 200 application/json; charset=utf-8
+2020-08-08 10:18:01.813 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/01-08-2020/09-08-2020  
+2020-08-08 10:18:01.820 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:18:01.822 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:18:01.891 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:18:01.903 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] <= @__endDate_2)"
+2020-08-08 10:18:01.996 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:18:02.003 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 180.8507ms
+2020-08-08 10:18:02.004 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:18:02.004 +01:00 [Information] Request finished in 191.2218ms 200 application/json; charset=utf-8
+2020-08-08 10:55:45.597 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-08 10:55:46.153 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-08-08 10:55:46.340 +01:00 [Information] Request finished in 195.3002ms 404 
+2020-08-08 10:55:47.751 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-08-08 10:55:47.845 +01:00 [Information] Request finished in 95.5844ms 200 text/html;charset=utf-8
+2020-08-08 10:55:48.163 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-08-08 10:55:48.436 +01:00 [Information] Request finished in 273.2797ms 200 application/json;charset=utf-8
+2020-08-08 10:56:20.571 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/01-08-2020/08-08-2020  
+2020-08-08 10:56:20.598 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:56:20.671 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:56:21.842 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.843 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.843 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.843 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.843 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.844 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.844 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.844 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.844 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.844 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.845 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.845 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.845 +01:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Quotation"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.845 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 10:56:21.920 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:56:22.961 +01:00 [Information] Executed DbCommand ("101"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] <= @__endDate_2)"
+2020-08-08 10:56:23.123 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:56:23.159 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 2473.5825ms
+2020-08-08 10:56:23.161 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:56:23.172 +01:00 [Information] Request finished in 2601.5033ms 200 application/json; charset=utf-8
+2020-08-08 10:56:34.177 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Quotation/GetQuotationByCustomerStartandEndDate/2/01-08-2020/09-08-2020  
+2020-08-08 10:56:34.183 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:56:34.185 +01:00 [Information] Route matched with "{action = \"GetQuotationByCustomerStartandEndDate\", controller = \"Quotation\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuotationByCustomerStartandEndDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.QuotationController" ("CRMSystem.Presentation.Core").
+2020-08-08 10:56:34.255 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 10:56:34.268 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__customerID_0='?' (DbType = Int32), @__startdate_1='?' (DbType = DateTime2), @__endDate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [q].[ID], [q].[CustomerID], [q].[DateCreated], [q].[DateModified], [q].[Name], [q].[Price], [q].[UserCreated], [q].[UserModified]
+FROM [Quotations] AS [q]
+WHERE (([q].[CustomerID] = @__customerID_0) AND ([q].[DateCreated] >= @__startdate_1)) AND ([q].[DateCreated] <= @__endDate_2)"
+2020-08-08 10:56:34.272 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Quotation, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 10:56:34.273 +01:00 [Information] Executed action "CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)" in 87.08ms
+2020-08-08 10:56:34.274 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.QuotationController.GetQuotationByCustomerStartandEndDate (CRMSystem.Presentation.Core)"'
+2020-08-08 10:56:34.274 +01:00 [Information] Request finished in 97.4189ms 200 application/json; charset=utf-8
+2020-08-08 19:23:06.185 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-08 19:23:07.313 +01:00 [Information] Creating key {728d7b0c-67b9-4af7-b4af-c0e129551f05} with creation date 2020-08-08 18:23:07Z, activation date 2020-08-10 10:55:59Z, and expiration date 2020-11-06 18:23:06Z.
+2020-08-08 19:23:07.447 +01:00 [Information] Writing data to file '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys\key-728d7b0c-67b9-4af7-b4af-c0e129551f05.xml"'.
+2020-08-08 19:23:07.805 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-08-08 19:23:07.805 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-08-08 19:23:11.067 +01:00 [Information] Request finished in 3269.3402ms 0 
+2020-08-08 19:23:11.187 +01:00 [Information] Request finished in 3390.096ms 200 text/html;charset=utf-8
+2020-08-08 19:23:13.398 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-08-08 19:23:13.743 +01:00 [Information] Request finished in 345.555ms 200 application/json;charset=utf-8
+2020-08-08 19:23:55.313 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSalesReportByDate/0/0/0  
+2020-08-08 19:23:55.322 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-08-08 19:23:55.473 +01:00 [Information] Route matched with "{action = \"GetSalesReportByDate\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSalesReportByDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-08-08 19:23:57.233 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.233 +01:00 [Warning] No type was specified for the decimal column '"AmountPaid"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"Balance"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"Discount"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Payment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.234 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.235 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.235 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.235 +01:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Quotation"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.235 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkill"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-08-08 19:23:57.321 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 19:24:00.473 +01:00 [Information] Executed DbCommand ("863"ms) [Parameters=["@__customerID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[InvoiceID], [s].[UserCreated], [s].[UserModified], [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[Discount], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[UserCreated], [i].[UserModified], [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM [Sales] AS [s]
+INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+LEFT JOIN [Items] AS [i0] ON [c].[ID] = [i0].[CartID]
+WHERE [s].[CustomerID] = @__customerID_0
+ORDER BY [s].[ID], [i].[ID], [c].[ID], [i0].[ID]"
+2020-08-08 19:24:00.528 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Sale, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 19:24:00.597 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)" in 5110.2627ms
+2020-08-08 19:24:00.598 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-08-08 19:24:00.604 +01:00 [Information] Request finished in 5291.652ms 200 application/json; charset=utf-8
+2020-08-08 19:24:16.979 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSalesReportByDate/2/0/0  
+2020-08-08 19:24:16.986 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-08-08 19:24:16.988 +01:00 [Information] Route matched with "{action = \"GetSalesReportByDate\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSalesReportByDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-08-08 19:24:17.053 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-08-08 19:24:17.275 +01:00 [Information] Executed DbCommand ("189"ms) [Parameters=["@__startdate_0='?' (DbType = DateTime2), @__enddate_1='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[InvoiceID], [s].[UserCreated], [s].[UserModified], [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[Discount], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[UserCreated], [i].[UserModified], [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[UserCreated], [c].[UserModified], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM [Sales] AS [s]
+INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+LEFT JOIN [Items] AS [i0] ON [c].[ID] = [i0].[CartID]
+WHERE ([s].[DateCreated] >= @__startdate_0) AND ([s].[DateCreated] < @__enddate_1)
+ORDER BY [s].[ID], [i].[ID], [c].[ID], [i0].[ID]"
+2020-08-08 19:24:17.278 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Sale, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-08 19:24:17.280 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)" in 291.1781ms
+2020-08-08 19:24:17.281 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-08-08 19:24:17.281 +01:00 [Information] Request finished in 302.453ms 200 application/json; charset=utf-8
