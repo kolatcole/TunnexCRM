@@ -92,6 +92,8 @@ namespace CRMSystem
             services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
             services.AddScoped<IQuotationRepo, QuotationRepo>();
             services.AddScoped<IRepo<QuotProduct>, QuotProductRepo>();
+            services.AddScoped<IWaybillRepo, WaybillRepo>();
+            services.AddScoped<IRepo<WaybillProduct>, WaybillProductRepo>();
 
 
 
@@ -106,6 +108,7 @@ namespace CRMSystem
             services.AddTransient<IStaffSkillService, StaffSkillService>();
             services.AddTransient<ICustomerService, CustomerService>();
             services.AddTransient<IQuotationService, QuotationService>();
+            services.AddTransient<IWaybillService, WaybillService>();
 
         }
 

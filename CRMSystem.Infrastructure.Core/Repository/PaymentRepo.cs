@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,6 +43,18 @@ namespace CRMSystem.Infrastructure
 
         }
 
+        public async Task<List<Payment>> getAllFreePaymentsAsync()
+        {
+            try
+            {
+                return await _context.Payments.Where(x => x.Method == "FOC").OrderByDescending(x => x.DatePaid).ToListAsync();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public async Task<Payment> getAsync(int ID)
         {
             try
@@ -57,9 +70,54 @@ namespace CRMSystem.Infrastructure
 
         }
 
-        public Task<List<Payment>> getByCustomerIDAsync(int customerID)
+        public async Task<List<Payment>> getByCustomerIDAsync(int customerID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _context.Payments.Where(x=> x.CustomerID==customerID).ToListAsync();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public async Task<List<Payment>> getFreePaymentsByCustomerAsync(int customerID)
+        {
+            try
+            {
+                return await _context.Payments.Where(x => x.CustomerID==customerID && x.Method == "FOC").ToListAsync();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public  async Task<List<Payment>> getFreePaymentsByCustomerIDandDateAsync(int customerID, DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                return await _context.Payments.Where(x => x.CustomerID == customerID && 
+                                                     x.DatePaid >= startDate && x.DatePaid <= endDate && 
+                                                     x.Method == "FOC").ToListAsync();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public async Task<List<Payment>> getFreePaymentsByDatesAsync(DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                return await _context.Payments.Where(x => x.DatePaid>=startDate && x.DatePaid <=endDate && x.Method == "FOC").ToListAsync();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public async Task<List<Payment>> getPaymentByInvoiceNo(string invNo)

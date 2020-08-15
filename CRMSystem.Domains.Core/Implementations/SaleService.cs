@@ -129,7 +129,7 @@ namespace CRMSystem.Domains
             var waybill = new Waybill
             {
                 DateCreated = DateTime.Now,
-                InvoiceNo = data.Invoice.InvoiceNo,
+                InvoiceNo = invNo,
                 UserCreated = data.UserCreated
                
             };
