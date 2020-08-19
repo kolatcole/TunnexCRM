@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using CRMSystem.Domains;
 using CRMSystem.Infrastructure;
 using CRMSystem.Presentation.Core.Setup_Files;
@@ -37,19 +38,23 @@ namespace CRMSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
-                                                    AllowAnyHeader()
-                                                  .AllowAnyMethod().AllowAnyOrigin();
+                                      builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
+                                      //  AllowAnyHeader()
+                                      //.AllowAnyMethod().AllowAnyOrigin();
                                   });
             });
-
-           //services.AddCors();
+            //builder.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
+            //                                        AllowAnyHeader()
+            //                                      .AllowAnyMethod().AllowAnyOrigin();
+            //services.AddCors();
+            //add cors support
+            
             services.AddMvc(x => x.EnableEndpointRouting = false);
             services.AddSwaggerGen(opt =>
             {
@@ -110,6 +115,8 @@ namespace CRMSystem
             services.AddTransient<IQuotationService, QuotationService>();
             services.AddTransient<IWaybillService, WaybillService>();
 
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -125,8 +132,15 @@ namespace CRMSystem
 
 
             }
+            
+            // Make sure you call this before calling app.UseMvc()
+            //app.UseCors(
+            //    options => options.WithOrigins("https://tunnexlabcrm.com", "https://www.tunnexlabcrm.com").AllowAnyMethod().AllowAnyHeader()
+            //);
 
             app.UseRouting();
+            
+            // must be after routing and before user authorization
 
             app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthorization();

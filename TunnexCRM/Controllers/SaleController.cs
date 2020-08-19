@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using CRMSystem.Domains;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +26,7 @@ namespace CRMSystem.Presentation
         /// <param name="data"></param>
         /// <returns></returns>
         /// 
-        
+        //[EnableCors("https://tunnexlabcrm.com", "*","*")]
         [HttpPost("SaveSale")]
         public async Task<IActionResult> Save(Sale data)
         {
