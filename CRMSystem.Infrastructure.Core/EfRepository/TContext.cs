@@ -47,6 +47,10 @@ namespace CRMSystem.Infrastructure
         public DbSet<QuotProduct> QuotProducts { get; set; }
         public DbSet<Waybill> Waybills { get; set; }
         public DbSet<WaybillProduct> WaybillProducts { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<PurchaseProduct> PurchaseProducts { get; set; }
+        
 
 
 

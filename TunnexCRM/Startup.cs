@@ -99,6 +99,9 @@ namespace CRMSystem
             services.AddScoped<IRepo<QuotProduct>, QuotProductRepo>();
             services.AddScoped<IWaybillRepo, WaybillRepo>();
             services.AddScoped<IRepo<WaybillProduct>, WaybillProductRepo>();
+            services.AddScoped<IRepo<Supplier>, SupplierRepo>();
+            services.AddScoped<IRepo<PurchaseProduct>, PurchaseProductRepo>();
+            services.AddScoped<IPurchaseRepo, PurchaseRepo>();
 
 
 
@@ -114,8 +117,9 @@ namespace CRMSystem
             services.AddTransient<ICustomerService, CustomerService>();
             services.AddTransient<IQuotationService, QuotationService>();
             services.AddTransient<IWaybillService, WaybillService>();
+            services.AddTransient<IPurchaseService, PurchaseService>();
 
-            
+
 
         }
 

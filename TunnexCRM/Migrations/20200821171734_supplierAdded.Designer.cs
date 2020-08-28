@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    [Migration("20200809201432_4th")]
-    partial class _4th
+    [Migration("20200821171734_supplierAdded")]
+    partial class supplierAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -514,6 +514,41 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("CRMSystem.Domains.Purchase", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CartID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InvoiceNo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SupplierID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserCreated")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserModified")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("CartID");
+
+                    b.ToTable("Purchases");
+                });
+
             modelBuilder.Entity("CRMSystem.Domains.Qualification", b =>
                 {
                     b.Property<int>("ID")
@@ -765,6 +800,42 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.ToTable("StaffSkills");
                 });
 
+            modelBuilder.Entity("CRMSystem.Domains.Supplier", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserCreated")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserModified")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Suppliers");
+                });
+
             modelBuilder.Entity("CRMSystem.Domains.User", b =>
                 {
                     b.Property<int>("ID")
@@ -828,8 +899,8 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("SaleID")
-                        .HasColumnType("int");
+                    b.Property<string>("InvoiceNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserCreated")
                         .HasColumnType("int");
@@ -920,6 +991,15 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.HasOne("CRMSystem.Domains.Role", null)
                         .WithMany("Privileges")
                         .HasForeignKey("RoleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CRMSystem.Domains.Purchase", b =>
+                {
+                    b.HasOne("CRMSystem.Domains.Cart", "Cart")
+                        .WithMany()
+                        .HasForeignKey("CartID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
