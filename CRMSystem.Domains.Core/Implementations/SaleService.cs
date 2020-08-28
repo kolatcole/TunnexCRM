@@ -92,10 +92,11 @@ namespace CRMSystem.Domains
                 InvoiceDate=data.DateCreated,
                 InvoiceNo= invNo,
                 CartID = CID,
-                Amount=data.Cart.Amount,
+                Amount=data.Cart.Amount-(data.Cart.Amount * (data.Invoice.DiscountPercent / 100)),
                 AmountPaid=totalAmt,
-                Balance=data.Cart.Amount-totalAmt,
-                IsPaid=invIsPaid
+                Balance=(data.Cart.Amount - (data.Cart.Amount * (data.Invoice.DiscountPercent / 100))) -totalAmt,
+                IsPaid=invIsPaid,
+                DiscountPercent=data.Invoice.DiscountPercent
 
             };
 

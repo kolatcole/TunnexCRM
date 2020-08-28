@@ -90,7 +90,7 @@ namespace CRMSystem.Infrastructure
                     {
                        CartID=data.CartID,
                        InvoiceID=data.InvoiceID,
-                      
+                        LPO=data.LPO,
                         DateCreated = DateTime.Now,
                         UserCreated = data.UserModified,
                         CustomerID = data.CustomerID

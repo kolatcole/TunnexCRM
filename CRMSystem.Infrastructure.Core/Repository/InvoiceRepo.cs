@@ -112,8 +112,8 @@ namespace CRMSystem.Infrastructure
                     {
                         DateCreated = DateTime.Now,
                         UserCreated = data.UserCreated,
-                        Amount=data.Amount,
-                        Discount=data.Discount,
+                        Amount = data.Amount,
+                        DiscountPercent=data.DiscountPercent,
                         CustomerID=data.CustomerID,
                         ExtData=data.ExtData,
                         InvoiceDate=DateTime.Now,

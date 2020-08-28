@@ -19,6 +19,9 @@ namespace CRMSystem.Domains
         public Invoice Invoice { get; set; }
         public Cart Cart { get; set; }
         public List<Payment> Payment { get; set; }
+
+        public string LPO { get; set; }
+
         // use to track either supply or sale so as to increase or reduce product qty as required
         // purchaase has the value of true, sale has false
        // public bool TransactionType { get; set; }

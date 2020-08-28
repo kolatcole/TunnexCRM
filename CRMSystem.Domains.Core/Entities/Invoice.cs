@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CRMSystem.Domains
@@ -16,8 +17,13 @@ namespace CRMSystem.Domains
 
         public int CartID { get; set; }
 
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
+
+        [Column(TypeName = "decimal(18,2)")]
         public decimal AmountPaid { get; set; }
+
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Balance { get; set; }
 
         public bool IsPaid { get; set; }
@@ -34,6 +40,7 @@ namespace CRMSystem.Domains
 
         public bool TaxInclusive { get; set; }
 
-        public decimal Discount { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal DiscountPercent { get; set; }
     }
 }
