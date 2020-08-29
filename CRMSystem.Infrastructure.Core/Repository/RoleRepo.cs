@@ -109,9 +109,10 @@ namespace CRMSystem.Infrastructure
             role.DateModified = DateTime.Now;
             if (data.UserModified > 0) role.UserModified = data.UserModified;
 
-            _context.Roles.Update(data);
+            _context.Roles.Update(role);
+           await _context.SaveChangesAsync();
             
-            return data.ID;
+            return role.ID;
         }
     }
 }

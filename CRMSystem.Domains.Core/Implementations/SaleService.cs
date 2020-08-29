@@ -149,6 +149,7 @@ namespace CRMSystem.Domains
             {
                 var prod = new WaybillProduct();
                 prod.ProductID = item.ProductID;
+                prod.Quantity = item.Quantity;
                 waybillProds.Add(prod);
 
             }

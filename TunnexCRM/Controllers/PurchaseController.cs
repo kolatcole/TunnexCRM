@@ -23,8 +23,9 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// You must enter the NairaEquivalent
         /// Enter invoice no from supplier
         /// Enter productID in item
-        /// Enter the quantity purchased
+        /// Enter each item quantity purchased
         /// Hardcode transactionType to true
+        /// Enter a unit amount for each item in the cart
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>

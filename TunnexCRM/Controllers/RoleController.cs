@@ -58,8 +58,8 @@ namespace CRMSystem.Presentation
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        [HttpPost("UpdateRole")]
-        public async Task<IActionResult> UpdateRole(Role data)
+        [HttpPost("Update")]
+        public async Task<IActionResult> Update(Role data)
         {
 
             await _service.UpdateRoleAsync(data);

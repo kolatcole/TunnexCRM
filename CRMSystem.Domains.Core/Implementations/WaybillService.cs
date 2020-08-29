@@ -52,6 +52,7 @@ namespace CRMSystem.Domains
             var products = new List<WaybillProduct>();
             foreach (var product in data.WaybillProducts)
             {
+                
                 product.WaybillID = WID;
                 products.Add(product);
             }
