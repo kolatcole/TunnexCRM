@@ -16,7 +16,7 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace CRMSystem.Infrastructure
                         Name = data.Name,
                         //Price = data.Price,
                         ProductID = data.ProductID,
-                        Quantity =data.Quantity
+                        Quantity = data.Quantity
                     };
                     await _context.Items.AddAsync(item);
                     await _context.SaveChangesAsync();
@@ -101,7 +101,7 @@ namespace CRMSystem.Infrastructure
         public async Task<int> insertListAsync(List<Item> data)
         {
             int ID = 0;
-            try 
+            try
             {
                 await _context.Items.AddRangeAsync(data);
                 ID = await _context.SaveChangesAsync();

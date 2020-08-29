@@ -96,7 +96,8 @@ namespace CRMSystem.Domains
                 AmountPaid=totalAmt,
                 Balance=(data.Cart.Amount - (data.Cart.Amount * (data.Invoice.DiscountPercent / 100))) -totalAmt,
                 IsPaid=invIsPaid,
-                DiscountPercent=data.Invoice.DiscountPercent
+                DiscountPercent=data.Invoice.DiscountPercent,
+                Type="sale"
 
             };
 

@@ -20,10 +20,9 @@ namespace CRMSystem.Domains
 
         public decimal NairaEquivalent { get; set; }
 
-        [JsonIgnore]
+        
         public decimal TotalAmountForeign { get; set; }
 
-        [JsonIgnore]
         public decimal TotalAmountNaira { get; set; }
 
         // use to track either supply or sale so as to increase or reduce product qty as required

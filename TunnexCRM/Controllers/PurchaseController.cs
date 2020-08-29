@@ -19,7 +19,12 @@ namespace CRMSystem.Presentation.Core.Controllers
 
 
         /// <summary>
-        /// 
+        /// You must specify ExchangeCurrency
+        /// You must enter the NairaEquivalent
+        /// Enter invoice no from supplier
+        /// Enter productID in item
+        /// Enter the quantity purchased
+        /// Hardcode transactionType to true
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>

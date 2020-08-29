@@ -11,8 +11,9 @@ namespace CRMSystem.Domains
         Task<Invoice> GetInvoiceByNumber(string InvNumber, int customerID);
         Task<List<Invoice>> GetInvoiceByCustomerID(int customerID);
         Task<int> getLastAsync();
-
+        Task<List<Invoice>> getProformaByDate(int customerID, string startDate, string endDate);
         Task<int> updateAsync(Invoice data);
         Task<List<Invoice>> getDebtorInvoice(DateTime startdate, DateTime enddate);
+        Task<int> SaveProformaInvoice(Invoice data);
     }
 }

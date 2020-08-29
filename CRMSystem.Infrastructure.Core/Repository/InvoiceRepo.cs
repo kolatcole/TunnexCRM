@@ -15,7 +15,7 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task  deleteAsync(int ID)
+        public Task deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -28,7 +28,7 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var invoices = await _context.Invoices.ToListAsync();
+                var invoices = await _context.Invoices.Where(x => x.Type == "sales").ToListAsync();
                 return invoices;
             }
             catch (Exception ex)
@@ -43,7 +43,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.ID == ID).FirstOrDefaultAsync();
+                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
+                                        Where(x => x.ID == ID && x.Type == "sales").FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -54,12 +55,12 @@ namespace CRMSystem.Infrastructure
 
         }
 
-        public async Task<Invoice> getByNumberAsync(string invNumber,int customerID)
+        public async Task<Invoice> getByNumberAsync(string invNumber, int customerID)
         {
             // PENDING
             try
             {
-                var invoice = await _context.Invoices.Include(x=>x.Cart).ThenInclude(x=>x.Items).Where(x => x.InvoiceNo == invNumber && x.CustomerID==customerID).FirstOrDefaultAsync();
+                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.InvoiceNo == invNumber && x.CustomerID == customerID).FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -70,22 +71,92 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
+
+
         public async Task<List<Invoice>> getByCustomerIDAsync(int customerID)
         {
-            // PENDING
-            //try
-            //{
-            //    var invoices = await _context.Invoices.Include(y => y.Cart).Where(x => x.CustomerID == customerID).ToListAsync();
-            //    return invoices;
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
-            throw new NotImplementedException();
+
+            try
+            {
+                var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items)
+                                    .Where(x => x.CustomerID == customerID && x.Type == "sales").ToListAsync();
+                return invoices;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
 
         }
 
+        public async Task<List<Invoice>> getProformaByCustomerIDAsync(int customerID)
+        {
+
+            try
+            {
+                var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items)
+                                    .Where(x => x.CustomerID == customerID && x.Type == "proforma").ToListAsync();
+                return invoices;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
+        public async Task<List<Invoice>> getAllProformaByDateAsync(DateTime startdate, DateTime enddate)
+        {
+
+            try
+            {
+                var invoices = await _context.Invoices.Include(x => x.Cart).
+                                        ThenInclude(x => x.Items).
+                                        Where(x => x.Type == "proforma" && x.DateCreated >= startdate && x.DateCreated < enddate)
+                                        .ToListAsync();
+                return invoices;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<List<Invoice>> getAllProformaByDateandCustomerAsync(int customerID, DateTime startdate, DateTime enddate)
+        {
+
+            try
+            {
+                var invoices = await _context.Invoices.Include(x => x.Cart).
+                                        ThenInclude(x => x.Items).
+                                        Where(x => x.Type == "proforma" && x.CustomerID == customerID &&
+                                        x.DateCreated >= startdate && x.DateCreated < enddate)
+                                        .ToListAsync();
+                return invoices;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<List<Invoice>> getAllProformaAsync()
+        {
+            try
+            {
+                var invoices = await _context.Invoices.Include(x => x.Cart).
+                                        ThenInclude(x => x.Items).
+                                        Where(x => x.Type == "proforma")
+                                        .ToListAsync();
+                return invoices;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public async Task<int> getLastAsync()
         {
             try
@@ -113,15 +184,16 @@ namespace CRMSystem.Infrastructure
                         DateCreated = DateTime.Now,
                         UserCreated = data.UserCreated,
                         Amount = data.Amount,
-                        DiscountPercent=data.DiscountPercent,
-                        CustomerID=data.CustomerID,
-                        ExtData=data.ExtData,
-                        InvoiceDate=DateTime.Now,
-                        InvoiceNo=data.InvoiceNo,
-                        CartID=data.CartID,
-                        AmountPaid=data.AmountPaid,
-                        Balance=data.Balance,
-                        IsPaid=data.IsPaid
+                        DiscountPercent = data.DiscountPercent,
+                        CustomerID = data.CustomerID,
+                        ExtData = data.ExtData,
+                        InvoiceDate = DateTime.Now,
+                        InvoiceNo = data.InvoiceNo,
+                        CartID = data.CartID,
+                        AmountPaid = data.AmountPaid,
+                        Balance = data.Balance,
+                        IsPaid = data.IsPaid,
+                        Type = data.Type
 
                     };
                     await _context.Invoices.AddAsync(invoice);
@@ -143,7 +215,7 @@ namespace CRMSystem.Infrastructure
 
         public async Task<int> updateAsync(Invoice data)
         {
-            
+
             var invoice = await _context.Invoices.FindAsync(data.ID);
             try
             {
@@ -168,10 +240,11 @@ namespace CRMSystem.Infrastructure
         }
         public async Task<List<Invoice>> getAllDebtorsAsync(DateTime startdate, DateTime enddate)
         {
-           
+
             try
             {
-                var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.Balance != 0 && x.DateCreated>=startdate && x.DateCreated<enddate).ToListAsync();
+                var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
+                                        Where(x => x.Type == "sales" && x.Balance != 0 && x.DateCreated >= startdate && x.DateCreated < enddate).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)

@@ -106,9 +106,18 @@ namespace CRMSystem.Infrastructure
             return ID;
         }
 
-        public Task<int> updateAsync(Privilege data)
+        public async Task<int> updateAsync(Privilege data)
         {
-            throw new NotImplementedException();
+            var privilege = await _context.Privileges.FindAsync(data.RoleID);
+
+            if (data.Name != null) privilege.Name = data.Name;
+            if (data.Code != null) privilege.Code = data.Code;
+            privilege.DateModified = DateTime.Now;
+            if (data.UserModified > 0) privilege.UserModified = data.UserModified;
+
+            _context.Privileges.Update(data);
+            await _context.SaveChangesAsync();
+            return data.ID;
         }
     }
 }

@@ -22,7 +22,7 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
-        public Task  deleteAsync(int ID)
+        public Task deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -74,7 +74,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                return await _context.Payments.Where(x=> x.CustomerID==customerID).ToListAsync();
+                return await _context.Payments.Where(x => x.CustomerID == customerID).ToListAsync();
             }
             catch
             {
@@ -86,7 +86,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                return await _context.Payments.Where(x => x.CustomerID==customerID && x.Method == "FOC").ToListAsync();
+                return await _context.Payments.Where(x => x.CustomerID == customerID && x.Method == "FOC").ToListAsync();
             }
             catch
             {
@@ -94,12 +94,12 @@ namespace CRMSystem.Infrastructure
             }
         }
 
-        public  async Task<List<Payment>> getFreePaymentsByCustomerIDandDateAsync(int customerID, DateTime startDate, DateTime endDate)
+        public async Task<List<Payment>> getFreePaymentsByCustomerIDandDateAsync(int customerID, DateTime startDate, DateTime endDate)
         {
             try
             {
-                return await _context.Payments.Where(x => x.CustomerID == customerID && 
-                                                     x.DatePaid >= startDate && x.DatePaid <= endDate && 
+                return await _context.Payments.Where(x => x.CustomerID == customerID &&
+                                                     x.DatePaid >= startDate && x.DatePaid <= endDate &&
                                                      x.Method == "FOC").ToListAsync();
             }
             catch
@@ -112,7 +112,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                return await _context.Payments.Where(x => x.DatePaid>=startDate && x.DatePaid <=endDate && x.Method == "FOC").ToListAsync();
+                return await _context.Payments.Where(x => x.DatePaid >= startDate && x.DatePaid <= endDate && x.Method == "FOC").ToListAsync();
             }
             catch
             {
@@ -136,14 +136,14 @@ namespace CRMSystem.Infrastructure
 
                     payment = new Payment
                     {
-                       
+
                         UserCreated = data.UserCreated,
-                        Amount=data.Amount,
-                        DatePaid= DateTime.Now,
-                        InvoiceNo=data.InvoiceNo,
-                        Method=data.Method,
-                        Reference=data.Reference,
-                        CustomerID=data.CustomerID
+                        Amount = data.Amount,
+                        DatePaid = DateTime.Now,
+                        InvoiceNo = data.InvoiceNo,
+                        Method = data.Method,
+                        Reference = data.Reference,
+                        CustomerID = data.CustomerID
                     };
                     await _context.Payments.AddAsync(payment);
                     await _context.SaveChangesAsync();
@@ -165,8 +165,8 @@ namespace CRMSystem.Infrastructure
         public Task<int> updateAsync(Payment data)
         {
             throw new NotImplementedException();
-           
+
         }
-       
+
     }
 }

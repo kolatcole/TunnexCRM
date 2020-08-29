@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    [Migration("20200828221935_skillorKpiAdded")]
-    partial class skillorKpiAdded
+    [Migration("20200829101311_invAdded")]
+    partial class invAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

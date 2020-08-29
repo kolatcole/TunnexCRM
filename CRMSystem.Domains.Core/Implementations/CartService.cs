@@ -118,5 +118,45 @@ namespace CRMSystem.Domains
             return CID;
         }
 
+        public async Task<int> SaveProformaCart(Cart data)
+        {
+
+            int CID = await _cRepo.insertAsync(data);
+
+            List<Item> items = new List<Item>();
+
+            decimal amount = 0;
+            foreach (var item in data.Items)
+            {
+
+                item.CartID = CID;
+
+
+                // get product by productID
+
+                var product = await _pRepo.getAsync(item.ProductID);
+                item.Amount = item.Quantity * product.SalePrice;
+                amount += item.Amount;
+                item.Name = product.Name;
+
+                // mark up product by the amount bought and update
+
+               
+
+
+                items.Add(item);
+            }
+
+            await _iRepo.insertListAsync(items);
+
+            // update cart to add total amount
+
+            data.ID = CID;
+
+            data.Amount = amount;
+            await _cRepo.updateAsync(data);
+            return CID;
+        }
+
     }
 }

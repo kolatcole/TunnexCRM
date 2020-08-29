@@ -26,7 +26,6 @@ namespace CRMSystem.Presentation
         /// <param name="data"></param>
         /// <returns></returns>
         /// 
-        //[EnableCors("https://tunnexlabcrm.com", "*","*")]
         [HttpPost("SaveSale")]
         public async Task<IActionResult> Save(Sale data)
         {

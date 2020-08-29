@@ -8,5 +8,7 @@ namespace CRMSystem.Domains
     public interface ICartService
     {
         Task<int> SaveCart(Cart data);
+
+        Task<int> SaveProformaCart(Cart data);
     }
 }

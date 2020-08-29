@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,12 +10,12 @@ namespace CRMSystem.Domains
     public class InvoiceService: IInvoiceService
     {
         private readonly IRepo<Invoice> _inRepo;
-        private readonly IRepo<Cart> _cRepo;
+        private readonly ICartService _cService;
         private readonly IInvoiceRepo _iRepo;
-        public InvoiceService(IRepo<Invoice> inRepo,IRepo<Cart> cRepo, IInvoiceRepo iRepo)
+        public InvoiceService(IRepo<Invoice> inRepo,ICartService cService, IInvoiceRepo iRepo)
         {
             _inRepo = inRepo;
-            _cRepo = cRepo;
+            _cService = cService;
             _iRepo = iRepo;
         }
 
@@ -22,6 +24,21 @@ namespace CRMSystem.Domains
             // PENDING  var CID = await _cRepo.insertAsync(data.Cart);
 
             // PENDING data.CartID = CID;
+            var IID = await _inRepo.insertAsync(data);
+            return IID;
+        }
+
+        public async Task<int> SaveProformaInvoice(Invoice data)
+        {
+            var CID = await _cService.SaveProformaCart(data.Cart);
+
+            data.CartID = CID;
+
+            Random rand = new Random();
+
+            int number = rand.Next(1, 1000000);
+            data.Amount = data.Cart.Amount - (data.Cart.Amount * (data.DiscountPercent / 100));
+            data.InvoiceNo = "00" + number.ToString();
             var IID = await _inRepo.insertAsync(data);
             return IID;
         }
@@ -55,6 +72,63 @@ namespace CRMSystem.Domains
         {
             var result = await _iRepo.getAllDebtorsAsync(startdate,enddate);
             return result;
+        }
+
+        public async Task<List<Invoice>> getProformaByDate(int customerID, string startDate, string endDate)
+        {
+
+            List<Invoice> invoices;
+            DateTime.TryParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime sdate);
+            DateTime.TryParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime edate);
+
+            if (sdate <= DateTime.MinValue)
+                sdate = DateTime.Now.StartOfDay();
+
+            if (edate <= DateTime.MinValue)
+                edate = DateTime.Now.EndOfDay();
+            else
+                edate = edate.EndOfDay();
+
+            // filter by customerID only, if that's what was given
+
+            if ((startDate == "0" || endDate == "0") && customerID > 0)
+            {
+                return invoices = await _iRepo.getProformaByCustomerIDAsync(customerID);
+            }
+
+
+
+
+
+
+            // filter by dates alone if customerID is not given
+
+            else if (customerID < 1 && (startDate != "0" || endDate != "0"))
+            {
+                return invoices = await _iRepo.getAllProformaByDateAsync(sdate, edate);
+            }
+
+
+
+
+            // filter by all given parameters
+
+            else if (startDate != "0" && endDate != "0" && customerID > 0)
+            {
+                return invoices = await _iRepo.getAllProformaByDateandCustomerAsync(customerID, sdate, edate);
+            }
+
+
+
+            // get without any parameter
+            else
+                return invoices = await _iRepo.getAllProformaAsync();
+
+
+
+
+
+
         }
     }
 }

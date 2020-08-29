@@ -15,7 +15,7 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var customer = await _context.Customers.Include(x=>x.CustomerMessages).ToListAsync();
+                var customer = await _context.Customers.Include(x => x.CustomerMessages).ToListAsync();
                 return customer;
             }
 
@@ -45,7 +45,7 @@ namespace CRMSystem.Infrastructure
             {
                 throw ex;
             }
-            
+
 
         }
 
@@ -67,11 +67,11 @@ namespace CRMSystem.Infrastructure
             {
                 throw ex;
             }
-            
+
 
         }
 
-        
+
 
         public Task<List<Customer>> getByCustomerIDAsync(int customerID)
         {
@@ -89,14 +89,14 @@ namespace CRMSystem.Infrastructure
                     {
                         DateCreated = DateTime.Now,
                         UserCreated = data.UserModified,
-                        FirstName=data.FirstName,
-                        Address=data.Address,
-                        Email=data.Email,
-                        Gender=data.Gender,
-                        Image=data.Image,
-                        LastName=data.LastName,
-                        Phone=data.Phone,
-                        TotalSales=data.TotalSales
+                        FirstName = data.FirstName,
+                        Address = data.Address,
+                        Email = data.Email,
+                        Gender = data.Gender,
+                        Image = data.Image,
+                        LastName = data.LastName,
+                        Phone = data.Phone,
+                        TotalSales = data.TotalSales
                     };
                     await _context.Customers.AddAsync(customer);
                     await _context.SaveChangesAsync();
@@ -118,7 +118,7 @@ namespace CRMSystem.Infrastructure
                 await _context.SaveChangesAsync();
                 return data.Count;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -136,7 +136,7 @@ namespace CRMSystem.Infrastructure
                 throw ex;
 
             }
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public async Task<int> updateAsync(Customer data)
@@ -146,19 +146,19 @@ namespace CRMSystem.Infrastructure
             {
 
 
-                if (data.Image != null ) newCustomer.Image = data.Image;
+                if (data.Image != null) newCustomer.Image = data.Image;
 
 
-                if (data.FirstName != null ) newCustomer.FirstName = data.FirstName;
+                if (data.FirstName != null) newCustomer.FirstName = data.FirstName;
 
                 if (data.Phone != null) newCustomer.Phone = data.Phone;
 
-                if (data.LastName != null ) newCustomer.LastName = data.LastName;
+                if (data.LastName != null) newCustomer.LastName = data.LastName;
                 data.DateModified = DateTime.Now;
 
-                if (data.UserModified != 0 ) newCustomer.UserModified = data.UserModified;
+                if (data.UserModified != 0) newCustomer.UserModified = data.UserModified;
 
-                if (data.Gender != null ) newCustomer.Gender = data.Gender;
+                if (data.Gender != null) newCustomer.Gender = data.Gender;
 
                 if (data.Email != null) newCustomer.Email = data.Email;
 
@@ -167,9 +167,9 @@ namespace CRMSystem.Infrastructure
                 if (data.TotalSales != 0) newCustomer.TotalSales += data.TotalSales;
 
 
-                    _context.Customers.Update(newCustomer);
-                     await _context.SaveChangesAsync();
-                
+                _context.Customers.Update(newCustomer);
+                await _context.SaveChangesAsync();
+
 
             }
             catch (Exception ex)

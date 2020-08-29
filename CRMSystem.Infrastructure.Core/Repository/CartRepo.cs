@@ -16,7 +16,7 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -87,7 +87,7 @@ namespace CRMSystem.Infrastructure
                     cart.DateModified = data.DateModified;
                     cart.UserModified = data.UserModified;
                     cart.Amount = data.Amount;
-                   
+
 
 
                     _context.Carts.Update(cart);
