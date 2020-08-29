@@ -8,11 +8,11 @@ namespace CRMSystem.Domains
     public class StaffSkillService : IStaffSkillService
     {
         private readonly IRepo<Assessment> _aRepo;
-        private readonly IRepo<StaffSkill> _sRepo;
-        private readonly IRepo<Skill> _skRepo;
-        private readonly IStaffSkillRepo _sskRepo;
+        private readonly IRepo<StaffSkillorKPI> _sRepo;
+        private readonly IRepo<SkillorKPI> _skRepo;
+        private readonly IStaffSkillorKPIRepo _sskRepo;
 
-        public StaffSkillService(IRepo<Assessment> aRepo,IRepo<StaffSkill> sRepo, IRepo<Skill> skRepo, IStaffSkillRepo sskRepo)
+        public StaffSkillService(IRepo<Assessment> aRepo,IRepo<StaffSkillorKPI> sRepo, IRepo<SkillorKPI> skRepo, IStaffSkillorKPIRepo sskRepo)
         {
 
             _sRepo = sRepo;
@@ -22,15 +22,15 @@ namespace CRMSystem.Domains
         }
         
 
-        public async Task<int> SaveStaffSkill(StaffSkill data)
+        public async Task<int> SaveStaffSkill(StaffSkillorKPI data)
         {
             var SID = await _sRepo.insertAsync(data);
 
             // get skill and increment numberOfStaff by 1
 
-            var skill = await _skRepo.getAsync(data.SkillID);
+            var skill = await _skRepo.getAsync(data.SkillorKPIID);
 
-            skill.StaffNumberWithSkill += 1;
+            skill.StaffNumberWithSkillorKPI += 1;
 
             await _skRepo.updateAsync(skill);
 
@@ -41,7 +41,7 @@ namespace CRMSystem.Domains
 
         }
 
-        public async Task<int> UpdateStaffSkillAsync(StaffSkill data)
+        public async Task<int> UpdateStaffSkillAsync(StaffSkillorKPI data)
         {
             var skill = await _sRepo.getAsync(data.ID);
 
@@ -52,7 +52,7 @@ namespace CRMSystem.Domains
                 foreach (var assessment in data.Assessments)
                 {
                     comp += assessment.SAS;
-                    assessment.StaffSkillID = data.ID;
+                    assessment.StaffSkillorKPIID = data.ID;
                     await _aRepo.insertAsync(assessment);
                 }
                 data.CompetencyValue = (comp*2) * 10;
@@ -64,22 +64,106 @@ namespace CRMSystem.Domains
             return SID;
         }
 
-        public async Task<StaffSkill> GetStaffSkillByIDAsync(int ID) 
+        public async Task<StaffSkillorKPI> GetStaffSkillByIDAsync(int ID) 
         {
             var skill = await _sRepo.getAsync(ID);
             return skill;
         }
 
-        public async Task<List<StaffSkill>> GetAllStaffSkillsAsync()
+        public async Task<List<StaffSkillorKPI>> GetAllStaffSkillsAsync()
         {
-            var skills = await _sRepo.getAllAsync();
-            return skills;
+            
+            var staffskillorKpis = await _sRepo.getAllAsync();
+
+            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+
+            foreach (var staffskillorKpi in staffskillorKpis)
+            {
+                var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+                if (skill.Type == "skill")
+                    newStaffskillorKpis.Add(staffskillorKpi);
+
+            }
+
+            return newStaffskillorKpis;
+        }
+        public async Task<List<StaffSkillorKPI>> GetAllStaffKpisAsync()
+        {
+
+            var staffskillorKpis = await _sRepo.getAllAsync();
+
+            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+
+            foreach (var staffskillorKpi in staffskillorKpis)
+            {
+                var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+                if (skill.Type == "kpi")
+                    newStaffskillorKpis.Add(staffskillorKpi);
+
+            }
+
+            return newStaffskillorKpis;
+        }
+        public async Task<List<StaffSkillorKPI>> getStaffSkillsByStaffIDAsync(int staffID)
+        {
+            //var skills = await _sskRepo.getStaffSkillsByStaffID(staffID);
+            //return skills;
+
+            var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+
+            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+
+            foreach (var staffskillorKpi in staffskillorKpis)
+            {
+                var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+                if (skill.Type == "skill")
+                    newStaffskillorKpis.Add(staffskillorKpi);
+
+            }
+
+            return newStaffskillorKpis;
+        }
+        public async Task<List<StaffSkillorKPI>> getStaffKpisByStaffIDAsync(int staffID)
+        {
+            
+
+            var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+
+            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+
+            foreach (var staffskillorKpi in staffskillorKpis)
+            {
+                var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+                if (skill.Type == "kpi")
+                    newStaffskillorKpis.Add(staffskillorKpi);
+
+            }
+
+            return newStaffskillorKpis;
         }
 
-        public async Task<List<StaffSkill>> getStaffSkillsByStaffIDAsync(int staffID)
+        public async Task<List<StaffSkillorKPI>> getStaffKpiorSkillByNameAsync(string name)
         {
-            var skills = await _sskRepo.getStaffSkillsByStaffID(staffID);
-            return skills;
+
+
+            var staffskillorKpis = await _sRepo.getAllAsync();
+
+            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+
+            foreach (var staffskillorKpi in staffskillorKpis)
+            {
+                var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+                if (skill.Name == name)
+                    newStaffskillorKpis.Add(staffskillorKpi);
+
+            }
+
+            return newStaffskillorKpis;
         }
     }
 }

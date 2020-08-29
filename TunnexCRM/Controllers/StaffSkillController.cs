@@ -23,7 +23,7 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// <param name="data"></param>
         /// <returns></returns>
         [HttpPost("Save")]
-        public async Task<IActionResult> Save(StaffSkill data)
+        public async Task<IActionResult> Save(StaffSkillorKPI data)
         {
             var result = await _service.SaveStaffSkill(data);
             return Ok(result);
@@ -37,7 +37,7 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// <param name="data"></param>
         /// <returns></returns>
         [HttpPost("Update")]
-        public async Task<IActionResult> Update(StaffSkill data)
+        public async Task<IActionResult> Update(StaffSkillorKPI data)
         {
             var result = await _service.UpdateStaffSkillAsync(data);
             return Ok(result);
@@ -52,6 +52,18 @@ namespace CRMSystem.Presentation.Core.Controllers
         {
 
             var result = await _service.GetAllStaffSkillsAsync();
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("GetAllStaffKpi")]
+        public async Task<IActionResult> GetAllStaffKpi()
+        {
+
+            var result = await _service.GetAllStaffKpisAsync();
             return Ok(result);
         }
 
@@ -81,6 +93,35 @@ namespace CRMSystem.Presentation.Core.Controllers
             var result = await _service.getStaffSkillsByStaffIDAsync(staffID);
             return Ok(result);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="staffID"></param>
+        /// <returns></returns>
+
+        [HttpGet("GetStaffKpisByStaffID/{staffID}")]
+        public async Task<IActionResult> GetStaffKpisByStaffID(int staffID)
+        {
+
+            var result = await _service.getStaffKpisByStaffIDAsync(staffID);
+            return Ok(result);
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        [HttpGet("GetStaffSkillorKpiByName/{name}")]
+        public async Task<IActionResult> GetStaffSkillorKpiByName(string name)
+        {
+
+            var result = await _service.getStaffKpiorSkillByNameAsync(name);
+            return Ok(result);
+        }
+
 
     }
 }

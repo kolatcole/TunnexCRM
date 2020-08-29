@@ -7,27 +7,27 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CRMSystem.Infrastructure
-{
-    public class SkillRepo : IRepo<Skill>
+{  // create ISkillRepo to form getKpiByType
+    public class SkillorKPIRepo : IRepo<SkillorKPI>,ISkillorKPIRepo
     {
         private readonly TContext _context;
-        public SkillRepo(TContext context)
+        public SkillorKPIRepo(TContext context)
         {
 
             _context = context;
         }
 
-        public Task deleteAllAsync(List<Skill> data)
+        public Task deleteAllAsync(List<SkillorKPI> data)
         {
             throw new NotImplementedException();
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             try
             {
-                var skill = await _context.Skills.FindAsync(ID);
-                _context.Skills.Remove(skill);
+                var skill = await _context.SkillorKPIs.FindAsync(ID);
+                _context.SkillorKPIs.Remove(skill);
                 await _context.SaveChangesAsync();
 
             }
@@ -37,11 +37,42 @@ namespace CRMSystem.Infrastructure
             }
         }
 
-        public async Task<List<Skill>> getAllAsync()
+        public async Task<List<SkillorKPI>> getAllAsync()
         {
             try
             {
-                var skill = await _context.Skills.ToListAsync();
+                var skill = await _context.SkillorKPIs.Where(x=>x.Type=="skill").ToListAsync();
+                return skill;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+        public async Task<List<SkillorKPI>> getAllKPIs()
+        {
+            try
+            {
+                var skill = await _context.SkillorKPIs.Where(x => x.Type == "kpi").ToListAsync();
+                return skill;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
+        public async Task<SkillorKPI> getAsync(int ID)
+        {
+            try
+            {
+                var skill = await _context.SkillorKPIs.Where(x => x.ID == ID).FirstOrDefaultAsync();
                 return skill;
             }
 
@@ -54,40 +85,24 @@ namespace CRMSystem.Infrastructure
         }
 
 
-        public async Task<Skill> getAsync(int ID)
+
+        public async Task<int> insertAsync(SkillorKPI data)
         {
-            try
-            {
-                var skill = await _context.Skills.Where(x => x.ID == ID).FirstOrDefaultAsync();
-                return skill;
-            }
-
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-
-        }
-
-
-
-        public async Task<int> insertAsync(Skill data)
-        {
-            var Skill = new Skill();
+            var Skill = new SkillorKPI();
             try
             {
                 if (data != null)
                 {
-                    Skill = new Skill
+                    Skill = new SkillorKPI
                     {
                         DateCreated = DateTime.Now,
-                        UserCreated=data.UserCreated,
-                        Description=data.Description,
-                        Name=data.Name
+                        UserCreated = data.UserCreated,
+                        Description = data.Description,
+                        Name = data.Name,
+                        Type=data.Type
 
                     };
-                    await _context.Skills.AddAsync(Skill);
+                    await _context.SkillorKPIs.AddAsync(Skill);
                     await _context.SaveChangesAsync();
                 }
 
@@ -99,16 +114,16 @@ namespace CRMSystem.Infrastructure
             return Skill.ID;
         }
 
-        public Task<int> insertListAsync(List<Skill> data)
+        public Task<int> insertListAsync(List<SkillorKPI> data)
         {
             throw new NotImplementedException();
         }
 
 
 
-        public async Task<int> updateAsync(Skill data)
+        public async Task<int> updateAsync(SkillorKPI data)
         {
-            var skill = await _context.Skills.FindAsync(data.ID);
+            var skill = await _context.SkillorKPIs.FindAsync(data.ID);
             try
             {
                 if (skill != null)
@@ -120,9 +135,9 @@ namespace CRMSystem.Infrastructure
                     skill.Name = data.Name;
                     skill.DateModified = DateTime.Now;
                     skill.UserModified = data.UserCreated;
-                    skill.StaffNumberWithSkill = data.StaffNumberWithSkill;
+                    skill.StaffNumberWithSkillorKPI = data.StaffNumberWithSkillorKPI;
 
-                    _context.Skills.Update(skill);
+                    _context.SkillorKPIs.Update(skill);
                     await _context.SaveChangesAsync();
                 }
 

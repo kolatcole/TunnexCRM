@@ -38,11 +38,11 @@ namespace CRMSystem.Infrastructure
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<Lead> Leads { get; set; }
         public DbSet<Message> Messages { get; set; }
-        public DbSet<Skill> Skills { get; set; }
-        public DbSet<Qualification> Qualifications { get; set; }
         public DbSet<Assessment> Assessments { get; set; }
+        public DbSet<SkillorKPI> SkillorKPIs { get; set; }
+        public DbSet<Qualification> Qualifications { get; set; }
         public DbSet<Staff> Staffs { get; set; }
-        public DbSet<StaffSkill> StaffSkills { get; set; }
+        public DbSet<StaffSkillorKPI> StaffSkillorKPIs { get; set; }
         public DbSet<Quotation> Quotations { get; set; }
         public DbSet<QuotProduct> QuotProducts { get; set; }
         public DbSet<Waybill> Waybills { get; set; }

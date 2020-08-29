@@ -42,5 +42,7 @@ namespace CRMSystem.Domains
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal DiscountPercent { get; set; }
+
+        public string Type { get; set; }
     }
 }

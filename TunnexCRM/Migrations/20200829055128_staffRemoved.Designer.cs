@@ -4,14 +4,16 @@ using CRMSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    partial class TContextModelSnapshot : ModelSnapshot
+    [Migration("20200829055128_staffRemoved")]
+    partial class staffRemoved
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -586,35 +588,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.ToTable("PurchaseProducts");
                 });
 
-            modelBuilder.Entity("CRMSystem.Domains.Qualification", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("StaffID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("StaffID");
-
-                    b.ToTable("Qualifications");
-                });
-
             modelBuilder.Entity("CRMSystem.Domains.QuotProduct", b =>
                 {
                     b.Property<int>("ID")
@@ -766,93 +739,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("SkillorKPIs");
-                });
-
-            modelBuilder.Entity("CRMSystem.Domains.Staff", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateEmployed")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateofBirth")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Designation")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Gender")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HEL")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MaidenName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MaritalStatus")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MiddleName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NextofKin")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NextofKinAddress")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NextofKinPhone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProfilePictureUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RelationshipToNextofKin")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StaffID")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserCreated")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserModified")
-                        .HasColumnType("int");
-
-                    b.Property<string>("YearofMarriage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Staffs");
                 });
 
             modelBuilder.Entity("CRMSystem.Domains.StaffSkillorKPI", b =>
@@ -1079,15 +965,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.HasOne("CRMSystem.Domains.Cart", "Cart")
                         .WithMany()
                         .HasForeignKey("CartID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("CRMSystem.Domains.Qualification", b =>
-                {
-                    b.HasOne("CRMSystem.Domains.Staff", null)
-                        .WithMany("Qualifications")
-                        .HasForeignKey("StaffID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

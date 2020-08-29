@@ -17,7 +17,7 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        
+
 
         public async Task<int> insertAsync(Waybill data)
         {
@@ -27,7 +27,7 @@ namespace CRMSystem.Infrastructure
                 {
                     DateCreated = DateTime.Now,
                     UserCreated = data.UserCreated,
-                    InvoiceNo=data.InvoiceNo
+                    InvoiceNo = data.InvoiceNo
                 };
 
                 await _context.Waybills.AddAsync(waybill);
@@ -88,4 +88,4 @@ namespace CRMSystem.Infrastructure
     }
 
 
-    }
+}

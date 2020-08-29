@@ -23,7 +23,7 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -44,7 +44,7 @@ namespace CRMSystem.Infrastructure
 
         }
 
-        
+
         public async Task<Qualification> getAsync(int ID)
         {
             try
@@ -72,11 +72,11 @@ namespace CRMSystem.Infrastructure
                 {
                     Qualification = new Qualification
                     {
-                        EndDate=data.EndDate,
-                        StaffID=data.StaffID,
-                        StartDate=data.StartDate,
-                        Name=data.Name,
-                        Status=data.Status
+                        EndDate = data.EndDate,
+                        StaffID = data.StaffID,
+                        StartDate = data.StartDate,
+                        Name = data.Name,
+                        Status = data.Status
                     };
                     await _context.Qualifications.AddAsync(Qualification);
                     await _context.SaveChangesAsync();

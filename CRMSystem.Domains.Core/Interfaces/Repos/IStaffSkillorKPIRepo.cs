@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace CRMSystem.Domains
 {
-    public interface IStaffSkillRepo
+    public interface IStaffSkillorKPIRepo
     {
-        Task<List<StaffSkill>> getStaffSkillsByStaffID(int staffID);
+        Task<List<StaffSkillorKPI>> getStaffSkillsByStaffID(int staffID);
     }
 }

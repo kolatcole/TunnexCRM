@@ -44,7 +44,7 @@ namespace CRMSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
+                                      builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();//.WithOrigins("https://tunnexlabcrm.com");
                                       //  AllowAnyHeader()
                                       //.AllowAnyMethod().AllowAnyOrigin();
                                   });
@@ -66,7 +66,7 @@ namespace CRMSystem
             });
             services.AddDbContext<TContext>(opt =>
             {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultTLocal"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
+                opt.UseSqlServer(Configuration.GetConnectionString("SmartConnection"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
             });
 
             services.AddScoped<IRepo<Lead>, LeadRepo>();
@@ -88,12 +88,13 @@ namespace CRMSystem
             services.AddScoped<IProductRepo, ProductRepo>();
             services.AddScoped<ICustomerRepo, CustomerRepo>();
             services.AddScoped<ISaleRepo, SaleRepo>();
-            services.AddScoped<IRepo<Skill>, SkillRepo>();
+            services.AddScoped<IRepo<SkillorKPI>, SkillorKPIRepo>();
+            services.AddScoped<ISkillorKPIRepo, SkillorKPIRepo>();
             services.AddScoped<IRepo<Staff>, StaffRepo>();
             services.AddScoped<IRepo<Qualification>, QualificationRepo>();
             services.AddScoped<IRepo<Assessment>, AssessmentRepo>();
-            services.AddScoped<IRepo<StaffSkill>, StaffSkillRepo>();
-            services.AddScoped<IStaffSkillRepo, StaffSkillRepo>();
+            services.AddScoped<IRepo<StaffSkillorKPI>, StaffSkillorKPIRepo>();
+            services.AddScoped<IStaffSkillorKPIRepo, StaffSkillorKPIRepo>();
             services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
             services.AddScoped<IQuotationRepo, QuotationRepo>();
             services.AddScoped<IRepo<QuotProduct>, QuotProductRepo>();
