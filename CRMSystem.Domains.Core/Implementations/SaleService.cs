@@ -73,7 +73,7 @@ namespace CRMSystem.Domains
                 {
                     payment.CustomerID = data.CustomerID;
                     payment.DatePaid = DateTime.Now;
-                    payment.InvoiceNo = data.Invoice.InvoiceNo;
+                    payment.InvoiceNo = invNo;
                     var PID = await _pRepo.insertAsync(payment);
                     totalAmt += payment.Amount;
 
@@ -101,6 +101,18 @@ namespace CRMSystem.Domains
 
             };
 
+            //  add delivery Fee to amount if delivery is checked
+
+            if (data.ToDeliver)
+            {
+                invoice.DeliveryFee = data.DeliveryFee;
+                invoice.Amount += data.DeliveryFee;
+                invoice.Balance = invoice.Amount;
+
+            }
+                
+
+
             // save invoice
 
 
@@ -123,6 +135,9 @@ namespace CRMSystem.Domains
             // data.CartID = CID;
             //was included initially  data.InvoiceID = IID;
             data.InvoiceID = IID;
+
+            
+
             var SID = await _repo.insertAsync(data);
 
 

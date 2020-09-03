@@ -51,5 +51,23 @@ namespace CRMSystem.Presentation.Core.Controllers
 
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="supplierID"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetPurchasedByDate/{startDate}/{endDate}")]
+        public async Task<IActionResult> GetPurchasedByDate(int supplierID = 0, string startDate = "0", string endDate = "0")
+        {
+
+            var result = await _service.GetPurchasesReportByDate(supplierID, startDate, endDate);
+
+            return Ok(result);
+
+        }
+
     }
 }

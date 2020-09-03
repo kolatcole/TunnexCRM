@@ -12,10 +12,9 @@ namespace CRMSystem.Domains
         Task<Purchase> getAsync(string invoiceNo);
         Task<List<Purchase>> getAllAsync();
         Task<List<Purchase>> getBySupplierIDAsync(int supplierID);
-
-        Task<List<Purchase>> getSaleHistoryByDate(DateTime startdate,DateTime enddate);
         Task<List<Purchase>> GetSingleDaySales(DateTime date);
         Task<List<Purchase>> getBySupplierIDandDateAsync(int supplierID, DateTime startdate, DateTime enddate);
         Task<List<Purchase>> getAllPurchasesAsync();
+        Task<List<Purchase>> getPurchaseHistoryByDate(DateTime startdate, DateTime enddate);
     }
 }

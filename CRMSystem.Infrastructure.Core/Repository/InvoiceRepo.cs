@@ -114,7 +114,7 @@ namespace CRMSystem.Infrastructure
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).
                                         ThenInclude(x => x.Items).
-                                        Where(x => x.Type == "proforma" && x.DateCreated >= startdate && x.DateCreated < enddate)
+                                        Where(x => x.Type == "proforma" && x.DateCreated >= startdate && x.DateCreated <= enddate)
                                         .ToListAsync();
                 return invoices;
             }
@@ -132,7 +132,7 @@ namespace CRMSystem.Infrastructure
                 var invoices = await _context.Invoices.Include(x => x.Cart).
                                         ThenInclude(x => x.Items).
                                         Where(x => x.Type == "proforma" && x.CustomerID == customerID &&
-                                        x.DateCreated >= startdate && x.DateCreated < enddate)
+                                        x.DateCreated >= startdate && x.DateCreated <= enddate)
                                         .ToListAsync();
                 return invoices;
             }
@@ -193,7 +193,8 @@ namespace CRMSystem.Infrastructure
                         AmountPaid = data.AmountPaid,
                         Balance = data.Balance,
                         IsPaid = data.IsPaid,
-                        Type = data.Type
+                        Type = data.Type,
+                        DeliveryFee=data.DeliveryFee
 
                     };
                     await _context.Invoices.AddAsync(invoice);
@@ -244,7 +245,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
-                                        Where(x => x.Type == "sales" && x.Balance != 0 && x.DateCreated >= startdate && x.DateCreated < enddate).ToListAsync();
+                                        Where(x => x.Type == "sales" && x.Balance != 0 && x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)

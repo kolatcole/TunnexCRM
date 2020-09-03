@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
@@ -21,6 +22,12 @@ namespace CRMSystem.Domains
         public List<Payment> Payment { get; set; }
 
         public string LPO { get; set; }
+
+        public bool ToDeliver { get; set; }
+
+        [Column(TypeName ="decimal(18,2)")]
+        public decimal DeliveryFee { get; set; }
+
 
         // use to track either supply or sale so as to increase or reduce product qty as required
         // purchaase has the value of true, sale has false

@@ -98,8 +98,8 @@ namespace CRMSystem
             services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
             services.AddScoped<IQuotationRepo, QuotationRepo>();
             services.AddScoped<IRepo<QuotProduct>, QuotProductRepo>();
-            //services.AddScoped<IWaybillRepo, WaybillRepo>();
-           // services.AddScoped<IRepo<WaybillProduct>, WaybillProductRepo>();
+            services.AddScoped<IWaybillRepo, WaybillRepo>();
+            services.AddScoped<IRepo<WaybillProduct>, WaybillProductRepo>();
             services.AddScoped<IRepo<Supplier>, SupplierRepo>();
             services.AddScoped<IRepo<PurchaseProduct>, PurchaseProductRepo>();
             services.AddScoped<IPurchaseRepo, PurchaseRepo>();

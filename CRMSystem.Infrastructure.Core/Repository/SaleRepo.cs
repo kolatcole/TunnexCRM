@@ -41,7 +41,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated >= startdate && x.DateCreated < enddate).ToListAsync();
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -93,7 +93,9 @@ namespace CRMSystem.Infrastructure
                     LPO = data.LPO,
                     DateCreated = DateTime.Now,
                     UserCreated = data.UserModified,
-                    CustomerID = data.CustomerID
+                    CustomerID = data.CustomerID,
+                    ToDeliver=data.ToDeliver,
+                    DeliveryFee=data.DeliveryFee
 
                 };
                 await _context.Sales.AddAsync(obj);

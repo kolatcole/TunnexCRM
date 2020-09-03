@@ -11,6 +11,8 @@ namespace CRMSystem.Domains
 
         Task<Purchase> GetPurchaseByInvoiceNo(string invoiceNo);
 
+        Task<List<Purchase>> GetPurchasesReportByDate(int customerID, string startDate, string endDate);
+
 
 
     }

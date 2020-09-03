@@ -36,7 +36,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated >= startdate && x.DateCreated < enddate).ToListAsync();
+                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -167,19 +167,26 @@ namespace CRMSystem.Infrastructure
             }
         }
 
-        public Task<List<Purchase>> getBySupplierIDAsync(int supplierID)
-        {
-            throw new NotImplementedException();
-        }
+       
 
-        public Task<List<Purchase>> getSaleHistoryByDate(DateTime startdate, DateTime enddate)
-        {
-            throw new NotImplementedException();
-        }
 
         public Task<List<Purchase>> GetSingleDaySales(DateTime date)
         {
             throw new NotImplementedException();
         }
+        public async Task<List<Purchase>> getBySupplierIDAsync(int supplierID)
+        {
+            try
+            {
+                var purchases = await _context.Purchases.Where(x=>x.SupplierID==supplierID).Include(y => y.Cart).
+                                    ThenInclude(a => a.Items).ToListAsync();
+                return purchases;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
