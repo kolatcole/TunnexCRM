@@ -105,6 +105,13 @@ namespace CRMSystem.Domains
 
         }
 
+        public async Task<bool> DeleteFOCPayment(string invNo)
+        {
+            var result = await _repo.DeleteFOCPaymentAsync(invNo);
+            return result;
+        
+        }
+
 
     }
 }

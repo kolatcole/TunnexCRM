@@ -4,14 +4,16 @@ using CRMSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    partial class TContextModelSnapshot : ModelSnapshot
+    [Migration("20200912051236_returnedStock")]
+    partial class returnedStock
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -672,7 +674,7 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CartID")
+                    b.Property<int>("CartID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DateCreated")
@@ -1151,7 +1153,9 @@ namespace CRMSystem.Presentation.Core.Migrations
                 {
                     b.HasOne("CRMSystem.Domains.Cart", "Cart")
                         .WithMany()
-                        .HasForeignKey("CartID");
+                        .HasForeignKey("CartID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("CRMSystem.Domains.Sale", b =>

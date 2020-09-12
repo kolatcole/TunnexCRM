@@ -9,6 +9,7 @@ namespace CRMSystem.Domains
     {
         Task<int> SaveInvoice(Invoice data);
         Task<Invoice> GetInvoiceByNumber(string InvNumber, int customerID);
+        Task<Invoice> GetInvoiceByinvNo(string InvNumber);
         Task<List<Invoice>> GetInvoiceByCustomerID(int customerID);
         Task<int> getLastAsync();
         Task<List<Invoice>> getProformaByDate(int customerID, string startDate, string endDate);

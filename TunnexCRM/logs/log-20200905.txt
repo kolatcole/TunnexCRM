@@ -1,0 +1,502 @@
+2020-09-05 18:11:15.603 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-05 18:11:19.271 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-05 18:11:19.271 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-09-05 18:11:19.463 +01:00 [Information] Request finished in 197.4251ms 0 
+2020-09-05 18:11:19.603 +01:00 [Information] Request finished in 339.3182ms 301 
+2020-09-05 18:11:19.619 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-05 18:11:19.797 +01:00 [Information] Request finished in 176.9314ms 200 text/html;charset=utf-8
+2020-09-05 18:11:19.864 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-09-05 18:11:19.867 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-09-05 18:11:19.870 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-09-05 18:11:20.052 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-09-05 18:11:20.057 +01:00 [Information] Request finished in 196.9013ms 200 text/css
+2020-09-05 18:11:20.103 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-09-05 18:11:20.108 +01:00 [Information] Request finished in 244.8169ms 200 application/javascript
+2020-09-05 18:11:20.300 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-09-05 18:11:20.306 +01:00 [Information] Request finished in 442.1014ms 200 application/javascript
+2020-09-05 18:11:22.647 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-09-05 18:11:22.771 +01:00 [Information] Request finished in 125.1142ms 404 
+2020-09-05 18:11:23.924 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-09-05 18:11:23.930 +01:00 [Information] Request finished in 6.2398ms 404 
+2020-09-05 18:11:24.089 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-05 18:11:24.701 +01:00 [Information] Request finished in 611.415ms 200 application/json;charset=utf-8
+2020-09-05 18:11:25.669 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2020-09-05 18:11:25.704 +01:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2020-09-05 18:11:25.766 +01:00 [Information] Request finished in 61.368ms 200 image/png
+2020-09-05 18:11:40.334 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffSkill  
+2020-09-05 18:11:40.350 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:11:40.429 +01:00 [Information] Route matched with "{action = \"GetAllStaffSkill\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffSkill()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:12:12.422 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)" in 31982.0523ms
+2020-09-05 18:12:12.430 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:12:12.947 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqlServerOptionsAction)
+   at CRMSystem.Startup.<ConfigureServices>b__5_3(DbContextOptionsBuilder opt) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Startup.cs:line 69
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider p, DbContextOptionsBuilder b)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider, Action`2 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass10_0`1.<AddCoreServices>b__0(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-05 18:12:12.999 +01:00 [Information] Request finished in 32633.5535ms 500 text/plain
+2020-09-05 18:12:24.059 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Skill/GetAllSkills  
+2020-09-05 18:12:24.065 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2020-09-05 18:12:24.106 +01:00 [Information] Route matched with "{action = \"GetAllSkills\", controller = \"Skill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSkills()" on controller "CRMSystem.Presentation.Core.Controllers.SkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:12:27.864 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)" in 3755.1691ms
+2020-09-05 18:12:27.868 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2020-09-05 18:12:27.886 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqlServerOptionsAction)
+   at CRMSystem.Startup.<ConfigureServices>b__5_3(DbContextOptionsBuilder opt) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Startup.cs:line 69
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider p, DbContextOptionsBuilder b)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider, Action`2 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass10_0`1.<AddCoreServices>b__0(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-05 18:12:27.903 +01:00 [Information] Request finished in 3844.5737ms 500 text/plain
+2020-09-05 18:13:11.830 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-05 18:13:12.247 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-05 18:13:12.414 +01:00 [Information] Request finished in 178.8458ms 404 
+2020-09-05 18:13:18.300 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-09-05 18:13:18.339 +01:00 [Information] Request finished in 15.2838ms 301 
+2020-09-05 18:13:18.344 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-05 18:13:18.440 +01:00 [Information] Request finished in 86.154ms 200 text/html;charset=utf-8
+2020-09-05 18:13:18.514 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-09-05 18:13:18.517 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-09-05 18:13:18.519 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-09-05 18:13:18.655 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-09-05 18:13:18.655 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-09-05 18:13:18.665 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-09-05 18:13:18.678 +01:00 [Information] Request finished in 158.1703ms 200 text/css
+2020-09-05 18:13:18.711 +01:00 [Information] Request finished in 153.0633ms 200 application/javascript
+2020-09-05 18:13:18.715 +01:00 [Information] Request finished in 165.4458ms 200 application/javascript
+2020-09-05 18:13:19.046 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-09-05 18:13:19.053 +01:00 [Information] Request finished in 7.7087ms 404 
+2020-09-05 18:13:19.270 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-09-05 18:13:19.316 +01:00 [Information] Request finished in 39.1631ms 404 
+2020-09-05 18:13:19.533 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-05 18:13:19.879 +01:00 [Information] Request finished in 362.6593ms 200 application/json;charset=utf-8
+2020-09-05 18:13:44.003 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffSkill  
+2020-09-05 18:13:44.030 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:13:44.067 +01:00 [Information] Route matched with "{action = \"GetAllStaffSkill\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffSkill()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:13:57.844 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.849 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.852 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.855 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.861 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.865 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.868 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.871 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.874 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.879 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.882 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:13:57.980 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 18:14:03.712 +01:00 [Information] Executed DbCommand ("541"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2020-09-05 18:14:24.487 +01:00 [Information] Executed DbCommand ("587"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:14:34.331 +01:00 [Information] Executed DbCommand ("410"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:14:45.370 +01:00 [Information] Executed DbCommand ("2,155"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:14:45.810 +01:00 [Information] Executed DbCommand ("431"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:14:46.255 +01:00 [Information] Executed DbCommand ("433"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:14:46.915 +01:00 [Information] Executed DbCommand ("652"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:14:47.589 +01:00 [Information] Executed DbCommand ("663"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:02.297 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)" in 318208.7011ms
+2020-09-05 18:19:02.304 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:19:02.456 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.Domains.StaffSkillService.GetAllStaffSkillsAsync() in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Domains.Core\Implementations\StaffSkillService.cs:line 84
+   at CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill() in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Controllers\StaffSkillController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-05 18:19:02.504 +01:00 [Information] Request finished in 318512.0338ms 500 text/plain
+2020-09-05 18:19:14.776 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffKpi  
+2020-09-05 18:19:14.784 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)"'
+2020-09-05 18:19:14.795 +01:00 [Information] Route matched with "{action = \"GetAllStaffKpi\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffKpi()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:19:14.863 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 18:19:15.227 +01:00 [Information] Executed DbCommand ("359"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2020-09-05 18:19:15.674 +01:00 [Information] Executed DbCommand ("433"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:16.119 +01:00 [Information] Executed DbCommand ("430"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:16.633 +01:00 [Information] Executed DbCommand ("508"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:16.996 +01:00 [Information] Executed DbCommand ("349"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:17.437 +01:00 [Information] Executed DbCommand ("433"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:17.878 +01:00 [Information] Executed DbCommand ("435"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:18.323 +01:00 [Information] Executed DbCommand ("437"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:19:53.550 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)" in 38752.3536ms
+2020-09-05 18:19:53.554 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)"'
+2020-09-05 18:19:53.568 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.Domains.StaffSkillService.GetAllStaffKpisAsync() in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Domains.Core\Implementations\StaffSkillService.cs:line 102
+   at CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi() in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Controllers\StaffSkillController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-05 18:19:53.587 +01:00 [Information] Request finished in 38810.0031ms 500 text/plain
+2020-09-05 18:20:03.573 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffSkill  
+2020-09-05 18:20:03.577 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:20:03.581 +01:00 [Information] Route matched with "{action = \"GetAllStaffSkill\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffSkill()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:20:06.169 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 18:20:06.913 +01:00 [Information] Executed DbCommand ("736"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2020-09-05 18:20:07.575 +01:00 [Information] Executed DbCommand ("655"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:08.238 +01:00 [Information] Executed DbCommand ("657"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:08.902 +01:00 [Information] Executed DbCommand ("658"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:09.436 +01:00 [Information] Executed DbCommand ("529"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:09.789 +01:00 [Information] Executed DbCommand ("349"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:10.448 +01:00 [Information] Executed DbCommand ("654"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:11.109 +01:00 [Information] Executed DbCommand ("654"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:20:24.709 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)" in 21125.3738ms
+2020-09-05 18:20:24.713 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:20:24.722 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.Domains.StaffSkillService.GetAllStaffSkillsAsync() in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Domains.Core\Implementations\StaffSkillService.cs:line 84
+   at CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill() in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Controllers\StaffSkillController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-05 18:20:24.736 +01:00 [Information] Request finished in 21159.5076ms 500 text/plain
+2020-09-05 18:20:27.711 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffSkill  
+2020-09-05 18:20:27.716 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:20:27.720 +01:00 [Information] Route matched with "{action = \"GetAllStaffSkill\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffSkill()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:20:29.873 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 18:20:30.320 +01:00 [Information] Executed DbCommand ("442"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2020-09-05 18:20:57.357 +01:00 [Information] Executed DbCommand ("311"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2020-09-05 18:37:04.571 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-05 18:37:04.956 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-05 18:37:05.155 +01:00 [Information] Request finished in 203.9402ms 404 
+2020-09-05 18:37:38.639 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+2020-09-05 18:37:38.673 +01:00 [Information] Request finished in 30.0801ms 404 
+2020-09-05 18:38:03.577 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-09-05 18:38:03.594 +01:00 [Information] Request finished in 44.7393ms 301 
+2020-09-05 18:38:03.615 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-05 18:38:03.693 +01:00 [Information] Request finished in 79.2975ms 200 text/html;charset=utf-8
+2020-09-05 18:38:03.738 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-09-05 18:38:03.741 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-09-05 18:38:03.744 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-09-05 18:38:03.864 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-09-05 18:38:03.864 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-09-05 18:38:03.886 +01:00 [Information] Request finished in 136.7242ms 200 application/javascript
+2020-09-05 18:38:03.887 +01:00 [Information] Request finished in 141.6379ms 200 application/javascript
+2020-09-05 18:38:03.893 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-09-05 18:38:03.897 +01:00 [Information] Request finished in 164.8653ms 200 text/css
+2020-09-05 18:38:04.217 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-09-05 18:38:04.223 +01:00 [Information] Request finished in 8.7244ms 404 
+2020-09-05 18:38:04.388 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-09-05 18:38:04.392 +01:00 [Information] Request finished in 3.949ms 404 
+2020-09-05 18:38:04.517 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-05 18:38:04.786 +01:00 [Information] Request finished in 264.4821ms 200 application/json;charset=utf-8
+2020-09-05 18:38:22.272 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffSkill  
+2020-09-05 18:38:22.290 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2020-09-05 18:38:22.345 +01:00 [Information] Route matched with "{action = \"GetAllStaffSkill\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffSkill()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2020-09-05 18:38:29.659 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.666 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.672 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.675 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.678 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.681 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.683 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.687 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.691 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.696 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.699 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 18:38:29.786 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 18:38:42.008 +01:00 [Information] Executed DbCommand ("651"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2020-09-05 20:23:58.941 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-05 20:24:00.744 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-05 20:24:01.131 +01:00 [Information] Request finished in 369.4277ms 404 
+2020-09-05 20:24:09.053 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-09-05 20:24:09.100 +01:00 [Information] Request finished in 27.3107ms 301 
+2020-09-05 20:24:09.105 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-05 20:24:09.293 +01:00 [Information] Request finished in 188.3593ms 200 text/html;charset=utf-8
+2020-09-05 20:24:09.368 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-09-05 20:24:09.372 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-09-05 20:24:09.374 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-09-05 20:24:09.546 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-09-05 20:24:09.583 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-09-05 20:24:09.593 +01:00 [Information] Request finished in 222.9687ms 200 application/javascript
+2020-09-05 20:24:09.595 +01:00 [Information] Request finished in 246.429ms 200 text/css
+2020-09-05 20:24:09.624 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-09-05 20:24:09.632 +01:00 [Information] Request finished in 280.8719ms 200 application/javascript
+2020-09-05 20:24:10.570 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-09-05 20:24:10.602 +01:00 [Information] Request finished in 31.9842ms 404 
+2020-09-05 20:24:10.757 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-09-05 20:24:10.760 +01:00 [Information] Request finished in 3.3039ms 404 
+2020-09-05 20:24:10.873 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-05 20:24:11.382 +01:00 [Information] Request finished in 504.0432ms 200 application/json;charset=utf-8
+2020-09-05 20:24:31.345 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Purchase/SavePurchase application/json 536
+2020-09-05 20:24:31.471 +01:00 [Information] CORS policy execution successful.
+2020-09-05 20:24:31.670 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.PurchaseController.SavePurchase (CRMSystem.Presentation.Core)"'
+2020-09-05 20:24:32.372 +01:00 [Information] Route matched with "{action = \"SavePurchase\", controller = \"Purchase\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SavePurchase(CRMSystem.Domains.Purchase)" on controller "CRMSystem.Presentation.Core.Controllers.PurchaseController" ("CRMSystem.Presentation.Core").
+2020-09-05 20:24:44.057 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.061 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.064 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.068 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.073 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.076 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.080 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.083 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.089 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.092 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.096 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:24:44.296 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 20:24:50.952 +01:00 [Information] Executed DbCommand ("1,093"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [TransactionType], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-09-05 20:25:48.120 +01:00 [Information] Executed DbCommand ("280"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-09-05 20:25:58.080 +01:00 [Information] Executed DbCommand ("297"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [PurchaseProducts] ([Amount], [cartID], [productID])
+VALUES (@p0, @p1, @p2);
+SELECT [ID]
+FROM [PurchaseProducts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-09-05 20:28:31.340 +01:00 [Information] Executed DbCommand ("286"ms) [Parameters=["@p13='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Description] = @p3, [Image] = @p4, [Location] = @p5, [Name] = @p6, [Quantity] = @p7, [SalePrice] = @p8, [StockLevel] = @p9, [TotalSold] = @p10, [UserCreated] = @p11, [UserModified] = @p12
+WHERE [ID] = @p13;
+SELECT @@ROWCOUNT;"
+2020-09-05 20:28:46.623 +01:00 [Information] Executed DbCommand ("292"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Items] ([Amount], [CartID], [Code], [Name], [ProductID], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [ID]
+FROM [Items]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-09-05 20:28:47.345 +01:00 [Information] Executed DbCommand ("283"ms) [Parameters=["@__data_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[TransactionType], [c].[UserCreated], [c].[UserModified]
+FROM [Carts] AS [c]
+WHERE [c].[ID] = @__data_ID_0"
+2020-09-05 20:28:47.989 +01:00 [Information] Executed DbCommand ("328"ms) [Parameters=["@p7='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Carts] SET [Amount] = @p0, [Code] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [TransactionType] = @p4, [UserCreated] = @p5, [UserModified] = @p6
+WHERE [ID] = @p7;
+SELECT @@ROWCOUNT;"
+2020-09-05 20:28:48.950 +01:00 [Information] Executed DbCommand ("323"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Purchases] ([CartID], [DateCreated], [DateModified], [ExchangeCurrency], [InvoiceNo], [NairaEquivalent], [SupplierID], [TotalAmountForeign], [TotalAmountNaira], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [ID]
+FROM [Purchases]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-09-05 20:28:49.344 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2020-09-05 20:28:49.415 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.PurchaseController.SavePurchase (CRMSystem.Presentation.Core)" in 257029.9309ms
+2020-09-05 20:28:49.419 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.PurchaseController.SavePurchase (CRMSystem.Presentation.Core)"'
+2020-09-05 20:28:49.437 +01:00 [Information] Request finished in 258084.7186ms 200 application/json; charset=utf-8
+2020-09-05 20:36:02.186 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Purchase/SavePurchase application/json 536
+2020-09-05 20:36:02.196 +01:00 [Information] CORS policy execution successful.
+2020-09-05 20:36:02.201 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.PurchaseController.SavePurchase (CRMSystem.Presentation.Core)"'
+2020-09-05 20:36:02.207 +01:00 [Information] Route matched with "{action = \"SavePurchase\", controller = \"Purchase\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SavePurchase(CRMSystem.Domains.Purchase)" on controller "CRMSystem.Presentation.Core.Controllers.PurchaseController" ("CRMSystem.Presentation.Core").
+2020-09-05 20:36:04.545 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-05 20:36:06.682 +01:00 [Information] Executed DbCommand ("358"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Carts] ([Amount], [Code], [DateCreated], [DateModified], [TransactionType], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [Carts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-09-05 20:36:10.230 +01:00 [Information] Executed DbCommand ("412"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-09-05 20:36:10.839 +01:00 [Information] Executed DbCommand ("277"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [PurchaseProducts] ([Amount], [cartID], [productID])
+VALUES (@p0, @p1, @p2);
+SELECT [ID]
+FROM [PurchaseProducts]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"

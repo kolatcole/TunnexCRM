@@ -66,7 +66,7 @@ namespace CRMSystem
             });
             services.AddDbContext<TContext>(opt =>
             {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultTLocal"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
+                opt.UseSqlServer(Configuration.GetConnectionString("SmartConnection"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
             });
 
             services.AddScoped<IRepo<Lead>, LeadRepo>();
@@ -103,7 +103,7 @@ namespace CRMSystem
             services.AddScoped<IRepo<Supplier>, SupplierRepo>();
             services.AddScoped<IRepo<PurchaseProduct>, PurchaseProductRepo>();
             services.AddScoped<IPurchaseRepo, PurchaseRepo>();
-
+            services.AddScoped<IRepo<ReturnedStock>, ReturnedStockRepo>();
 
 
             services.AddTransient<IUserService, UserService>();

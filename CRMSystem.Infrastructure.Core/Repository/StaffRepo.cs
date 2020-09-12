@@ -88,7 +88,7 @@ namespace CRMSystem.Infrastructure
                         Phone = data.Phone,
                         DateEmployed = data.DateEmployed,
                         Designation = data.Designation,
-                        StaffID = "00" + staff.ID,
+                        StaffID = data.StaffID,
                         MaidenName = data.MaidenName,
                         MaritalStatus = data.MaritalStatus,
                         MiddleName = data.MiddleName,

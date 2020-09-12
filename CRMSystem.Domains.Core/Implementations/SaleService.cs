@@ -16,9 +16,15 @@ namespace CRMSystem.Domains
         private readonly ISaleRepo _sRepo;
         private readonly IRepo<Customer> _custRepo;
         private readonly IWaybillService _wService;
+        private readonly IRepo<Product> _proRepo;
+        private readonly IRepo<Item> _iRepo;
+        private readonly IRepo<Cart> _cRepo;
+        private readonly IRepo<ReturnedStock> _rRepo;
+
 
         public SaleService(IRepo<Sale> repo,  IInvoiceService inService, ICartService cService, IRepo<Payment> pRepo, 
-            IPaymentRepo payRepo, IRepo<Customer> custRepo, ISaleRepo sRepo, IWaybillService wService)
+            IPaymentRepo payRepo, IRepo<Customer> custRepo, ISaleRepo sRepo, IWaybillService wService, IRepo<Product> proRepo, IRepo<Item> iRepo,
+            IRepo<Cart> cRepo, IRepo<ReturnedStock> rRepo)
         {
             _repo = repo;
             _cService = cService;
@@ -28,6 +34,10 @@ namespace CRMSystem.Domains
             _custRepo = custRepo;
             _sRepo = sRepo;
             _wService = wService;
+            _proRepo = proRepo;
+            _iRepo = iRepo;
+            _cRepo = cRepo;
+            _rRepo = rRepo;
         }
         public async Task<int> Save(Sale data)
         {
@@ -97,7 +107,8 @@ namespace CRMSystem.Domains
                 Balance=(data.Cart.Amount - (data.Cart.Amount * (data.Invoice.DiscountPercent / 100))) -totalAmt,
                 IsPaid=invIsPaid,
                 DiscountPercent=data.Invoice.DiscountPercent,
-                Type="sale"
+                Type="sale",
+                UserCreated=data.UserCreated
 
             };
 
@@ -206,10 +217,29 @@ namespace CRMSystem.Domains
 
             return sales;
         }
+
         public async Task<Sale> GetSaleByIDAsync(int ID)
         {
             var sale = await _repo.getAsync(ID);
             sale.Payment = await _payRepo.getPaymentByInvoiceNo(sale.Invoice.InvoiceNo);
+            return sale;
+        }
+
+        public async Task<Sale> GetSaleWithPaymentsByIDAsync(string invNo)
+        {
+            // get invoice
+            var invoice = await _inService.GetInvoiceByinvNo(invNo);
+
+            // get sale with invoiceID
+
+            var sale = await _repo.getAsync(invoice.ID);
+
+            // get paymwnt with invNo
+
+            var payments = await _payRepo.getAllByInvAsync(invNo);
+
+            sale.Payment = payments;
+
             return sale;
         }
         public async Task<List<Sale>> GetAllSalesAsync()
@@ -304,6 +334,87 @@ namespace CRMSystem.Domains
         {
             var waybills = await _wService.GetAllWaybillByDates(startDate, endDate);
             return waybills;
+        }
+
+        public async Task DeleteSale(string invNo)
+        {
+            var invoice = await _inService.GetInvoiceByinvNo(invNo);
+
+            // use invoiceID to get the sale
+
+            // soft delete the sale
+            await _repo.deleteAsync(invoice.ID);
+
+        
+        }
+
+        public async Task<int> CreateRefund(ReturnedStock data)
+        {
+            // get invoice
+            var invoice = await _inService.GetInvoiceByinvNo(data.InvoiceNo);
+
+            //use invoiceID to get sale
+
+            var sale = await _sRepo.getByInvIDAsync(invoice.ID);
+
+            var CID = await _cRepo.insertAsync(data.Cart);
+
+
+            List<Item> items = new List<Item>();
+
+            decimal refundAmount = 0;
+
+            foreach (var item in data.Cart.Items)
+            {
+
+
+                // get product by productID
+
+                var product = await _proRepo.getAsync(item.ProductID);
+
+                item.CartID = CID;
+
+                item.Amount = product.SalePrice * item.Quantity; // to get the total amount of product returnedd
+
+                refundAmount += item.Amount;
+                item.Name = product.Name;
+
+
+                // Reduce product in cart with the returned items(I think it's not needed to reduce the qty in the cart,
+                // since the refunded items will be vailable in refundStock)
+
+
+
+
+                // increase product by the amount returned and update
+
+                product.Quantity += item.Quantity;
+                product.TotalSold -= item.Quantity;
+
+                await _proRepo.updateAsync(product);
+
+                items.Add(item);
+
+            }
+
+            // save the returned items 
+            await _iRepo.insertListAsync(items);
+
+            // update cart to add total amount
+
+            
+            data.RefundAmount= refundAmount;
+            data.Cart.ID = CID;
+            await _cRepo.updateAsync(data.Cart);
+
+
+            //save refunded items
+            data.CartID = CID;
+            var RID = await _rRepo.insertAsync(data);
+
+            return RID;
+
+
         }
     }
 }

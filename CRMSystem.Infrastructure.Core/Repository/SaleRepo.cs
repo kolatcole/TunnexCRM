@@ -17,7 +17,26 @@ namespace CRMSystem.Infrastructure
         }
         public async Task deleteAsync(int ID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // get sale by invoiceID
+                var sale = await _context.Sales.Where(x => x.IsDeleted != true && x.InvoiceID == ID).FirstOrDefaultAsync();
+
+                // soft delete the sale object and update the daatabase
+
+                sale.IsDeleted = true;
+                sale.DateModified = DateTime.Now;
+
+
+                _context.Sales.Update(sale);
+                ID = await _context.SaveChangesAsync();
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         public async Task<List<Sale>> getAllAsync()
@@ -41,7 +60,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
+                                                .Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted == false).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -50,11 +70,28 @@ namespace CRMSystem.Infrastructure
             }
         }
 
+        // this ID is invoiceID used like this becuase of generic interface
         public async Task<Sale> getAsync(int ID)
         {
             try
             {
-                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.ID == ID).FirstOrDefaultAsync();
+                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
+                                                .Where(x => x.InvoiceID == ID && x.IsDeleted==false).FirstOrDefaultAsync();
+                return sale;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
+        public async Task<Sale> getByInvIDAsync(int invID)
+        {
+            try
+            {
+                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.InvoiceID == invID).FirstOrDefaultAsync();
                 return sale;
             }
             catch (Exception ex)
@@ -69,7 +106,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID).ToListAsync();
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
+                                                .Where(x => x.CustomerID == customerID && x.IsDeleted==false).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -92,7 +130,7 @@ namespace CRMSystem.Infrastructure
                     InvoiceID = data.InvoiceID,
                     LPO = data.LPO,
                     DateCreated = DateTime.Now,
-                    UserCreated = data.UserModified,
+                    UserCreated = data.UserCreated,
                     CustomerID = data.CustomerID,
                     ToDeliver=data.ToDeliver,
                     DeliveryFee=data.DeliveryFee
@@ -147,7 +185,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated.Date == date.Date).ToListAsync();
+                var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
+                                                .Where(x => x.DateCreated.Date == date.Date && x.IsDeleted==false).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -181,7 +220,7 @@ namespace CRMSystem.Infrastructure
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).
                                     ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID
-                                    && x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
+                                    && x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted == false).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -195,7 +234,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).
-                                    ThenInclude(a => a.Items).ToListAsync();
+                                    ThenInclude(a => a.Items).Where(x =>x.IsDeleted == false).ToListAsync();
                 return sales;
             }
             catch (Exception ex)

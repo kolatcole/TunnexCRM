@@ -27,6 +27,22 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
+        public async Task<List<Payment>> getAllByInvAsync(string invNo)
+        {
+
+            try
+            {
+                var payment = await _context.Payments.Where(x=>x.InvoiceNo==invNo).ToListAsync();
+                return payment;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
         public async Task<List<Payment>> getAllAsync()
         {
 
@@ -166,6 +182,27 @@ namespace CRMSystem.Infrastructure
         {
             throw new NotImplementedException();
 
+        }
+
+        public async Task<bool> DeleteFOCPaymentAsync(string invNo)
+        {
+            try
+            {
+                var payment = await _context.Payments.FirstOrDefaultAsync(x => x.InvoiceNo == invNo && x.Method == "FOC");
+
+                 _context.Payments.Remove(payment);
+                 await _context.SaveChangesAsync();
+
+                return true;
+
+
+            }
+            catch
+            {
+                return false;
+            }
+
+        
         }
 
     }

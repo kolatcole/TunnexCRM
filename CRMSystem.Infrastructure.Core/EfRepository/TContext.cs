@@ -50,7 +50,8 @@ namespace CRMSystem.Infrastructure
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
         public DbSet<PurchaseProduct> PurchaseProducts { get; set; }
-        
+        public DbSet<ReturnedStock> ReturnedStocks { get; set; }
+
 
 
 

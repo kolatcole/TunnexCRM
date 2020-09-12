@@ -60,7 +60,24 @@ namespace CRMSystem.Infrastructure
             // PENDING
             try
             {
-                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.InvoiceNo == invNumber && x.CustomerID == customerID).FirstOrDefaultAsync();
+                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
+                    Where(x => x.InvoiceNo == invNumber && x.CustomerID == customerID).FirstOrDefaultAsync();
+                return invoice;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            throw new NotImplementedException();
+        }
+
+        public async Task<Invoice> getByinvNumberAsync(string invNumber)
+        {
+            
+            try
+            {
+                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.InvoiceNo == invNumber && x.Type == "sale").FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -245,7 +262,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
-                                        Where(x => x.Type == "sales" && x.Balance != 0 && x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
+                                        Where(x => x.Type == "sale" && x.Balance != 0 && x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)

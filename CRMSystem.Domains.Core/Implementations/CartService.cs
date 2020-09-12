@@ -61,7 +61,7 @@ namespace CRMSystem.Domains
 
 
                     item.Amount *= item.Quantity; // to get the total amount of product bought
-                   
+
                     amount += item.Amount;
                     item.Name = product.Name;
 
@@ -92,7 +92,7 @@ namespace CRMSystem.Domains
                     amount += item.Amount;
                     item.Name = product.Name;
 
-                    // mark up product by the amount bought and update
+                    // Remove the number of  product bought from stock and update
 
                     product.TotalSold += item.Quantity;
                     product.Quantity -= item.Quantity;
@@ -104,8 +104,8 @@ namespace CRMSystem.Domains
                 }
 
             }
-            
-            
+
+
 
             await _iRepo.insertListAsync(items);
 
@@ -141,7 +141,7 @@ namespace CRMSystem.Domains
 
                 // mark up product by the amount bought and update
 
-               
+
 
 
                 items.Add(item);
@@ -158,5 +158,6 @@ namespace CRMSystem.Domains
             return CID;
         }
 
+       
     }
 }

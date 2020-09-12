@@ -1,0 +1,358 @@
+2020-09-10 23:41:11.433 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-10 23:41:14.871 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-10 23:41:15.641 +01:00 [Information] Request finished in 775.6451ms 404 
+2020-09-10 23:41:35.526 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-10 23:41:36.035 +01:00 [Information] Request finished in 509.5156ms 200 text/html;charset=utf-8
+2020-09-10 23:41:37.572 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-10 23:41:38.543 +01:00 [Information] Request finished in 971.5589ms 200 application/json;charset=utf-8
+2020-09-10 23:42:33.673 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSalesReportByDate/0/0  
+2020-09-10 23:42:33.786 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-09-10 23:42:34.088 +01:00 [Information] Route matched with "{action = \"GetSalesReportByDate\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSalesReportByDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:42:36.170 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.170 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.171 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.171 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.171 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.171 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.171 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.171 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.172 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.172 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.172 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:42:36.294 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:42:39.147 +01:00 [Information] Executed DbCommand ("590"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[TransactionType], [c].[UserCreated], [c].[UserModified], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM [Sales] AS [s]
+INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+LEFT JOIN [Items] AS [i0] ON [c].[ID] = [i0].[CartID]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [s].[ID], [i].[ID], [c].[ID], [i0].[ID]"
+2020-09-10 23:42:39.366 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Sale, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-09-10 23:42:39.489 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)" in 5391.1162ms
+2020-09-10 23:42:39.490 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-09-10 23:42:39.496 +01:00 [Information] Request finished in 5823.6559ms 200 application/json; charset=utf-8
+2020-09-10 23:43:35.422 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000017  
+2020-09-10 23:43:35.429 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:43:35.450 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:43:35.568 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:43:36.003 +01:00 [Information] Executed DbCommand ("317"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sales')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:43:36.159 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)" in 707.7334ms
+2020-09-10 23:43:36.169 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:43:37.142 +01:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.Domains.SaleService.GetSaleWithPaymentsByIDAsync(String invNo) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\CRMSystem.Domains.Core\Implementations\SaleService.cs:line 225
+   at CRMSystem.Presentation.SaleController.GetSaleWithPayments(String InvNumber) in C:\Users\PC\Source\Repos\kolatcole\TunnexCRM\TunnexCRM\Controllers\SaleController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-10 23:43:37.201 +01:00 [Information] Request finished in 1778.6425ms 500 text/plain
+2020-09-10 23:47:35.454 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-10 23:47:35.869 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-10 23:47:35.989 +01:00 [Information] Request finished in 128.2179ms 404 
+2020-09-10 23:47:37.145 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-10 23:47:37.198 +01:00 [Information] Request finished in 53.1262ms 200 text/html;charset=utf-8
+2020-09-10 23:47:37.429 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-10 23:47:37.598 +01:00 [Information] Request finished in 169.039ms 200 application/json;charset=utf-8
+2020-09-10 23:48:07.779 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/DeleteSale/0000017  0
+2020-09-10 23:48:07.795 +01:00 [Information] CORS policy execution successful.
+2020-09-10 23:48:07.825 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)"'
+2020-09-10 23:48:07.895 +01:00 [Information] Route matched with "{action = \"DeleteSale\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteSale(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:48:08.807 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.807 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.808 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.808 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.808 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.809 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.809 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.809 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.810 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.810 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.810 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:48:08.879 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:48:09.763 +01:00 [Information] Executed DbCommand ("93"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:48:09.963 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified]
+FROM [Sales] AS [s]
+WHERE ([s].[IsDeleted] <> CAST(1 AS bit)) AND ([s].[InvoiceID] = @__ID_0)"
+2020-09-10 23:48:10.495 +01:00 [Information] Executed DbCommand ("198"ms) [Parameters=["@p11='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Sales] SET [CartID] = @p0, [CustomerID] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [DeliveryFee] = @p4, [InvoiceID] = @p5, [IsDeleted] = @p6, [LPO] = @p7, [ToDeliver] = @p8, [UserCreated] = @p9, [UserModified] = @p10
+WHERE [ID] = @p11;
+SELECT @@ROWCOUNT;"
+2020-09-10 23:48:10.534 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-09-10 23:48:10.546 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)" in 2641.5464ms
+2020-09-10 23:48:10.547 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)"'
+2020-09-10 23:48:10.566 +01:00 [Information] Request finished in 2787.7473ms 200 
+2020-09-10 23:48:36.121 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000017  
+2020-09-10 23:48:36.128 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:48:36.150 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:48:36.197 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:48:36.204 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:48:36.471 +01:00 [Information] Executed DbCommand ("209"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CartID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[InvoiceID], [t].[IsDeleted], [t].[LPO], [t].[ToDeliver], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID0], [t].[CashierID], [t].[CustomerID0], [t].[DateCreated0], [t].[DateModified0], [t].[DeliveryFee0], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated0], [t].[UserModified0], [t].[ID1], [t].[Amount0], [t].[Code], [t].[DateCreated1], [t].[DateModified1], [t].[TransactionType], [t].[UserCreated1], [t].[UserModified1], [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID] AS [ID0], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID] AS [CartID0], [i].[CashierID], [i].[CustomerID] AS [CustomerID0], [i].[DateCreated] AS [DateCreated0], [i].[DateModified] AS [DateModified0], [i].[DeliveryFee] AS [DeliveryFee0], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated] AS [UserCreated0], [i].[UserModified] AS [UserModified0], [c].[ID] AS [ID1], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated1], [c].[DateModified] AS [DateModified1], [c].[TransactionType], [c].[UserCreated] AS [UserCreated1], [c].[UserModified] AS [UserModified1]
+    FROM [Sales] AS [s]
+    INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+    INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+    WHERE ([s].[InvoiceID] = @__ID_0) AND ([s].[IsDeleted] = CAST(0 AS bit))
+) AS [t]
+LEFT JOIN [Payments] AS [p] ON [t].[ID] = [p].[SaleID]
+LEFT JOIN [Items] AS [i0] ON [t].[ID1] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [t].[ID1], [p].[ID], [i0].[ID]"
+2020-09-10 23:48:36.477 +01:00 [Information] Executing ObjectResult, writing value of type '"null"'.
+2020-09-10 23:48:36.478 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)" in 327.0289ms
+2020-09-10 23:48:36.478 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:48:36.479 +01:00 [Information] Request finished in 358.6483ms 204 
+2020-09-10 23:48:59.330 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSalesReportByDate/0/0  
+2020-09-10 23:48:59.331 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-09-10 23:48:59.339 +01:00 [Information] Route matched with "{action = \"GetSalesReportByDate\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSalesReportByDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:48:59.377 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:48:59.409 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[TransactionType], [c].[UserCreated], [c].[UserModified], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM [Sales] AS [s]
+INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+LEFT JOIN [Items] AS [i0] ON [c].[ID] = [i0].[CartID]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [s].[ID], [i].[ID], [c].[ID], [i0].[ID]"
+2020-09-10 23:48:59.416 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Sale, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-09-10 23:48:59.441 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)" in 100.6593ms
+2020-09-10 23:48:59.442 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2020-09-10 23:48:59.442 +01:00 [Information] Request finished in 112.7697ms 200 application/json; charset=utf-8
+2020-09-10 23:49:12.016 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000018  
+2020-09-10 23:49:12.018 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:49:12.019 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:49:12.022 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:49:12.027 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:49:12.032 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CartID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[InvoiceID], [t].[IsDeleted], [t].[LPO], [t].[ToDeliver], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID0], [t].[CashierID], [t].[CustomerID0], [t].[DateCreated0], [t].[DateModified0], [t].[DeliveryFee0], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated0], [t].[UserModified0], [t].[ID1], [t].[Amount0], [t].[Code], [t].[DateCreated1], [t].[DateModified1], [t].[TransactionType], [t].[UserCreated1], [t].[UserModified1], [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID] AS [ID0], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID] AS [CartID0], [i].[CashierID], [i].[CustomerID] AS [CustomerID0], [i].[DateCreated] AS [DateCreated0], [i].[DateModified] AS [DateModified0], [i].[DeliveryFee] AS [DeliveryFee0], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated] AS [UserCreated0], [i].[UserModified] AS [UserModified0], [c].[ID] AS [ID1], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated1], [c].[DateModified] AS [DateModified1], [c].[TransactionType], [c].[UserCreated] AS [UserCreated1], [c].[UserModified] AS [UserModified1]
+    FROM [Sales] AS [s]
+    INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+    INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+    WHERE ([s].[InvoiceID] = @__ID_0) AND ([s].[IsDeleted] = CAST(0 AS bit))
+) AS [t]
+LEFT JOIN [Payments] AS [p] ON [t].[ID] = [p].[SaleID]
+LEFT JOIN [Items] AS [i0] ON [t].[ID1] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [t].[ID1], [p].[ID], [i0].[ID]"
+2020-09-10 23:49:12.034 +01:00 [Information] Executing ObjectResult, writing value of type '"CRMSystem.Domains.Sale"'.
+2020-09-10 23:49:12.036 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)" in 16.5834ms
+2020-09-10 23:49:12.036 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:49:12.036 +01:00 [Information] Request finished in 20.2972ms 200 application/json; charset=utf-8
+2020-09-10 23:50:20.582 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000019  
+2020-09-10 23:50:20.584 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:50:20.585 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:50:20.590 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:50:20.597 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:50:20.610 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CartID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[InvoiceID], [t].[IsDeleted], [t].[LPO], [t].[ToDeliver], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID0], [t].[CashierID], [t].[CustomerID0], [t].[DateCreated0], [t].[DateModified0], [t].[DeliveryFee0], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated0], [t].[UserModified0], [t].[ID1], [t].[Amount0], [t].[Code], [t].[DateCreated1], [t].[DateModified1], [t].[TransactionType], [t].[UserCreated1], [t].[UserModified1], [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID] AS [ID0], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID] AS [CartID0], [i].[CashierID], [i].[CustomerID] AS [CustomerID0], [i].[DateCreated] AS [DateCreated0], [i].[DateModified] AS [DateModified0], [i].[DeliveryFee] AS [DeliveryFee0], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated] AS [UserCreated0], [i].[UserModified] AS [UserModified0], [c].[ID] AS [ID1], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated1], [c].[DateModified] AS [DateModified1], [c].[TransactionType], [c].[UserCreated] AS [UserCreated1], [c].[UserModified] AS [UserModified1]
+    FROM [Sales] AS [s]
+    INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+    INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+    WHERE ([s].[InvoiceID] = @__ID_0) AND ([s].[IsDeleted] = CAST(0 AS bit))
+) AS [t]
+LEFT JOIN [Payments] AS [p] ON [t].[ID] = [p].[SaleID]
+LEFT JOIN [Items] AS [i0] ON [t].[ID1] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [t].[ID1], [p].[ID], [i0].[ID]"
+2020-09-10 23:50:20.613 +01:00 [Information] Executing ObjectResult, writing value of type '"CRMSystem.Domains.Sale"'.
+2020-09-10 23:50:20.618 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)" in 32.4607ms
+2020-09-10 23:50:20.619 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:50:20.620 +01:00 [Information] Request finished in 37.7727ms 200 application/json; charset=utf-8
+2020-09-10 23:53:32.496 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-10 23:53:32.816 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-10 23:53:33.026 +01:00 [Information] Request finished in 214.9409ms 404 
+2020-09-10 23:53:41.500 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-10 23:53:41.551 +01:00 [Information] Request finished in 50.8723ms 200 text/html;charset=utf-8
+2020-09-10 23:53:41.782 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-10 23:53:41.977 +01:00 [Information] Request finished in 194.9481ms 200 application/json;charset=utf-8
+2020-09-10 23:54:14.999 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000020  
+2020-09-10 23:54:15.007 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:54:15.079 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:54:16.084 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.085 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.085 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.085 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.085 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.086 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.086 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.086 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.086 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.086 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.087 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:54:16.135 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:54:17.304 +01:00 [Information] Executed DbCommand ("140"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:54:17.599 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CartID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[InvoiceID], [t].[IsDeleted], [t].[LPO], [t].[ToDeliver], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID0], [t].[CashierID], [t].[CustomerID0], [t].[DateCreated0], [t].[DateModified0], [t].[DeliveryFee0], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated0], [t].[UserModified0], [t].[ID1], [t].[Amount0], [t].[Code], [t].[DateCreated1], [t].[DateModified1], [t].[TransactionType], [t].[UserCreated1], [t].[UserModified1], [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID] AS [ID0], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID] AS [CartID0], [i].[CashierID], [i].[CustomerID] AS [CustomerID0], [i].[DateCreated] AS [DateCreated0], [i].[DateModified] AS [DateModified0], [i].[DeliveryFee] AS [DeliveryFee0], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated] AS [UserCreated0], [i].[UserModified] AS [UserModified0], [c].[ID] AS [ID1], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated1], [c].[DateModified] AS [DateModified1], [c].[TransactionType], [c].[UserCreated] AS [UserCreated1], [c].[UserModified] AS [UserModified1]
+    FROM [Sales] AS [s]
+    INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+    INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+    WHERE ([s].[InvoiceID] = @__ID_0) AND ([s].[IsDeleted] = CAST(0 AS bit))
+) AS [t]
+LEFT JOIN [Payments] AS [p] ON [t].[ID] = [p].[SaleID]
+LEFT JOIN [Items] AS [i0] ON [t].[ID1] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [t].[ID1], [p].[ID], [i0].[ID]"
+2020-09-10 23:54:17.620 +01:00 [Information] Executing ObjectResult, writing value of type '"CRMSystem.Domains.Sale"'.
+2020-09-10 23:54:17.665 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)" in 2570.3644ms
+2020-09-10 23:54:17.666 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:54:17.671 +01:00 [Information] Request finished in 2672.3222ms 200 application/json; charset=utf-8
+2020-09-10 23:55:22.500 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000019  
+2020-09-10 23:55:22.507 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:55:22.508 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:55:22.573 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:55:22.585 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:55:22.591 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CartID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[InvoiceID], [t].[IsDeleted], [t].[LPO], [t].[ToDeliver], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID0], [t].[CashierID], [t].[CustomerID0], [t].[DateCreated0], [t].[DateModified0], [t].[DeliveryFee0], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated0], [t].[UserModified0], [t].[ID1], [t].[Amount0], [t].[Code], [t].[DateCreated1], [t].[DateModified1], [t].[TransactionType], [t].[UserCreated1], [t].[UserModified1], [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID] AS [ID0], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID] AS [CartID0], [i].[CashierID], [i].[CustomerID] AS [CustomerID0], [i].[DateCreated] AS [DateCreated0], [i].[DateModified] AS [DateModified0], [i].[DeliveryFee] AS [DeliveryFee0], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated] AS [UserCreated0], [i].[UserModified] AS [UserModified0], [c].[ID] AS [ID1], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated1], [c].[DateModified] AS [DateModified1], [c].[TransactionType], [c].[UserCreated] AS [UserCreated1], [c].[UserModified] AS [UserModified1]
+    FROM [Sales] AS [s]
+    INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+    INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+    WHERE ([s].[InvoiceID] = @__ID_0) AND ([s].[IsDeleted] = CAST(0 AS bit))
+) AS [t]
+LEFT JOIN [Payments] AS [p] ON [t].[ID] = [p].[SaleID]
+LEFT JOIN [Items] AS [i0] ON [t].[ID1] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [t].[ID1], [p].[ID], [i0].[ID]"
+2020-09-10 23:55:22.593 +01:00 [Information] Executing ObjectResult, writing value of type '"CRMSystem.Domains.Sale"'.
+2020-09-10 23:55:22.595 +01:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)" in 86.4289ms
+2020-09-10 23:55:22.595 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:55:22.596 +01:00 [Information] Request finished in 95.8995ms 200 application/json; charset=utf-8
+2020-09-10 23:57:18.337 +01:00 [Information] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-10 23:57:18.970 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-09-10 23:57:19.157 +01:00 [Information] Request finished in 191.6338ms 404 
+2020-09-10 23:57:25.947 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2020-09-10 23:57:25.967 +01:00 [Information] Request finished in 15.1092ms 301 
+2020-09-10 23:57:25.971 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-09-10 23:57:26.096 +01:00 [Information] Request finished in 121.1251ms 200 text/html;charset=utf-8
+2020-09-10 23:57:26.154 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-09-10 23:57:26.155 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-09-10 23:57:26.158 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-09-10 23:57:26.422 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-09-10 23:57:26.438 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-09-10 23:57:26.470 +01:00 [Information] Request finished in 319.9338ms 200 text/css
+2020-09-10 23:57:26.472 +01:00 [Information] Request finished in 315.0087ms 200 application/javascript
+2020-09-10 23:57:26.519 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-09-10 23:57:26.532 +01:00 [Information] Request finished in 374.9967ms 200 application/javascript
+2020-09-10 23:57:27.431 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-bundle.js.map  
+2020-09-10 23:57:27.467 +01:00 [Information] Request finished in 37.5025ms 404 
+2020-09-10 23:57:27.624 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js.map  
+2020-09-10 23:57:27.629 +01:00 [Information] Request finished in 3.5308ms 404 
+2020-09-10 23:57:27.805 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-09-10 23:57:28.114 +01:00 [Information] Request finished in 309.9239ms 200 application/json;charset=utf-8
+2020-09-10 23:59:15.559 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSaleWithPayments/0000019  
+2020-09-10 23:59:15.592 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSaleWithPayments (CRMSystem.Presentation.Core)"'
+2020-09-10 23:59:15.741 +01:00 [Information] Route matched with "{action = \"GetSaleWithPayments\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSaleWithPayments(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-09-10 23:59:17.343 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.348 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.356 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.361 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.369 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.373 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.376 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.379 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.385 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.388 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.392 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-10 23:59:17.442 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-09-10 23:59:18.771 +01:00 [Information] Executed DbCommand ("139"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE ([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [i0].[ID]"
+2020-09-10 23:59:46.094 +01:00 [Information] Executed DbCommand ("172"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CartID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[InvoiceID], [t].[IsDeleted], [t].[LPO], [t].[ToDeliver], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID0], [t].[CashierID], [t].[CustomerID0], [t].[DateCreated0], [t].[DateModified0], [t].[DeliveryFee0], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated0], [t].[UserModified0], [t].[ID1], [t].[Amount0], [t].[Code], [t].[DateCreated1], [t].[DateModified1], [t].[TransactionType], [t].[UserCreated1], [t].[UserModified1], [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID] AS [ID0], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID] AS [CartID0], [i].[CashierID], [i].[CustomerID] AS [CustomerID0], [i].[DateCreated] AS [DateCreated0], [i].[DateModified] AS [DateModified0], [i].[DeliveryFee] AS [DeliveryFee0], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated] AS [UserCreated0], [i].[UserModified] AS [UserModified0], [c].[ID] AS [ID1], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated1], [c].[DateModified] AS [DateModified1], [c].[TransactionType], [c].[UserCreated] AS [UserCreated1], [c].[UserModified] AS [UserModified1]
+    FROM [Sales] AS [s]
+    INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+    INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+    WHERE ([s].[InvoiceID] = @__ID_0) AND ([s].[IsDeleted] = CAST(0 AS bit))
+) AS [t]
+LEFT JOIN [Payments] AS [p] ON [t].[ID] = [p].[SaleID]
+LEFT JOIN [Items] AS [i0] ON [t].[ID1] = [i0].[CartID]
+ORDER BY [t].[ID], [t].[ID0], [t].[ID1], [p].[ID], [i0].[ID]"

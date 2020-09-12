@@ -4,14 +4,16 @@ using CRMSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    partial class TContextModelSnapshot : ModelSnapshot
+    [Migration("20200910182910_isDeleted")]
+    partial class isDeleted
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -665,32 +667,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.ToTable("Quotations");
                 });
 
-            modelBuilder.Entity("CRMSystem.Domains.ReturnedStock", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("CartID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("InvoiceNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("RefundAmount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("CartID");
-
-                    b.ToTable("ReturnedStocks");
-                });
-
             modelBuilder.Entity("CRMSystem.Domains.Role", b =>
                 {
                     b.Property<int>("ID")
@@ -752,9 +728,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<string>("LPO")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ReturnedStockID")
-                        .HasColumnType("int");
-
                     b.Property<bool>("ToDeliver")
                         .HasColumnType("bit");
 
@@ -769,8 +742,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.HasIndex("CartID");
 
                     b.HasIndex("InvoiceID");
-
-                    b.HasIndex("ReturnedStockID");
 
                     b.ToTable("Sales");
                 });
@@ -1147,13 +1118,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("CRMSystem.Domains.ReturnedStock", b =>
-                {
-                    b.HasOne("CRMSystem.Domains.Cart", "Cart")
-                        .WithMany()
-                        .HasForeignKey("CartID");
-                });
-
             modelBuilder.Entity("CRMSystem.Domains.Sale", b =>
                 {
                     b.HasOne("CRMSystem.Domains.Cart", "Cart")
@@ -1167,10 +1131,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .HasForeignKey("InvoiceID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("CRMSystem.Domains.ReturnedStock", "ReturnedStock")
-                        .WithMany()
-                        .HasForeignKey("ReturnedStockID");
                 });
 
             modelBuilder.Entity("CRMSystem.Domains.User", b =>

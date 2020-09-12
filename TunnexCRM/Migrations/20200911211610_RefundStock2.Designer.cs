@@ -4,14 +4,16 @@ using CRMSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    partial class TContextModelSnapshot : ModelSnapshot
+    [Migration("20200911211610_RefundStock2")]
+    partial class RefundStock2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -665,7 +667,7 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.ToTable("Quotations");
                 });
 
-            modelBuilder.Entity("CRMSystem.Domains.ReturnedStock", b =>
+            modelBuilder.Entity("CRMSystem.Domains.RefundStock", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -688,7 +690,7 @@ namespace CRMSystem.Presentation.Core.Migrations
 
                     b.HasIndex("CartID");
 
-                    b.ToTable("ReturnedStocks");
+                    b.ToTable("RefundStocks");
                 });
 
             modelBuilder.Entity("CRMSystem.Domains.Role", b =>
@@ -752,7 +754,7 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<string>("LPO")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ReturnedStockID")
+                    b.Property<int?>("RefundStockID")
                         .HasColumnType("int");
 
                     b.Property<bool>("ToDeliver")
@@ -770,7 +772,7 @@ namespace CRMSystem.Presentation.Core.Migrations
 
                     b.HasIndex("InvoiceID");
 
-                    b.HasIndex("ReturnedStockID");
+                    b.HasIndex("RefundStockID");
 
                     b.ToTable("Sales");
                 });
@@ -1147,7 +1149,7 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("CRMSystem.Domains.ReturnedStock", b =>
+            modelBuilder.Entity("CRMSystem.Domains.RefundStock", b =>
                 {
                     b.HasOne("CRMSystem.Domains.Cart", "Cart")
                         .WithMany()
@@ -1168,9 +1170,9 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CRMSystem.Domains.ReturnedStock", "ReturnedStock")
+                    b.HasOne("CRMSystem.Domains.RefundStock", "RefundStock")
                         .WithMany()
-                        .HasForeignKey("ReturnedStockID");
+                        .HasForeignKey("RefundStockID");
                 });
 
             modelBuilder.Entity("CRMSystem.Domains.User", b =>

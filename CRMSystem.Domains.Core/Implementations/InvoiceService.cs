@@ -43,6 +43,11 @@ namespace CRMSystem.Domains
             return IID;
         }
 
+        public async Task<Invoice> GetInvoiceByinvNo(string invNumber)
+        {
+            return await _iRepo.getByinvNumberAsync(invNumber);
+        }
+
         public async Task<Invoice> GetInvoiceByNumber(string InvNumber, int customerID)
         {
 

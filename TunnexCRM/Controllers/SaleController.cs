@@ -34,6 +34,14 @@ namespace CRMSystem.Presentation
 
         }
 
+        [HttpPost("DeleteSale/{invoiceNo}")]
+        public async Task<IActionResult> DeleteSale(string invoiceNo)
+        {
+            await _service.DeleteSale(invoiceNo);
+            return Ok();
+
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -53,6 +61,19 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="InvNumber"></param>
+        /// <returns></returns>
+        [HttpGet("GetSaleWithPayments/{InvNumber}")]
+        public async Task<IActionResult> GetSaleWithPayments(string InvNumber)
+        {
+            var result = await _service.GetSaleWithPaymentsByIDAsync(InvNumber);
+            return Ok(result);
+        }
+
 
         /// <summary>
         /// Fetch All Customer Sales Record
@@ -116,6 +137,19 @@ namespace CRMSystem.Presentation
 
             return Ok(result);
 
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("ReturnProduct")]
+        public async Task<IActionResult> ReturnProduct(ReturnedStock data)
+        {
+            var result = await _service.CreateRefund(data);
+            return Ok(result);
+        
         }
 
     }
