@@ -1,37 +1,34 @@
 ﻿using CRMSystem.Domains;
 using Microsoft.AspNetCore.Components.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CRMSystem.Infrastructure
 {
-    public class ReturnedStockRepo : IRepo<ReturnedStock>
+    public class ReturnedStockRepo : IReturnedStockRepo
     {
         private readonly TContext _context;
 
         public ReturnedStockRepo(TContext context) => _context = context;
 
 
-        public Task deleteAllAsync(List<ReturnedStock> data)
+        
+        public async Task<ReturnedStock> getAsync(string invNo)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task deleteAsync(int ID)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<ReturnedStock>> getAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<ReturnedStock> getAsync(int ID)
-        {
-            throw new NotImplementedException();
+            try
+            {
+                var stock = await _context.ReturnedStocks.Where(x => x.InvoiceNo == invNo)
+                    .Include(y=>y.Cart).ThenInclude(y=>y.Items).FirstOrDefaultAsync();
+                return stock;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<int> insertAsync(ReturnedStock data)
@@ -57,14 +54,6 @@ namespace CRMSystem.Infrastructure
 
         }
 
-        public Task<int> insertListAsync(List<ReturnedStock> data)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> updateAsync(ReturnedStock data)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

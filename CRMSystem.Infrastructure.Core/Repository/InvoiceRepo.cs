@@ -68,8 +68,6 @@ namespace CRMSystem.Infrastructure
             {
                 throw ex;
             }
-
-            throw new NotImplementedException();
         }
 
         public async Task<Invoice> getByinvNumberAsync(string invNumber)

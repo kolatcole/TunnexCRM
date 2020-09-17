@@ -107,6 +107,15 @@ namespace CRMSystem.Domains
 
         public async Task<bool> DeleteFOCPayment(string invNo)
         {
+
+            var invoice = await _iService.GetInvoiceByinvNo(invNo);
+            invoice.Balance = invoice.Amount;
+            invoice.AmountPaid = 0;
+            invoice.IsPaid = false;
+
+            await _iService.SaveInvoice(invoice);
+
+
             var result = await _repo.DeleteFOCPaymentAsync(invNo);
             return result;
         

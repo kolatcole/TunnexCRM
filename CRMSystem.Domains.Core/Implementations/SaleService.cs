@@ -19,12 +19,12 @@ namespace CRMSystem.Domains
         private readonly IRepo<Product> _proRepo;
         private readonly IRepo<Item> _iRepo;
         private readonly IRepo<Cart> _cRepo;
-        private readonly IRepo<ReturnedStock> _rRepo;
+        private readonly IReturnedStockRepo _rRepo;
 
 
         public SaleService(IRepo<Sale> repo,  IInvoiceService inService, ICartService cService, IRepo<Payment> pRepo, 
             IPaymentRepo payRepo, IRepo<Customer> custRepo, ISaleRepo sRepo, IWaybillService wService, IRepo<Product> proRepo, IRepo<Item> iRepo,
-            IRepo<Cart> cRepo, IRepo<ReturnedStock> rRepo)
+            IRepo<Cart> cRepo, IReturnedStockRepo rRepo)
         {
             _repo = repo;
             _cService = cService;
@@ -118,7 +118,10 @@ namespace CRMSystem.Domains
             {
                 invoice.DeliveryFee = data.DeliveryFee;
                 invoice.Amount += data.DeliveryFee;
-                invoice.Balance = invoice.Amount;
+                invoice.Balance += invoice.DeliveryFee;
+
+                if (invoice.Balance == 0)
+                    invoice.IsPaid = true;
 
             }
                 
@@ -225,6 +228,8 @@ namespace CRMSystem.Domains
             return sale;
         }
 
+       // public async Task<Sale> GetSale
+
         public async Task<Sale> GetSaleWithPaymentsByIDAsync(string invNo)
         {
             // get invoice
@@ -234,10 +239,14 @@ namespace CRMSystem.Domains
 
             var sale = await _repo.getAsync(invoice.ID);
 
+            // get returnedstock
+
+            var stock = await _rRepo.getAsync(invNo);
             // get paymwnt with invNo
 
             var payments = await _payRepo.getAllByInvAsync(invNo);
 
+            sale.ReturnedStock = stock;
             sale.Payment = payments;
 
             return sale;

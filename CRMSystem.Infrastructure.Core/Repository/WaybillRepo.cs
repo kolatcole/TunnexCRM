@@ -50,7 +50,7 @@ namespace CRMSystem.Infrastructure
                 try
                 {
                     var waybills = await _context.Waybills.Include(y => y.WaybillProducts).Where(x => x.DateCreated >= startdate &&
-                                              x.DateCreated <= endDate).ToListAsync();
+                                              x.DateCreated <= endDate).OrderByDescending(x=>x.DateCreated).ToListAsync();
                     return waybills;
                 }
                 catch (Exception ex)
@@ -71,7 +71,7 @@ namespace CRMSystem.Infrastructure
             {
                 try
                 {
-                    var waybills = await _context.Waybills.Include(y => y.WaybillProducts).ToListAsync();
+                    var waybills = await _context.Waybills.Include(y => y.WaybillProducts).OrderByDescending(x => x.DateCreated).ToListAsync();
                     return waybills;
                 }
                 catch (Exception ex)

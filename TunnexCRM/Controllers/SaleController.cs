@@ -152,5 +152,18 @@ namespace CRMSystem.Presentation
         
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="invNo"></param>
+        /// <returns></returns>
+        [HttpGet("GetSalewithInvoiceNo/{invNo}")]
+        public async Task<IActionResult> GetSalewithInvoiceNo(string invNo)
+        {
+            var result = await _service.GetSaleWithPaymentsByIDAsync(invNo);
+            return Ok(result);
+        
+        }
+
     }
 }
