@@ -119,17 +119,16 @@ namespace CRMSystem.Infrastructure
             var item = await _context.Items.FindAsync(data.ID);
             try
             {
-                if (item != null)
-                {
-                    item.Amount = data.Amount;
-                    item.CartID = data.CartID;
-                    item.Code = data.Code;
-                    item.Name = data.Name;
-                    item.Quantity = data.Quantity;
+                
+                    if(item.Amount!=0) item.Amount = data.Amount;
+                    if (item.CartID != 0) item.CartID = data.CartID;
+                    if (item.Code != null) item.Code = data.Code;
+                    if (item.Name != null) item.Name = data.Name;
+                    if (item.Quantity != 0) item.Quantity = data.Quantity;
 
                     _context.Update(item);
                     ID = await _context.SaveChangesAsync();
-                }
+               
 
             }
             catch (Exception ex)

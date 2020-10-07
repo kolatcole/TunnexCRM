@@ -73,6 +73,24 @@ namespace CRMSystem.Domains
 
             }
 
+
+
+            var invoice = new Invoice
+            {
+                Amount = data.Cart.Amount - (data.Cart.Amount * (data.Invoice.DiscountPercent / 100))
+             };
+
+            //  add delivery Fee to amount if delivery is checked
+
+            if (data.ToDeliver)
+            {
+                invoice.DeliveryFee = data.DeliveryFee;
+                invoice.Amount += data.DeliveryFee;
+                
+            }
+
+            invoice.Balance += invoice.Amount;
+
             // save payment if payment is available
             decimal totalAmt = 0;
             var invIsPaid = false;
@@ -88,49 +106,35 @@ namespace CRMSystem.Domains
                     totalAmt += payment.Amount;
 
                     // Change payment status to true if payment amount equals cart amount
-                    if (payment.Amount == data.Cart.Amount)
+                    if (payment.Amount == invoice.Amount)
                         invIsPaid = true;
                 }
 
             }
 
 
-            var invoice = new Invoice
-            { 
-                CustomerID=data.CustomerID,
-                DateCreated=data.DateCreated,
-                InvoiceDate=data.DateCreated,
-                InvoiceNo= invNo,
-                CartID = CID,
-                Amount=data.Cart.Amount-(data.Cart.Amount * (data.Invoice.DiscountPercent / 100)),
-                AmountPaid=totalAmt,
-                Balance=(data.Cart.Amount - (data.Cart.Amount * (data.Invoice.DiscountPercent / 100))) -totalAmt,
-                IsPaid=invIsPaid,
-                DiscountPercent=data.Invoice.DiscountPercent,
-                Type="sale",
-                UserCreated=data.UserCreated
-
-            };
-
-            //  add delivery Fee to amount if delivery is checked
-
-            if (data.ToDeliver)
-            {
-                invoice.DeliveryFee = data.DeliveryFee;
-                invoice.Amount += data.DeliveryFee;
-                invoice.Balance += invoice.DeliveryFee;
-
-                if (invoice.Balance == 0)
-                    invoice.IsPaid = true;
-
-            }
-                
+            invoice.CustomerID = data.CustomerID;
+            invoice.DateCreated = data.DateCreated;
+            invoice.InvoiceDate = data.DateCreated;
+            invoice.InvoiceNo = invNo;
+            invoice.CartID = CID;
+            invoice.DiscountPercent = data.Invoice.DiscountPercent;
+            invoice.Type = "sale";
+            invoice.UserCreated = data.UserCreated;
+            invoice.AmountPaid = totalAmt;
+            invoice.Balance -= totalAmt;
+            invoice.IsPaid = invIsPaid;
 
 
             // save invoice
 
 
             var IID = await _inService.SaveInvoice(invoice);
+
+
+
+            
+
 
 
             // update customer 
@@ -161,7 +165,8 @@ namespace CRMSystem.Domains
             {
                 DateCreated = DateTime.Now,
                 InvoiceNo = invNo,
-                UserCreated = data.UserCreated
+                UserCreated = data.UserCreated,
+                customerID=data.CustomerID
                
             };
 
@@ -351,12 +356,16 @@ namespace CRMSystem.Domains
 
             // use invoiceID to get the sale
 
+            // soft delete invoice
+
+            await _inService.deleteInvoice(invoice.ID);
+
             // soft delete the sale
             await _repo.deleteAsync(invoice.ID);
 
         
         }
-
+        
         public async Task<int> CreateRefund(ReturnedStock data)
         {
             // get invoice
@@ -373,6 +382,8 @@ namespace CRMSystem.Domains
 
             decimal refundAmount = 0;
 
+            decimal itemAmount = 0;
+
             foreach (var item in data.Cart.Items)
             {
 
@@ -385,8 +396,25 @@ namespace CRMSystem.Domains
 
                 item.Amount = product.SalePrice * item.Quantity; // to get the total amount of product returnedd
 
-                refundAmount += item.Amount;
+                
+
+                if (invoice.DiscountPercent>0.00M)
+                {
+                    item.Amount = item.Amount-( item.Amount * (invoice.DiscountPercent/100));
+                    itemAmount = item.Amount;
+                    refundAmount = refundAmount + itemAmount;
+                }
+                else
+                {
+                    itemAmount = item.Amount;
+                    refundAmount += itemAmount;
+                }
+
                 item.Name = product.Name;
+
+
+                //refundAmount += item.Amount;
+                //item.Name = product.Name;  was working initially
 
 
                 // Reduce product in cart with the returned items(I think it's not needed to reduce the qty in the cart,
@@ -404,6 +432,36 @@ namespace CRMSystem.Domains
 
                 items.Add(item);
 
+
+                // update existing cart items
+
+
+                
+                foreach (var exitem in invoice.Cart.Items)
+                {
+
+                    
+                    if (exitem.ProductID==item.ProductID)
+                    {
+                        exitem.Quantity -= item.Quantity;
+                        decimal amt = exitem.Quantity * product.SalePrice;
+                        if (invoice.DiscountPercent>0.00M)
+                        {
+                            exitem.Amount = amt - (amt * (invoice.DiscountPercent / 100));
+                        }
+                        else
+                        {
+                            exitem.Amount = amt;
+                        }
+                        
+
+                        await _iRepo.updateAsync(exitem);
+                    }
+                }
+
+                
+                
+
             }
 
             // save the returned items 
@@ -415,11 +473,26 @@ namespace CRMSystem.Domains
             data.RefundAmount= refundAmount;
             data.Cart.ID = CID;
             await _cRepo.updateAsync(data.Cart);
+            
 
 
             //save refunded items
             data.CartID = CID;
             var RID = await _rRepo.insertAsync(data);
+
+
+            // update invoice
+
+            invoice.Amount -= refundAmount;
+            invoice.Balance -= refundAmount;
+
+            if (invoice.IsPaid)
+                invoice.AmountPaid -= refundAmount;
+
+            invoice.Cart.Amount = invoice.Amount;
+            await _cRepo.updateAsync(invoice.Cart);
+
+            await _inService.updateAsync(invoice);
 
             return RID;
 

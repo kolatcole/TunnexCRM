@@ -25,7 +25,7 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// Enter productID in item
         /// Enter each item quantity purchased
         /// Hardcode transactionType to true
-        /// Enter a unit amount for each item in the cart
+        /// Enter a unit amount in foreign currency for each item in the cart
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>

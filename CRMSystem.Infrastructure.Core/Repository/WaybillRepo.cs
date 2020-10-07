@@ -27,7 +27,8 @@ namespace CRMSystem.Infrastructure
                 {
                     DateCreated = DateTime.Now,
                     UserCreated = data.UserCreated,
-                    InvoiceNo = data.InvoiceNo
+                    InvoiceNo = data.InvoiceNo,
+                    customerID=data.customerID
                 };
 
                 await _context.Waybills.AddAsync(waybill);

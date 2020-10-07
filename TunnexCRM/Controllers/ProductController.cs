@@ -69,6 +69,12 @@ namespace CRMSystem.Presentation
             var result = await _service.GetAllProducts();
             return Ok(result);
         }
+        [HttpGet("GetAllAvailableProducts")]
+        public async Task<IActionResult> GetAllAvailableProducts()
+        {
+            var result = await _service.GetAllAvailableProducts();
+            return Ok(result);
+        }
 
         [HttpGet("BestSellingProducts")]
         public async Task<IActionResult> BestSellingProducts()

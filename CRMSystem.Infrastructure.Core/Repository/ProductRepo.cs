@@ -41,7 +41,7 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var product = await _context.Products.ToListAsync();
+                var product = await _context.Products.OrderByDescending(x => x.DateCreated).ToListAsync();
                 return product;
             }
             catch (Exception ex)
@@ -51,6 +51,22 @@ namespace CRMSystem.Infrastructure
             
 
         }
+        public async Task<List<Product>> getAllAvailableAsync()
+        {
+
+            try
+            {
+                var product = await _context.Products.Where(x=>x.Quantity > 0).OrderByDescending(x => x.DateCreated).ToListAsync();
+                return product;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+        
 
         public async Task<Product> getAsync(int ID)
         {
@@ -76,7 +92,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var products = await _context.Products.OrderByDescending(x => x.TotalSold).Take(5).ToListAsync();
+                var products = await _context.Products.OrderByDescending(x => x.TotalSold).ToListAsync();
                 return products;
             }
             catch (Exception ex)

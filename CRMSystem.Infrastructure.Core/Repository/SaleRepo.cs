@@ -44,7 +44,8 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).ToListAsync();
+                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
+                                                .OrderByDescending(x => x.DateCreated ).Where(x=>x.IsDeleted==false).ToListAsync();
 
                 return sale;
             }
@@ -61,7 +62,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
-                                                .Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted == false).ToListAsync();
+                                                .Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted == false)
+                                                .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -91,7 +93,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.InvoiceID == invID).FirstOrDefaultAsync();
+                var sale = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).
+                    Where(x => x.InvoiceID == invID && x.IsDeleted == false).FirstOrDefaultAsync();
                 return sale;
             }
             catch (Exception ex)
@@ -107,7 +110,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
-                                                .Where(x => x.CustomerID == customerID && x.IsDeleted==false).ToListAsync();
+                                                .Where(x => x.CustomerID == customerID && x.IsDeleted==false)
+                                                .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -186,7 +190,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items)
-                                                .Where(x => x.DateCreated.Date == date.Date && x.IsDeleted==false).ToListAsync();
+                                                .Where(x => x.DateCreated.Date == date.Date && x.IsDeleted==false)
+                                                .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -206,7 +211,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).ThenInclude(a => a.Items).
-                            Where(x => x.DateCreated.Date >= startdate.Date && x.DateCreated <= enddate.Date).ToListAsync();
+                            Where(x => x.DateCreated.Date >= startdate.Date && x.DateCreated <= enddate.Date && x.IsDeleted == false)
+                            .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -220,7 +226,8 @@ namespace CRMSystem.Infrastructure
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).
                                     ThenInclude(a => a.Items).Where(x => x.CustomerID == customerID
-                                    && x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted == false).ToListAsync();
+                                    && x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted == false)
+                                    .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return sales;
             }
             catch (Exception ex)
@@ -234,7 +241,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var sales = await _context.Sales.Include(y => y.Invoice).Include(y => y.Cart).
-                                    ThenInclude(a => a.Items).Where(x =>x.IsDeleted == false).ToListAsync();
+                                    ThenInclude(a => a.Items).Where(x =>x.IsDeleted == false)
+                                    .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return sales;
             }
             catch (Exception ex)

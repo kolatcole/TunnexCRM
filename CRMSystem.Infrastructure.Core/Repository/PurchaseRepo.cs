@@ -20,7 +20,8 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var Purchase = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).ToListAsync();
+                var Purchase = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items)
+                                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
 
                 return Purchase;
             }
@@ -36,7 +37,9 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
+                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).
+                                                        Where(x => x.DateCreated >= startdate && x.DateCreated <= enddate)
+                                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -49,7 +52,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var Purchase = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.InvoiceNo == invNo).FirstOrDefaultAsync();
+                var Purchase = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.InvoiceNo == invNo)
+                                                        .OrderByDescending(x => x.DateCreated).FirstOrDefaultAsync();
 
                 return Purchase;
             }
@@ -65,7 +69,9 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.SupplierID == supplierID).ToListAsync();
+                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).
+                                                        Where(x => x.SupplierID == supplierID)
+                                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -114,7 +120,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated.Date == date.Date).ToListAsync();
+                var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).Where(x => x.DateCreated.Date == date.Date)
+                                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -130,7 +137,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var Purchases = await _context.Purchases.Include(y => y.Cart).ThenInclude(a => a.Items).
-                            Where(x => x.DateCreated.Date >= startdate.Date && x.DateCreated <= enddate.Date).ToListAsync();
+                            Where(x => x.DateCreated.Date >= startdate.Date && x.DateCreated <= enddate.Date)
+                            .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -144,7 +152,8 @@ namespace CRMSystem.Infrastructure
             {
                 var Purchases = await _context.Purchases.Include(y => y.Cart).
                                     ThenInclude(a => a.Items).Where(x => x.SupplierID == supplierID
-                                    && x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
+                                    && x.DateCreated >= startdate && x.DateCreated <= enddate)
+                                    .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -158,7 +167,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var Purchases = await _context.Purchases.Include(y => y.Cart).
-                                    ThenInclude(a => a.Items).ToListAsync();
+                                    ThenInclude(a => a.Items).OrderByDescending(x => x.DateCreated).ToListAsync();
                 return Purchases;
             }
             catch (Exception ex)
@@ -179,7 +188,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var purchases = await _context.Purchases.Where(x=>x.SupplierID==supplierID).Include(y => y.Cart).
-                                    ThenInclude(a => a.Items).ToListAsync();
+                                    ThenInclude(a => a.Items).OrderByDescending(x => x.DateCreated).ToListAsync();
                 return purchases;
             }
             catch (Exception ex)

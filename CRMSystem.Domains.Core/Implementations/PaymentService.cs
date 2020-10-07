@@ -113,7 +113,8 @@ namespace CRMSystem.Domains
             invoice.AmountPaid = 0;
             invoice.IsPaid = false;
 
-            await _iService.SaveInvoice(invoice);
+            // update invoice
+            await _iService.updateAsync(invoice);
 
 
             var result = await _repo.DeleteFOCPaymentAsync(invNo);

@@ -15,9 +15,28 @@ namespace CRMSystem.Infrastructure
         {
             _context = context;
         }
-        public Task deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // get sale by invoiceID
+                var invoice = await _context.Invoices.Where(x => x.IsDeleted != true && x.ID == ID).FirstOrDefaultAsync();
+
+                // soft delete the invoice object and update the daatabase
+
+                invoice.IsDeleted = true;
+                invoice.DateModified = DateTime.Now;
+
+
+                _context.Invoices.Update(invoice);
+                ID = await _context.SaveChangesAsync();
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
         public Task deleteAllAsync(List<Invoice> data)
         {
@@ -28,7 +47,8 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var invoices = await _context.Invoices.Where(x => x.Type == "sales").ToListAsync();
+                var invoices = await _context.Invoices.Where(x => x.Type == "sales" && x.IsDeleted != true).
+                    OrderByDescending(x => x.DateCreated).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)
@@ -44,7 +64,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
-                                        Where(x => x.ID == ID && x.Type == "sales").FirstOrDefaultAsync();
+                                        Where(x => x.ID == ID && x.Type == "sales" && x.IsDeleted != true).
+                                        OrderByDescending(x => x.DateCreated).FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -61,7 +82,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
-                    Where(x => x.InvoiceNo == invNumber && x.CustomerID == customerID).FirstOrDefaultAsync();
+                    Where(x => x.InvoiceNo == invNumber && x.CustomerID == customerID && x.IsDeleted != true).FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -75,7 +96,9 @@ namespace CRMSystem.Infrastructure
             
             try
             {
-                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).Where(x => x.InvoiceNo == invNumber && x.Type == "sale").FirstOrDefaultAsync();
+                var invoice = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
+                                                        Where(x => x.InvoiceNo == invNumber && x.Type == "sale" && x.IsDeleted!=true)
+                                                        .OrderByDescending(x => x.DateCreated).FirstOrDefaultAsync();
                 return invoice;
             }
             catch (Exception ex)
@@ -94,7 +117,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items)
-                                    .Where(x => x.CustomerID == customerID && x.Type == "sales").ToListAsync();
+                                    .Where(x => x.CustomerID == customerID && x.Type == "sales" && x.IsDeleted != true)
+                                    .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)
@@ -111,7 +135,8 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items)
-                                    .Where(x => x.CustomerID == customerID && x.Type == "proforma").ToListAsync();
+                                    .Where(x => x.CustomerID == customerID && x.Type == "proforma")
+                                    .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)
@@ -130,7 +155,7 @@ namespace CRMSystem.Infrastructure
                 var invoices = await _context.Invoices.Include(x => x.Cart).
                                         ThenInclude(x => x.Items).
                                         Where(x => x.Type == "proforma" && x.DateCreated >= startdate && x.DateCreated <= enddate)
-                                        .ToListAsync();
+                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)
@@ -148,7 +173,7 @@ namespace CRMSystem.Infrastructure
                                         ThenInclude(x => x.Items).
                                         Where(x => x.Type == "proforma" && x.CustomerID == customerID &&
                                         x.DateCreated >= startdate && x.DateCreated <= enddate)
-                                        .ToListAsync();
+                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)
@@ -241,6 +266,7 @@ namespace CRMSystem.Infrastructure
                     invoice.UserModified = data.UserModified;
                     invoice.AmountPaid = data.AmountPaid;
                     invoice.Balance = data.Balance;
+                    invoice.IsDeleted = data.IsDeleted;
 
 
                     _context.Invoices.Update(invoice);
@@ -260,7 +286,9 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).ThenInclude(x => x.Items).
-                                        Where(x => x.Type == "sale" && x.Balance != 0 && x.DateCreated >= startdate && x.DateCreated <= enddate).ToListAsync();
+                                        Where(x => x.Type == "sale" && x.Balance != 0 && 
+                                        x.DateCreated >= startdate && x.DateCreated <= enddate && x.IsDeleted != true)
+                                        .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return invoices;
             }
             catch (Exception ex)

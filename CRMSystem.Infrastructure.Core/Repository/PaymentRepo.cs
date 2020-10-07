@@ -32,7 +32,7 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var payment = await _context.Payments.Where(x=>x.InvoiceNo==invNo).ToListAsync();
+                var payment = await _context.Payments.Where(x=>x.InvoiceNo==invNo).OrderByDescending(x => x.DatePaid).ToListAsync();
                 return payment;
             }
             catch (Exception ex)
@@ -48,7 +48,7 @@ namespace CRMSystem.Infrastructure
 
             try
             {
-                var payment = await _context.Payments.ToListAsync();
+                var payment = await _context.Payments.OrderByDescending(x => x.DatePaid).ToListAsync();
                 return payment;
             }
             catch (Exception ex)
@@ -90,7 +90,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                return await _context.Payments.Where(x => x.CustomerID == customerID).ToListAsync();
+                return await _context.Payments.Where(x => x.CustomerID == customerID).OrderByDescending(x => x.DatePaid).ToListAsync();
             }
             catch
             {
@@ -102,7 +102,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                return await _context.Payments.Where(x => x.CustomerID == customerID && x.Method == "FOC").ToListAsync();
+                return await _context.Payments.Where(x => x.CustomerID == customerID && x.Method == "FOC")
+                                    .OrderByDescending(x => x.DatePaid).ToListAsync();
             }
             catch
             {
@@ -116,7 +117,8 @@ namespace CRMSystem.Infrastructure
             {
                 return await _context.Payments.Where(x => x.CustomerID == customerID &&
                                                      x.DatePaid >= startDate && x.DatePaid <= endDate &&
-                                                     x.Method == "FOC").ToListAsync();
+                                                     x.Method == "FOC")
+                                                     .OrderByDescending(x => x.DatePaid).ToListAsync();
             }
             catch
             {
@@ -128,7 +130,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                return await _context.Payments.Where(x => x.DatePaid >= startDate && x.DatePaid <= endDate && x.Method == "FOC").ToListAsync();
+                return await _context.Payments.Where(x => x.DatePaid >= startDate && x.DatePaid <= endDate && x.Method == "FOC")
+                                                .OrderByDescending(x => x.DatePaid).ToListAsync();
             }
             catch
             {
@@ -138,7 +141,8 @@ namespace CRMSystem.Infrastructure
 
         public async Task<List<Payment>> getPaymentByInvoiceNo(string invNo)
         {
-            var payments = await _context.Payments.Where(x => x.InvoiceNo == invNo).ToListAsync();
+            var payments = await _context.Payments.Where(x => x.InvoiceNo == invNo)
+                                                    .OrderByDescending(x => x.DatePaid).ToListAsync();
             return payments;
         }
 

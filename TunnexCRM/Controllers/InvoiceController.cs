@@ -81,9 +81,6 @@ namespace CRMSystem.Presentation.Core.Controllers
         public async Task<IActionResult> GetProforma(int customerID = 0, string startDate = "0", string endDate = "0")
         {
 
-
-
-
             var result = await _service.getProformaByDate(customerID, startDate, endDate);
 
             return Ok(result);

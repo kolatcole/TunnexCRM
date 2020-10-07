@@ -16,5 +16,6 @@ namespace CRMSystem.Domains
         Task<int> updateAsync(Invoice data);
         Task<List<Invoice>> getDebtorInvoice(DateTime startdate, DateTime enddate);
         Task<int> SaveProformaInvoice(Invoice data);
+        Task deleteInvoice(int ID);
     }
 }

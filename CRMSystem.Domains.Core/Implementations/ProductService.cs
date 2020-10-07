@@ -8,8 +8,8 @@ namespace CRMSystem.Domains
     public class ProductService : IProductService
     {
         private readonly IRepo<Product> _pRepo;
-        private readonly IRepo<Price> _pcrepo;
-        public ProductService(IRepo<Price> pcrepo, IRepo<Product> pRepo)
+        private readonly IProductRepo _pcrepo;
+        public ProductService(IProductRepo pcrepo, IRepo<Product> pRepo)
         {
             _pRepo = pRepo;
             _pcrepo = pcrepo;
@@ -45,6 +45,12 @@ namespace CRMSystem.Domains
             //    await _pcrepo.updateAsync(data.Price);
             return pid;
             
+        }
+
+        public async Task<List<Product>> GetAllAvailableProducts()
+        {
+            var result = await _pcrepo.getAllAvailableAsync();
+            return result;
         }
         public async Task<List<Product>> GetAllProducts()
         {

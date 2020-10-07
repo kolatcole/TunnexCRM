@@ -131,9 +131,11 @@ namespace CRMSystem.Domains
 
 
 
+        }
 
-
-
+        public async Task deleteInvoice(int ID)
+        {
+            await _inRepo.deleteAsync(ID);
         }
     }
 }
