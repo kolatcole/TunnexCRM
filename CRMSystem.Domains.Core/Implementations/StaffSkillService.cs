@@ -106,44 +106,127 @@ namespace CRMSystem.Domains
 
             return newStaffskillorKpis;
         }
-        public async Task<List<StaffSkillorKPI>> getStaffSkillsByStaffIDAsync(int staffID)
+        public async Task<StaffSkillorKPICompetency> getStaffSkillsByStaffIDAsync(int staffID)
         {
             //var skills = await _sskRepo.getStaffSkillsByStaffID(staffID);
             //return skills;
 
             var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+            var overAll = new StaffSkillorKPICompetency();
 
             var newStaffskillorKpis = new List<StaffSkillorKPI>();
-
+            int competenceCount = 0;
+            decimal Average = 0.00M;
+            decimal TempCompetency = 0.00M;
             foreach (var staffskillorKpi in staffskillorKpis)
             {
                 var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
 
                 if (skill.Type == "skill")
+                {
+                    competenceCount++;
+                    TempCompetency += staffskillorKpi.CompetencyValue;
+                    Average /= competenceCount;
                     newStaffskillorKpis.Add(staffskillorKpi);
+
+                    overAll.StaffId = staffID;
+                    overAll.AllSkillsOrKpis = newStaffskillorKpis;
+                    
+
+                }
+                
 
             }
 
-            return newStaffskillorKpis;
+            if (TempCompetency > 0)
+                overAll.OverallCompetence = TempCompetency/competenceCount;
+
+            return overAll;
+
+
+
+
+
+
+
+
+
+
+
+            //var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+
+            //var newStaffskillorKpis = new List<StaffSkillorKPI>();
+            //int competenceCount = 0;
+            //foreach (var staffskillorKpi in staffskillorKpis)
+            //{
+            //    var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+            //    if (skill.Type == "skill")
+            //    {
+            //        competenceCount++;
+            //        staffskillorKpi.Average += staffskillorKpi.CompetencyValue;
+            //        staffskillorKpi.Average /= competenceCount;
+            //        newStaffskillorKpis.Add(staffskillorKpi);
+            //    }
+
+
+            //}
+
+            //return newStaffskillorKpis;
         }
-        public async Task<List<StaffSkillorKPI>> getStaffKpisByStaffIDAsync(int staffID)
+        public async Task<StaffSkillorKPICompetency> getStaffKpisByStaffIDAsync(int staffID)
         {
-            
+
+
+            //var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+
+            //var newStaffskillorKpis = new List<StaffSkillorKPI>();
+
+            //foreach (var staffskillorKpi in staffskillorKpis)
+            //{
+            //    var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+            //    if (skill.Type == "kpi")
+            //        newStaffskillorKpis.Add(staffskillorKpi);
+
+            //}
+
+            //return newStaffskillorKpis;
+
+
 
             var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
 
-            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+            var overAll = new StaffSkillorKPICompetency();
 
+            var newStaffskillorKpis = new List<StaffSkillorKPI>();
+            int competenceCount = 0;
+            decimal Average = 0.00M;
+            decimal TempCompetency = 0.00M;
             foreach (var staffskillorKpi in staffskillorKpis)
             {
                 var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
 
                 if (skill.Type == "kpi")
+                {
+                    competenceCount++;
+                    TempCompetency += staffskillorKpi.CompetencyValue;
+                    Average /= competenceCount;
                     newStaffskillorKpis.Add(staffskillorKpi);
+
+                    overAll.StaffId = staffID;
+                    overAll.AllSkillsOrKpis = newStaffskillorKpis;
+
+
+                }
+
 
             }
 
-            return newStaffskillorKpis;
+            if(TempCompetency>0)
+                overAll.OverallCompetence = TempCompetency / competenceCount;
+
+            return overAll;
         }
 
         public async Task<List<StaffSkillorKPI>> getStaffKpiorSkillByNameAsync(string name)

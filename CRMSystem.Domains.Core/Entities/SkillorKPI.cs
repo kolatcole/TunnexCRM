@@ -35,6 +35,7 @@ namespace CRMSystem.Domains
 
       
         public decimal CompetencyValue { get; set; }
+
     }
     public class Assessment
     {
@@ -45,4 +46,13 @@ namespace CRMSystem.Domains
         public int SAS { get; set; }
         public DateTime DateCreated { get; set; }
     }
+
+    public class StaffSkillorKPICompetency
+    {
+        public int StaffId { get; set; }
+
+        public List<StaffSkillorKPI> AllSkillsOrKpis { get; set; }
+
+        public decimal OverallCompetence { get; set; }
+    }   
 }

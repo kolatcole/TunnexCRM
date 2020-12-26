@@ -12,8 +12,8 @@ namespace CRMSystem.Domains
         Task<StaffSkillorKPI> GetStaffSkillByIDAsync(int ID);
         Task<List<StaffSkillorKPI>> GetAllStaffSkillsAsync();
         Task<List<StaffSkillorKPI>> GetAllStaffKpisAsync();
-        Task<List<StaffSkillorKPI>> getStaffSkillsByStaffIDAsync(int staffID);
-        Task<List<StaffSkillorKPI>> getStaffKpisByStaffIDAsync(int staffID);
+        Task<StaffSkillorKPICompetency> getStaffSkillsByStaffIDAsync(int staffID);
+        Task<StaffSkillorKPICompetency> getStaffKpisByStaffIDAsync(int staffID);
         Task<List<StaffSkillorKPI>> getStaffKpiorSkillByNameAsync(string name);
     }
 }

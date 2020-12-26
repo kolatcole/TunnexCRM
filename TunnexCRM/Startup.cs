@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http.Cors;
 using CRMSystem.Domains;
+using CRMSystem.Domains.Core.Implementations;
 using CRMSystem.Infrastructure;
 using CRMSystem.Presentation.Core.Setup_Files;
 using Microsoft.AspNetCore.Builder;
@@ -124,6 +125,8 @@ namespace CRMSystem
             services.AddTransient<IQuotationService, QuotationService>();
             services.AddTransient<IWaybillService, WaybillService>();
             services.AddTransient<IPurchaseService, PurchaseService>();
+            services.AddTransient<IStaffSkillorKPICompetencyService, StaffSkillorKPICompetencyService>();
+            
 
 
 
