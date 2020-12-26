@@ -11,11 +11,14 @@ namespace CRMSystem.Domains
 
         private readonly IQuotationRepo _qRepo;
         private readonly IRepo<QuotProduct> _pRepo;
-
-        public QuotationService(IQuotationRepo qRepo, IRepo<QuotProduct> pRepo)
+        private readonly ISaleService _service;
+        private readonly IRepo<Product> _proRepo;
+        public QuotationService(IQuotationRepo qRepo, IRepo<QuotProduct> pRepo, IRepo<Sale> sRepo, ISaleService service, IRepo<Product> proRepo)
         {
             _qRepo = qRepo;
             _pRepo = pRepo;
+            _service = service;
+            _proRepo = proRepo;
         }
 
         public async Task<List<Quotation>> GetAllByCustomerAndDates(int customerID, string startDate, string endDate)
@@ -33,7 +36,7 @@ namespace CRMSystem.Domains
                 edate = edate.EndOfDay();
 
             // filter by customerID only, if that's what was given
-            
+
             if ((startDate == "0" || endDate == "0") && customerID > 0)
             {
                 return quotations = await _qRepo.getAllByCustomerAsync(customerID);
@@ -49,23 +52,23 @@ namespace CRMSystem.Domains
             else if (customerID < 1 && (startDate != "0" || endDate != "0"))
             {
                 return quotations = await _qRepo.getAllByDatesAsync(sdate, edate);
-            } 
+            }
 
-            
 
-            
+
+
             // filter by all given parameters
 
             else if (startDate != "0" && endDate != "0" && customerID > 0)
             {
                 return quotations = await _qRepo.getAllByCustomerandDateAsync(customerID, sdate, edate);
             }
-                
+
 
 
             // get without any parameter
             else
-            return quotations = await _qRepo.getAllQuotationsAsync();
+                return quotations = await _qRepo.getAllQuotationsAsync();
 
 
         }
@@ -80,7 +83,7 @@ namespace CRMSystem.Domains
             var QID = await _qRepo.insertAsync(data);
 
             var products = new List<QuotProduct>();
-            foreach(var product in data.QuotProducts)
+            foreach (var product in data.QuotProducts)
             {
                 product.QuotationID = QID;
                 products.Add(product);
@@ -91,6 +94,52 @@ namespace CRMSystem.Domains
             return QID;
         }
 
-        
+        public async Task<int> ChangeQuoteToSale(Quotation data, string Lpo, bool IsDeliver, decimal DeliveryFee, decimal discount)
+        {
+
+            // save quotation
+
+           await SaveQuotationAndProducts(data);
+
+            var sale = new Sale
+            {
+                DateCreated = DateTime.Now,
+                CustomerID = data.CustomerID,
+                DeliveryFee = DeliveryFee,
+                ToDeliver = IsDeliver,
+                LPO=Lpo,
+                Cart=new Cart(),
+                Invoice=new Invoice()
+            };
+            var items = new List<Item>();
+            sale.Invoice.DiscountPercent = discount;
+
+            // get sale cart 
+
+            foreach (var Quoteprod in data.QuotProducts)
+            {
+                // get each cart item with product id
+
+                var prod = await _proRepo.getAsync(Quoteprod.ProductID);
+
+                var item = new Item
+                {
+                    Amount = prod.SalePrice,
+                    ProductID = prod.ID,
+                    Quantity = Quoteprod.Quantity
+                };
+                
+                items.Add(item);
+                
+            };
+
+            sale.Cart.Items = items;
+
+            int SID = await _service.Save(sale);
+            return SID;
+
+
+        }
+
     }
 }

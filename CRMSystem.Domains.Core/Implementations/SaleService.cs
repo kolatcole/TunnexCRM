@@ -354,6 +354,19 @@ namespace CRMSystem.Domains
         {
             var invoice = await _inService.GetInvoiceByinvNo(invNo);
 
+            // return all products to inventory
+
+            foreach(var item in invoice.Cart.Items)
+            {
+                var product = await _proRepo.getAsync(item.ProductID);
+                product.Quantity += item.Quantity;
+                product.TotalSold -= item.Quantity;
+
+                await _proRepo.updateAsync(product);
+
+            }
+
+
             // use invoiceID to get the sale
 
             // soft delete invoice
@@ -483,14 +496,52 @@ namespace CRMSystem.Domains
 
             // update invoice
 
-            invoice.Amount -= refundAmount;
-            invoice.Balance -= refundAmount;
 
             if (invoice.IsPaid)
                 invoice.AmountPaid -= refundAmount;
 
+            
+            
+            if(refundAmount==invoice.Amount)
+            {
+                invoice.Balance = 0;
+            }
+            else if (invoice.AmountPaid < invoice.Balance)
+            {
+                invoice.Balance -= refundAmount;
+            }
+
+            else
+            {
+                invoice.Balance = invoice.Amount - refundAmount - invoice.AmountPaid;
+            }
+
+            invoice.Amount -= refundAmount;
+           
+
+            if (invoice.Balance == 0)
+                invoice.IsPaid = true;
+
+
+
             invoice.Cart.Amount = invoice.Amount;
             await _cRepo.updateAsync(invoice.Cart);
+
+
+            //how it was
+
+            //invoice.Amount -= refundAmount;
+            //invoice.Balance -= refundAmount;
+
+            //if (invoice.IsPaid)
+            //    invoice.AmountPaid -= refundAmount;
+
+
+
+            //invoice.Cart.Amount = invoice.Amount;
+            //await _cRepo.updateAsync(invoice.Cart);
+
+            //how it was
 
             await _inService.updateAsync(invoice);
 

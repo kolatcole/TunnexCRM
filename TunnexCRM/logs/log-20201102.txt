@@ -1,0 +1,144 @@
+2020-11-02 07:40:08.258 -08:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-02 07:40:11.325 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-11-02 07:40:11.362 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-11-02 07:40:12.448 -08:00 [Information] Request finished in 1084.1838ms 0 
+2020-11-02 07:40:12.575 -08:00 [Information] Request finished in 1277.2436ms 200 text/html;charset=utf-8
+2020-11-02 07:40:14.074 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2020-11-02 07:40:14.089 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2020-11-02 07:40:14.182 -08:00 [Information] The file "/swagger-ui-standalone-preset.js" was not modified
+2020-11-02 07:40:14.193 -08:00 [Information] The file "/swagger-ui-bundle.js" was not modified
+2020-11-02 07:40:14.201 -08:00 [Information] Request finished in 136.0663ms 304 application/javascript
+2020-11-02 07:40:14.202 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2020-11-02 07:40:14.204 -08:00 [Information] The file "/swagger-ui.css" was not modified
+2020-11-02 07:40:14.205 -08:00 [Information] Request finished in 116.319ms 304 application/javascript
+2020-11-02 07:40:14.206 -08:00 [Information] Request finished in 3.6458ms 304 text/css
+2020-11-02 07:40:16.737 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-11-02 07:40:17.747 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2020-11-02 07:40:17.780 -08:00 [Information] The file "/favicon-32x32.png" was not modified
+2020-11-02 07:40:17.786 -08:00 [Information] Request finished in 37.8103ms 304 image/png
+2020-11-02 07:40:18.232 -08:00 [Information] Request finished in 1495.7105ms 200 application/json;charset=utf-8
+2020-11-02 07:41:10.540 -08:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/DeleteSale/0000001  0
+2020-11-02 07:41:10.680 -08:00 [Information] CORS policy execution failed.
+2020-11-02 07:41:10.681 -08:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-11-02 07:41:10.691 -08:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)"'
+2020-11-02 07:41:11.681 -08:00 [Information] Route matched with "{action = \"DeleteSale\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteSale(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-11-02 07:41:18.891 -08:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.892 -08:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.892 -08:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.892 -08:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.893 -08:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.893 -08:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.893 -08:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.894 -08:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.894 -08:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.894 -08:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:18.894 -08:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 07:41:19.391 -08:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-11-02 07:41:26.293 -08:00 [Information] Executed DbCommand ("951"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsDeleted], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsDeleted], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE (([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')) AND ([i].[IsDeleted] <> CAST(1 AS bit))
+    ORDER BY [i].[DateCreated] DESC
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[DateCreated] DESC, [t].[ID], [t].[ID0], [i0].[ID]"
+2020-11-02 07:41:27.856 -08:00 [Information] Executed DbCommand ("60"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsDeleted], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified]
+FROM [Invoices] AS [i]
+WHERE ([i].[IsDeleted] <> CAST(1 AS bit)) AND ([i].[ID] = @__ID_0)"
+2020-11-02 07:41:29.172 -08:00 [Information] Executed DbCommand ("243"ms) [Parameters=["@p22='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (DbType = Decimal), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (DbType = Boolean), @p15='?' (DbType = Decimal), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Decimal), @p19='?' (Size = 4000), @p20='?' (DbType = Int32), @p21='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Invoices] SET [Amount] = @p0, [AmountPaid] = @p1, [Balance] = @p2, [CartID] = @p3, [CashierID] = @p4, [CustomerID] = @p5, [DateCreated] = @p6, [DateModified] = @p7, [DeliveryFee] = @p8, [DiscountPercent] = @p9, [ExtData] = @p10, [InvoiceDate] = @p11, [InvoiceNo] = @p12, [IsDeleted] = @p13, [IsPaid] = @p14, [Tax] = @p15, [TaxInclusive] = @p16, [TaxName] = @p17, [TaxPercent] = @p18, [Type] = @p19, [UserCreated] = @p20, [UserModified] = @p21
+WHERE [ID] = @p22;
+SELECT @@ROWCOUNT;"
+2020-11-02 07:41:29.454 -08:00 [Information] Executed DbCommand ("24"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ReturnedStockID], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified]
+FROM [Sales] AS [s]
+WHERE ([s].[IsDeleted] <> CAST(1 AS bit)) AND ([s].[InvoiceID] = @__ID_0)"
+2020-11-02 07:41:29.781 -08:00 [Information] Executed DbCommand ("27"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Sales] SET [CartID] = @p0, [CustomerID] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [DeliveryFee] = @p4, [InvoiceID] = @p5, [IsDeleted] = @p6, [LPO] = @p7, [ReturnedStockID] = @p8, [ToDeliver] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-11-02 07:41:29.861 -08:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-02 07:41:29.924 -08:00 [Information] Executed action "CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)" in 18177.5026ms
+2020-11-02 07:41:29.927 -08:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)"'
+2020-11-02 07:41:29.991 -08:00 [Information] Request finished in 19484.6708ms 200 
+2020-11-02 08:04:26.826 -08:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-02 08:04:29.836 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2020-11-02 08:04:29.820 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2020-11-02 08:04:30.625 -08:00 [Information] Request finished in 787.2318ms 0 
+2020-11-02 08:04:30.741 -08:00 [Information] Request finished in 933.0406ms 200 text/html;charset=utf-8
+2020-11-02 08:04:36.057 -08:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2020-11-02 08:04:42.638 -08:00 [Information] Request finished in 6634.2031ms 200 application/json;charset=utf-8
+2020-11-02 08:33:05.150 -08:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Sale/DeleteSale/0000029  0
+2020-11-02 08:33:05.399 -08:00 [Information] CORS policy execution failed.
+2020-11-02 08:33:05.400 -08:00 [Information] Request origin "https://localhost:44363" does not have permission to access the resource.
+2020-11-02 08:33:05.467 -08:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)"'
+2020-11-02 08:33:06.049 -08:00 [Information] Route matched with "{action = \"DeleteSale\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteSale(System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2020-11-02 08:33:14.597 -08:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.599 -08:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.599 -08:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.600 -08:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.600 -08:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.600 -08:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.600 -08:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.601 -08:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.601 -08:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.601 -08:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.602 -08:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-11-02 08:33:14.861 -08:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2020-11-02 08:33:20.412 -08:00 [Information] Executed DbCommand ("670"ms) [Parameters=["@__invNumber_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Amount], [t].[AmountPaid], [t].[Balance], [t].[CartID], [t].[CashierID], [t].[CustomerID], [t].[DateCreated], [t].[DateModified], [t].[DeliveryFee], [t].[DiscountPercent], [t].[ExtData], [t].[InvoiceDate], [t].[InvoiceNo], [t].[IsDeleted], [t].[IsPaid], [t].[Tax], [t].[TaxInclusive], [t].[TaxName], [t].[TaxPercent], [t].[Type], [t].[UserCreated], [t].[UserModified], [t].[ID0], [t].[Amount0], [t].[Code], [t].[DateCreated0], [t].[DateModified0], [t].[TransactionType], [t].[UserCreated0], [t].[UserModified0], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM (
+    SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsDeleted], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID] AS [ID0], [c].[Amount] AS [Amount0], [c].[Code], [c].[DateCreated] AS [DateCreated0], [c].[DateModified] AS [DateModified0], [c].[TransactionType], [c].[UserCreated] AS [UserCreated0], [c].[UserModified] AS [UserModified0]
+    FROM [Invoices] AS [i]
+    INNER JOIN [Carts] AS [c] ON [i].[CartID] = [c].[ID]
+    WHERE (([i].[InvoiceNo] = @__invNumber_0) AND ([i].[Type] = N'sale')) AND ([i].[IsDeleted] <> CAST(1 AS bit))
+    ORDER BY [i].[DateCreated] DESC
+) AS [t]
+LEFT JOIN [Items] AS [i0] ON [t].[ID0] = [i0].[CartID]
+ORDER BY [t].[DateCreated] DESC, [t].[ID], [t].[ID0], [i0].[ID]"
+2020-11-02 08:33:21.721 -08:00 [Information] Executed DbCommand ("20"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-11-02 08:33:23.012 -08:00 [Information] Executed DbCommand ("57"ms) [Parameters=["@p13='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Description] = @p3, [Image] = @p4, [Location] = @p5, [Name] = @p6, [Quantity] = @p7, [SalePrice] = @p8, [StockLevel] = @p9, [TotalSold] = @p10, [UserCreated] = @p11, [UserModified] = @p12
+WHERE [ID] = @p13;
+SELECT @@ROWCOUNT;"
+2020-11-02 08:33:23.245 -08:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[ID] = @__ID_0"
+2020-11-02 08:33:23.266 -08:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@p13='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Products] SET [CostPrice] = @p0, [DateCreated] = @p1, [DateModified] = @p2, [Description] = @p3, [Image] = @p4, [Location] = @p5, [Name] = @p6, [Quantity] = @p7, [SalePrice] = @p8, [StockLevel] = @p9, [TotalSold] = @p10, [UserCreated] = @p11, [UserModified] = @p12
+WHERE [ID] = @p13;
+SELECT @@ROWCOUNT;"
+2020-11-02 08:33:23.335 -08:00 [Information] Executed DbCommand ("37"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsDeleted], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified]
+FROM [Invoices] AS [i]
+WHERE ([i].[IsDeleted] <> CAST(1 AS bit)) AND ([i].[ID] = @__ID_0)"
+2020-11-02 08:33:23.494 -08:00 [Information] Executed DbCommand ("63"ms) [Parameters=["@p22='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Decimal), @p9='?' (DbType = Decimal), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (DbType = Boolean), @p15='?' (DbType = Decimal), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Decimal), @p19='?' (Size = 4000), @p20='?' (DbType = Int32), @p21='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Invoices] SET [Amount] = @p0, [AmountPaid] = @p1, [Balance] = @p2, [CartID] = @p3, [CashierID] = @p4, [CustomerID] = @p5, [DateCreated] = @p6, [DateModified] = @p7, [DeliveryFee] = @p8, [DiscountPercent] = @p9, [ExtData] = @p10, [InvoiceDate] = @p11, [InvoiceNo] = @p12, [IsDeleted] = @p13, [IsPaid] = @p14, [Tax] = @p15, [TaxInclusive] = @p16, [TaxName] = @p17, [TaxPercent] = @p18, [Type] = @p19, [UserCreated] = @p20, [UserModified] = @p21
+WHERE [ID] = @p22;
+SELECT @@ROWCOUNT;"
+2020-11-02 08:33:23.578 -08:00 [Information] Executed DbCommand ("20"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ReturnedStockID], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified]
+FROM [Sales] AS [s]
+WHERE ([s].[IsDeleted] <> CAST(1 AS bit)) AND ([s].[InvoiceID] = @__ID_0)"
+2020-11-02 08:33:23.967 -08:00 [Information] Executed DbCommand ("62"ms) [Parameters=["@p12='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Sales] SET [CartID] = @p0, [CustomerID] = @p1, [DateCreated] = @p2, [DateModified] = @p3, [DeliveryFee] = @p4, [InvoiceID] = @p5, [IsDeleted] = @p6, [LPO] = @p7, [ReturnedStockID] = @p8, [ToDeliver] = @p9, [UserCreated] = @p10, [UserModified] = @p11
+WHERE [ID] = @p12;
+SELECT @@ROWCOUNT;"
+2020-11-02 08:33:24.032 -08:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-02 08:33:24.085 -08:00 [Information] Executed action "CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)" in 17998.9817ms
+2020-11-02 08:33:24.088 -08:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.DeleteSale (CRMSystem.Presentation.Core)"'
+2020-11-02 08:33:24.149 -08:00 [Information] Request finished in 19024.4269ms 200 

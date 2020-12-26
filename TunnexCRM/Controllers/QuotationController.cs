@@ -51,6 +51,15 @@ namespace CRMSystem.Presentation
 
         }
 
+        [HttpPost("ChangeQuoteToSale")]
+        public async Task<IActionResult> ChangeQuoteToSale(Quotation data, string Lpo,bool ToDeliver,decimal DeliveryFee,decimal discount )
+        {
+
+            var result = await _service.ChangeQuoteToSale(data, Lpo, ToDeliver, DeliveryFee, discount);
+            return Ok(result);
+
+        }
+
         /// <summary>
         /// 
         /// </summary>

@@ -15,6 +15,8 @@ namespace CRMSystem.Domains
         public string HEL { get; set; }
         public string Image { get; set; }
         public string Phone { get; set; }
+
+        public string SecondPhone { get; set; }
         public DateTime DateofBirth { get; set; }
         public string MiddleName { get; set; }
 

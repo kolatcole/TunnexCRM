@@ -86,6 +86,7 @@ namespace CRMSystem.Infrastructure
                         Image = data.Image,
                         LastName = data.LastName,
                         Phone = data.Phone,
+                        SecondPhone = data.SecondPhone,
                         DateEmployed = data.DateEmployed,
                         Designation = data.Designation,
                         StaffID = data.StaffID,
@@ -125,7 +126,8 @@ namespace CRMSystem.Infrastructure
                 if (staff != null)
                 {
 
-
+                    
+                    if (data.SecondPhone != null) staff.SecondPhone = data.SecondPhone;
                     if (data.Image != null) staff.Image = data.Image;
                     if (data.FirstName != null) staff.FirstName = data.FirstName;
                     if (data.Phone != null) staff.Phone = data.Phone;

@@ -13,6 +13,8 @@ namespace CRMSystem.Domains
 
         Task<List<Quotation>> GetAllQuotations();
 
+        Task<int> ChangeQuoteToSale(Quotation data, string Lpo, bool IsDeliver, decimal DeliveryFee, decimal discount);
+
         //Task<List<Quotation>> GetAllByCustomer(int customerID);
     }
 }

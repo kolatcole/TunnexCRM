@@ -4,14 +4,16 @@ using CRMSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CRMSystem.Presentation.Core.Migrations
 {
     [DbContext(typeof(TContext))]
-    partial class TContextModelSnapshot : ModelSnapshot
+    [Migration("20201014204238_first")]
+    partial class first
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -631,9 +633,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                     b.Property<int>("ProductID")
                         .HasColumnType("int");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
                     b.Property<int>("QuotationID")
                         .HasColumnType("int");
 
@@ -885,9 +884,6 @@ namespace CRMSystem.Presentation.Core.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RelationshipToNextofKin")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SecondPhone")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StaffID")

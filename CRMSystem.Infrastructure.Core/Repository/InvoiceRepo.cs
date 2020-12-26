@@ -187,7 +187,7 @@ namespace CRMSystem.Infrastructure
             try
             {
                 var invoices = await _context.Invoices.Include(x => x.Cart).
-                                        ThenInclude(x => x.Items).
+                                        ThenInclude(x => x.Items).OrderByDescending(x => x.DateCreated).
                                         Where(x => x.Type == "proforma")
                                         .ToListAsync();
                 return invoices;

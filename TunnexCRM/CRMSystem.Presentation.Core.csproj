@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>25f4002b-a85b-4ce6-b3cc-c53c40059fd1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CRMSystem.Domains.Core\CRMSystem.Domains.Core.csproj" />
     <ProjectReference Include="..\CRMSystem.Infrastructure.Core\CRMSystem.Infrastructure.Core.csproj" />
   </ItemGroup>
 
