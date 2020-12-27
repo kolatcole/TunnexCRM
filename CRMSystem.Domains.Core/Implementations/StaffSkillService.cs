@@ -139,7 +139,10 @@ namespace CRMSystem.Domains
             }
 
             if (TempCompetency > 0)
-                overAll.OverallCompetence = TempCompetency/competenceCount;
+            {
+                TempCompetency /= competenceCount;
+                overAll.OverallCompetence = decimal.Round(TempCompetency, 2, MidpointRounding.AwayFromZero);
+            }
 
             return overAll;
 
@@ -222,9 +225,14 @@ namespace CRMSystem.Domains
 
 
             }
+            
+            if (TempCompetency>0)
+            {
+                TempCompetency /= competenceCount;
+                overAll.OverallCompetence = decimal.Round(TempCompetency, 2, MidpointRounding.AwayFromZero);
+            }
+            
 
-            if(TempCompetency>0)
-                overAll.OverallCompetence = TempCompetency / competenceCount;
 
             return overAll;
         }

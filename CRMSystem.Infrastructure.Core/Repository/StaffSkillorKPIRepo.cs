@@ -99,6 +99,15 @@ namespace CRMSystem.Infrastructure
 
         public async Task<int> insertAsync(StaffSkillorKPI data)
         {
+
+            // CHHECK IF STAFF HAS BEEN ENROLLED FOR THIS SKILL
+
+            var skill = await _context.StaffSkillorKPIs.Where(x => x.SkillorKPIID == data.SkillorKPIID && x.StaffID == data.StaffID)
+                                                       .FirstOrDefaultAsync();
+
+            if (skill != null)
+                return 0;
+
             var StaffSkill = new StaffSkillorKPI();
             try
             {

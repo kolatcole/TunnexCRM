@@ -35,6 +35,9 @@ namespace CRMSystem.Domains
             else
                 edate = edate.EndOfDay();
 
+
+           
+
             // filter by customerID only, if that's what was given
 
             if ((startDate == "0" || endDate == "0") && customerID > 0)

@@ -72,7 +72,7 @@ namespace CRMSystem
             });
             services.AddDbContext<TContext>(opt =>
             {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultTLocal"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
+                opt.UseSqlServer(Configuration.GetConnectionString("SmartConnection"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
             });
 
             services.AddScoped<IRepo<Lead>, LeadRepo>();
