@@ -27,7 +27,6 @@ namespace CRMSystem.Infrastructure
                 invoice.IsDeleted = true;
                 invoice.DateModified = DateTime.Now;
 
-
                 _context.Invoices.Update(invoice);
                 ID = await _context.SaveChangesAsync();
             }
