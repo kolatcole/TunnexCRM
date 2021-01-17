@@ -45,13 +45,15 @@ namespace CRMSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      //builder.AllowAnyOrigin().//.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
+                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+
+                                      // builder.AllowAnyOrigin().//.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
                                       //                                      AllowAnyHeader()
                                       //                                      .AllowAnyMethod().AllowAnyOrigin();
 
 
-                                    // FOR PRODUCTION  
-                                      builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
+                                      // FOR PRODUCTION  
+                                      // builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
                                       //  AllowAnyHeader()
                                       //.AllowAnyMethod().AllowAnyOrigin();
                                   });
@@ -73,7 +75,7 @@ namespace CRMSystem
             });
             services.AddDbContext<TContext>(opt =>
             {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultTLocal"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
             });
 
             services.AddScoped<IRepo<Lead>, LeadRepo>();

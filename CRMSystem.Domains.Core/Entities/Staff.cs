@@ -45,6 +45,9 @@ namespace CRMSystem.Domains
 
         public List<Qualification> Qualifications { get; set; }
 
+        public string nin { get; set; }
+        public string pension { get; set; }
+
 
     }
 }

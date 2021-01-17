@@ -98,7 +98,9 @@ namespace CRMSystem.Infrastructure
                         NextofKinPhone = data.NextofKinPhone,
                         ProfilePictureUrl = data.ProfilePictureUrl,
                         RelationshipToNextofKin = data.RelationshipToNextofKin,
-                        YearofMarriage = data.YearofMarriage
+                        YearofMarriage = data.YearofMarriage,
+                        nin=data.nin,
+                        pension=data.pension
 
                     };
                     await _context.Staffs.AddAsync(staff);
@@ -149,6 +151,8 @@ namespace CRMSystem.Infrastructure
                     if (data.ProfilePictureUrl != null) staff.ProfilePictureUrl = data.ProfilePictureUrl;
                     if (data.RelationshipToNextofKin != null) staff.RelationshipToNextofKin = data.RelationshipToNextofKin;
                     if (data.YearofMarriage != null) staff.YearofMarriage = data.YearofMarriage;
+                    if (data.nin != null) staff.nin = data.nin;
+                    if (data.pension != null) staff.pension = data.pension;
 
                     _context.Staffs.Update(staff);
                     await _context.SaveChangesAsync();
