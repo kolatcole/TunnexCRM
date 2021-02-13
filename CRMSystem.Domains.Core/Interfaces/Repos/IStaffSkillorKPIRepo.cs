@@ -8,5 +8,7 @@ namespace CRMSystem.Domains
     public interface IStaffSkillorKPIRepo
     {
         Task<List<StaffSkillorKPI>> getStaffSkillsByStaffID(int staffID);
+
+        Task<StaffSkillorKPI> getStaffSkillorKpiByStaffIDandSkillorKpi(int staffID,int skillOrKpi);
     }
 }

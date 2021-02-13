@@ -69,6 +69,21 @@ namespace CRMSystem.Infrastructure
             }
         }
 
+        public async Task<StaffSkillorKPI> getStaffSkillorKpiByStaffIDandSkillorKpi(int staffID, int skillOrKpiId)
+        {
+            try
+            {
+                var StaffSkill = await _context.StaffSkillorKPIs.Include(x => x.Assessments).Where
+                                                (x => x.StaffID == staffID && x.SkillorKPIID==skillOrKpiId).FirstOrDefaultAsync();
+                return StaffSkill;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
         public async Task<List<StaffSkillorKPI>> getStaffSkillsByStaffID(int staffID)
         {
             try

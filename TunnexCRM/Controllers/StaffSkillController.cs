@@ -17,6 +17,22 @@ namespace CRMSystem.Presentation.Core.Controllers
         {
             _service = service;
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="skillId"></param>
+        /// <returns></returns>
+        [HttpPost("EnrolAllStaff/{skillId}")]
+        public async Task<IActionResult> EnrolAllStaff(int skillId)
+        {
+            var result = await _service.EnrolAllStaffAsync(skillId);
+            return Ok(result);
+        }
+
+
+
         /// <summary>
         /// 
         /// </summary>

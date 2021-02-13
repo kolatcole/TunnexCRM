@@ -45,7 +45,8 @@ namespace CRMSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                                      // TEST
+                                     // builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 
                                       // builder.AllowAnyOrigin().//.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
                                       //                                      AllowAnyHeader()
@@ -53,7 +54,7 @@ namespace CRMSystem
 
 
                                       // FOR PRODUCTION  
-                                      // builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
+                                       builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
                                       //  AllowAnyHeader()
                                       //.AllowAnyMethod().AllowAnyOrigin();
                                   });

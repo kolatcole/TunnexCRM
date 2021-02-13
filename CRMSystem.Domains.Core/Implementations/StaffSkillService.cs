@@ -11,16 +11,67 @@ namespace CRMSystem.Domains
         private readonly IRepo<StaffSkillorKPI> _sRepo;
         private readonly IRepo<SkillorKPI> _skRepo;
         private readonly IStaffSkillorKPIRepo _sskRepo;
+        private readonly IRepo<Staff> _stRepo;
+        
 
-        public StaffSkillService(IRepo<Assessment> aRepo,IRepo<StaffSkillorKPI> sRepo, IRepo<SkillorKPI> skRepo, IStaffSkillorKPIRepo sskRepo)
+        public StaffSkillService(IRepo<Assessment> aRepo,IRepo<StaffSkillorKPI> sRepo, IRepo<SkillorKPI> skRepo, IStaffSkillorKPIRepo sskRepo,
+                                   IRepo<Staff> stRepo)
         {
-
+            _stRepo = stRepo;
             _sRepo = sRepo;
             _aRepo = aRepo;
             _skRepo = skRepo;
             _sskRepo = sskRepo;
         }
-        
+
+
+
+        // Enrol All Staff
+        public async Task<int> EnrolAllStaffAsync(int id)
+        {
+
+            // get skillorKpi 
+
+            var skillOrKpi = await _skRepo.getAsync(id);
+
+
+            // get all staff
+
+            var staff = await _stRepo.getAllAsync();
+
+
+            foreach(var st in staff)
+            {
+                var stKpiOrsk = await _sskRepo.getStaffSkillorKpiByStaffIDandSkillorKpi(st.ID, skillOrKpi.ID);
+
+                if(stKpiOrsk==null)
+                {
+                    stKpiOrsk = new StaffSkillorKPI
+                    {
+                        SkillorKPIID = skillOrKpi.ID,
+                        StaffID = st.ID,
+                        CompetencyValue = 0
+                    };
+
+                    await _sRepo.insertAsync(stKpiOrsk);
+
+                    // get skill and increment numberOfStaff by 1
+
+                    //var skill = await _skRepo.getAsync(data.SkillorKPIID);
+
+                    skillOrKpi.StaffNumberWithSkillorKPI += 1;
+
+                    await _skRepo.updateAsync(skillOrKpi);
+                }
+
+                
+            }
+
+
+            return id;
+        }
+
+
 
         public async Task<int> SaveStaffSkill(StaffSkillorKPI data)
         {

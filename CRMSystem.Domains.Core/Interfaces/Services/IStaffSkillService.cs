@@ -7,6 +7,7 @@ namespace CRMSystem.Domains
 {
     public interface IStaffSkillService
     {
+        Task<int> EnrolAllStaffAsync(int id);
         Task<int> SaveStaffSkill(StaffSkillorKPI data);
         Task<int> UpdateStaffSkillAsync(StaffSkillorKPI data);
         Task<StaffSkillorKPI> GetStaffSkillByIDAsync(int ID);

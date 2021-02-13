@@ -1,0 +1,251 @@
+2021-01-17 07:09:19.523 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-17 07:09:20.621 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-01-17 07:09:20.998 +01:00 [Information] Request finished in 382.9247ms 404 
+2021-01-17 07:09:37.277 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger  
+2021-01-17 07:09:37.325 +01:00 [Information] Request finished in 33.7729ms 301 
+2021-01-17 07:09:37.348 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-01-17 07:09:37.512 +01:00 [Information] Request finished in 165.8615ms 200 text/html;charset=utf-8
+2021-01-17 07:09:37.602 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2021-01-17 07:09:37.626 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2021-01-17 07:09:37.626 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2021-01-17 07:09:37.852 +01:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2021-01-17 07:09:37.852 +01:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2021-01-17 07:09:37.901 +01:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2021-01-17 07:09:37.909 +01:00 [Information] Request finished in 288.8937ms 200 application/javascript
+2021-01-17 07:09:37.917 +01:00 [Information] Request finished in 295.2384ms 200 text/css
+2021-01-17 07:09:37.926 +01:00 [Information] Request finished in 316.9337ms 200 application/javascript
+2021-01-17 07:09:39.063 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-01-17 07:09:39.532 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2021-01-17 07:09:39.589 +01:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2021-01-17 07:09:39.656 +01:00 [Information] Request finished in 264.7098ms 200 image/png
+2021-01-17 07:09:40.316 +01:00 [Information] Request finished in 1242.0903ms 200 application/json;charset=utf-8
+2021-01-17 07:10:23.387 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Skill/GetAllSkills  
+2021-01-17 07:10:23.427 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2021-01-17 07:10:23.522 +01:00 [Information] Route matched with "{action = \"GetAllSkills\", controller = \"Skill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSkills()" on controller "CRMSystem.Presentation.Core.Controllers.SkillController" ("CRMSystem.Presentation.Core").
+2021-01-17 07:10:28.169 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.179 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.185 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.194 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.202 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.211 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.218 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.226 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.235 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.246 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.258 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 07:10:28.396 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 07:10:31.236 +01:00 [Information] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[Type] = N'skill'"
+2021-01-17 07:10:31.606 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.SkillorKPI, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-01-17 07:10:31.675 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)" in 8121.8819ms
+2021-01-17 07:10:31.685 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2021-01-17 07:10:31.701 +01:00 [Information] Request finished in 8378.07ms 200 application/json; charset=utf-8
+2021-01-17 07:10:55.891 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Staff/GetAllStaff  
+2021-01-17 07:10:55.979 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-01-17 07:10:56.098 +01:00 [Information] Route matched with "{action = \"GetAllStaff\", controller = \"Staff\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaff()" on controller "CRMSystem.Presentation.StaffController" ("CRMSystem.Presentation.Core").
+2021-01-17 07:10:56.447 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 07:10:56.910 +01:00 [Information] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[Address], [s].[DateCreated], [s].[DateEmployed], [s].[DateModified], [s].[DateofBirth], [s].[Designation], [s].[Email], [s].[FirstName], [s].[Gender], [s].[HEL], [s].[Image], [s].[LastName], [s].[MaidenName], [s].[MaritalStatus], [s].[MiddleName], [s].[NextofKin], [s].[NextofKinAddress], [s].[NextofKinPhone], [s].[Phone], [s].[ProfilePictureUrl], [s].[RelationshipToNextofKin], [s].[SecondPhone], [s].[StaffID], [s].[UserCreated], [s].[UserModified], [s].[YearofMarriage], [s].[nin], [s].[pension], [q].[ID], [q].[EndDate], [q].[Name], [q].[StaffID], [q].[StartDate], [q].[Status]
+FROM [Staffs] AS [s]
+LEFT JOIN [Qualifications] AS [q] ON [s].[ID] = [q].[StaffID]
+ORDER BY [s].[ID], [q].[ID]"
+2021-01-17 07:10:57.014 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Staff, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-01-17 07:10:57.057 +01:00 [Information] Executed action "CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)" in 942.644ms
+2021-01-17 07:10:57.066 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-01-17 07:10:57.081 +01:00 [Information] Request finished in 1230.3378ms 200 application/json; charset=utf-8
+2021-01-17 07:13:42.903 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/StaffSkill/EnrolAllStaff/7  0
+2021-01-17 07:13:42.943 +01:00 [Information] CORS policy execution successful.
+2021-01-17 07:13:42.957 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.EnrolAllStaff (CRMSystem.Presentation.Core)"'
+2021-01-17 07:13:43.019 +01:00 [Information] Route matched with "{action = \"EnrolAllStaff\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EnrolAllStaff(Int32)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2021-01-17 07:13:43.118 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 07:13:43.336 +01:00 [Information] Executed DbCommand ("121"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-01-17 07:13:43.391 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[Address], [s].[DateCreated], [s].[DateEmployed], [s].[DateModified], [s].[DateofBirth], [s].[Designation], [s].[Email], [s].[FirstName], [s].[Gender], [s].[HEL], [s].[Image], [s].[LastName], [s].[MaidenName], [s].[MaritalStatus], [s].[MiddleName], [s].[NextofKin], [s].[NextofKinAddress], [s].[NextofKinPhone], [s].[Phone], [s].[ProfilePictureUrl], [s].[RelationshipToNextofKin], [s].[SecondPhone], [s].[StaffID], [s].[UserCreated], [s].[UserModified], [s].[YearofMarriage], [s].[nin], [s].[pension], [q].[ID], [q].[EndDate], [q].[Name], [q].[StaffID], [q].[StartDate], [q].[Status]
+FROM [Staffs] AS [s]
+LEFT JOIN [Qualifications] AS [q] ON [s].[ID] = [q].[StaffID]
+ORDER BY [s].[ID], [q].[ID]"
+2021-01-17 07:13:43.436 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__data_SkillorKPIID_0='?' (DbType = Int32), @__data_StaffID_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE ([s].[SkillorKPIID] = @__data_SkillorKPIID_0) AND ([s].[StaffID] = @__data_StaffID_1)"
+2021-01-17 07:13:44.484 +01:00 [Information] Executed DbCommand ("57"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StaffSkillorKPIs] ([CompetencyValue], [SkillorKPIID], [StaffID], [SupervisorID])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ID]
+FROM [StaffSkillorKPIs]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2021-01-17 07:13:44.749 +01:00 [Information] Executed DbCommand ("34"ms) [Parameters=["@p8='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [SkillorKPIs] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [Name] = @p3, [StaffNumberWithSkillorKPI] = @p4, [Type] = @p5, [UserCreated] = @p6, [UserModified] = @p7
+WHERE [ID] = @p8;
+SELECT @@ROWCOUNT;"
+2021-01-17 07:13:44.800 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__data_SkillorKPIID_0='?' (DbType = Int32), @__data_StaffID_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE ([s].[SkillorKPIID] = @__data_SkillorKPIID_0) AND ([s].[StaffID] = @__data_StaffID_1)"
+2021-01-17 07:13:44.827 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StaffSkillorKPIs] ([CompetencyValue], [SkillorKPIID], [StaffID], [SupervisorID])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ID]
+FROM [StaffSkillorKPIs]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2021-01-17 07:13:44.884 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p8='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [SkillorKPIs] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [Name] = @p3, [StaffNumberWithSkillorKPI] = @p4, [Type] = @p5, [UserCreated] = @p6, [UserModified] = @p7
+WHERE [ID] = @p8;
+SELECT @@ROWCOUNT;"
+2021-01-17 07:13:44.905 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2021-01-17 07:13:44.932 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.EnrolAllStaff (CRMSystem.Presentation.Core)" in 1896.7332ms
+2021-01-17 07:13:44.939 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.EnrolAllStaff (CRMSystem.Presentation.Core)"'
+2021-01-17 07:13:44.985 +01:00 [Information] Request finished in 2049.8343ms 200 application/json; charset=utf-8
+2021-01-17 07:13:57.993 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Skill/GetAllSkills  
+2021-01-17 07:13:58.007 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2021-01-17 07:13:58.014 +01:00 [Information] Route matched with "{action = \"GetAllSkills\", controller = \"Skill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSkills()" on controller "CRMSystem.Presentation.Core.Controllers.SkillController" ("CRMSystem.Presentation.Core").
+2021-01-17 07:13:58.026 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 07:13:58.080 +01:00 [Information] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[Type] = N'skill'"
+2021-01-17 07:13:58.106 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.SkillorKPI, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-01-17 07:13:58.124 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)" in 94.8156ms
+2021-01-17 07:13:58.132 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2021-01-17 07:13:58.143 +01:00 [Information] Request finished in 150.0557ms 200 application/json; charset=utf-8
+2021-01-17 07:15:17.434 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffSkill  
+2021-01-17 07:15:17.480 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2021-01-17 07:15:17.531 +01:00 [Information] Route matched with "{action = \"GetAllStaffSkill\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffSkill()" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2021-01-17 07:15:17.569 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 07:15:17.682 +01:00 [Information] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2021-01-17 07:15:17.716 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-01-17 07:15:17.733 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-01-17 07:15:17.755 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-01-17 07:15:17.762 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPI, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-01-17 07:15:17.794 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)" in 251.7918ms
+2021-01-17 07:15:17.800 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffSkill (CRMSystem.Presentation.Core)"'
+2021-01-17 07:15:17.811 +01:00 [Information] Request finished in 388.2689ms 200 application/json; charset=utf-8
+2021-01-17 07:15:57.299 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Staff/Save application/json 814
+2021-01-17 07:15:57.322 +01:00 [Information] CORS policy execution successful.
+2021-01-17 07:15:57.334 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.StaffController.Save (CRMSystem.Presentation.Core)"'
+2021-01-17 07:15:57.415 +01:00 [Information] Route matched with "{action = \"Save\", controller = \"Staff\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Staff)" on controller "CRMSystem.Presentation.StaffController" ("CRMSystem.Presentation.Core").
+2021-01-17 07:15:57.586 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 07:15:57.621 +01:00 [Information] Executed DbCommand ("14"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p23='?' (DbType = Int32), @p24='?' (DbType = Int32), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Staffs] ([Address], [DateCreated], [DateEmployed], [DateModified], [DateofBirth], [Designation], [Email], [FirstName], [Gender], [HEL], [Image], [LastName], [MaidenName], [MaritalStatus], [MiddleName], [NextofKin], [NextofKinAddress], [NextofKinPhone], [Phone], [ProfilePictureUrl], [RelationshipToNextofKin], [SecondPhone], [StaffID], [UserCreated], [UserModified], [YearofMarriage], [nin], [pension])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT [ID]
+FROM [Staffs]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2021-01-17 07:15:57.656 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2021-01-17 07:15:57.674 +01:00 [Information] Executed action "CRMSystem.Presentation.StaffController.Save (CRMSystem.Presentation.Core)" in 242.7317ms
+2021-01-17 07:15:57.694 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.StaffController.Save (CRMSystem.Presentation.Core)"'
+2021-01-17 07:15:57.707 +01:00 [Information] Request finished in 411.4675ms 200 application/json; charset=utf-8
+2021-01-17 08:13:01.942 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-17 08:13:02.691 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-01-17 08:13:03.009 +01:00 [Information] Request finished in 325.8629ms 404 
+2021-01-17 08:13:03.768 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-01-17 08:13:03.903 +01:00 [Information] Request finished in 136.0782ms 200 text/html;charset=utf-8
+2021-01-17 08:13:04.604 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-01-17 08:13:05.072 +01:00 [Information] Request finished in 462.9654ms 200 application/json;charset=utf-8
+2021-01-17 08:13:57.606 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Skill/GetAllSkills  
+2021-01-17 08:13:57.664 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2021-01-17 08:13:57.814 +01:00 [Information] Route matched with "{action = \"GetAllSkills\", controller = \"Skill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSkills()" on controller "CRMSystem.Presentation.Core.Controllers.SkillController" ("CRMSystem.Presentation.Core").
+2021-01-17 08:14:01.730 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.741 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.749 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.760 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.774 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.784 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.795 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.808 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.815 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.830 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:01.846 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-01-17 08:14:02.098 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 08:14:05.842 +01:00 [Information] Executed DbCommand ("162"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[Type] = N'skill'"
+2021-01-17 08:14:06.322 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.SkillorKPI, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-01-17 08:14:06.442 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)" in 8588.7261ms
+2021-01-17 08:14:06.454 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.SkillController.GetAllSkills (CRMSystem.Presentation.Core)"'
+2021-01-17 08:14:06.487 +01:00 [Information] Request finished in 8947.1929ms 200 application/json; charset=utf-8
+2021-01-17 08:15:35.644 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/StaffSkill/EnrolAllStaff/7  0
+2021-01-17 08:15:35.689 +01:00 [Information] CORS policy execution successful.
+2021-01-17 08:15:35.700 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.EnrolAllStaff (CRMSystem.Presentation.Core)"'
+2021-01-17 08:15:35.768 +01:00 [Information] Route matched with "{action = \"EnrolAllStaff\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EnrolAllStaff(Int32)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2021-01-17 08:15:35.915 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-01-17 08:15:36.136 +01:00 [Information] Executed DbCommand ("117"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-01-17 08:15:36.401 +01:00 [Information] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[Address], [s].[DateCreated], [s].[DateEmployed], [s].[DateModified], [s].[DateofBirth], [s].[Designation], [s].[Email], [s].[FirstName], [s].[Gender], [s].[HEL], [s].[Image], [s].[LastName], [s].[MaidenName], [s].[MaritalStatus], [s].[MiddleName], [s].[NextofKin], [s].[NextofKinAddress], [s].[NextofKinPhone], [s].[Phone], [s].[ProfilePictureUrl], [s].[RelationshipToNextofKin], [s].[SecondPhone], [s].[StaffID], [s].[UserCreated], [s].[UserModified], [s].[YearofMarriage], [s].[nin], [s].[pension], [q].[ID], [q].[EndDate], [q].[Name], [q].[StaffID], [q].[StartDate], [q].[Status]
+FROM [Staffs] AS [s]
+LEFT JOIN [Qualifications] AS [q] ON [s].[ID] = [q].[StaffID]
+ORDER BY [s].[ID], [q].[ID]"
+2021-01-17 08:15:45.115 +01:00 [Information] Executed DbCommand ("99"ms) [Parameters=["@__staffID_0='?' (DbType = Int32), @__skillOrKpiId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CompetencyValue], [t].[SkillorKPIID], [t].[StaffID], [t].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+    FROM [StaffSkillorKPIs] AS [s]
+    WHERE ([s].[StaffID] = @__staffID_0) AND ([s].[SkillorKPIID] = @__skillOrKpiId_1)
+) AS [t]
+LEFT JOIN [Assessments] AS [a] ON [t].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [t].[ID], [a].[ID]"
+2021-01-17 08:16:09.075 +01:00 [Information] Executed DbCommand ("19"ms) [Parameters=["@__staffID_0='?' (DbType = Int32), @__skillOrKpiId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CompetencyValue], [t].[SkillorKPIID], [t].[StaffID], [t].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+    FROM [StaffSkillorKPIs] AS [s]
+    WHERE ([s].[StaffID] = @__staffID_0) AND ([s].[SkillorKPIID] = @__skillOrKpiId_1)
+) AS [t]
+LEFT JOIN [Assessments] AS [a] ON [t].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [t].[ID], [a].[ID]"
+2021-01-17 08:16:19.420 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__staffID_0='?' (DbType = Int32), @__skillOrKpiId_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CompetencyValue], [t].[SkillorKPIID], [t].[StaffID], [t].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+    FROM [StaffSkillorKPIs] AS [s]
+    WHERE ([s].[StaffID] = @__staffID_0) AND ([s].[SkillorKPIID] = @__skillOrKpiId_1)
+) AS [t]
+LEFT JOIN [Assessments] AS [a] ON [t].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [t].[ID], [a].[ID]"
+2021-01-17 08:17:21.736 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__data_SkillorKPIID_0='?' (DbType = Int32), @__data_StaffID_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE ([s].[SkillorKPIID] = @__data_SkillorKPIID_0) AND ([s].[StaffID] = @__data_StaffID_1)"
+2021-01-17 08:17:22.277 +01:00 [Information] Executed DbCommand ("21"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StaffSkillorKPIs] ([CompetencyValue], [SkillorKPIID], [StaffID], [SupervisorID])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ID]
+FROM [StaffSkillorKPIs]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2021-01-17 08:17:36.640 +01:00 [Information] Executed DbCommand ("101"ms) [Parameters=["@p8='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [SkillorKPIs] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [Name] = @p3, [StaffNumberWithSkillorKPI] = @p4, [Type] = @p5, [UserCreated] = @p6, [UserModified] = @p7
+WHERE [ID] = @p8;
+SELECT @@ROWCOUNT;"
+2021-01-17 08:17:49.228 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2021-01-17 08:17:49.257 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.EnrolAllStaff (CRMSystem.Presentation.Core)" in 133474.3942ms
+2021-01-17 08:17:49.264 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.EnrolAllStaff (CRMSystem.Presentation.Core)"'
+2021-01-17 08:17:49.273 +01:00 [Information] Request finished in 133649.8702ms 200 application/json; charset=utf-8

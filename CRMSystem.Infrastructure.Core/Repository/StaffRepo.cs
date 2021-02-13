@@ -141,6 +141,7 @@ namespace CRMSystem.Infrastructure
                     if (data.Address != null) staff.Address = data.Address;
                     if (data.HEL != null) staff.HEL = data.HEL;
                     if (data.DateEmployed != null) staff.DateEmployed = data.DateEmployed;
+                    if (data.DateofBirth != null) staff.DateofBirth = data.DateofBirth;
                     if (data.Designation != null) staff.Designation = data.Designation;
                     if (data.MaidenName != null) staff.MaidenName = data.MaidenName;
                     if (data.MaritalStatus != null) staff.MaritalStatus = data.MaritalStatus;
