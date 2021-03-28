@@ -11,10 +11,10 @@ namespace CRMSystem.Domains
         Task<int> SaveStaffSkill(StaffSkillorKPI data);
         Task<int> UpdateStaffSkillAsync(StaffSkillorKPI data);
         Task<StaffSkillorKPI> GetStaffSkillByIDAsync(int ID);
-        Task<List<StaffSkillorKPI>> GetAllStaffSkillsAsync();
-        Task<List<StaffSkillorKPI>> GetAllStaffKpisAsync();
-        Task<StaffSkillorKPICompetency> getStaffSkillsByStaffIDAsync(int staffID);
-        Task<StaffSkillorKPICompetency> getStaffKpisByStaffIDAsync(int staffID);
+        Task<List<StaffSkillorKPI>> GetAllStaffSkillsAsync(string sdate, string edate);
+        Task<List<StaffSkillorKPI>> GetAllStaffKpisAsync(string sdate, string edate);
+        Task<StaffSkillorKPICompetency> getStaffSkillsByStaffIDAsync(int staffID,string sdate="0",string edate="0");
+        Task<StaffSkillorKPICompetency> getStaffKpisByStaffIDAsync(int staffID, string sdate="0", string edate="0");
         Task<List<StaffSkillorKPI>> getStaffKpiorSkillByNameAsync(string name);
     }
 }

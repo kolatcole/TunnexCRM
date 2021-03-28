@@ -52,9 +52,9 @@ namespace CRMSystem.Domains
             var result = await _pcrepo.getAllAvailableAsync();
             return result;
         }
-        public async Task<List<Product>> GetAllProducts()
+        public async Task<List<Product>> GetAllProducts(string type)
         {
-            var result = await _pRepo.getAllAsync();
+            var result = await _pcrepo.getAllAsync(type);
             return result;
         }
         public async Task<Product> GetProduct(int ID)

@@ -9,7 +9,7 @@ namespace CRMSystem.Domains
     {
         Task<int> insertProductAsync(Product data);
         Task<int> updateProductAsync(Product data);
-        Task<List<Product>> GetAllProducts();
+        Task<List<Product>> GetAllProducts(string type);
         Task<Product> GetProduct(int ID);
         Task DeleteProductAsync(int ID);
         Task<int> insertMultipleProductsAsync(List<Product> data);

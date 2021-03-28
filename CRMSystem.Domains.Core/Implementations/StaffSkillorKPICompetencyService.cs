@@ -67,79 +67,59 @@ namespace CRMSystem.Domains.Core.Implementations
         //    return overAll;
         //}
 
-        public async Task<List<StaffSkillorKPICompetency>> GetAllOverAllSkill()
+        public async Task<List<StaffSkillorKPICompetency>> GetAllOverAllSkill(string startdate,string enddate)
         {
 
-            //List<Invoice> invoices;
-            //DateTime.TryParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime sdate);
-            //DateTime.TryParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime edate);
-
-            //if (sdate <= DateTime.MinValue)
-            //    sdate = DateTime.Now.StartOfDay();
-
-            //if (edate <= DateTime.MinValue)
-            //    edate = DateTime.Now.EndOfDay();
-            //else
-            //    edate = edate.EndOfDay();
-
-            //// filter by customerID only, if that's what was given
-
-            //if ((startDate == "0" || endDate == "0") && customerID > 0)
-            //{
-            //    return invoices = await _iRepo.getProformaByCustomerIDAsync(customerID);
-            //}
-
-
-
-
-
-
-            //// filter by dates alone if customerID is not given
-
-            //else if (customerID < 1 && (startDate != "0" || endDate != "0"))
-            //{
-            //    return invoices = await _iRepo.getAllProformaByDateAsync(sdate, edate);
-            //}
-
-
-
-
-            //// filter by all given parameters
-
-            //else if (startDate != "0" && endDate != "0" && customerID > 0)
-            //{
-            //    return invoices = await _iRepo.getAllProformaByDateandCustomerAsync(customerID, sdate, edate);
-            //}
-
-
-
-            //// get without any parameter
-            //else
-            //    return invoices = await _iRepo.getAllProformaAsync();
-
-            
-            
-            
-            var skills = await _service.GetAllStaffSkillsAsync();
 
             var overAll = new List<StaffSkillorKPICompetency>();
 
 
+            var skills = await _service.GetAllStaffSkillsAsync(startdate, enddate);
+            // filter by date, if that's what was given
 
             foreach (var skill in skills)
             {
                 if (!overAll.Exists(x => x.StaffId == skill.StaffID))
                 {
-                    var oneStaff = await _service.getStaffSkillsByStaffIDAsync(skill.StaffID);
-                    
+                    var oneStaff = await _service.getStaffSkillsByStaffIDAsync(skill.StaffID, startdate, enddate);
 
 
-                  //  oneStaff.OverallCompetence = oneStaff.AllSkillsOrKpis.FindAll(x => x.CompetencyValue);
+
+                    //  oneStaff.OverallCompetence = oneStaff.AllSkillsOrKpis.FindAll(x => x.CompetencyValue);
                     overAll.Add(oneStaff);
                 }
 
 
             }
+
+
+            return overAll;
+
+
+
+
+            //pend
+            //var skills = await _service.GetAllStaffSkillsAsync();
+            // var skills = new List<StaffSkillorKPI>();
+
+            //var overAll = new List<StaffSkillorKPICompetency>();
+
+
+
+            //foreach (var skill in skills)
+            //{
+            //    if (!overAll.Exists(x => x.StaffId == skill.StaffID))
+            //    {
+            //        var oneStaff = await _service.getStaffSkillsByStaffIDAsync(skill.StaffID);
+
+
+
+            //      //  oneStaff.OverallCompetence = oneStaff.AllSkillsOrKpis.FindAll(x => x.CompetencyValue);
+            //        overAll.Add(oneStaff);
+            //    }
+
+
+            //}
 
 
             //foreach(var skill in skills)
@@ -162,29 +142,85 @@ namespace CRMSystem.Domains.Core.Implementations
 
 
             //}
-            return overAll;
         }
 
-        public async Task<List<StaffSkillorKPICompetency>> GetAllOverAllKpi()
+
+
+
+        //public async Task<List<StaffSkillorKPICompetency>> GetAllOverAllSkill(string startdate, string enddate)
+        //{
+
+
+        //    var overAll = new List<StaffSkillorKPICompetency>();
+
+
+        //    var skills = await _service.GetAllStaffSkillsAsync(startdate, enddate);
+        //    // filter by date, if that's what was given
+
+        //    foreach (var skill in skills)
+        //    {
+        //        if (!overAll.Exists(x => x.StaffId == skill.StaffID))
+        //        {
+        //            var oneStaff = await _service.getStaffSkillsByStaffIDAsync(skill.StaffID, startdate, enddate);
+
+
+
+        //            //  oneStaff.OverallCompetence = oneStaff.AllSkillsOrKpis.FindAll(x => x.CompetencyValue);
+        //            overAll.Add(oneStaff);
+        //        }
+
+
+        //    }
+
+
+        //    return overAll;
+
+        //}
+        public async Task<List<StaffSkillorKPICompetency>> GetAllOverAllKpi(string startdate, string enddate)
         {
-            var skills = await _service.GetAllStaffSkillsAsync();
+            ////pend
+            ////var skills = await _service.GetAllStaffSkillsAsync();
+            //var skills = new List<StaffSkillorKPI>();
+            //var overAll = new List<StaffSkillorKPICompetency>();
+
+
+
+            //foreach (var skill in skills)
+            //{
+            //    if (!overAll.Exists(x => x.StaffId == skill.StaffID))
+            //    {
+            //        var oneStaff = await _service.getStaffKpisByStaffIDAsync(skill.StaffID);
+
+
+            //        overAll.Add(oneStaff);
+            //    }
+
+
+            //}
+
+            //return overAll;
 
             var overAll = new List<StaffSkillorKPICompetency>();
 
 
+            var skills = await _service.GetAllStaffKpisAsync(startdate, enddate);
+            // filter by date, if that's what was given
 
             foreach (var skill in skills)
             {
                 if (!overAll.Exists(x => x.StaffId == skill.StaffID))
                 {
-                    var oneStaff = await _service.getStaffKpisByStaffIDAsync(skill.StaffID);
+                    var oneStaff = await _service.getStaffKpisByStaffIDAsync(skill.StaffID, startdate, enddate);
 
 
+
+                    //  oneStaff.OverallCompetence = oneStaff.AllSkillsOrKpis.FindAll(x => x.CompetencyValue);
                     overAll.Add(oneStaff);
                 }
 
 
             }
+
 
             return overAll;
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -121,10 +122,12 @@ namespace CRMSystem.Domains
             return skill;
         }
 
-        public async Task<List<StaffSkillorKPI>> GetAllStaffSkillsAsync()
+        public async Task<List<StaffSkillorKPI>> GetAllStaffSkillsAsync(string sdate,string edate)
         {
             
-            var staffskillorKpis = await _sRepo.getAllAsync();
+
+
+            var staffskillorKpis = await _sskRepo.getAllAsync(sdate, edate);
 
             var newStaffskillorKpis = new List<StaffSkillorKPI>();
 
@@ -139,10 +142,10 @@ namespace CRMSystem.Domains
 
             return newStaffskillorKpis;
         }
-        public async Task<List<StaffSkillorKPI>> GetAllStaffKpisAsync()
+        public async Task<List<StaffSkillorKPI>> GetAllStaffKpisAsync(string sdate, string edate)
         {
 
-            var staffskillorKpis = await _sRepo.getAllAsync();
+            var staffskillorKpis = await _sskRepo.getAllAsync(sdate, edate);
 
             var newStaffskillorKpis = new List<StaffSkillorKPI>();
 
@@ -157,12 +160,20 @@ namespace CRMSystem.Domains
 
             return newStaffskillorKpis;
         }
-        public async Task<StaffSkillorKPICompetency> getStaffSkillsByStaffIDAsync(int staffID)
+        public async Task<StaffSkillorKPICompetency> getStaffSkillsByStaffIDAsync(int staffID, string sdate, string edate)
         {
             //var skills = await _sskRepo.getStaffSkillsByStaffID(staffID);
             //return skills;
 
-            var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+           
+
+
+            var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID,sdate,edate);
+
+            
+
+            
+
             var overAll = new StaffSkillorKPICompetency();
 
             var newStaffskillorKpis = new List<StaffSkillorKPI>();
@@ -171,10 +182,43 @@ namespace CRMSystem.Domains
             decimal TempCompetency = 0.00M;
             foreach (var staffskillorKpi in staffskillorKpis)
             {
+                staffskillorKpi.CompetencyValue = 0;
                 var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
 
                 if (skill.Type == "skill")
                 {
+                    // get competencevalue on the fly
+
+                    var totalSAS = 0;
+                    var assessmentCount = 0;
+                    if (staffskillorKpi.Assessments != null)
+                    {
+                        foreach (var ass in staffskillorKpi.Assessments)
+                        {
+                            totalSAS += ass.SAS;
+                            assessmentCount += 1;
+                        }
+                    }
+
+
+                    if(assessmentCount==0)
+                    {
+                        staffskillorKpi.CompetencyValue = 0;
+                    }
+                    else
+                    {
+                        //var comp = assessmentCount * 5;
+                        //comp = totalSAS / comp;
+                        //comp *= 100;
+
+                        //staffskillorKpi.CompetencyValue = comp;
+
+                        staffskillorKpi.CompetencyValue = Convert.ToDecimal((double)(totalSAS) / (double)(assessmentCount * 5)) * 100;
+                    }
+
+
+
+
                     competenceCount++;
                     TempCompetency += staffskillorKpi.CompetencyValue;
                     Average /= competenceCount;
@@ -228,28 +272,15 @@ namespace CRMSystem.Domains
 
             //return newStaffskillorKpis;
         }
-        public async Task<StaffSkillorKPICompetency> getStaffKpisByStaffIDAsync(int staffID)
+        public async Task<StaffSkillorKPICompetency> getStaffKpisByStaffIDAsync(int staffID,string sdate,string edate)
         {
 
 
-            //var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
-
-            //var newStaffskillorKpis = new List<StaffSkillorKPI>();
-
-            //foreach (var staffskillorKpi in staffskillorKpis)
-            //{
-            //    var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
-
-            //    if (skill.Type == "kpi")
-            //        newStaffskillorKpis.Add(staffskillorKpi);
-
-            //}
-
-            //return newStaffskillorKpis;
+            var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID, sdate, edate);
 
 
 
-            var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+
 
             var overAll = new StaffSkillorKPICompetency();
 
@@ -259,10 +290,43 @@ namespace CRMSystem.Domains
             decimal TempCompetency = 0.00M;
             foreach (var staffskillorKpi in staffskillorKpis)
             {
+                staffskillorKpi.CompetencyValue = 0;
                 var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
 
                 if (skill.Type == "kpi")
                 {
+                    // get competencevalue on the fly
+
+                    var totalSAS = 0;
+                    var assessmentCount = 0;
+                    if (staffskillorKpi.Assessments != null)
+                    {
+                        foreach (var ass in staffskillorKpi.Assessments)
+                        {
+                            totalSAS += ass.SAS;
+                            assessmentCount += 1;
+                        }
+                    }
+
+
+                    if (assessmentCount == 0)
+                    {
+                        staffskillorKpi.CompetencyValue = 0;
+                    }
+                    else
+                    {
+                        //var comp = assessmentCount * 5;
+                        //comp = totalSAS / comp;
+                        //comp *= 100;
+
+                        //staffskillorKpi.CompetencyValue = comp;
+
+                        staffskillorKpi.CompetencyValue = Convert.ToDecimal((double)(totalSAS) / (double)(assessmentCount * 5)) * 100;
+                    }
+
+
+
+
                     competenceCount++;
                     TempCompetency += staffskillorKpi.CompetencyValue;
                     Average /= competenceCount;
@@ -276,16 +340,53 @@ namespace CRMSystem.Domains
 
 
             }
-            
-            if (TempCompetency>0)
+
+            if (TempCompetency > 0)
             {
                 TempCompetency /= competenceCount;
                 overAll.OverallCompetence = decimal.Round(TempCompetency, 2, MidpointRounding.AwayFromZero);
             }
-            
-
 
             return overAll;
+
+
+            //var staffskillorKpis = await _sskRepo.getStaffSkillsByStaffID(staffID);
+
+            //var overAll = new StaffSkillorKPICompetency();
+
+            //var newStaffskillorKpis = new List<StaffSkillorKPI>();
+            //int competenceCount = 0;
+            //decimal Average = 0.00M;
+            //decimal TempCompetency = 0.00M;
+            //foreach (var staffskillorKpi in staffskillorKpis)
+            //{
+            //    var skill = await _skRepo.getAsync(staffskillorKpi.SkillorKPIID);
+
+            //    if (skill.Type == "kpi")
+            //    {
+            //        competenceCount++;
+            //        TempCompetency += staffskillorKpi.CompetencyValue;
+            //        Average /= competenceCount;
+            //        newStaffskillorKpis.Add(staffskillorKpi);
+
+            //        overAll.StaffId = staffID;
+            //        overAll.AllSkillsOrKpis = newStaffskillorKpis;
+
+
+            //    }
+
+
+            //}
+
+            //if (TempCompetency>0)
+            //{
+            //    TempCompetency /= competenceCount;
+            //    overAll.OverallCompetence = decimal.Round(TempCompetency, 2, MidpointRounding.AwayFromZero);
+            //}
+
+
+
+            //return overAll;
         }
 
         public async Task<List<StaffSkillorKPI>> getStaffKpiorSkillByNameAsync(string name)
@@ -307,5 +408,7 @@ namespace CRMSystem.Domains
 
             return newStaffskillorKpis;
         }
+
+        
     }
 }

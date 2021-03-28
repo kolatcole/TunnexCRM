@@ -21,16 +21,16 @@ namespace CRMSystem.Presentation.Core.Controllers
         }
 
         [HttpGet("GetAllbyStaffSkill")]
-        public async Task<IActionResult> GetAllbyStaffSkill()
+        public async Task<IActionResult> GetAllbyStaffSkill(string sdate="0",string edate="0")
         {
-            var result = await _service.GetAllOverAllSkill();
+            var result = await _service.GetAllOverAllSkill(sdate,edate);
             return Ok(result);
         }
 
         [HttpGet("GetAllbyStaffKPI")]
-        public async Task<IActionResult> GetAllbyStaffKPI()
+        public async Task<IActionResult> GetAllbyStaffKPI(string sdate = "0", string edate = "0")
         {
-            var result = await _service.GetAllOverAllKpi();
+            var result = await _service.GetAllOverAllKpi(sdate,edate);
             return Ok(result);
         }
     }

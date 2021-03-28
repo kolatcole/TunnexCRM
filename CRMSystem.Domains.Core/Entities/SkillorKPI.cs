@@ -21,9 +21,9 @@ namespace CRMSystem.Domains
     
 
 
-    public class StaffSkillorKPI:BaseEntity
+    public class StaffSkillorKPI
     {
-        
+        public int ID { get; set; }
 
         [ForeignKey("Staff")]
         public int StaffID { get; set; }

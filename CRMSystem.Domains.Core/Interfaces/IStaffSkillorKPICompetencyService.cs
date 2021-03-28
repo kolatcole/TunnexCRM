@@ -7,8 +7,8 @@ namespace CRMSystem.Domains
 {
     public interface IStaffSkillorKPICompetencyService
     {
-        Task<List<StaffSkillorKPICompetency>> GetAllOverAllSkill();
+        Task<List<StaffSkillorKPICompetency>> GetAllOverAllSkill(string startdate,string enddate);
 
-        Task<List<StaffSkillorKPICompetency>> GetAllOverAllKpi();
+        Task<List<StaffSkillorKPICompetency>> GetAllOverAllKpi(string startdate, string enddate);
     }
 }

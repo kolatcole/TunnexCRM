@@ -64,10 +64,10 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("GetAllStaffSkill")]
-        public async Task<IActionResult> GetAllStaffSkill()
+        public async Task<IActionResult> GetAllStaffSkill(string sdate="0",string edate="0")
         {
 
-            var result = await _service.GetAllStaffSkillsAsync();
+            var result = await _service.GetAllStaffSkillsAsync(sdate,edate);
             return Ok(result);
         }
 
@@ -76,10 +76,10 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("GetAllStaffKpi")]
-        public async Task<IActionResult> GetAllStaffKpi()
+        public async Task<IActionResult> GetAllStaffKpi(string sdate = "0", string edate = "0")
         {
 
-            var result = await _service.GetAllStaffKpisAsync();
+            var result = await _service.GetAllStaffKpisAsync(sdate,edate);
             return Ok(result);
         }
 

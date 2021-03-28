@@ -201,7 +201,7 @@ namespace CRMSystem.Domains
 
 
 
-            return SID;
+            return Convert.ToInt32(invoice.InvoiceNo);
         }
         //public async Task<List<Sale>> GetSalesByCustomerIDAsync(int customerID)
         //{

@@ -1,0 +1,95 @@
+2021-03-01 10:39:40.737 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-01 10:40:10.100 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-03-01 10:40:12.851 +01:00 [Information] Request finished in 2927.8082ms 0 
+2021-03-01 10:56:25.602 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-01 10:56:26.888 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-03-01 10:56:26.888 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/SWAGGER  
+2021-03-01 10:56:27.349 +01:00 [Information] Request finished in 482.765ms 0 
+2021-03-01 10:56:27.517 +01:00 [Information] Request finished in 661.4744ms 404 
+2021-03-01 10:56:39.427 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/SWAGGER/INDEX.HTML  
+2021-03-01 10:56:39.489 +01:00 [Information] Request finished in 76.8104ms 404 
+2021-03-01 10:57:11.126 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-03-01 10:57:11.302 +01:00 [Information] Request finished in 199.2031ms 200 text/html;charset=utf-8
+2021-03-01 10:57:12.023 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-03-01 10:57:12.507 +01:00 [Information] Request finished in 483.937ms 200 application/json;charset=utf-8
+2021-03-01 10:57:31.450 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Staff/GetAllStaff  
+2021-03-01 10:57:31.513 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-03-01 10:57:31.590 +01:00 [Information] Route matched with "{action = \"GetAllStaff\", controller = \"Staff\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaff()" on controller "CRMSystem.Presentation.StaffController" ("CRMSystem.Presentation.Core").
+2021-03-01 10:57:40.227 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.236 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.240 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.254 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.260 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.264 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.271 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.279 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.286 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.291 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.296 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-03-01 10:57:40.397 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-03-01 10:57:44.848 +01:00 [Error] Failed executing DbCommand ("439"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[Address], [s].[DateCreated], [s].[DateEmployed], [s].[DateModified], [s].[DateofBirth], [s].[Designation], [s].[Email], [s].[FirstName], [s].[Gender], [s].[HEL], [s].[Image], [s].[LastName], [s].[MaidenName], [s].[MaritalStatus], [s].[MiddleName], [s].[NextofKin], [s].[NextofKinAddress], [s].[NextofKinPhone], [s].[Phone], [s].[ProfilePictureUrl], [s].[RelationshipToNextofKin], [s].[SecondPhone], [s].[StaffID], [s].[UserCreated], [s].[UserModified], [s].[YearofMarriage], [s].[nin], [s].[pension], [q].[ID], [q].[EndDate], [q].[Name], [q].[StaffID], [q].[StartDate], [q].[Status]
+FROM [Staffs] AS [s]
+LEFT JOIN [Qualifications] AS [q] ON [s].[ID] = [q].[StaffID]
+ORDER BY [s].[ID], [q].[ID]"
+2021-03-01 10:57:45.172 +01:00 [Error] An exception occurred while iterating over the results of a query for context type '"CRMSystem.Infrastructure.TContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'nin'.
+Invalid column name 'pension'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0ac95cad-1d20-422c-a8fe-2db4f19f44f0
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'nin'.
+Invalid column name 'pension'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0ac95cad-1d20-422c-a8fe-2db4f19f44f0
+Error Number:207,State:1,Class:16
+2021-03-01 10:57:45.914 +01:00 [Information] Executed action "CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)" in 14288.0468ms
+2021-03-01 10:57:45.928 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-03-01 10:57:46.124 +01:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'nin'.
+Invalid column name 'pension'.
+   at CRMSystem.Infrastructure.StaffRepo.getAllAsync() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\CRMSystem.Infrastructure.Core\Repository\StaffRepo.cs:line 50
+   at CRMSystem.Presentation.StaffController.GetAllStaff() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\TunnexCRM\Controllers\StaffController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:0ac95cad-1d20-422c-a8fe-2db4f19f44f0
+Error Number:207,State:1,Class:16
+2021-03-01 10:57:46.197 +01:00 [Information] Request finished in 14743.3092ms 500 text/plain

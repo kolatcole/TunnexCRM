@@ -9,5 +9,7 @@ namespace CRMSystem.Domains
     {
         Task<List<Product>> GetTopSellingProducts();
         Task<List<Product>> getAllAvailableAsync();
+
+        Task<List<Product>> getAllAsync(string type);
     }
 }
