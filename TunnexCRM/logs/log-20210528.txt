@@ -1,0 +1,319 @@
+2021-05-28 07:55:08.878 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-28 07:55:09.954 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-05-28 07:55:10.773 +01:00 [Information] Request finished in 676.9424ms 404 
+2021-05-28 07:55:21.892 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-05-28 07:55:22.111 +01:00 [Information] Request finished in 222.518ms 200 text/html;charset=utf-8
+2021-05-28 07:55:22.449 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2021-05-28 07:55:22.482 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2021-05-28 07:55:22.449 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2021-05-28 07:55:22.536 +01:00 [Information] The file "/swagger-ui.css" was not modified
+2021-05-28 07:55:22.542 +01:00 [Information] The file "/swagger-ui-bundle.js" was not modified
+2021-05-28 07:55:22.544 +01:00 [Information] The file "/swagger-ui-standalone-preset.js" was not modified
+2021-05-28 07:55:22.647 +01:00 [Information] Request finished in 151.7614ms 304 application/javascript
+2021-05-28 07:55:22.702 +01:00 [Information] Request finished in 138.2814ms 304 application/javascript
+2021-05-28 07:55:22.711 +01:00 [Information] Request finished in 142.4298ms 304 text/css
+2021-05-28 07:55:23.275 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-05-28 07:55:23.709 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2021-05-28 07:55:23.750 +01:00 [Information] The file "/favicon-32x32.png" was not modified
+2021-05-28 07:55:23.849 +01:00 [Information] Request finished in 76.5849ms 304 image/png
+2021-05-28 07:55:24.435 +01:00 [Information] Request finished in 1113.1708ms 200 application/json;charset=utf-8
+2021-05-28 07:55:58.454 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Staff/GetAllStaff  
+2021-05-28 07:55:58.594 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-05-28 07:55:58.806 +01:00 [Information] Route matched with "{action = \"GetAllStaff\", controller = \"Staff\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaff()" on controller "CRMSystem.Presentation.StaffController" ("CRMSystem.Presentation.Core").
+2021-05-28 07:56:26.502 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.526 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.584 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.612 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.628 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.645 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.658 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.667 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.674 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.688 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.694 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 07:56:26.888 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-05-28 07:56:33.534 +01:00 [Error] Failed executing DbCommand ("471"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[Address], [s].[DateCreated], [s].[DateEmployed], [s].[DateModified], [s].[DateofBirth], [s].[Designation], [s].[Email], [s].[FirstName], [s].[Gender], [s].[HEL], [s].[Image], [s].[LastName], [s].[MaidenName], [s].[MaritalStatus], [s].[MiddleName], [s].[NextofKin], [s].[NextofKinAddress], [s].[NextofKinPhone], [s].[Phone], [s].[ProfilePictureUrl], [s].[RelationshipToNextofKin], [s].[SecondPhone], [s].[StaffID], [s].[UserCreated], [s].[UserModified], [s].[YearofMarriage], [s].[nin], [s].[pension], [q].[ID], [q].[EndDate], [q].[Name], [q].[StaffID], [q].[StartDate], [q].[Status]
+FROM [Staffs] AS [s]
+LEFT JOIN [Qualifications] AS [q] ON [s].[ID] = [q].[StaffID]
+ORDER BY [s].[ID], [q].[ID]"
+2021-05-28 07:56:37.809 +01:00 [Error] An exception occurred while iterating over the results of a query for context type '"CRMSystem.Infrastructure.TContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'nin'.
+Invalid column name 'pension'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4577f5e2-542d-4f9e-8596-ca1830ed647b
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'nin'.
+Invalid column name 'pension'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4577f5e2-542d-4f9e-8596-ca1830ed647b
+Error Number:207,State:1,Class:16
+2021-05-28 08:18:00.831 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-28 08:18:01.288 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-05-28 08:18:01.544 +01:00 [Information] Request finished in 262.5919ms 404 
+2021-05-28 08:18:08.922 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-05-28 08:18:09.029 +01:00 [Information] Request finished in 107.5081ms 200 text/html;charset=utf-8
+2021-05-28 08:18:09.682 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-05-28 08:18:10.110 +01:00 [Information] Request finished in 430.3284ms 200 application/json;charset=utf-8
+2021-05-28 08:18:21.988 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2021-05-28 08:18:22.000 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:18:22.244 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2021-05-28 08:18:24.279 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.280 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.281 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.282 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.283 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:18:24.355 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-05-28 08:18:27.535 +01:00 [Error] An error occurred using the connection to database '"db_a74a37_basit"' on server '"SQL5104.site4now.net,1433"'.
+2021-05-28 08:18:27.619 +01:00 [Error] An exception occurred while iterating over the results of a query for context type '"CRMSystem.Infrastructure.TContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'db_a74a37_basit_admin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:33805c64-b48d-424c-977c-09d4f6c80507
+Error Number:18456,State:1,Class:14"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'db_a74a37_basit_admin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:33805c64-b48d-424c-977c-09d4f6c80507
+Error Number:18456,State:1,Class:14
+2021-05-28 08:18:27.659 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 5396.8514ms
+2021-05-28 08:18:27.664 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:18:27.771 +01:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'db_a74a37_basit_admin'.
+   at CRMSystem.Infrastructure.CustomerRepo.getAllAsync() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 46
+   at CRMSystem.Domains.CustomerService.getAllCustomers() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 27
+   at CRMSystem.Presentation.CustomerController.GetAllCustomers() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\TunnexCRM\Controllers\CustomerController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:33805c64-b48d-424c-977c-09d4f6c80507
+Error Number:18456,State:1,Class:14
+2021-05-28 08:18:27.813 +01:00 [Information] Request finished in 5825.9363ms 500 text/plain
+2021-05-28 08:22:07.342 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-28 08:22:07.755 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-05-28 08:22:08.042 +01:00 [Information] Request finished in 295.2802ms 404 
+2021-05-28 08:22:13.934 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-05-28 08:22:14.079 +01:00 [Information] Request finished in 147.8468ms 200 text/html;charset=utf-8
+2021-05-28 08:22:14.528 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-05-28 08:22:15.042 +01:00 [Information] Request finished in 514.5123ms 200 application/json;charset=utf-8
+2021-05-28 08:22:22.548 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2021-05-28 08:22:22.566 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:22:22.718 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2021-05-28 08:22:25.347 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.348 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.348 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.349 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.349 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.349 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.349 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.349 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.350 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.350 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.350 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:22:25.476 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-05-28 08:22:28.488 +01:00 [Error] An error occurred using the connection to database '"db_a74a37_basit"' on server '"SQL5104.site4now.net,1433"'.
+2021-05-28 08:22:28.612 +01:00 [Error] An exception occurred while iterating over the results of a query for context type '"CRMSystem.Infrastructure.TContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'db_a74a37_basit_admin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:44d0e7f3-3173-4d73-80b1-2b3cc6050206
+Error Number:18456,State:1,Class:14"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'db_a74a37_basit_admin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:44d0e7f3-3173-4d73-80b1-2b3cc6050206
+Error Number:18456,State:1,Class:14
+2021-05-28 08:22:28.659 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 5921.1411ms
+2021-05-28 08:22:28.666 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:22:28.752 +01:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'db_a74a37_basit_admin'.
+   at CRMSystem.Infrastructure.CustomerRepo.getAllAsync() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 46
+   at CRMSystem.Domains.CustomerService.getAllCustomers() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 27
+   at CRMSystem.Presentation.CustomerController.GetAllCustomers() in C:\Users\KOLAWOLE\source\repos\TunnexCRM\TunnexCRM\Controllers\CustomerController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:44d0e7f3-3173-4d73-80b1-2b3cc6050206
+Error Number:18456,State:1,Class:14
+2021-05-28 08:22:28.809 +01:00 [Information] Request finished in 6261.338ms 500 text/plain
+2021-05-28 08:23:39.350 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-28 08:23:39.808 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-05-28 08:23:40.057 +01:00 [Information] Request finished in 260.0358ms 404 
+2021-05-28 08:23:41.336 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-05-28 08:23:41.468 +01:00 [Information] Request finished in 132.5188ms 200 text/html;charset=utf-8
+2021-05-28 08:23:42.998 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-05-28 08:23:43.536 +01:00 [Information] Request finished in 538.5728ms 200 application/json;charset=utf-8
+2021-05-28 08:23:49.715 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2021-05-28 08:23:49.728 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:23:49.811 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2021-05-28 08:23:51.787 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.788 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.788 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.788 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.789 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.790 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.790 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.790 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.790 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.791 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.791 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:23:51.880 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-05-28 08:23:56.322 +01:00 [Information] Executed DbCommand ("850"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2021-05-28 08:23:56.536 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-05-28 08:23:56.583 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 6748.5237ms
+2021-05-28 08:23:56.586 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:23:56.595 +01:00 [Information] Request finished in 6880.0511ms 200 application/json; charset=utf-8
+2021-05-28 08:33:12.528 +01:00 [Information] User profile is available. Using '"C:\Users\KOLAWOLE\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-28 08:33:13.388 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2021-05-28 08:33:13.421 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2021-05-28 08:33:13.716 +01:00 [Information] Request finished in 397.8029ms 0 
+2021-05-28 08:33:13.830 +01:00 [Information] Request finished in 508.1496ms 200 text/html;charset=utf-8
+2021-05-28 08:33:14.284 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2021-05-28 08:33:14.864 +01:00 [Information] Request finished in 573.7633ms 200 application/json;charset=utf-8
+2021-05-28 08:33:22.852 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2021-05-28 08:33:22.882 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:33:23.010 +01:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2021-05-28 08:33:26.094 +01:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.103 +01:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.111 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.120 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.126 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.139 +01:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.148 +01:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.159 +01:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.168 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.174 +01:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.181 +01:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-05-28 08:33:26.295 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-05-28 08:33:30.484 +01:00 [Information] Executed DbCommand ("418"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2021-05-28 08:33:30.804 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-05-28 08:33:30.893 +01:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 7849.2714ms
+2021-05-28 08:33:30.903 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2021-05-28 08:33:30.921 +01:00 [Information] Request finished in 8068.608ms 200 application/json; charset=utf-8
+2021-05-28 08:33:45.904 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Staff/GetAllStaff  
+2021-05-28 08:33:45.930 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-05-28 08:33:45.975 +01:00 [Information] Route matched with "{action = \"GetAllStaff\", controller = \"Staff\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaff()" on controller "CRMSystem.Presentation.StaffController" ("CRMSystem.Presentation.Core").
+2021-05-28 08:33:48.793 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-05-28 08:33:49.320 +01:00 [Information] Executed DbCommand ("448"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[Address], [s].[DateCreated], [s].[DateEmployed], [s].[DateModified], [s].[DateofBirth], [s].[Designation], [s].[Email], [s].[FirstName], [s].[Gender], [s].[HEL], [s].[Image], [s].[LastName], [s].[MaidenName], [s].[MaritalStatus], [s].[MiddleName], [s].[NextofKin], [s].[NextofKinAddress], [s].[NextofKinPhone], [s].[Phone], [s].[ProfilePictureUrl], [s].[RelationshipToNextofKin], [s].[SecondPhone], [s].[StaffID], [s].[UserCreated], [s].[UserModified], [s].[YearofMarriage], [s].[nin], [s].[pension], [q].[ID], [q].[EndDate], [q].[Name], [q].[StaffID], [q].[StartDate], [q].[Status]
+FROM [Staffs] AS [s]
+LEFT JOIN [Qualifications] AS [q] ON [s].[ID] = [q].[StaffID]
+ORDER BY [s].[ID], [q].[ID]"
+2021-05-28 08:33:49.381 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Staff, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-05-28 08:33:49.432 +01:00 [Information] Executed action "CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)" in 3441.6421ms
+2021-05-28 08:33:49.474 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.StaffController.GetAllStaff (CRMSystem.Presentation.Core)"'
+2021-05-28 08:33:49.489 +01:00 [Information] Request finished in 3586.399ms 200 application/json; charset=utf-8
