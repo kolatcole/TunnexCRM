@@ -44,7 +44,8 @@ namespace CRMSystem.Infrastructure
                 var product = new QuotProduct
                 {
                    ProductID=data.ProductID,
-                   QuotationID=data.QuotationID
+                   QuotationID=data.QuotationID,
+                    UnitPrice=data.UnitPrice
                 };
 
                 await _context.QuotProducts.AddAsync(product);

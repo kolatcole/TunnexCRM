@@ -127,7 +127,8 @@ namespace CRMSystem.Domains
 
                 var item = new Item
                 {
-                    Amount = prod.SalePrice,
+                    
+                    Amount=(Quoteprod.UnitPrice!=0)?Quoteprod.UnitPrice: prod.SalePrice,
                     ProductID = prod.ID,
                     Quantity = Quoteprod.Quantity
                 };

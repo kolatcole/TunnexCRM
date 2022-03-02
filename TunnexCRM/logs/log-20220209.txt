@@ -1,0 +1,4 @@
+2022-02-09 07:37:13.701 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js  
+2022-02-09 07:37:20.424 +00:00 [Information] Request finished in 7318.3056ms 200 application/javascript; charset=utf-8
+2022-02-09 07:37:21.458 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2022-02-09 07:37:24.406 +00:00 [Information] Request finished in 2948.0485ms 200 application/json;charset=utf-8

@@ -88,7 +88,10 @@ namespace CRMSystem.Domains
                     // get product by productID
 
                     var product = await _pRepo.getAsync(item.ProductID);
-                    item.Amount = item.Quantity * product.SalePrice;
+                    item.Amount = item.Quantity * item.Amount;
+
+                   // item.Amount=(item.Amount!=0)? item.Amount* item.Quantity: item.Quantity * product.SalePrice;
+                   // item.Amount * = item.Quantity;
                     amount += item.Amount;
                     item.Name = product.Name;
 
