@@ -1,0 +1,453 @@
+2023-02-15 08:15:38.317 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/values - -
+2023-02-15 08:15:39.219 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/values - - - 404 - - 924.2738ms
+2023-02-15 08:15:47.767 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 08:15:48.540 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_vs/browserLink - -
+2023-02-15 08:15:48.549 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 770.9801ms
+2023-02-15 08:15:48.552 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 08:15:48.582 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 27.7085ms
+2023-02-15 08:15:48.700 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 165.5149ms
+2023-02-15 08:15:48.770 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - -
+2023-02-15 08:15:49.038 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.7676ms
+2023-02-15 08:15:58.297 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - -
+2023-02-15 08:15:58.313 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 08:15:58.351 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:15:59.713 +00:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.716 +00:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.719 +00:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.722 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.724 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.728 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.764 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.767 +00:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.769 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.771 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.773 +00:00 [Warning] No type was specified for the decimal column '"UnitPrice"' on entity type '"QuotProduct"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.775 +00:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:15:59.827 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:16:00.227 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 1859.2345ms
+2023-02-15 08:16:00.236 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 08:16:00.671 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.EnumerableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.EnumerableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.CustomerRepo.getAllAsync() in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 46
+   at CRMSystem.Domains.CustomerService.getAllCustomers() in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 27
+   at CRMSystem.Presentation.CustomerController.GetAllCustomers() in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\CustomerController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 08:16:00.706 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - - - 500 - text/plain;+charset=utf-8 2409.8153ms
+2023-02-15 08:16:27.751 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/MostFrequentCustomers - -
+2023-02-15 08:16:27.759 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.MostFrequent (CRMSystem.Presentation.Core)"'
+2023-02-15 08:16:27.769 +00:00 [Information] Route matched with "{action = \"MostFrequent\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MostFrequent()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:16:27.852 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:16:28.006 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.MostFrequent (CRMSystem.Presentation.Core)" in 234.0374ms
+2023-02-15 08:16:28.009 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.MostFrequent (CRMSystem.Presentation.Core)"'
+2023-02-15 08:16:28.016 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.EnumerableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.EnumerableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.CustomerRepo.MostFrequentCustomer() in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 136
+   at CRMSystem.Domains.CustomerService.MostFrequentCustomerAsync() in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 57
+   at CRMSystem.Presentation.CustomerController.MostFrequent() in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\CustomerController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 08:16:28.025 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/MostFrequentCustomers - - - 500 - text/plain;+charset=utf-8 279.4134ms
+2023-02-15 08:16:42.579 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Lead/GetAllLeads - -
+2023-02-15 08:16:42.582 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2023-02-15 08:16:42.588 +00:00 [Information] Route matched with "{action = \"GetAllLeads\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLeads()" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:16:42.602 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:16:42.762 +00:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)" in 171.0278ms
+2023-02-15 08:16:42.764 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2023-02-15 08:16:42.770 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.EnumerableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.EnumerableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.LeadRepo.getAllAsync() in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\LeadRepo.cs:line 48
+   at CRMSystem.Domains.LeadService.getAllLeads() in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\LeadService.cs:line 47
+   at CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads() in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\LeadController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 08:16:42.778 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Lead/GetAllLeads - - - 500 - text/plain;+charset=utf-8 197.3998ms
+2023-02-15 08:27:47.702 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/values - -
+2023-02-15 08:27:47.929 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/values - - - 404 - - 233.3612ms
+2023-02-15 08:32:09.008 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 08:32:09.359 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 08:32:09.374 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_vs/browserLink - -
+2023-02-15 08:32:09.379 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 370.7904ms
+2023-02-15 08:32:09.390 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 28.1782ms
+2023-02-15 08:32:09.455 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.2343ms
+2023-02-15 08:32:09.622 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - -
+2023-02-15 08:32:09.848 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 227.9920ms
+2023-02-15 08:32:29.100 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - -
+2023-02-15 08:32:29.125 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 08:32:29.167 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:32:30.530 +00:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.532 +00:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.535 +00:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.537 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.539 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.541 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.544 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.547 +00:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.550 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.552 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.555 +00:00 [Warning] No type was specified for the decimal column '"UnitPrice"' on entity type '"QuotProduct"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.558 +00:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 08:32:30.637 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:32:30.969 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 1788.5182ms
+2023-02-15 08:32:30.975 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 08:32:31.131 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.EnumerableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.EnumerableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.CustomerRepo.getAllAsync() in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 46
+   at CRMSystem.Domains.CustomerService.getAllCustomers() in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 27
+   at CRMSystem.Presentation.CustomerController.GetAllCustomers() in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\CustomerController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 08:32:31.178 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - - - 500 - text/plain;+charset=utf-8 2108.3678ms
+2023-02-15 08:37:15.766 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetCustomerByID/7 - -
+2023-02-15 08:37:15.776 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetCustomer (CRMSystem.Presentation.Core)"'
+2023-02-15 08:37:15.819 +00:00 [Information] Route matched with "{action = \"GetCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomer(Int32)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:37:15.904 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:37:16.069 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetCustomer (CRMSystem.Presentation.Core)" in 247.0897ms
+2023-02-15 08:37:16.072 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetCustomer (CRMSystem.Presentation.Core)"'
+2023-02-15 08:37:16.079 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.Query.QueryableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.CustomerRepo.getAsync(Int32 ID) in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 68
+   at CRMSystem.Domains.CustomerService.getCustomerByID(Int32 ID) in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 34
+   at CRMSystem.Presentation.CustomerController.GetCustomer(Int32 ID) in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\CustomerController.cs:line 67
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 08:37:16.090 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetCustomerByID/7 - - - 500 - text/plain;+charset=utf-8 327.8761ms
+2023-02-15 08:37:33.481 +00:00 [Information] Request starting HTTP/2 POST https://localhost:44363/api/Customer/SaveCustomer application/json 486
+2023-02-15 08:37:33.484 +00:00 [Information] CORS policy execution successful.
+2023-02-15 08:37:33.488 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.Save (CRMSystem.Presentation.Core)"'
+2023-02-15 08:37:33.494 +00:00 [Information] Route matched with "{action = \"Save\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Customer)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:37:33.564 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:37:35.164 +00:00 [Information] Executed DbCommand ("128"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [DateCreated], [DateModified], [Email], [FirstName], [Gender], [Image], [LastName], [Phone], [TotalSales], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [ID]
+FROM [Customers]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2023-02-15 08:37:35.316 +00:00 [Information] Executing "OkObjectResult", writing value of type '"System.Int32"'.
+2023-02-15 08:37:35.326 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.Save (CRMSystem.Presentation.Core)" in 1829.43ms
+2023-02-15 08:37:35.330 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.Save (CRMSystem.Presentation.Core)"'
+2023-02-15 08:37:35.333 +00:00 [Information] Request finished HTTP/2 POST https://localhost:44363/api/Customer/SaveCustomer application/json 486 - 200 - application/json;+charset=utf-8 1852.7095ms
+2023-02-15 08:39:52.574 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - -
+2023-02-15 08:39:52.577 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 08:39:52.581 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 08:40:03.026 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 08:40:43.028 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 50445.3568ms
+2023-02-15 08:40:43.031 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 08:40:43.036 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.EnumerableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.EnumerableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.CustomerRepo.getAllAsync() in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 46
+   at CRMSystem.Domains.CustomerService.getAllCustomers() in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 27
+   at CRMSystem.Presentation.CustomerController.GetAllCustomers() in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\CustomerController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 08:40:43.042 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - - - 500 - text/plain;+charset=utf-8 50471.8964ms
+2023-02-15 09:17:30.337 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/values - -
+2023-02-15 09:17:30.734 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/values - - - 404 - - 402.1967ms
+2023-02-15 09:17:35.347 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 09:17:35.994 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 648.7816ms
+2023-02-15 09:17:36.014 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_vs/browserLink - -
+2023-02-15 09:17:36.034 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 09:17:36.057 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/favicon.ico - -
+2023-02-15 09:17:36.115 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/favicon.ico - - - 404 - - 25.6681ms
+2023-02-15 09:17:36.120 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 43.7238ms
+2023-02-15 09:17:36.180 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 162.2985ms
+2023-02-15 09:17:37.203 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 09:17:37.218 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 190.6446ms
+2023-02-15 09:17:37.541 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - -
+2023-02-15 09:17:37.697 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/favicon-32x32.png - -
+2023-02-15 09:17:37.770 +00:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2023-02-15 09:17:37.779 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/favicon-32x32.png - - - 200 628 image/png 82.0629ms
+2023-02-15 09:17:38.326 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 776.8163ms
+2023-02-15 09:17:50.936 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - -
+2023-02-15 09:17:50.965 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 09:17:51.076 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 09:17:57.590 +00:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.592 +00:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.595 +00:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.597 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.599 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.604 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.631 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.638 +00:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.647 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.656 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.662 +00:00 [Warning] No type was specified for the decimal column '"UnitPrice"' on entity type '"QuotProduct"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.668 +00:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2023-02-15 09:17:57.839 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2023-02-15 09:17:58.904 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 7782.4704ms
+2023-02-15 09:17:58.924 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 09:17:59.280 +00:00 [Error] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Microsoft.EntityFrameworkCore.EnumerableMethods' threw an exception.
+ ---> System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Microsoft.EntityFrameworkCore.EnumerableMethods..cctor()
+   --- End of inner exception stack trace ---
+   at CRMSystem.Infrastructure.CustomerRepo.getAllAsync() in C:\Users\user\Desktop\source\repos\CRMSystem.Infrastructure.Core\Repository\CustomerRepo.cs:line 46
+   at CRMSystem.Domains.CustomerService.getAllCustomers() in C:\Users\user\Desktop\source\repos\CRMSystem.Domains.Core\Implementations\CustomerService.cs:line 27
+   at CRMSystem.Presentation.CustomerController.GetAllCustomers() in C:\Users\user\Desktop\source\repos\TunnexCRM\Controllers\CustomerController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-15 09:17:59.323 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - - - 500 - text/plain;+charset=utf-8 8385.9510ms
+2023-02-15 09:22:59.140 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/values - -
+2023-02-15 09:22:59.252 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 09:22:59.741 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/values - - - 0 - - 494.0736ms
+2023-02-15 09:23:00.437 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 09:23:00.455 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 1198.4044ms
+2023-02-15 09:23:00.455 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_vs/browserLink - -
+2023-02-15 09:23:00.480 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 33.7426ms
+2023-02-15 09:23:00.580 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 134.0698ms
+2023-02-15 09:23:00.816 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - -
+2023-02-15 09:23:01.695 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 870.3280ms
+2023-02-15 09:23:11.570 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - -
+2023-02-15 09:23:11.618 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 09:23:11.715 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 09:23:24.734 +00:00 [Warning] No store type was specified for the decimal property '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.738 +00:00 [Warning] No store type was specified for the decimal property '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.742 +00:00 [Warning] No store type was specified for the decimal property '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.749 +00:00 [Warning] No store type was specified for the decimal property '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.753 +00:00 [Warning] No store type was specified for the decimal property '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.757 +00:00 [Warning] No store type was specified for the decimal property '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.764 +00:00 [Warning] No store type was specified for the decimal property '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.768 +00:00 [Warning] No store type was specified for the decimal property '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.772 +00:00 [Warning] No store type was specified for the decimal property '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.776 +00:00 [Warning] No store type was specified for the decimal property '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.782 +00:00 [Warning] No store type was specified for the decimal property '"UnitPrice"' on entity type '"QuotProduct"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:24.788 +00:00 [Warning] No store type was specified for the decimal property '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 09:23:29.329 +00:00 [Information] Executed DbCommand ("396"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID]"
+2023-02-15 09:23:29.648 +00:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-02-15 09:23:29.716 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 17979.5178ms
+2023-02-15 09:23:29.720 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 09:23:29.770 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - - - 200 - application/json;+charset=utf-8 18201.5608ms
+2023-02-15 09:23:56.931 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/MostFrequentCustomers - -
+2023-02-15 09:23:56.938 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.MostFrequent (CRMSystem.Presentation.Core)"'
+2023-02-15 09:23:56.945 +00:00 [Information] Route matched with "{action = \"MostFrequent\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MostFrequent()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 09:24:22.329 +00:00 [Information] Executed DbCommand ("25,185"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+FROM [Customers] AS [c]
+ORDER BY [c].[TotalSales] DESC"
+2023-02-15 09:24:22.334 +00:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-02-15 09:24:22.337 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.MostFrequent (CRMSystem.Presentation.Core)" in 25389.6493ms
+2023-02-15 09:24:22.341 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.MostFrequent (CRMSystem.Presentation.Core)"'
+2023-02-15 09:24:22.345 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/MostFrequentCustomers - - - 200 - application/json;+charset=utf-8 25416.4332ms
+2023-02-15 09:24:45.222 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetCustomerByID/7 - -
+2023-02-15 09:24:45.226 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetCustomer (CRMSystem.Presentation.Core)"'
+2023-02-15 09:24:45.256 +00:00 [Information] Route matched with "{action = \"GetCustomer\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomer(Int32)" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 09:24:45.505 +00:00 [Information] Executed DbCommand ("23"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[Address], [t].[DateCreated], [t].[DateModified], [t].[Email], [t].[FirstName], [t].[Gender], [t].[Image], [t].[LastName], [t].[Phone], [t].[TotalSales], [t].[UserCreated], [t].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM (
+    SELECT TOP(1) [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified]
+    FROM [Customers] AS [c]
+    WHERE [c].[ID] = @__ID_0
+) AS [t]
+LEFT JOIN [CustomerMessages] AS [c0] ON [t].[ID] = [c0].[CustomerID]
+ORDER BY [t].[ID]"
+2023-02-15 09:24:45.513 +00:00 [Information] Executing "OkObjectResult", writing value of type '"CRMSystem.Domains.Customer"'.
+2023-02-15 09:24:45.517 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetCustomer (CRMSystem.Presentation.Core)" in 256.7989ms
+2023-02-15 09:24:45.532 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetCustomer (CRMSystem.Presentation.Core)"'
+2023-02-15 09:24:45.547 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetCustomerByID/7 - - - 200 - application/json;+charset=utf-8 316.6947ms
+2023-02-15 09:25:10.652 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Product/GetAllAvailableProducts - -
+2023-02-15 09:25:10.671 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllAvailableProducts (CRMSystem.Presentation.Core)"'
+2023-02-15 09:25:10.687 +00:00 [Information] Route matched with "{action = \"GetAllAvailableProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableProducts()" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2023-02-15 09:25:36.151 +00:00 [Information] Executed DbCommand ("25,441"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+WHERE [p].[Quantity] > 0
+ORDER BY [p].[DateCreated] DESC"
+2023-02-15 09:25:36.336 +00:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-02-15 09:25:36.376 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllAvailableProducts (CRMSystem.Presentation.Core)" in 25683.9155ms
+2023-02-15 09:25:36.381 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllAvailableProducts (CRMSystem.Presentation.Core)"'
+2023-02-15 09:25:36.395 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Product/GetAllAvailableProducts - - - 200 - application/json;+charset=utf-8 25744.6490ms
+2023-02-15 10:48:05.853 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/values - -
+2023-02-15 10:48:06.593 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/values - - - 404 - - 749.4039ms
+2023-02-15 10:48:08.687 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 10:48:09.755 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 10:48:09.764 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_vs/browserLink - -
+2023-02-15 10:48:09.776 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 1086.0750ms
+2023-02-15 10:48:09.815 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 52.2225ms
+2023-02-15 10:48:09.900 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.5832ms
+2023-02-15 10:48:09.984 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - -
+2023-02-15 10:48:10.364 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 350.5823ms
+2023-02-15 12:22:26.836 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/values - -
+2023-02-15 12:22:26.836 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 12:22:26.836 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/index.html - -
+2023-02-15 12:22:27.106 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/values - - - 0 - - 286.4031ms
+2023-02-15 12:22:27.586 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 767.0837ms
+2023-02-15 12:22:27.591 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/index.html - - - 200 - text/html;charset=utf-8 771.0912ms
+2023-02-15 12:22:27.638 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_vs/browserLink - -
+2023-02-15 12:22:27.638 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 12:22:27.687 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 43.9473ms
+2023-02-15 12:22:27.879 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 246.4994ms
+2023-02-15 12:22:27.932 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - -
+2023-02-15 12:22:28.316 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 401.6038ms
+2023-02-15 12:22:37.986 +00:00 [Information] Request starting HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - -
+2023-02-15 12:22:38.007 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 12:22:38.050 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2023-02-15 12:22:44.304 +00:00 [Warning] No store type was specified for the decimal property '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.307 +00:00 [Warning] No store type was specified for the decimal property '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.312 +00:00 [Warning] No store type was specified for the decimal property '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.315 +00:00 [Warning] No store type was specified for the decimal property '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.319 +00:00 [Warning] No store type was specified for the decimal property '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.323 +00:00 [Warning] No store type was specified for the decimal property '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.331 +00:00 [Warning] No store type was specified for the decimal property '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.335 +00:00 [Warning] No store type was specified for the decimal property '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.339 +00:00 [Warning] No store type was specified for the decimal property '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.344 +00:00 [Warning] No store type was specified for the decimal property '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.349 +00:00 [Warning] No store type was specified for the decimal property '"UnitPrice"' on entity type '"QuotProduct"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:44.353 +00:00 [Warning] No store type was specified for the decimal property '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-02-15 12:22:48.910 +00:00 [Information] Executed DbCommand ("381"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID]"
+2023-02-15 12:22:49.052 +00:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-02-15 12:22:49.086 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 11024.5569ms
+2023-02-15 12:22:49.092 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2023-02-15 12:22:49.116 +00:00 [Information] Request finished HTTP/2 GET https://localhost:44363/api/Customer/GetAllCustomers - - - 200 - application/json;+charset=utf-8 11131.1753ms
