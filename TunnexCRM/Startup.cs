@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using CRMSystem.Domains;
+using CRMSystem.Domains.Core.Implementations;
 using CRMSystem.Infrastructure;
 using CRMSystem.Presentation.Core.Setup_Files;
 using Microsoft.AspNetCore.Builder;
@@ -37,22 +39,32 @@ namespace CRMSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", opt => opt.WithOrigins("https://tunnexcrm.netlify.app/"));
-            //});
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder/*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
-                                                    AllowAnyHeader()
-                                                  .AllowAnyMethod().AllowAnyOrigin();
+                                      // TEST
+                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+
+                                      //builder.AllowAnyOrigin().//.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
+                                      //                                     AllowAnyHeader()
+                                      //                                     .AllowAnyMethod().AllowAnyOrigin();
+
+
+                                      // FOR PRODUCTION  
+                                      //builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
+                                      //  AllowAnyHeader()
+                                      //.AllowAnyMethod().AllowAnyOrigin();
                                   });
             });
-
-           //services.AddCors();
+            //builder.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
+            //                                        AllowAnyHeader()
+            //                                      .AllowAnyMethod().AllowAnyOrigin();
+            //services.AddCors();
+            //add cors support
+            
             services.AddMvc(x => x.EnableEndpointRouting = false);
             services.AddSwaggerGen(opt =>
             {
@@ -60,7 +72,7 @@ namespace CRMSystem
                 {
                     Version="v1",
                     Title="CRM System API"
-                });
+                }); 
             });
             services.AddDbContext<TContext>(opt =>
             {
@@ -86,14 +98,22 @@ namespace CRMSystem
             services.AddScoped<IProductRepo, ProductRepo>();
             services.AddScoped<ICustomerRepo, CustomerRepo>();
             services.AddScoped<ISaleRepo, SaleRepo>();
-            services.AddScoped<IRepo<Skill>, SkillRepo>();
+            services.AddScoped<IRepo<SkillorKPI>, SkillorKPIRepo>();
+            services.AddScoped<ISkillorKPIRepo, SkillorKPIRepo>();
             services.AddScoped<IRepo<Staff>, StaffRepo>();
             services.AddScoped<IRepo<Qualification>, QualificationRepo>();
             services.AddScoped<IRepo<Assessment>, AssessmentRepo>();
-            services.AddScoped<IRepo<StaffSkill>, StaffSkillRepo>();
-            services.AddScoped<IStaffSkillRepo, StaffSkillRepo>();
+            services.AddScoped<IRepo<StaffSkillorKPI>, StaffSkillorKPIRepo>();
+            services.AddScoped<IStaffSkillorKPIRepo, StaffSkillorKPIRepo>();
             services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
-
+            services.AddScoped<IQuotationRepo, QuotationRepo>();
+            services.AddScoped<IRepo<QuotProduct>, QuotProductRepo>();
+            services.AddScoped<IWaybillRepo, WaybillRepo>();
+            services.AddScoped<IRepo<WaybillProduct>, WaybillProductRepo>();
+            services.AddScoped<IRepo<Supplier>, SupplierRepo>();
+            services.AddScoped<IRepo<PurchaseProduct>, PurchaseProductRepo>();
+            services.AddScoped<IPurchaseRepo, PurchaseRepo>();
+            services.AddScoped<IReturnedStockRepo, ReturnedStockRepo >();
 
 
             services.AddTransient<IUserService, UserService>();
@@ -106,6 +126,13 @@ namespace CRMSystem
             services.AddTransient<ILeadService, LeadService>();
             services.AddTransient<IStaffSkillService, StaffSkillService>();
             services.AddTransient<ICustomerService, CustomerService>();
+            services.AddTransient<IQuotationService, QuotationService>();
+            services.AddTransient<IWaybillService, WaybillService>();
+            services.AddTransient<IPurchaseService, PurchaseService>();
+            services.AddTransient<IStaffSkillorKPICompetencyService, StaffSkillorKPICompetencyService>();
+            
+
+
 
         }
 
@@ -122,8 +149,15 @@ namespace CRMSystem
 
 
             }
+            
+            // Make sure you call this before calling app.UseMvc()
+            //app.UseCors(
+            //    options => options.WithOrigins("https://tunnexlabcrm.com", "https://www.tunnexlabcrm.com").AllowAnyMethod().AllowAnyHeader()
+            //);
 
             app.UseRouting();
+            
+            // must be after routing and before user authorization
 
             app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthorization();

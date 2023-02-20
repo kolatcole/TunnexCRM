@@ -16,7 +16,7 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -81,18 +81,16 @@ namespace CRMSystem.Infrastructure
             var cart = await _context.Carts.Where(x => x.ID == data.ID).SingleOrDefaultAsync();
             try
             {
-                if (cart != null)
-                {
-                    cart.Code = data.Code;
-                    cart.DateModified = data.DateModified;
-                    cart.UserModified = data.UserModified;
-                    cart.Amount = data.Amount;
-                   
+                if(data.Code!=null)cart.Code = data.Code;
+                cart.DateModified = data.DateModified;
+                if (data.UserModified> 0) cart.UserModified = data.UserModified;
+                if (data.Amount > 0) cart.Amount = data.Amount;
+
 
 
                     _context.Carts.Update(cart);
                     await _context.SaveChangesAsync();
-                }
+                
 
             }
             catch (Exception ex)

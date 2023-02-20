@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using CRMSystem.Domains;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -25,12 +26,19 @@ namespace CRMSystem.Presentation
         /// <param name="data"></param>
         /// <returns></returns>
         /// 
-        
         [HttpPost("SaveSale")]
         public async Task<IActionResult> Save(Sale data)
         {
             var result = await _service.Save(data);
             return Ok(result);
+
+        }
+
+        [HttpPost("DeleteSale/{invoiceNo}")]
+        public async Task<IActionResult> DeleteSale(string invoiceNo)
+        {
+            await _service.DeleteSale(invoiceNo);
+            return Ok();
 
         }
 
@@ -53,6 +61,19 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="InvNumber"></param>
+        /// <returns></returns>
+        [HttpGet("GetSaleWithPayments/{InvNumber}")]
+        public async Task<IActionResult> GetSaleWithPayments(string InvNumber)
+        {
+            var result = await _service.GetSaleWithPaymentsByIDAsync(InvNumber);
+            return Ok(result);
+        }
+
 
         /// <summary>
         /// Fetch All Customer Sales Record
@@ -81,5 +102,69 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="customerID"></param>
+        ///  <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetSalesReportByDate/{startDate}/{endDate}")]
+        public async Task<IActionResult> GetSalesReportByDate(int customerID=0,string startDate="0",string endDate="0")
+        {
+
+
+
+
+            var result = await _service.GetSalesReportByDate(customerID,startDate, endDate);
+
+            return Ok(result);
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetWaybillByDate/{startDate}/{endDate}")]
+        public async Task<IActionResult> GetWaybillByDate( string startDate = "0", string endDate = "0")
+        {
+
+            var result = await _service.GetWaybillByDate(startDate, endDate);
+
+            return Ok(result);
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("ReturnProduct")]
+        public async Task<IActionResult> ReturnProduct(ReturnedStock data)
+        {
+            var result = await _service.CreateRefund(data);
+            return Ok(result);
+        
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="invNo"></param>
+        /// <returns></returns>
+        [HttpGet("GetSalewithInvoiceNo/{invNo}")]
+        public async Task<IActionResult> GetSalewithInvoiceNo(string invNo)
+        {
+            var result = await _service.GetSaleWithPaymentsByIDAsync(invNo);
+            return Ok(result);
+        
+        }
+
     }
 }
+

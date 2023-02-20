@@ -100,9 +100,19 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
-        public Task<int> updateAsync(Role data)
+        public async Task<int> updateAsync(Role data)
         {
-            throw new NotImplementedException();
+            var role = await _context.Roles.FindAsync(data.ID);
+
+            if (data.Name != null) role.Name = data.Name;
+            if (data.Code != null) role.Code = data.Code;
+            role.DateModified = DateTime.Now;
+            if (data.UserModified > 0) role.UserModified = data.UserModified;
+
+            _context.Roles.Update(role);
+           await _context.SaveChangesAsync();
+            
+            return role.ID;
         }
     }
 }

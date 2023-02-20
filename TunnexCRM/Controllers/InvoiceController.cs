@@ -32,13 +32,13 @@ namespace CRMSystem.Presentation.Core.Controllers
             DateTime.TryParseExact(startDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime sDate);
             DateTime.TryParseExact(endDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime eDate);
 
-            //if (sDate <= DateTime.MinValue)
-            //   sDate = D
+            if (sDate <= DateTime.MinValue)
+                sDate = DateTime.Now.StartOfDay();
 
             if (eDate <= DateTime.MinValue)
-                eDate = DateTime.Now;
-            //else
-            //    eDate = eDate.
+                eDate = DateTime.Now.EndOfDay();
+            else
+                eDate = eDate.EndOfDay();
 
             var result = await _service.getDebtorInvoice(sDate,eDate);
             return Ok(result);
@@ -56,6 +56,35 @@ namespace CRMSystem.Presentation.Core.Controllers
         {
             var result = await _service.GetInvoiceByNumber(InvNumber, customerID);
             return Ok(result);
+        }
+
+        /// <summary>
+        /// hardcode type as proforma
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("CreateProformaInvoice")]
+        public async Task<IActionResult> CreateProformaInvoice(Invoice data)
+        {
+            var result = await _service.SaveProformaInvoice(data);
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="customerID"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetProforma/{startDate}/{endDate}")]
+        public async Task<IActionResult> GetProforma(int customerID = 0, string startDate = "0", string endDate = "0")
+        {
+
+            var result = await _service.getProformaByDate(customerID, startDate, endDate);
+
+            return Ok(result);
+
         }
     }
 }

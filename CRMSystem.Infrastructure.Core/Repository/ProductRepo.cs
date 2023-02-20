@@ -38,19 +38,62 @@ namespace CRMSystem.Infrastructure
 
         public async Task<List<Product>> getAllAsync()
         {
+            throw new NotImplementedException();
+            
+
+        }
+
+        public async Task<List<Product>> getAllAsync(string type)
+        {
+            var product = new List<Product>();
+            try
+            {
+                if (type.ToLower() == "namedesc")
+                {
+                    product = await _context.Products.OrderByDescending(x => x.Name).ToListAsync();
+                    return product;
+                }
+                else if(type.ToLower() == "nameasc")
+                {
+                    product = await _context.Products.OrderBy(x => x.Name).ToListAsync();
+                    return product;
+                }
+                else if(type.ToLower() == "dateasc")
+                {
+                    product = await _context.Products.OrderBy(x => x.DateCreated).ToListAsync();
+                    return product;
+                }
+                else
+                {
+                    product = await _context.Products.OrderByDescending(x => x.DateCreated).ToListAsync();
+                    return product;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+        }
+
+
+        public async Task<List<Product>> getAllAvailableAsync()
+        {
 
             try
             {
-                var product = await _context.Products.ToListAsync();
+                var product = await _context.Products.Where(x=>x.Quantity > 0).OrderByDescending(x => x.DateCreated).ToListAsync();
                 return product;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            
+
 
         }
+        
 
         public async Task<Product> getAsync(int ID)
         {
@@ -76,7 +119,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var products = await _context.Products.OrderByDescending(x => x.TotalSold).Take(5).ToListAsync();
+                var products = await _context.Products.OrderByDescending(x => x.TotalSold).ToListAsync();
                 return products;
             }
             catch (Exception ex)
@@ -102,7 +145,9 @@ namespace CRMSystem.Infrastructure
                         Quantity=data.Quantity,
                         SalePrice=data.SalePrice,
                         CostPrice=data.CostPrice,
-                        TotalSold=data.TotalSold
+                        TotalSold=data.TotalSold,
+                        Description=data.Description,
+                        Location=data.Location
                     };
                     await _context.Products.AddAsync(product);
                     await _context.SaveChangesAsync();
@@ -146,6 +191,8 @@ namespace CRMSystem.Infrastructure
                     newProduct.SalePrice = data.SalePrice;
                     newProduct.CostPrice = data.CostPrice;
                     newProduct.TotalSold = data.TotalSold;
+                    newProduct.Description = data.Description;
+                    newProduct.Location = data.Location;
 
 
                     _context.Products.Update(newProduct);

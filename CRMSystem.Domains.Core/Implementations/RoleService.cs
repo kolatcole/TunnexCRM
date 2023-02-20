@@ -52,5 +52,30 @@ namespace CRMSystem.Domains
 
             
         }
+
+        public async Task UpdateRoleAsync(Role data)
+        {
+            var RID=await _Rrepo.updateAsync(data);
+
+            if (data.Privileges != null)
+            {
+                foreach (var priv in data.Privileges)
+                {
+                    var privilege = await _Prepo.getAsync(priv.ID);
+                    priv.RoleID = data.ID;
+                    if(privilege!=null)
+                    {
+                        await _Prepo.updateAsync(priv);
+                    }
+                    else
+                    {
+                        await _Prepo.insertAsync(priv);
+                    } 
+                    
+
+                }
+
+            }
+        }
     }
 }

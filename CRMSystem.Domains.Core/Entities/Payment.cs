@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CRMSystem.Domains
@@ -9,6 +10,8 @@ namespace CRMSystem.Domains
         public int ID { get; set; }
 
         public int CustomerID { get; set; }
+
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
         public string Method { get; set; }
         public string Reference { get; set; }

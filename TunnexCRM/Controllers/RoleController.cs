@@ -51,5 +51,21 @@ namespace CRMSystem.Presentation
             await _service.DeleteRoleAsync(ID);
             return Ok();
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("Update")]
+        public async Task<IActionResult> Update(Role data)
+        {
+
+            await _service.UpdateRoleAsync(data);
+            return Ok();
+        }
     }
+
+
 }

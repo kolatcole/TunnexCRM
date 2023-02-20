@@ -1,0 +1,460 @@
+2021-02-15 06:25:27.950 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffKpi?sdate=0&edate=0  
+2021-02-15 06:25:28.422 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)"'
+2021-02-15 06:25:28.991 +01:00 [Information] Route matched with "{action = \"GetAllStaffKpi\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffKpi(System.String, System.String)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:25:29.352 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:25:30.324 +01:00 [Information] Executed DbCommand ("110"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2021-02-15 06:25:30.774 +01:00 [Information] Executed DbCommand ("102"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:25:31.073 +01:00 [Information] Executed DbCommand ("234"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:25:31.430 +01:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:25:31.470 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:25:31.719 +01:00 [Information] Executed DbCommand ("19"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:25:31.847 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPI, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-02-15 06:25:31.949 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)" in 2882.9535ms
+2021-02-15 06:25:31.997 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)"'
+2021-02-15 06:25:32.082 +01:00 [Information] Request finished in 4098.2482ms 200 application/json; charset=utf-8
+2021-02-15 06:30:04.204 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/StaffSkill/Update application/json 172
+2021-02-15 06:30:04.241 +01:00 [Information] CORS policy execution successful.
+2021-02-15 06:30:04.260 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.Update (CRMSystem.Presentation.Core)"'
+2021-02-15 06:30:04.297 +01:00 [Information] Route matched with "{action = \"Update\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(CRMSystem.Domains.StaffSkillorKPI)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:30:04.368 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:30:04.547 +01:00 [Information] Executed DbCommand ("39"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ID], [t].[CompetencyValue], [t].[SkillorKPIID], [t].[StaffID], [t].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM (
+    SELECT TOP(1) [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+    FROM [StaffSkillorKPIs] AS [s]
+    WHERE [s].[ID] = @__ID_0
+) AS [t]
+LEFT JOIN [Assessments] AS [a] ON [t].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [t].[ID], [a].[ID]"
+2021-02-15 06:30:04.832 +01:00 [Information] Executed DbCommand ("55"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Assessments] ([DateCreated], [SAS], [StaffSkillorKPIID])
+VALUES (@p0, @p1, @p2);
+SELECT [ID]
+FROM [Assessments]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2021-02-15 06:30:05.176 +01:00 [Information] Executed DbCommand ("118"ms) [Parameters=["@p4='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [StaffSkillorKPIs] SET [CompetencyValue] = @p0, [SkillorKPIID] = @p1, [StaffID] = @p2, [SupervisorID] = @p3
+WHERE [ID] = @p4;
+SELECT @@ROWCOUNT;"
+2021-02-15 06:30:05.265 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2021-02-15 06:30:05.409 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.Update (CRMSystem.Presentation.Core)" in 983.8405ms
+2021-02-15 06:30:05.458 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.Update (CRMSystem.Presentation.Core)"'
+2021-02-15 06:30:05.596 +01:00 [Information] Request finished in 1270.796ms 200 application/json; charset=utf-8
+2021-02-15 06:30:20.786 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkill/GetAllStaffKpi?sdate=0&edate=0  
+2021-02-15 06:30:20.805 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)"'
+2021-02-15 06:30:20.819 +01:00 [Information] Route matched with "{action = \"GetAllStaffKpi\", controller = \"StaffSkill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStaffKpi(System.String, System.String)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:30:20.895 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:30:20.947 +01:00 [Information] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID], [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [StaffSkillorKPIs] AS [s]
+LEFT JOIN [Assessments] AS [a] ON [s].[ID] = [a].[StaffSkillorKPIID]
+ORDER BY [s].[ID], [a].[ID]"
+2021-02-15 06:30:21.053 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:30:21.113 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:30:21.165 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:30:21.187 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:30:21.215 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:30:21.230 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPI, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-02-15 06:30:21.248 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)" in 413.7004ms
+2021-02-15 06:30:21.300 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillController.GetAllStaffKpi (CRMSystem.Presentation.Core)"'
+2021-02-15 06:30:21.350 +01:00 [Information] Request finished in 530.7364ms 200 application/json; charset=utf-8
+2021-02-15 06:39:56.996 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkillorKPICompetency/GetAllbyStaffKPI?sdate=01-01-2021&edate=01-06-2021  
+2021-02-15 06:39:57.003 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:39:57.034 +01:00 [Information] Route matched with "{action = \"GetAllbyStaffKPI\", controller = \"StaffSkillorKPICompetency\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllbyStaffKPI(System.String, System.String)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:39:57.049 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:39:57.111 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]"
+2021-02-15 06:39:57.188 +01:00 [Information] Executed DbCommand ("49"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:39:57.220 +01:00 [Information] Executed DbCommand ("16"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:39:57.268 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:39:57.288 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:39:57.301 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:39:57.329 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.348 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.373 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.402 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.434 +01:00 [Information] Executed DbCommand ("14"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.469 +01:00 [Information] Executed DbCommand ("16"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:39:57.506 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:39:57.536 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:39:57.553 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.607 +01:00 [Information] Executed DbCommand ("15"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:57.839 +01:00 [Information] Executed DbCommand ("115"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:39:57.913 +01:00 [Information] Executed DbCommand ("40"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:39:57.998 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:39:58.148 +01:00 [Information] Executed DbCommand ("103"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:58.196 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:39:58.245 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPICompetency, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-02-15 06:39:58.286 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)" in 1215.1758ms
+2021-02-15 06:39:58.311 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:39:58.327 +01:00 [Information] Request finished in 1334.8632ms 200 application/json; charset=utf-8
+2021-02-15 06:44:54.398 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkillorKPICompetency/GetAllbyStaffKPI?sdate=01-01-2021&edate=01-06-2021  
+2021-02-15 06:44:54.421 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:44:54.437 +01:00 [Information] Route matched with "{action = \"GetAllbyStaffKPI\", controller = \"StaffSkillorKPICompetency\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllbyStaffKPI(System.String, System.String)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:44:54.461 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:44:54.507 +01:00 [Information] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]"
+2021-02-15 06:44:54.529 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:44:54.586 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:44:54.601 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:44:54.618 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:44:54.636 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:44:54.667 +01:00 [Information] Executed DbCommand ("15"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.690 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.716 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.731 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.747 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.765 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:44:54.788 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:44:54.802 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:44:54.821 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.838 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:54.857 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:44:54.889 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:44:55.257 +01:00 [Information] Executed DbCommand ("191"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:44:55.329 +01:00 [Information] Executed DbCommand ("24"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:55.371 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:44:55.390 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPICompetency, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-02-15 06:44:55.428 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)" in 966.8498ms
+2021-02-15 06:44:55.450 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:44:55.487 +01:00 [Information] Request finished in 1070.5639ms 200 application/json; charset=utf-8
+2021-02-15 06:54:21.988 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkillorKPICompetency/GetAllbyStaffKPI?sdate=01-01-2019&edate=01-06-2021  
+2021-02-15 06:54:22.024 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:54:22.033 +01:00 [Information] Route matched with "{action = \"GetAllbyStaffKPI\", controller = \"StaffSkillorKPICompetency\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllbyStaffKPI(System.String, System.String)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:54:22.052 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:54:22.169 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]"
+2021-02-15 06:54:22.224 +01:00 [Information] Executed DbCommand ("29"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:54:22.241 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:54:22.255 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:54:22.272 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:54:22.292 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:54:22.308 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.330 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.341 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.359 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.372 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.397 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:54:22.414 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:54:22.439 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:54:22.464 +01:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.480 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.498 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:54:22.529 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:54:22.575 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:54:22.607 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.875 +01:00 [Information] Executed DbCommand ("165"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:54:22.968 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPICompetency, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-02-15 06:54:23.004 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)" in 941.2235ms
+2021-02-15 06:54:23.030 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:54:23.040 +01:00 [Information] Request finished in 1074.8521ms 200 application/json; charset=utf-8
+2021-02-15 06:55:20.090 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/StaffSkillorKPICompetency/GetAllbyStaffKPI?sdate=01-01-2021&edate=01-06-2021  
+2021-02-15 06:55:20.109 +01:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:55:20.141 +01:00 [Information] Route matched with "{action = \"GetAllbyStaffKPI\", controller = \"StaffSkillorKPICompetency\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllbyStaffKPI(System.String, System.String)" on controller "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController" ("CRMSystem.Presentation.Core").
+2021-02-15 06:55:20.173 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2021-02-15 06:55:20.251 +01:00 [Information] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]"
+2021-02-15 06:55:20.344 +01:00 [Information] Executed DbCommand ("75"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:55:20.362 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:55:20.383 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:55:20.409 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:55:20.459 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__8__locals1_sdate_0='?' (DbType = DateTime2), @__8__locals1_edate_1='?' (DbType = DateTime2), @__stk_ID_2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE (([a].[DateCreated] >= @__8__locals1_sdate_0) AND ([a].[DateCreated] <= @__8__locals1_edate_1)) AND ([a].[StaffSkillorKPIID] = @__stk_ID_2)"
+2021-02-15 06:55:20.483 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.508 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.542 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.552 +01:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.566 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.618 +01:00 [Information] Executed DbCommand ("32"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:55:20.651 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:55:20.710 +01:00 [Information] Executed DbCommand ("26"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:55:20.735 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.797 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:20.841 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__staffID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CompetencyValue], [s].[SkillorKPIID], [s].[StaffID], [s].[SupervisorID]
+FROM [StaffSkillorKPIs] AS [s]
+WHERE [s].[StaffID] = @__staffID_0"
+2021-02-15 06:55:20.901 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:55:20.966 +01:00 [Information] Executed DbCommand ("27"ms) [Parameters=["@__stk_ID_0='?' (DbType = Int32), @__8__locals1_sdate_1='?' (DbType = DateTime2), @__8__locals1_edate_2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[SAS], [a].[StaffSkillorKPIID]
+FROM [Assessments] AS [a]
+WHERE ([a].[StaffSkillorKPIID] = @__stk_ID_0) AND (([a].[DateCreated] >= @__8__locals1_sdate_1) AND ([a].[DateCreated] <= @__8__locals1_edate_2))"
+2021-02-15 06:55:20.997 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:21.027 +01:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[DateCreated], [s].[DateModified], [s].[Description], [s].[Name], [s].[StaffNumberWithSkillorKPI], [s].[Type], [s].[UserCreated], [s].[UserModified]
+FROM [SkillorKPIs] AS [s]
+WHERE [s].[ID] = @__ID_0"
+2021-02-15 06:55:21.042 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.StaffSkillorKPICompetency, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2021-02-15 06:55:21.063 +01:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)" in 903.5871ms
+2021-02-15 06:55:21.083 +01:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.StaffSkillorKPICompetencyController.GetAllbyStaffKPI (CRMSystem.Presentation.Core)"'
+2021-02-15 06:55:21.132 +01:00 [Information] Request finished in 1017.0429ms 200 application/json; charset=utf-8

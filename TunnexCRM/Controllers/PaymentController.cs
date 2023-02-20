@@ -31,5 +31,35 @@ namespace CRMSystem.Presentation
 
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="customerID"></param>
+        /// <param name="sDate"></param>
+        /// <param name="eDate"></param>
+        /// <returns></returns>
+        [HttpGet("GetFreePayments")]
+        public async Task<IActionResult> GetFreePayments(int customerID=0,string sDate="0",string eDate="0")
+        {
+            var result = await _pService.GetFreePayments(customerID, sDate, eDate);
+            return Ok(result);
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="invNo"></param>
+        /// <returns></returns>
+        /// 
+        [HttpPost("DeleteFOCPayment/{invNo}")]
+        public async Task<IActionResult> DeleteFOCPayment(string invNo)
+        {
+            var result = await _pService.DeleteFOCPayment(invNo);
+            return Ok(result);
+        
+        }
+        
     }
 }

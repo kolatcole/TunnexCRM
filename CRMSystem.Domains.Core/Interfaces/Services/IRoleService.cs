@@ -11,5 +11,6 @@ namespace CRMSystem.Domains
         Task<Role> GetRoleWithPrivileges(int ID);
         Task<List<Role>> GetAllRolesAsync();
         Task DeleteRoleAsync(int ID);
+        Task UpdateRoleAsync(Role data);
     }
 }

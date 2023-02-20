@@ -13,10 +13,12 @@ namespace CRMSystem.Presentation.Core.Controllers
     public class SkillController : ControllerBase
     {
 
-        private readonly IRepo<Skill> _repo;
-        public SkillController(IRepo<Skill> repo)
+        private readonly IRepo<SkillorKPI> _repo;
+        private readonly ISkillorKPIRepo _skRepo;
+        public SkillController(IRepo<SkillorKPI> repo,ISkillorKPIRepo skRepo)
         {
             _repo = repo;
+            _skRepo = skRepo;
         }
 
         /// <summary>
@@ -25,7 +27,7 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// <param name="data"></param>
         /// <returns></returns>
         [HttpPost("Save")]
-        public async Task<IActionResult> Save(Skill data)
+        public async Task<IActionResult> Save(SkillorKPI data)
         {
             var result = await _repo.insertAsync(data);
             return Ok(result);
@@ -36,7 +38,7 @@ namespace CRMSystem.Presentation.Core.Controllers
         /// <param name="data"></param>
         /// <returns></returns>
         [HttpPost("Update")]
-        public async Task<IActionResult> Update(Skill data)
+        public async Task<IActionResult> Update(SkillorKPI data)
         {
             var result = await _repo.updateAsync(data);
             return Ok(result);
@@ -51,6 +53,17 @@ namespace CRMSystem.Presentation.Core.Controllers
         public async Task<IActionResult> GetAllSkills()
         {
             var result = await _repo.getAllAsync();
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("GetAllKpis")]
+        public async Task<IActionResult> GetAllKpis()
+        {
+            var result = await _skRepo.getAllKPIs();
             return Ok(result);
         }
         [HttpGet("GetSkillByID/{ID}")]

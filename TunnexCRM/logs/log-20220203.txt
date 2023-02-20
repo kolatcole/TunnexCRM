@@ -1,0 +1,152 @@
+2022-02-03 19:09:20.291 +00:00 [Information] User profile is available. Using '"C:\Users\kolaw.DESKTOP-EQTIN8U\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-02-03 19:09:25.536 +00:00 [Information] Creating key {4e2a3fae-115c-4eab-bb7e-104eb3a082ab} with creation date 2022-02-03 19:09:25Z, activation date 2022-02-03 19:09:25Z, and expiration date 2022-05-04 19:09:25Z.
+2022-02-03 19:09:26.124 +00:00 [Information] Writing data to file '"C:\Users\kolaw.DESKTOP-EQTIN8U\AppData\Local\ASP.NET\DataProtection-Keys\key-4e2a3fae-115c-4eab-bb7e-104eb3a082ab.xml"'.
+2022-02-03 19:09:29.058 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2022-02-03 19:09:31.055 +00:00 [Information] Request finished in 2149.4536ms 404 
+2022-02-03 19:09:56.425 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/swagger.html  
+2022-02-03 19:09:56.815 +00:00 [Information] Request finished in 471.7715ms 404 
+2022-02-03 19:10:32.571 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/swagger/index.html  
+2022-02-03 19:10:32.654 +00:00 [Information] Request finished in 48.7903ms 404 
+2022-02-03 19:10:59.716 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2022-02-03 19:11:00.346 +00:00 [Information] Request finished in 642.3997ms 200 text/html;charset=utf-8
+2022-02-03 19:11:00.766 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui.css  
+2022-02-03 19:11:00.779 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-bundle.js  
+2022-02-03 19:11:01.894 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/swagger-ui-standalone-preset.js  
+2022-02-03 19:11:02.286 +00:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2022-02-03 19:11:02.300 +00:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2022-02-03 19:11:02.398 +00:00 [Information] Request finished in 1854.4011ms 200 text/css
+2022-02-03 19:11:02.566 +00:00 [Information] Request finished in 449.1103ms 200 application/javascript
+2022-02-03 19:11:02.596 +00:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2022-02-03 19:11:02.676 +00:00 [Information] Request finished in 1882.4103ms 200 application/javascript
+2022-02-03 19:11:04.415 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2022-02-03 19:11:05.002 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/favicon-32x32.png  
+2022-02-03 19:11:05.063 +00:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2022-02-03 19:11:05.122 +00:00 [Information] Request finished in 207.9545ms 200 image/png
+2022-02-03 19:11:05.705 +00:00 [Information] Request finished in 1285.7599ms 200 application/json;charset=utf-8
+2022-02-03 21:45:51.484 +00:00 [Information] User profile is available. Using '"C:\Users\kolaw.DESKTOP-EQTIN8U\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-02-03 21:45:52.971 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2022-02-03 21:45:53.869 +00:00 [Information] Request finished in 910.5278ms 404 
+2022-02-03 21:46:09.723 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2022-02-03 21:46:10.377 +00:00 [Information] Request finished in 655.4644ms 200 text/html;charset=utf-8
+2022-02-03 21:46:10.638 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js  
+2022-02-03 21:46:10.645 +00:00 [Information] Request finished in 7.7207ms 200 application/javascript; charset=utf-8
+2022-02-03 21:46:12.514 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2022-02-03 21:46:13.284 +00:00 [Information] Request finished in 770.4766ms 200 application/json;charset=utf-8
+2022-02-03 21:46:27.135 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2022-02-03 21:46:27.170 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-03 21:46:27.556 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:46:36.193 +00:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.195 +00:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.204 +00:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.205 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.205 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.206 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.206 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.207 +00:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.207 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.207 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.208 +00:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-03 21:46:36.594 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:46:47.274 +00:00 [Information] Executed DbCommand ("428"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2022-02-03 21:46:47.458 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:46:47.588 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 19981.1299ms
+2022-02-03 21:46:47.591 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-03 21:46:47.624 +00:00 [Information] Request finished in 20489.481ms 200 application/json; charset=utf-8
+2022-02-03 21:47:23.392 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts?type=datedesc  
+2022-02-03 21:47:23.409 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:47:23.554 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:47:24.083 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:47:24.391 +00:00 [Information] Executed DbCommand ("245"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-03 21:47:24.399 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:47:24.413 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 858.2361ms
+2022-02-03 21:47:24.414 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:47:24.415 +00:00 [Information] Request finished in 1026.4672ms 200 application/json; charset=utf-8
+2022-02-03 21:47:24.449 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts?type=datedesc  
+2022-02-03 21:47:24.464 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:47:24.466 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:47:24.669 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:47:25.258 +00:00 [Information] Executed DbCommand ("541"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-03 21:47:25.274 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:47:25.277 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 810.138ms
+2022-02-03 21:47:25.289 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:47:25.290 +00:00 [Information] Request finished in 840.8027ms 200 application/json; charset=utf-8
+2022-02-03 21:47:25.987 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts?type=datedesc  
+2022-02-03 21:47:25.988 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:47:25.989 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:47:26.010 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:47:26.312 +00:00 [Information] Executed DbCommand ("292"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-03 21:47:26.320 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:47:26.322 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 332.111ms
+2022-02-03 21:47:26.326 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:47:26.385 +00:00 [Information] Request finished in 397.0283ms 200 application/json; charset=utf-8
+2022-02-03 21:48:29.692 +00:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/Product/SaveProduct application/json 270
+2022-02-03 21:48:29.712 +00:00 [Information] CORS policy execution successful.
+2022-02-03 21:48:29.717 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.Save (CRMSystem.Presentation.Core)"'
+2022-02-03 21:48:29.791 +00:00 [Information] Route matched with "{action = \"Save\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(CRMSystem.Domains.Product)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:48:30.035 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:48:32.804 +00:00 [Information] Executed DbCommand ("574"ms) [Parameters=["@p0='?' (DbType = Decimal), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Products] ([CostPrice], [DateCreated], [DateModified], [Description], [Image], [Location], [Name], [Quantity], [SalePrice], [StockLevel], [TotalSold], [UserCreated], [UserModified])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT [ID]
+FROM [Products]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2022-02-03 21:48:33.317 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2022-02-03 21:48:33.342 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.Save (CRMSystem.Presentation.Core)" in 3550.2368ms
+2022-02-03 21:48:33.343 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.Save (CRMSystem.Presentation.Core)"'
+2022-02-03 21:48:33.348 +00:00 [Information] Request finished in 3652.5714ms 200 application/json; charset=utf-8
+2022-02-03 21:48:40.268 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts?type=datedesc  
+2022-02-03 21:48:40.271 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:48:40.272 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:48:40.283 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:48:40.951 +00:00 [Information] Executed DbCommand ("664"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-03 21:48:40.992 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:48:41.099 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 826.1663ms
+2022-02-03 21:48:41.100 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:48:41.100 +00:00 [Information] Request finished in 832.8218ms 200 application/json; charset=utf-8
+2022-02-03 21:49:16.189 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/User/GetAllUsers  
+2022-02-03 21:49:16.198 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2022-02-03 21:49:16.268 +00:00 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers()" on controller "CRMSystem.Presentation.UserController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:49:16.493 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:49:27.057 +00:00 [Information] Executed DbCommand ("10,370"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[Gender], [a].[Image], [a].[Name], [a].[Password], [a].[Phone], [a].[Post], [a].[RoleID], [a].[UserCreated], [a].[UserModified], [a].[Username]
+FROM [AppUsers] AS [a]"
+2022-02-03 21:49:27.072 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.User, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:49:27.090 +00:00 [Information] Executed action "CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)" in 10817.2732ms
+2022-02-03 21:49:27.091 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.UserController.GetAllUsers (CRMSystem.Presentation.Core)"'
+2022-02-03 21:49:27.091 +00:00 [Information] Request finished in 10902.7249ms 200 application/json; charset=utf-8
+2022-02-03 21:59:16.376 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts?type=datedesc  
+2022-02-03 21:59:16.380 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:59:16.382 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-03 21:59:16.391 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-03 21:59:18.063 +00:00 [Information] Executed DbCommand ("502"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-03 21:59:45.245 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 21:59:45.465 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 29082.0527ms
+2022-02-03 21:59:45.466 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-03 21:59:45.467 +00:00 [Information] Request finished in 29090.9053ms 200 application/json; charset=utf-8
+2022-02-03 22:12:26.302 +00:00 [Information] User profile is available. Using '"C:\Users\kolaw.DESKTOP-EQTIN8U\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-02-03 22:12:27.653 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/index.html  
+2022-02-03 22:12:28.361 +00:00 [Information] Request finished in 731.4361ms 200 text/html;charset=utf-8
+2022-02-03 22:12:28.453 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/_framework/aspnetcore-browser-refresh.js  
+2022-02-03 22:12:28.463 +00:00 [Information] Request finished in 9.2052ms 200 application/javascript; charset=utf-8
+2022-02-03 22:12:47.420 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/swagger/v1/swagger.json  
+2022-02-03 22:12:49.075 +00:00 [Information] Request finished in 1658.5515ms 200 application/json;charset=utf-8
