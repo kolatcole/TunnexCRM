@@ -16,7 +16,7 @@ namespace CRMSystem.Infrastructure
             _context = context;
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace CRMSystem.Infrastructure
                         Name = data.Name,
                         //Price = data.Price,
                         ProductID = data.ProductID,
-                        Quantity =data.Quantity
+                        Quantity = data.Quantity
                     };
                     await _context.Items.AddAsync(item);
                     await _context.SaveChangesAsync();
@@ -101,7 +101,7 @@ namespace CRMSystem.Infrastructure
         public async Task<int> insertListAsync(List<Item> data)
         {
             int ID = 0;
-            try 
+            try
             {
                 await _context.Items.AddRangeAsync(data);
                 ID = await _context.SaveChangesAsync();
@@ -119,17 +119,16 @@ namespace CRMSystem.Infrastructure
             var item = await _context.Items.FindAsync(data.ID);
             try
             {
-                if (item != null)
-                {
-                    item.Amount = data.Amount;
-                    item.CartID = data.CartID;
-                    item.Code = data.Code;
-                    item.Name = data.Name;
-                    item.Quantity = data.Quantity;
+                
+                    if(item.Amount!=0) item.Amount = data.Amount;
+                    if (item.CartID != 0) item.CartID = data.CartID;
+                    if (item.Code != null) item.Code = data.Code;
+                    if (item.Name != null) item.Name = data.Name;
+                    if (item.Quantity != 0) item.Quantity = data.Quantity;
 
                     _context.Update(item);
                     ID = await _context.SaveChangesAsync();
-                }
+               
 
             }
             catch (Exception ex)

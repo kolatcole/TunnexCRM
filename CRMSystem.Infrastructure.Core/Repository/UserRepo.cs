@@ -150,22 +150,20 @@ namespace CRMSystem.Infrastructure
             var newUser = await _context.AppUsers.FindAsync(data.ID);
             try
             {
-                if (newUser!=null)
-                {
-                    newUser.Image = data.Image;
-                    newUser.Name = data.Name;
-                    newUser.Phone = data.Phone;
-                    newUser.Post = data.Post;
-                    newUser.DateModified = DateTime.Now;
-                    newUser.Gender = data.Gender;
-                    newUser.Username = data.Username;
-                    newUser.Password = data.Password;
-                    newUser.Email = data.Email;
-                    newUser.DateModified = DateTime.Now;
+                
+                if(data.Image!=null || data.Image!=String.Empty) newUser.Image = data.Image;
+                if (data.Name != null || data.Name != String.Empty) newUser.Name = data.Name;
+                if (data.Phone != null || data.Phone != String.Empty) newUser.Phone = data.Phone;
+                if (data.Post != null || data.Post != String.Empty) newUser.Post = data.Post;
+                newUser.DateModified = DateTime.Now;
+                if (data.Gender != null || data.Gender != String.Empty) newUser.Gender = data.Gender;
+                if (data.Username != null || data.Username != String.Empty) newUser.Username = data.Username;
+                if (data.Email != null || data.Email != String.Empty) newUser.Email = data.Email;
+                if (data.Image != null || data.Image != String.Empty) newUser.RoleID = data.RoleID;
 
-                    _context.Update(newUser);
-                     await _context.SaveChangesAsync();
-                }
+                _context.Update(newUser);
+                await _context.SaveChangesAsync();
+
 
             }
             catch (Exception ex)

@@ -14,6 +14,8 @@ namespace CRMSystem.Domains
 
         public string InvoiceNo { get; set; }
 
+        public int customerID { get; set; }
+
         public List<WaybillProduct> WaybillProducts { get; set; }
     }
 }

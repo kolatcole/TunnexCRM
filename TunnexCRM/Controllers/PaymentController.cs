@@ -46,6 +46,20 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="invNo"></param>
+        /// <returns></returns>
+        /// 
+        [HttpPost("DeleteFOCPayment/{invNo}")]
+        public async Task<IActionResult> DeleteFOCPayment(string invNo)
+        {
+            var result = await _pService.DeleteFOCPayment(invNo);
+            return Ok(result);
+        
+        }
         
     }
 }

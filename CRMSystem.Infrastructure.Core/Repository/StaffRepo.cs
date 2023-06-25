@@ -22,7 +22,7 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var staff = await _context.Staffs.Include(x=>x.Qualifications).ToListAsync();
+                var staff = await _context.Staffs.Include(x => x.Qualifications).ToListAsync();
                 return staff;
             }
 
@@ -83,10 +83,25 @@ namespace CRMSystem.Infrastructure
                         Gender = data.Gender,
                         HEL = data.HEL,
                         DateofBirth = data.DateofBirth,
-                         Image = data.Image,
+                        Image = data.Image,
                         LastName = data.LastName,
-                         Phone = data.Phone
-                        
+                        Phone = data.Phone,
+                        SecondPhone = data.SecondPhone,
+                        DateEmployed = data.DateEmployed,
+                        Designation = data.Designation,
+                        StaffID = data.StaffID,
+                        MaidenName = data.MaidenName,
+                        MaritalStatus = data.MaritalStatus,
+                        MiddleName = data.MiddleName,
+                        NextofKin = data.NextofKin,
+                        NextofKinAddress = data.NextofKinAddress,
+                        NextofKinPhone = data.NextofKinPhone,
+                        ProfilePictureUrl = data.ProfilePictureUrl,
+                        RelationshipToNextofKin = data.RelationshipToNextofKin,
+                        YearofMarriage = data.YearofMarriage,
+                        nin=data.nin,
+                        pension=data.pension
+
                     };
                     await _context.Staffs.AddAsync(staff);
                     await _context.SaveChangesAsync();
@@ -113,18 +128,32 @@ namespace CRMSystem.Infrastructure
                 if (staff != null)
                 {
 
-
-                    staff.Image = data.Image;
-                    staff.FirstName = data.FirstName;
-                    staff.Phone = data.Phone;
-                    staff.LastName = data.LastName;
+                    
+                    if (data.SecondPhone != null) staff.SecondPhone = data.SecondPhone;
+                    if (data.Image != null) staff.Image = data.Image;
+                    if (data.FirstName != null) staff.FirstName = data.FirstName;
+                    if (data.Phone != null) staff.Phone = data.Phone;
+                    if (data.LastName != null) staff.LastName = data.LastName;
                     staff.DateModified = DateTime.Now;
                     staff.UserModified = data.UserModified;
-                    staff.Gender = data.Gender;
-                    staff.Email = data.Email;
-                    staff.Address = data.Address;
-                    staff.HEL = data.HEL;
-                    
+                    if (data.Gender != null) staff.Gender = data.Gender;
+                    if (data.Email != null) staff.Email = data.Email;
+                    if (data.Address != null) staff.Address = data.Address;
+                    if (data.HEL != null) staff.HEL = data.HEL;
+                    if (data.DateEmployed != null) staff.DateEmployed = data.DateEmployed;
+                    if (data.DateofBirth != null) staff.DateofBirth = data.DateofBirth;
+                    if (data.Designation != null) staff.Designation = data.Designation;
+                    if (data.MaidenName != null) staff.MaidenName = data.MaidenName;
+                    if (data.MaritalStatus != null) staff.MaritalStatus = data.MaritalStatus;
+                    if (data.MiddleName != null) staff.MiddleName = data.MiddleName;
+                    if (data.NextofKin != null) staff.NextofKin = data.NextofKin;
+                    if (data.NextofKinAddress != null) staff.NextofKinAddress = data.NextofKinAddress;
+                    if (data.NextofKinPhone != null) staff.NextofKinPhone = data.NextofKinPhone;
+                    if (data.ProfilePictureUrl != null) staff.ProfilePictureUrl = data.ProfilePictureUrl;
+                    if (data.RelationshipToNextofKin != null) staff.RelationshipToNextofKin = data.RelationshipToNextofKin;
+                    if (data.YearofMarriage != null) staff.YearofMarriage = data.YearofMarriage;
+                    if (data.nin != null) staff.nin = data.nin;
+                    if (data.pension != null) staff.pension = data.pension;
 
                     _context.Staffs.Update(staff);
                     await _context.SaveChangesAsync();

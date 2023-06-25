@@ -50,9 +50,17 @@ namespace CRMSystem.Infrastructure
             throw new NotImplementedException();
         }
 
-        public Task<Privilege> getAsync(int ID)
+        public async Task<Privilege> getAsync(int ID)
         {
-            throw new NotImplementedException();
+            try
+            {
+               var privilege = await _context.Privileges.FindAsync(ID);
+                return privilege;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public Task<List<Privilege>> getByCustomerIDAsync(int customerID)
@@ -106,9 +114,20 @@ namespace CRMSystem.Infrastructure
             return ID;
         }
 
-        public Task<int> updateAsync(Privilege data)
+        public async Task<int> updateAsync(Privilege data)
         {
-            throw new NotImplementedException();
+            var privilege = await _context.Privileges.FindAsync(data.ID);
+
+            if (data.Name != null) privilege.Name = data.Name;
+            if (data.Code != null) privilege.Code = data.Code;
+            privilege.Read = data.Read;
+            privilege.Write = data.Write;
+            privilege.DateModified = DateTime.Now;
+            if (data.UserModified > 0) privilege.UserModified = data.UserModified;
+
+            _context.Privileges.Update(privilege);
+            await _context.SaveChangesAsync();
+            return privilege.ID;
         }
     }
 }

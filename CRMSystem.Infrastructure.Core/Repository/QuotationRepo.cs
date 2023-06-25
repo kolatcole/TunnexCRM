@@ -24,7 +24,7 @@ namespace CRMSystem.Infrastructure
                 try
                 {
                     var quotations = await _context.Quotations.Include(y=>y.QuotProducts).Where(x => x.CustomerID == customerID && x.DateCreated >= startdate &&
-                                            x.DateCreated <= endDate).ToListAsync();
+                                            x.DateCreated <= endDate).OrderByDescending(x => x.DateCreated).ToListAsync();
                     return quotations;
                 }
                 catch (Exception ex)
@@ -46,7 +46,7 @@ namespace CRMSystem.Infrastructure
                 try
                 {
                     var quotations = await _context.Quotations.Include(y=>y.QuotProducts).Where(x => x.DateCreated >= startdate &&
-                                            x.DateCreated <= endDate).ToListAsync();
+                                            x.DateCreated <= endDate).OrderByDescending(x => x.DateCreated).ToListAsync();
                     return quotations;
                 }
                 catch (Exception ex)
@@ -66,7 +66,8 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                var quotations = await _context.Quotations.Include(y=>y.QuotProducts).Where(x => x.CustomerID == customerID).ToListAsync();
+                var quotations = await _context.Quotations.Include(y=>y.QuotProducts).Where(x => x.CustomerID == customerID)
+                                                            .OrderByDescending(x => x.DateCreated).ToListAsync();
                 return quotations;
             }
             catch (Exception ex)

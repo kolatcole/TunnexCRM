@@ -43,8 +43,9 @@ namespace CRMSystem.Infrastructure
             {
                 var product = new WaybillProduct
                 {
-                   ProductID=data.ProductID,
-                   WaybillID=data.WaybillID
+                    ProductID = data.ProductID,
+                    WaybillID = data.WaybillID,
+                    Quantity=data.Quantity
                 };
 
                 await _context.WaybillProducts.AddAsync(product);
@@ -64,7 +65,7 @@ namespace CRMSystem.Infrastructure
         {
             try
             {
-                
+
 
                 await _context.WaybillProducts.AddRangeAsync(data);
                 await _context.SaveChangesAsync();

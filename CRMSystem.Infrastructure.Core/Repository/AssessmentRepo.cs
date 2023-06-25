@@ -16,7 +16,7 @@ namespace CRMSystem.Infrastructure
 
             _context = context;
         }
-        public async Task  deleteAsync(int ID)
+        public async Task deleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
@@ -71,7 +71,7 @@ namespace CRMSystem.Infrastructure
                     {
                         DateCreated = DateTime.Now,
                         SAS = data.SAS,
-                        StaffSkillID=data.StaffSkillID
+                        StaffSkillorKPIID = data.StaffSkillorKPIID
                     };
                     await _context.Assessments.AddAsync(Assessment);
                     await _context.SaveChangesAsync();

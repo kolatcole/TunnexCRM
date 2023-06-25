@@ -1,0 +1,2305 @@
+2022-02-14 22:52:48.631 +00:00 [Information] User profile is available. Using '"C:\Users\kolaw.DESKTOP-EQTIN8U\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-02-14 22:52:54.809 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/values  
+2022-02-14 22:52:56.617 +00:00 [Information] Request finished in 1838.9607ms 404 
+2022-02-14 22:53:15.832 +00:00 [Information] Request starting HTTP/2.0 POST https://localhost:44363/api/User/Authenticate?username=admin&password=admin  0
+2022-02-14 22:53:16.628 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:53:16.992 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.UserController.Authenticate (CRMSystem.Presentation.Core)"'
+2022-02-14 22:53:19.948 +00:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(System.String, System.String)" on controller "CRMSystem.Presentation.UserController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:53:41.352 +00:00 [Warning] No type was specified for the decimal column '"Tax"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.366 +00:00 [Warning] No type was specified for the decimal column '"TaxPercent"' on entity type '"Invoice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.367 +00:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Item"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.367 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.367 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Price"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.368 +00:00 [Warning] No type was specified for the decimal column '"CostPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.368 +00:00 [Warning] No type was specified for the decimal column '"SalePrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.368 +00:00 [Warning] No type was specified for the decimal column '"NairaEquivalent"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.368 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountForeign"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.381 +00:00 [Warning] No type was specified for the decimal column '"TotalAmountNaira"' on entity type '"Purchase"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:41.382 +00:00 [Warning] No type was specified for the decimal column '"CompetencyValue"' on entity type '"StaffSkillorKPI"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-02-14 22:53:42.133 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:54:02.031 +00:00 [Information] Executed DbCommand ("1,478"ms) [Parameters=["@__username_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[Gender], [a].[Image], [a].[Name], [a].[Password], [a].[Phone], [a].[Post], [a].[RoleID], [a].[UserCreated], [a].[UserModified], [a].[Username]
+FROM [AppUsers] AS [a]
+WHERE ([a].[Username] = @__username_0) AND ([a].[Password] = @__password_1)"
+2022-02-14 22:54:02.965 +00:00 [Information] Executing ObjectResult, writing value of type '"CRMSystem.Domains.User"'.
+2022-02-14 22:54:03.899 +00:00 [Information] Executed action "CRMSystem.Presentation.UserController.Authenticate (CRMSystem.Presentation.Core)" in 43795.6061ms
+2022-02-14 22:54:03.902 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.UserController.Authenticate (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:03.925 +00:00 [Information] Request finished in 48094.1653ms 200 application/json; charset=utf-8
+2022-02-14 22:54:04.193 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/User/GetUserByID/2  
+2022-02-14 22:54:04.207 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:54:04.209 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.UserController.GetUserByID (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:04.315 +00:00 [Information] Route matched with "{action = \"GetUserByID\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserByID(Int32)" on controller "CRMSystem.Presentation.UserController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:54:04.879 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:54:05.313 +00:00 [Information] Executed DbCommand ("270"ms) [Parameters=["@__ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[DateCreated], [a].[DateModified], [a].[Email], [a].[Gender], [a].[Image], [a].[Name], [a].[Password], [a].[Phone], [a].[Post], [a].[RoleID], [a].[UserCreated], [a].[UserModified], [a].[Username]
+FROM [AppUsers] AS [a]
+WHERE [a].[ID] = @__ID_0"
+2022-02-14 22:54:05.830 +00:00 [Information] Executed DbCommand ("410"ms) [Parameters=["@__user_RoleID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[ID], [r].[Code], [r].[DateCreated], [r].[DateModified], [r].[Name], [r].[UserCreated], [r].[UserModified]
+FROM [Roles] AS [r]
+WHERE [r].[ID] = @__user_RoleID_0"
+2022-02-14 22:54:06.583 +00:00 [Information] Executed DbCommand ("389"ms) [Parameters=["@__role_ID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Code], [p].[DateCreated], [p].[DateModified], [p].[Name], [p].[Read], [p].[RoleID], [p].[UserCreated], [p].[UserModified], [p].[Write]
+FROM [Privileges] AS [p]
+WHERE [p].[RoleID] = @__role_ID_0"
+2022-02-14 22:54:06.881 +00:00 [Information] Executing ObjectResult, writing value of type '"CRMSystem.Domains.User"'.
+2022-02-14 22:54:07.031 +00:00 [Information] Executed action "CRMSystem.Presentation.UserController.GetUserByID (CRMSystem.Presentation.Core)" in 2714.9592ms
+2022-02-14 22:54:07.032 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.UserController.GetUserByID (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:07.033 +00:00 [Information] Request finished in 2865.1769ms 200 application/json; charset=utf-8
+2022-02-14 22:54:09.188 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetAllSales  
+2022-02-14 22:54:09.225 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:54:09.226 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetAll (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:09.228 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2022-02-14 22:54:09.230 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:54:09.230 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:09.247 +00:00 [Information] Route matched with "{action = \"GetAll\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll()" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:54:09.249 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:54:09.289 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Lead/GetAllLeads  
+2022-02-14 22:54:09.290 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:54:09.290 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:09.293 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts  
+2022-02-14 22:54:09.294 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:54:09.294 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:09.309 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:54:09.363 +00:00 [Information] Route matched with "{action = \"GetAllLeads\", controller = \"Lead\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLeads()" on controller "CRMSystem.Presentation.Core.Controllers.LeadController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:54:09.372 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:54:09.372 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:54:09.423 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:54:09.425 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:54:10.225 +00:00 [Information] Executed DbCommand ("703"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-14 22:54:20.696 +00:00 [Information] Executed DbCommand ("3,508"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[ID], [l].[Address], [l].[Company], [l].[DateCreated], [l].[DateModified], [l].[Email], [l].[FirstName], [l].[Gender], [l].[Image], [l].[LastName], [l].[Phone], [l].[UserCreated], [l].[UserModified], [l].[isCustomer], [m].[ID], [m].[Attachment], [m].[DateCreated], [m].[DateModified], [m].[LeadID], [m].[Summary], [m].[Type], [m].[UserCreated], [m].[UserModified]
+FROM [Leads] AS [l]
+LEFT JOIN [Messages] AS [m] ON [l].[ID] = [m].[LeadID]
+WHERE [l].[isCustomer] = CAST(0 AS bit)
+ORDER BY [l].[ID], [m].[ID]"
+2022-02-14 22:54:20.731 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Lead, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:54:20.750 +00:00 [Information] Executed action "CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)" in 11386.7389ms
+2022-02-14 22:54:20.758 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.Core.Controllers.LeadController.GetAllLeads (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:20.759 +00:00 [Information] Request finished in 11469.6394ms 200 application/json; charset=utf-8
+2022-02-14 22:54:23.478 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:54:23.776 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 14466.4031ms
+2022-02-14 22:54:23.777 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:23.808 +00:00 [Information] Request finished in 14514.6292ms 200 application/json; charset=utf-8
+2022-02-14 22:54:24.192 +00:00 [Information] Executed DbCommand ("716"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ReturnedStockID], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsDeleted], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[TransactionType], [c].[UserCreated], [c].[UserModified], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM [Sales] AS [s]
+INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+LEFT JOIN [Items] AS [i0] ON [c].[ID] = [i0].[CartID]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [s].[DateCreated] DESC, [s].[ID], [i].[ID], [c].[ID], [i0].[ID]"
+2022-02-14 22:54:24.710 +00:00 [Information] Executed DbCommand ("1,238"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2022-02-14 22:54:29.093 +00:00 [Information] Executed DbCommand ("356"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:29.567 +00:00 [Information] Executed DbCommand ("345"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:32.164 +00:00 [Information] Executed DbCommand ("2,581"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:35.696 +00:00 [Information] Executed DbCommand ("3,522"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:38.743 +00:00 [Information] Executed DbCommand ("3,030"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:39.044 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:54:39.108 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 29858.0646ms
+2022-02-14 22:54:39.109 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-14 22:54:39.110 +00:00 [Information] Request finished in 29881.4614ms 200 application/json; charset=utf-8
+2022-02-14 22:54:39.564 +00:00 [Information] Executed DbCommand ("815"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:39.850 +00:00 [Information] Executed DbCommand ("282"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:40.092 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:40.315 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:40.640 +00:00 [Information] Executed DbCommand ("315"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:40.859 +00:00 [Information] Executed DbCommand ("215"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:41.112 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:41.340 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:41.575 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:41.807 +00:00 [Information] Executed DbCommand ("229"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:42.056 +00:00 [Information] Executed DbCommand ("245"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:42.293 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:42.510 +00:00 [Information] Executed DbCommand ("213"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:42.724 +00:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:42.943 +00:00 [Information] Executed DbCommand ("216"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:43.172 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:43.392 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:43.639 +00:00 [Information] Executed DbCommand ("235"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:43.879 +00:00 [Information] Executed DbCommand ("237"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:44.109 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:44.344 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:44.566 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:44.844 +00:00 [Information] Executed DbCommand ("251"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:45.079 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:45.295 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:45.523 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:45.751 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:46.006 +00:00 [Information] Executed DbCommand ("253"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:46.228 +00:00 [Information] Executed DbCommand ("221"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:46.471 +00:00 [Information] Executed DbCommand ("236"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:46.708 +00:00 [Information] Executed DbCommand ("235"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:46.959 +00:00 [Information] Executed DbCommand ("249"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:47.172 +00:00 [Information] Executed DbCommand ("208"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:47.407 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:47.637 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:47.855 +00:00 [Information] Executed DbCommand ("216"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:48.074 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:48.279 +00:00 [Information] Executed DbCommand ("203"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:48.509 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:48.738 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:49.022 +00:00 [Information] Executed DbCommand ("283"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:49.243 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:49.534 +00:00 [Information] Executed DbCommand ("289"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:49.772 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:49.993 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:50.224 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:50.455 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:50.695 +00:00 [Information] Executed DbCommand ("237"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:50.933 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:51.722 +00:00 [Information] Executed DbCommand ("784"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:52.363 +00:00 [Information] Executed DbCommand ("640"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:52.579 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:52.806 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:53.054 +00:00 [Information] Executed DbCommand ("246"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:53.288 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:53.550 +00:00 [Information] Executed DbCommand ("259"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:53.779 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:53.999 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:54.242 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:54.455 +00:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:54.683 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:54.909 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:55.128 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:55.355 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:55.571 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:55.799 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:56.033 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:56.255 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:56.490 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:56.728 +00:00 [Information] Executed DbCommand ("236"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:56.951 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:57.159 +00:00 [Information] Executed DbCommand ("206"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:57.367 +00:00 [Information] Executed DbCommand ("203"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:57.592 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:57.813 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:58.038 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:58.262 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:58.514 +00:00 [Information] Executed DbCommand ("251"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:58.739 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:58.947 +00:00 [Information] Executed DbCommand ("206"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:59.179 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:59.391 +00:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:59.609 +00:00 [Information] Executed DbCommand ("215"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:54:59.843 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:00.072 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:00.291 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:00.510 +00:00 [Information] Executed DbCommand ("215"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:00.721 +00:00 [Information] Executed DbCommand ("207"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:00.950 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:01.172 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:01.406 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:01.611 +00:00 [Information] Executed DbCommand ("203"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:01.835 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:02.050 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:02.295 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:02.511 +00:00 [Information] Executed DbCommand ("215"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:02.747 +00:00 [Information] Executed DbCommand ("234"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:02.975 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:03.195 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:03.429 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:03.671 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:03.900 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:04.134 +00:00 [Information] Executed DbCommand ("229"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:04.367 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:04.589 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:04.816 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:05.050 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:05.283 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:05.523 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:05.747 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:05.977 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:06.217 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:06.438 +00:00 [Information] Executed DbCommand ("216"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:06.760 +00:00 [Information] Executed DbCommand ("321"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:06.984 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:07.214 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:07.456 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:07.688 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:07.943 +00:00 [Information] Executed DbCommand ("253"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:08.165 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:08.394 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:08.624 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:08.872 +00:00 [Information] Executed DbCommand ("245"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:09.099 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:09.339 +00:00 [Information] Executed DbCommand ("237"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:09.573 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:09.812 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:10.060 +00:00 [Information] Executed DbCommand ("245"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:10.325 +00:00 [Information] Executed DbCommand ("262"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:10.563 +00:00 [Information] Executed DbCommand ("236"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:10.817 +00:00 [Information] Executed DbCommand ("252"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:11.078 +00:00 [Information] Executed DbCommand ("259"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:11.315 +00:00 [Information] Executed DbCommand ("234"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:11.575 +00:00 [Information] Executed DbCommand ("250"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:11.827 +00:00 [Information] Executed DbCommand ("251"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:12.095 +00:00 [Information] Executed DbCommand ("261"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:12.328 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:12.590 +00:00 [Information] Executed DbCommand ("259"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:12.844 +00:00 [Information] Executed DbCommand ("252"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:13.081 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:13.323 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:13.555 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:13.793 +00:00 [Information] Executed DbCommand ("235"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:14.041 +00:00 [Information] Executed DbCommand ("244"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:14.275 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:14.495 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:14.725 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:14.963 +00:00 [Information] Executed DbCommand ("235"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:15.180 +00:00 [Information] Executed DbCommand ("215"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:15.401 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:15.644 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:15.889 +00:00 [Information] Executed DbCommand ("243"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:16.108 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:16.330 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:16.555 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:16.777 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:17.008 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:17.235 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:17.443 +00:00 [Information] Executed DbCommand ("207"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:17.660 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:17.884 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:18.114 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:18.327 +00:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:18.579 +00:00 [Information] Executed DbCommand ("250"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:18.808 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:19.037 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:19.280 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:19.493 +00:00 [Information] Executed DbCommand ("210"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:19.766 +00:00 [Information] Executed DbCommand ("272"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:19.991 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:20.204 +00:00 [Information] Executed DbCommand ("209"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:20.415 +00:00 [Information] Executed DbCommand ("209"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:20.640 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:20.890 +00:00 [Information] Executed DbCommand ("249"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:21.106 +00:00 [Information] Executed DbCommand ("210"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:21.337 +00:00 [Information] Executed DbCommand ("229"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:21.596 +00:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:21.826 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:22.050 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:22.266 +00:00 [Information] Executed DbCommand ("213"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:22.492 +00:00 [Information] Executed DbCommand ("221"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:22.716 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:22.948 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:23.174 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:23.380 +00:00 [Information] Executed DbCommand ("204"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:23.617 +00:00 [Information] Executed DbCommand ("235"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:23.865 +00:00 [Information] Executed DbCommand ("246"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:24.092 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:24.335 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:24.596 +00:00 [Information] Executed DbCommand ("260"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:25.545 +00:00 [Information] Executed DbCommand ("945"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:25.773 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:25.996 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:26.216 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:26.458 +00:00 [Information] Executed DbCommand ("237"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:26.691 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:26.900 +00:00 [Information] Executed DbCommand ("207"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:27.121 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:27.340 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:27.572 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:27.799 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:28.040 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:28.255 +00:00 [Information] Executed DbCommand ("213"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:28.475 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:28.690 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:28.910 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:29.131 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:29.367 +00:00 [Information] Executed DbCommand ("234"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:29.605 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:29.825 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:30.127 +00:00 [Information] Executed DbCommand ("299"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:30.377 +00:00 [Information] Executed DbCommand ("247"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:30.622 +00:00 [Information] Executed DbCommand ("243"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:30.827 +00:00 [Information] Executed DbCommand ("202"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:31.074 +00:00 [Information] Executed DbCommand ("245"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:31.282 +00:00 [Information] Executed DbCommand ("205"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:31.504 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:31.735 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:32.030 +00:00 [Information] Executed DbCommand ("294"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:32.588 +00:00 [Information] Executed DbCommand ("555"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:32.810 +00:00 [Information] Executed DbCommand ("220"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:33.026 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:33.447 +00:00 [Information] Executed DbCommand ("419"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:33.664 +00:00 [Information] Executed DbCommand ("216"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:33.904 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:34.143 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:34.443 +00:00 [Information] Executed DbCommand ("298"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:34.830 +00:00 [Information] Executed DbCommand ("386"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:36.168 +00:00 [Information] Executed DbCommand ("1,336"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:37.472 +00:00 [Information] Executed DbCommand ("1,302"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:37.732 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:38.341 +00:00 [Information] Executed DbCommand ("607"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:38.590 +00:00 [Information] Executed DbCommand ("248"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:38.941 +00:00 [Information] Executed DbCommand ("346"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:39.248 +00:00 [Information] Executed DbCommand ("304"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:39.482 +00:00 [Information] Executed DbCommand ("229"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:39.714 +00:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:39.926 +00:00 [Information] Executed DbCommand ("209"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:40.181 +00:00 [Information] Executed DbCommand ("253"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:40.440 +00:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:40.688 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:40.923 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:41.144 +00:00 [Information] Executed DbCommand ("216"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:41.384 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:41.637 +00:00 [Information] Executed DbCommand ("247"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:41.888 +00:00 [Information] Executed DbCommand ("249"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:42.216 +00:00 [Information] Executed DbCommand ("326"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:42.430 +00:00 [Information] Executed DbCommand ("210"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:42.664 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:42.878 +00:00 [Information] Executed DbCommand ("212"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:43.110 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:43.345 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:43.572 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:43.803 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:44.030 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:44.282 +00:00 [Information] Executed DbCommand ("250"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:44.630 +00:00 [Information] Executed DbCommand ("345"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:44.870 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:45.129 +00:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:45.166 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Product/GetAllProducts  
+2022-02-14 22:55:45.213 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:55:45.265 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-14 22:55:45.283 +00:00 [Information] Route matched with "{action = \"GetAllProducts\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(System.String)" on controller "CRMSystem.Presentation.ProductController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:55:45.293 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:55:45.329 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2022-02-14 22:55:45.352 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:55:45.353 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-14 22:55:45.353 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:55:45.355 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:55:45.355 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:45.739 +00:00 [Information] Executed DbCommand ("444"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[CostPrice], [p].[DateCreated], [p].[DateModified], [p].[Description], [p].[Image], [p].[Location], [p].[Name], [p].[Quantity], [p].[SalePrice], [p].[StockLevel], [p].[TotalSold], [p].[UserCreated], [p].[UserModified]
+FROM [Products] AS [p]
+ORDER BY [p].[DateCreated] DESC"
+2022-02-14 22:55:50.915 +00:00 [Information] Executed DbCommand ("5,557"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:51.441 +00:00 [Information] Executed DbCommand ("525"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:51.749 +00:00 [Information] Executed DbCommand ("6,393"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2022-02-14 22:55:52.112 +00:00 [Information] Executed DbCommand ("669"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:53.395 +00:00 [Information] Executed DbCommand ("1,282"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:53.916 +00:00 [Information] Executed DbCommand ("519"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:55.778 +00:00 [Information] Executed DbCommand ("1,857"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:55:59.693 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:56:00.981 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 15627.3462ms
+2022-02-14 22:56:00.981 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-14 22:56:00.982 +00:00 [Information] Request finished in 15652.5423ms 200 application/json; charset=utf-8
+2022-02-14 22:56:01.799 +00:00 [Information] Executed DbCommand ("3,802"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:03.805 +00:00 [Information] Executed DbCommand ("1,998"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:05.460 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Product, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:56:05.464 +00:00 [Information] Executed DbCommand ("1,656"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:05.773 +00:00 [Information] Executed DbCommand ("296"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:05.795 +00:00 [Information] Executed action "CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)" in 20506.0744ms
+2022-02-14 22:56:05.796 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.ProductController.GetAllProducts (CRMSystem.Presentation.Core)"'
+2022-02-14 22:56:05.796 +00:00 [Information] Request finished in 20630.6644ms 200 application/json; charset=utf-8
+2022-02-14 22:56:06.098 +00:00 [Information] Executed DbCommand ("323"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:06.330 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:08.730 +00:00 [Information] Executed DbCommand ("630"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:08.995 +00:00 [Information] Executed DbCommand ("264"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:09.280 +00:00 [Information] Executed DbCommand ("284"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:09.662 +00:00 [Information] Executed DbCommand ("381"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:10.048 +00:00 [Information] Executed DbCommand ("337"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:10.423 +00:00 [Information] Executed DbCommand ("374"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:10.729 +00:00 [Information] Executed DbCommand ("297"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:11.075 +00:00 [Information] Executed DbCommand ("345"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:11.363 +00:00 [Information] Executed DbCommand ("287"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:13.875 +00:00 [Information] Executed DbCommand ("276"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:14.230 +00:00 [Information] Executed DbCommand ("352"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:14.654 +00:00 [Information] Executed DbCommand ("422"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:15.111 +00:00 [Information] Executed DbCommand ("452"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:15.377 +00:00 [Information] Executed DbCommand ("252"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:15.725 +00:00 [Information] Executed DbCommand ("346"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:15.973 +00:00 [Information] Executed DbCommand ("247"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:16.249 +00:00 [Information] Executed DbCommand ("249"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:16.577 +00:00 [Information] Executed DbCommand ("318"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:19.764 +00:00 [Information] Executed DbCommand ("1,136"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:20.265 +00:00 [Information] Executed DbCommand ("500"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:21.312 +00:00 [Information] Executed DbCommand ("1,038"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:21.764 +00:00 [Information] Executed DbCommand ("442"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:22.081 +00:00 [Information] Executed DbCommand ("315"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:22.479 +00:00 [Information] Executed DbCommand ("385"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:22.927 +00:00 [Information] Executed DbCommand ("447"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:24.027 +00:00 [Information] Executed DbCommand ("246"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:24.348 +00:00 [Information] Executed DbCommand ("320"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:24.644 +00:00 [Information] Executed DbCommand ("287"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:24.932 +00:00 [Information] Executed DbCommand ("286"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:25.147 +00:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:25.457 +00:00 [Information] Executed DbCommand ("309"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:25.810 +00:00 [Information] Executed DbCommand ("352"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:26.550 +00:00 [Information] Executed DbCommand ("727"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:27.596 +00:00 [Information] Executed DbCommand ("519"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:28.025 +00:00 [Information] Executed DbCommand ("411"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:28.393 +00:00 [Information] Executed DbCommand ("366"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:28.839 +00:00 [Information] Executed DbCommand ("443"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:29.189 +00:00 [Information] Executed DbCommand ("349"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:29.532 +00:00 [Information] Executed DbCommand ("335"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:29.797 +00:00 [Information] Executed DbCommand ("264"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:30.040 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:30.294 +00:00 [Information] Executed DbCommand ("252"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:30.691 +00:00 [Information] Executed DbCommand ("395"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:30.990 +00:00 [Information] Executed DbCommand ("298"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:31.223 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:31.665 +00:00 [Information] Executed DbCommand ("440"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:32.080 +00:00 [Information] Executed DbCommand ("414"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:32.326 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:32.639 +00:00 [Information] Executed DbCommand ("308"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:32.890 +00:00 [Information] Executed DbCommand ("247"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:33.197 +00:00 [Information] Executed DbCommand ("304"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:33.424 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:33.659 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:33.916 +00:00 [Information] Executed DbCommand ("254"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:34.241 +00:00 [Information] Executed DbCommand ("320"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:34.649 +00:00 [Information] Executed DbCommand ("406"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:34.887 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:35.489 +00:00 [Information] Executed DbCommand ("598"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:35.707 +00:00 [Information] Executed DbCommand ("212"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:36.267 +00:00 [Information] Executed DbCommand ("554"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:36.905 +00:00 [Information] Executed DbCommand ("632"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:36.907 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Customer/GetAllCustomers  
+2022-02-14 22:56:36.908 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:56:36.909 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-14 22:56:36.910 +00:00 [Information] Route matched with "{action = \"GetAllCustomers\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers()" on controller "CRMSystem.Presentation.CustomerController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:56:36.923 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:56:36.960 +00:00 [Information] Request starting HTTP/2.0 GET https://localhost:44363/api/Sale/GetSalesReportByDate/0/0?customerID=0  
+2022-02-14 22:56:36.978 +00:00 [Information] CORS policy execution successful.
+2022-02-14 22:56:36.979 +00:00 [Information] Executing endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2022-02-14 22:56:37.006 +00:00 [Information] Route matched with "{action = \"GetSalesReportByDate\", controller = \"Sale\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSalesReportByDate(Int32, System.String, System.String)" on controller "CRMSystem.Presentation.SaleController" ("CRMSystem.Presentation.Core").
+2022-02-14 22:56:37.245 +00:00 [Information] Entity Framework Core "3.1.4" initialized '"TContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CRMSystem.Presentation.Core "
+2022-02-14 22:56:37.446 +00:00 [Information] Executed DbCommand ("536"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:37.449 +00:00 [Information] Executed DbCommand ("524"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Address], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[FirstName], [c].[Gender], [c].[Image], [c].[LastName], [c].[Phone], [c].[TotalSales], [c].[UserCreated], [c].[UserModified], [c0].[ID], [c0].[Attachment], [c0].[CustomerID], [c0].[DateCreated], [c0].[DateModified], [c0].[Summary], [c0].[Type], [c0].[UserCreated], [c0].[UserModified]
+FROM [Customers] AS [c]
+LEFT JOIN [CustomerMessages] AS [c0] ON [c].[ID] = [c0].[CustomerID]
+ORDER BY [c].[ID], [c0].[ID]"
+2022-02-14 22:56:37.540 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Customer, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:56:37.572 +00:00 [Information] Executed action "CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)" in 661.6818ms
+2022-02-14 22:56:37.572 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.CustomerController.GetAllCustomers (CRMSystem.Presentation.Core)"'
+2022-02-14 22:56:37.573 +00:00 [Information] Request finished in 666.6531ms 200 application/json; charset=utf-8
+2022-02-14 22:56:37.715 +00:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:38.042 +00:00 [Information] Executed DbCommand ("628"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[CartID], [s].[CustomerID], [s].[DateCreated], [s].[DateModified], [s].[DeliveryFee], [s].[InvoiceID], [s].[IsDeleted], [s].[LPO], [s].[ReturnedStockID], [s].[ToDeliver], [s].[UserCreated], [s].[UserModified], [i].[ID], [i].[Amount], [i].[AmountPaid], [i].[Balance], [i].[CartID], [i].[CashierID], [i].[CustomerID], [i].[DateCreated], [i].[DateModified], [i].[DeliveryFee], [i].[DiscountPercent], [i].[ExtData], [i].[InvoiceDate], [i].[InvoiceNo], [i].[IsDeleted], [i].[IsPaid], [i].[Tax], [i].[TaxInclusive], [i].[TaxName], [i].[TaxPercent], [i].[Type], [i].[UserCreated], [i].[UserModified], [c].[ID], [c].[Amount], [c].[Code], [c].[DateCreated], [c].[DateModified], [c].[TransactionType], [c].[UserCreated], [c].[UserModified], [i0].[ID], [i0].[Amount], [i0].[CartID], [i0].[Code], [i0].[Name], [i0].[ProductID], [i0].[Quantity]
+FROM [Sales] AS [s]
+INNER JOIN [Invoices] AS [i] ON [s].[InvoiceID] = [i].[ID]
+INNER JOIN [Carts] AS [c] ON [s].[CartID] = [c].[ID]
+LEFT JOIN [Items] AS [i0] ON [c].[ID] = [i0].[CartID]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [s].[DateCreated] DESC, [s].[ID], [i].[ID], [c].[ID], [i0].[ID]"
+2022-02-14 22:56:38.327 +00:00 [Information] Executed DbCommand ("554"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:41.497 +00:00 [Information] Executed DbCommand ("3,169"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:44.288 +00:00 [Information] Executed DbCommand ("2,789"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:44.950 +00:00 [Information] Executed DbCommand ("660"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:45.448 +00:00 [Information] Executed DbCommand ("492"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:45.548 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Sale, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:56:45.715 +00:00 [Information] Executed DbCommand ("266"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:45.845 +00:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)" in 8837.8286ms
+2022-02-14 22:56:45.845 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetSalesReportByDate (CRMSystem.Presentation.Core)"'
+2022-02-14 22:56:45.846 +00:00 [Information] Request finished in 8888.2301ms 200 application/json; charset=utf-8
+2022-02-14 22:56:45.980 +00:00 [Information] Executed DbCommand ("261"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:46.222 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:46.473 +00:00 [Information] Executed DbCommand ("249"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:46.704 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:46.962 +00:00 [Information] Executed DbCommand ("256"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:47.207 +00:00 [Information] Executed DbCommand ("243"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:47.420 +00:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:47.660 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:48.063 +00:00 [Information] Executed DbCommand ("402"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:49.731 +00:00 [Information] Executed DbCommand ("1,666"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:50.133 +00:00 [Information] Executed DbCommand ("400"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:50.421 +00:00 [Information] Executed DbCommand ("284"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:50.955 +00:00 [Information] Executed DbCommand ("533"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:51.175 +00:00 [Information] Executed DbCommand ("219"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:51.395 +00:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:51.630 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:51.887 +00:00 [Information] Executed DbCommand ("256"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:52.135 +00:00 [Information] Executed DbCommand ("245"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:52.396 +00:00 [Information] Executed DbCommand ("259"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:52.640 +00:00 [Information] Executed DbCommand ("242"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:52.903 +00:00 [Information] Executed DbCommand ("262"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:53.162 +00:00 [Information] Executed DbCommand ("258"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:53.437 +00:00 [Information] Executed DbCommand ("273"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:53.662 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:53.907 +00:00 [Information] Executed DbCommand ("242"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:54.146 +00:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:54.389 +00:00 [Information] Executed DbCommand ("242"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:54.642 +00:00 [Information] Executed DbCommand ("251"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:54.866 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:55.113 +00:00 [Information] Executed DbCommand ("243"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:55.339 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:55.608 +00:00 [Information] Executed DbCommand ("268"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:56.113 +00:00 [Information] Executed DbCommand ("504"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:56.346 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:56.553 +00:00 [Information] Executed DbCommand ("206"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:57.032 +00:00 [Information] Executed DbCommand ("476"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:57.286 +00:00 [Information] Executed DbCommand ("241"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:57.521 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:57.755 +00:00 [Information] Executed DbCommand ("232"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:57.986 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:58.248 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:58.549 +00:00 [Information] Executed DbCommand ("293"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:58.807 +00:00 [Information] Executed DbCommand ("252"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:59.059 +00:00 [Information] Executed DbCommand ("250"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:59.300 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:59.527 +00:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:56:59.776 +00:00 [Information] Executed DbCommand ("244"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:00.012 +00:00 [Information] Executed DbCommand ("234"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:00.242 +00:00 [Information] Executed DbCommand ("227"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:00.478 +00:00 [Information] Executed DbCommand ("234"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:00.709 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:00.942 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:01.170 +00:00 [Information] Executed DbCommand ("226"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:01.430 +00:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:01.665 +00:00 [Information] Executed DbCommand ("233"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:01.927 +00:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:02.159 +00:00 [Information] Executed DbCommand ("230"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:02.397 +00:00 [Information] Executed DbCommand ("237"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:02.641 +00:00 [Information] Executed DbCommand ("241"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:02.872 +00:00 [Information] Executed DbCommand ("229"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:03.096 +00:00 [Information] Executed DbCommand ("221"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:03.322 +00:00 [Information] Executed DbCommand ("223"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:03.587 +00:00 [Information] Executed DbCommand ("242"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:03.861 +00:00 [Information] Executed DbCommand ("270"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:04.088 +00:00 [Information] Executed DbCommand ("224"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:04.347 +00:00 [Information] Executed DbCommand ("256"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:04.598 +00:00 [Information] Executed DbCommand ("244"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:04.864 +00:00 [Information] Executed DbCommand ("256"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:05.123 +00:00 [Information] Executed DbCommand ("258"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:05.422 +00:00 [Information] Executed DbCommand ("297"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:05.645 +00:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:05.889 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:06.130 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:06.405 +00:00 [Information] Executed DbCommand ("252"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:06.692 +00:00 [Information] Executed DbCommand ("284"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:06.926 +00:00 [Information] Executed DbCommand ("231"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:07.165 +00:00 [Information] Executed DbCommand ("237"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:07.439 +00:00 [Information] Executed DbCommand ("268"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:07.679 +00:00 [Information] Executed DbCommand ("239"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:07.927 +00:00 [Information] Executed DbCommand ("246"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:08.169 +00:00 [Information] Executed DbCommand ("240"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:08.399 +00:00 [Information] Executed DbCommand ("228"ms) [Parameters=["@__invNo_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Amount], [p].[CustomerID], [p].[DatePaid], [p].[InvoiceNo], [p].[Method], [p].[Reference], [p].[SaleID], [p].[UserCreated]
+FROM [Payments] AS [p]
+WHERE [p].[InvoiceNo] = @__invNo_0
+ORDER BY [p].[DatePaid] DESC"
+2022-02-14 22:57:08.429 +00:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[CRMSystem.Domains.Sale, CRMSystem.Domains.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-14 22:57:08.511 +00:00 [Information] Executed action "CRMSystem.Presentation.SaleController.GetAll (CRMSystem.Presentation.Core)" in 179263.1421ms
+2022-02-14 22:57:08.511 +00:00 [Information] Executed endpoint '"CRMSystem.Presentation.SaleController.GetAll (CRMSystem.Presentation.Core)"'
+2022-02-14 22:57:08.521 +00:00 [Information] Request finished in 179326.6924ms 200 application/json; charset=utf-8

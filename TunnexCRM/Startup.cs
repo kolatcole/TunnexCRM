@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http.Cors;
 using CRMSystem.Domains;
+using CRMSystem.Domains.Core.Implementations;
 using CRMSystem.Infrastructure;
 using CRMSystem.Presentation.Core.Setup_Files;
 using Microsoft.AspNetCore.Builder;
@@ -44,7 +45,16 @@ namespace CRMSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
+                                      // TEST
+                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+
+                                      //builder.AllowAnyOrigin().//.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")/*.WithOrigins("https://tunnexlabcrm.com")*//*.WithOrigins("https://tunnexcrm.netlify.app", "http://localhost:4200")*/.
+                                      //                                     AllowAnyHeader()
+                                      //                                     .AllowAnyMethod().AllowAnyOrigin();
+
+
+                                      // FOR PRODUCTION  
+                                      //builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://tunnexlabcrm.com");
                                       //  AllowAnyHeader()
                                       //.AllowAnyMethod().AllowAnyOrigin();
                                   });
@@ -62,11 +72,11 @@ namespace CRMSystem
                 {
                     Version="v1",
                     Title="CRM System API"
-                });
+                }); 
             });
             services.AddDbContext<TContext>(opt =>
             {
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultTLocal"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("CRMSystem.Presentation.Core"));
             });
 
             services.AddScoped<IRepo<Lead>, LeadRepo>();
@@ -88,18 +98,22 @@ namespace CRMSystem
             services.AddScoped<IProductRepo, ProductRepo>();
             services.AddScoped<ICustomerRepo, CustomerRepo>();
             services.AddScoped<ISaleRepo, SaleRepo>();
-            services.AddScoped<IRepo<Skill>, SkillRepo>();
+            services.AddScoped<IRepo<SkillorKPI>, SkillorKPIRepo>();
+            services.AddScoped<ISkillorKPIRepo, SkillorKPIRepo>();
             services.AddScoped<IRepo<Staff>, StaffRepo>();
             services.AddScoped<IRepo<Qualification>, QualificationRepo>();
             services.AddScoped<IRepo<Assessment>, AssessmentRepo>();
-            services.AddScoped<IRepo<StaffSkill>, StaffSkillRepo>();
-            services.AddScoped<IStaffSkillRepo, StaffSkillRepo>();
+            services.AddScoped<IRepo<StaffSkillorKPI>, StaffSkillorKPIRepo>();
+            services.AddScoped<IStaffSkillorKPIRepo, StaffSkillorKPIRepo>();
             services.AddScoped<IRepo<CustomerMessage>, CustomerMessageRepo>();
             services.AddScoped<IQuotationRepo, QuotationRepo>();
             services.AddScoped<IRepo<QuotProduct>, QuotProductRepo>();
             services.AddScoped<IWaybillRepo, WaybillRepo>();
             services.AddScoped<IRepo<WaybillProduct>, WaybillProductRepo>();
-
+            services.AddScoped<IRepo<Supplier>, SupplierRepo>();
+            services.AddScoped<IRepo<PurchaseProduct>, PurchaseProductRepo>();
+            services.AddScoped<IPurchaseRepo, PurchaseRepo>();
+            services.AddScoped<IReturnedStockRepo, ReturnedStockRepo >();
 
 
             services.AddTransient<IUserService, UserService>();
@@ -114,8 +128,11 @@ namespace CRMSystem
             services.AddTransient<ICustomerService, CustomerService>();
             services.AddTransient<IQuotationService, QuotationService>();
             services.AddTransient<IWaybillService, WaybillService>();
-
+            services.AddTransient<IPurchaseService, PurchaseService>();
+            services.AddTransient<IStaffSkillorKPICompetencyService, StaffSkillorKPICompetencyService>();
             
+
+
 
         }
 

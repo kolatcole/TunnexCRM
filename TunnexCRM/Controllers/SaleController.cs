@@ -26,12 +26,19 @@ namespace CRMSystem.Presentation
         /// <param name="data"></param>
         /// <returns></returns>
         /// 
-        //[EnableCors("https://tunnexlabcrm.com", "*","*")]
         [HttpPost("SaveSale")]
         public async Task<IActionResult> Save(Sale data)
         {
             var result = await _service.Save(data);
             return Ok(result);
+
+        }
+
+        [HttpPost("DeleteSale/{invoiceNo}")]
+        public async Task<IActionResult> DeleteSale(string invoiceNo)
+        {
+            await _service.DeleteSale(invoiceNo);
+            return Ok();
 
         }
 
@@ -54,6 +61,19 @@ namespace CRMSystem.Presentation
             return Ok(result);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="InvNumber"></param>
+        /// <returns></returns>
+        [HttpGet("GetSaleWithPayments/{InvNumber}")]
+        public async Task<IActionResult> GetSaleWithPayments(string InvNumber)
+        {
+            var result = await _service.GetSaleWithPaymentsByIDAsync(InvNumber);
+            return Ok(result);
+        }
+
 
         /// <summary>
         /// Fetch All Customer Sales Record
@@ -119,5 +139,32 @@ namespace CRMSystem.Presentation
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost("ReturnProduct")]
+        public async Task<IActionResult> ReturnProduct(ReturnedStock data)
+        {
+            var result = await _service.CreateRefund(data);
+            return Ok(result);
+        
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="invNo"></param>
+        /// <returns></returns>
+        [HttpGet("GetSalewithInvoiceNo/{invNo}")]
+        public async Task<IActionResult> GetSalewithInvoiceNo(string invNo)
+        {
+            var result = await _service.GetSaleWithPaymentsByIDAsync(invNo);
+            return Ok(result);
+        
+        }
+
     }
 }
+
